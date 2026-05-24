@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Как посчитать потребление холодильника: формулы и примеры — Холодильник Инфо</title>
+    <meta name="description" content="Узнайте, сколько электроэнергии потребляет ваш холодильник. Простые формулы расчета, таблица классов энергоэффективности и способы экономии.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/k/ka/kak-poschitat-skolko-potreblyaet-kholodilnik.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как посчитать потребление холодильника: формулы и примеры">
+    <meta property="og:description" content="Узнайте, сколько электроэнергии потребляет ваш холодильник. Простые формулы расчета, таблица классов энергоэффективности и способы экономии.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ustrojstvo-i-detali/">Устройство и детали</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как посчитать потребление холодильника: формулы и примеры</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#основные-параметры-для-расчета-энергопотребления">Основные параметры для расчета энергопотребления</a></li><li><a href="#формула-расчета-и-пример-вычислений">Формула расчета и пример вычислений</a></li><li><a href="#таблица-классов-энергоэффективности">Таблица классов энергоэффективности</a></li><li><a href="#факторы-влияющие-на-реальный-расход">Факторы, влияющие на реальный расход</a></li><li><a href="#практические-способы-измерения-потребления">Практические способы измерения потребления</a></li><li><a href="#как-снизить-энергопотребление-холодильника">Как снизить энергопотребление холодильника</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/kh/kholodilnik-termostat-kak-rabotaet.html">Как работает термостат холодильника: устройство и ремонт</a></li><li><a href="/articles/s/sk/skolko-po-vremeni-rabotaet-kompressor-kholodilnika.html">Сколько времени работает компрессор холодильника: нормы и причины</a></li><li><a href="/articles/k/ka/kak-uznat-god-vypuska-kholodilnika-simens.html">Как узнать год выпуска холодильника Siemens по серийному номеру</a></li><li><a href="/articles/k/kh/kholodilnik-funktsiya-nou-frost-chto-eto.html">Холодильник No Frost: что это, принцип работы и плюсы</a></li><li><a href="/articles/c/ch/chto-takoe-ruchka-s-tolkatelem-na-kholodilnike.html">Ручка с толкателем на холодильнике: устройство и замена</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как посчитать сколько потребляет холодильник</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#основные-параметры-для-расчета-энергопотребления">Основные параметры для расчета энергопотребления</a></li><li><a href="#формула-расчета-и-пример-вычислений">Формула расчета и пример вычислений</a></li><li><a href="#таблица-классов-энергоэффективности">Таблица классов энергоэффективности</a></li><li><a href="#факторы-влияющие-на-реальный-расход">Факторы, влияющие на реальный расход</a></li><li><a href="#практические-способы-измерения-потребления">Практические способы измерения потребления</a></li><li><a href="#как-снизить-энергопотребление-холодильника">Как снизить энергопотребление холодильника</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>В условиях постоянного роста тарифов на коммунальные услуги вопрос экономии электроэнергии становится особенно актуальным для каждой семьи. Холодильник является одним из немногих бытовых приборов, которые работают в режиме 24/7, не отключаясь ни на минуту в течение года. Именно поэтому понимание того, сколько именно киловатт-часов расходуется на поддержание холода, позволяет не только оптимизировать семейный бюджет, но и оценить техническое состояние оборудования.</p>
+
+<p>Многие владельцы даже не подозревают, что старый или неисправный агрегат может"съедать" в два-три раза больше энергии, чем заявлено производителем или чем потребляют современные модели. Расчет фактического энергопотребления — это не просто математическое упражнение, а необходимый шаг для диагностики скрытых проблем системы охлаждения. В этой статье мы разберем, как самостоятельно вычислить расход электричества, используя простые инструменты и формулы.</p>
+
+<h2 id="основные-параметры-для-расчета-энергопотребления">Основные параметры для расчета энергопотребления</h2>
+
+<p>Для того чтобы получить точные данные о расходе ресурсов, необходимо понимать, из чего складывается итоговая цифра в квитанции. Базовым параметром является <strong>мощность компрессора</strong>, которая указывается в технической документации или на наклейке с задней стороны корпуса. Однако, важно понимать, что холодильник не работает на максимальной мощности постоянно, а циклически включается и выключается.</p>
+
+<p>Вторым ключевым показателем является <strong>коэффициент работы</strong> (или коэффициент использования), который показывает долю времени, когда мотор-компрессор находится во включенном состоянии. Для исправного бытового холодильника этот параметр обычно варьируется в диапазоне от 0.3 до 0.5, то есть агрегат работает примерно треть или половину всего времени. Оставшееся время он"отдыхает", поддерживая температуру за счет инерции холода.</p>
+
+<p>Также следует учитывать класс энергоэффективности, обозначаемый буквами от A до G. Современные модели класса <em>A++</em> или <em>A+++</em> спроектированы так, чтобы минимизировать потери тепла и optimize работу компрессора. Старые советские холодильники или модели класса <em>C</em> и ниже могут не иметь точных данных о годовом потреблении, поэтому для них расчет по фактической мощности будет наиболее достоверным методом.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Данные на заводской этикетке о годовом потреблении (например, 250 кВт·ч/год) получены в лабораторных условиях при температуре окружающей среды +25°C. В реальной жизни, особенно летом или на жаркой кухне, расход может быть значительно выше.</p>
+</blockquote>
+
+<div class="pb-poll" id="poll-086640ec"><div class="pb-poll-question">📊 Какой у вас сейчас холодильник?</div><div class="pb-poll-option" data-poll="086640ec" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Старый советский</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="086640ec" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Современный с No Frost</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="086640ec" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Встроенный</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="086640ec" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Коммерческий/Промышленный</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="формула-расчета-и-пример-вычислений">Формула расчета и пример вычислений</h2>
+
+<p>Чтобы узнать, сколько электричества потребляет ваш агрегат в сутки или в месяц, можно воспользоваться простой математической формулой. Она базируется на произведении мощности компрессора на количество часов работы и коэффициент включения. Результатом будет потребление в киловатт-часах, которое легко перевести в денежный эквивалент, умножив на тариф вашего региона.</p>
+
+<p>Рассмотрим конкретный пример расчета для стандартного двухкамерного холодильника. Допустим, мощность его компрессора составляет 150 Ватт (0.15 кВт). Предположим, что коэффициент работы равен 0.4 (агрегат работает 40% времени). Тогда расчет за одни сутки (24 часа) будет выглядеть следующим образом: 0.15 кВт × 24 часа × 0.4 = 1.44 кВт·ч в сутки. За месяц (30 дней) это составит уже 43.2 кВт·ч.</p>
+
+<p>Для более точного анализа можно использовать данные о токе и напряжении, если известна сила тока в Амперах. Формула мощности в этом случае выглядит как P = I × U, где I — сила тока, а U — напряжение сети (обычно 220-230 Вольт). Однако, для бытовых целей достаточно знать номинальную мощность, указанную производителем, так как пиковые значения при запуске двигателя длятся доли секунды и не оказывают существенного влияния на общий счет за электричество.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если на этикетке указана только сила тока (например, 0.8 А), умножьте её на 220 В, чтобы получить примерную мощность в Ваттах (0.8 × 220 = 176 Вт).</p></aside>
+
+<h2 id="таблица-классов-энергоэффективности">Таблица классов энергоэффективности</h2>
+
+<p>Понимание маркировки энергоэффективности помогает быстро сориентироваться в потенциальных затратах еще до покупки или при первичной оценке имеющейся техники. Разница между классами может быть колоссальной: современные инверторные модели потребляют в разы меньше энергии благодаря плавному регулированию скорости вращения вала двигателя.</p>
+
+<p>Ниже приведена сравнительная таблица, демонстрирующая примерное годовое потребление энергии для холодильников разного класса при стандартном объеме камеры. Эти данные помогут вам оценить, насколько эффективно работает ваше оборудование по сравнению с современными стандартами.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Класс</th>
+<th>Индекс энергоэффективности</th>
+<th>Примерное потребление (кВт·ч/год)</th>
+<th>Экономичность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A+++</td>
+<td>< 25%</td>
+<td>150 - 200</td>
+<td>Максимальная</td>
+</tr>
+<tr>
+<td>A+</td>
+<td>30% - 40%</td>
+<td>250 - 300</td>
+<td>Высокая</td>
+</tr>
+<tr>
+<td>C</td>
+<td>55% - 75%</td>
+<td>400 - 500</td>
+<td>Средняя</td>
+</tr>
+<tr>
+<td>E</td>
+<td>90% - 100%</td>
+<td>600 - 800</td>
+<td>Низкая</td>
+</tr>
+<tr>
+<td>G</td>
+<td>> 125%</td>
+<td>> 1000</td>
+<td>Очень низкая</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Стоит отметить, что переход с класса <em>D</em> или <em>E</em> на класс <em>A+</em> позволяет сэкономить значительную сумму денег за срок службы прибора, который составляет 10-15 лет. Инвестиции в новую технику часто окупаются именно за счет снижения счетов за электроэнергию, не говоря уже о лучшем сохранении продуктов.</p>
+
+<h2 id="факторы-влияющие-на-реальный-расход">Факторы, влияющие на реальный расход</h2>
+
+<p>Теоретические расчеты часто расходятся с практикой, и на это есть объективные причины. Одним из главных факторов является <strong>температура окружающей среды</strong>. Если холодильник стоит рядом с батареей, плитой или под прямыми солнечными лучами, системе охлаждения приходится работать практически без остановок, чтобы компенсировать внешний нагрев.</p>
+
+<p>Частота открывания дверей также играет критическую роль. Каждый раз, когда вы открываете дверцу, внутрь попадает теплый влажный воздух, который необходимо охладить. Если в доме живут дети или привычка закрывать дверь плотно отсутствует, компрессор будет включаться гораздо чаще, увеличивая <strong>коэффициент работы</strong>.</p>
+
+<ul>
+<li>🌡️ Температура в помещении: чем жарче на кухне, тем выше энергозатраты.</li>
+<li>🍲 Температура продуктов: загрузка горячих или теплых блюд требует экстренного охлаждения.</li>
+<li>❄️ Наличие наледи: слой льда в 5 мм на испарителе увеличивает расход электричества на 15-20%.</li>
+<li>🔌 Герметичность уплотнителя: изношенная резинка пропускает тепло, заставляя мотор работать непрерывно.</li>
+</ul>
+
+<p>Кроме того, техническое состояние оборудования напрямую влияет на аппетиты прибора. Забитый пылью конденсатор на задней решетке, отсутствие зазора между стенкой холодильника и мебелью, нарушение циркуляции воздуха — все это создает дополнительные нагрузки на систему.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка условий эксплуатации</h4><label class="check-item"><input type="checkbox"><span>Холодильник стоит вдали от (батареи, плиты)</span></label><label class="check-item"><input type="checkbox"><span>Зазор у задней стенки не менее 5 см</span></label><label class="check-item"><input type="checkbox"><span>Уплотнительные резинки чистые и целые</span></label><label class="check-item"><input type="checkbox"><span>Внутри камер нет толстого слоя наледи</span></label><label class="check-item"><input type="checkbox"><span>Продукты не перекрывают вентиляционные отверстия</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="практические-способы-измерения-потребления">Практические способы измерения потребления</h2>
+
+<p>Если вы хотите узнать точные цифры, а не доверять расчетам"на глаз", лучше всего воспользоваться специализированным прибором — <strong>ваттметром</strong> (или энергометром). Это устройство вставляется в розетку, а уже в него включается шнур питания холодильника. Ваттметр показывает реальное потребление в реальном времени, а также может накапливать статистику за сутки или неделю.</p>
+
+<p>Использование ваттметра позволяет увидеть, как меняется потребление в разных режимах: при первом включении после разморозки, при загрузке продуктов или в режиме глубокой заморозки. Некоторые продвинутые модели таких приборов подключаются к смартфону и строят графики, помогая выявить аномалии в работе техники.</p>
+
+<blockquote>
+<p>⚠️ Внимание: При использовании бытовых ваттметров убедитесь, что их максимальная токовая нагрузка (обычно 10А или 16А) превышает пусковой ток компрессора вашего холодильника, чтобы избежать повреждения измерительного прибора.</p>
+</blockquote>
+
+<p>Альтернативным, но менее точным методом является наблюдение за счетчиком электроэнергии. Для этого нужно отключить все остальные электроприборы в доме, оставить работающим только холодильник и засечь время, за которое диск счетчика сделает определенное количество оборотов (или мигнет светодиод определенное количество раз). Зная передаточное число счетчика, можно вычислить мощность.</p>
+
+<details class="pb-accordion"><summary>Как считать по счетчику?</summary><div class="pb-accordion-body"><p>Если на счетчике написано"3200 imp/kWh", это значит, что 3200 миганий соответствуют 1 кВт·ч. Засеките время 100 миганий. Формула: (3600 секунд × 100 миганий) / (3200 × время в секундах) = Мощность в кВт.</p></div></details>
+
+<h2 id="как-снизить-энергопотребление-холодильника">Как снизить энергопотребление холодильника</h2>
+
+<p>Оптимизация работы холодильника — это не только про деньги, но и про продление срока службы компрессора. Первым шагом должна стать регулярная <strong>разморозка</strong>. Даже если у вас система <em>No Frost</em>, проверять дренажные отверстия и чистить внутренние каналы от пыли необходимо минимум раз в год.</p>
+
+<p>Важно правильно располагать продукты. Холодный воздух тяжелее теплого, поэтому основные запасы лучше держать на нижних полках, не загромождая зону циркуляции у задней стенки. Пустой холодильник расходует больше энергии, чем заполненный, так как продукты выступают в роли аккумуляторов холода. Если полки пустуют, можно поставить туда бутылки с водой.</p>
+
+<ul>
+<li>🧊 Регулярно размораживайте камеру (если это не No Frost), слой льда — отличный теплоизолятор, мешающий охлаждению.</li>
+<li>🚪 Минимизируйте время открытия дверцы: заранее решайте, что будете доставать.</li>
+<li>🍲 Остужайте горячую еду до комнатной температуры перед отправкой в камеру.</li>
+<li>🧹 Пылесосьте конденсатор сзади хотя бы раз в полгода для улучшения теплоотдачи.</li>
+</ul>
+
+<p>Также стоит проверить настройки терморегулятора. Нет смысла выставлять минимальную температуру, если в этом нет необходимости. Для основного отделения достаточно +4...+5°C, а для морозильной камеры -18°C. Каждое дополнительное деление в сторону усиления холода увеличивает расход энергии на 5-10%.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Самый эффективный способ экономии — это не частое открывание дверей и своевременная разморозка, что снижает нагрузку на компрессор до 30%.</p></aside>
+
+<details>
+<summary>Влияет ли сезон года на потребление холодильника?</summary>
+<p>Да, влияние очень существенное. Зимой, когда в квартире прохладнее, холодильник работает меньше, так как перепад температур между камерой и помещением меньше. Летом, особенно в жару, потребление может вырасти на 20-30% из-за интенсивной работы компрессора.</p>
+</details>
+
+<details>
+<summary>Правда ли, что старый холодильник"ест" больше нового?</summary>
+<p>Абсолютная правда. Технологии за последние 10-15 лет шагнули далеко вперед. Современный холодильник класса A++ может потреблять в 2-3 раза меньше электроэнергии, чем исправный холодильник 90-х годов выпуска аналогичного объема.</p>
+</details>
+
+<details>
+<summary>Стоит ли выключать холодильник на ночь для экономии?</summary>
+<p>Категорически не рекомендуется. За ночь продукты могут разморозиться или испортиться, а повторное охлаждение утром потребует столько же энергии, сколько было сэкономлено. Кроме того, частые циклы полного размораживания вредны для компрессора.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/kh/kholodilnik-termostat-kak-rabotaet.html" class="pb-related-card">
+                <span class="pb-related-title">Как работает термостат холодильника: устройство и ремонт</span>
+                <span class="pb-related-desc">Подробный разбор принципа работы термостата холодильника. Диагностика неисправностей, замена своими </span>
+            </a><a href="/articles/s/sk/skolko-po-vremeni-rabotaet-kompressor-kholodilnika.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько времени работает компрессор холодильника: нормы и причины</span>
+                <span class="pb-related-desc">Узнайте, сколько по времени должен работать компрессор холодильника в норме. Разбор циклов, причин к</span>
+            </a><a href="/articles/k/ka/kak-uznat-god-vypuska-kholodilnika-simens.html" class="pb-related-card">
+                <span class="pb-related-title">Как узнать год выпуска холодильника Siemens по серийному номеру</span>
+                <span class="pb-related-desc">Подробная инструкция по расшифровке серийного номера холодильника Сименс. Узнайте точную дату произв</span>
+            </a><a href="/articles/k/kh/kholodilnik-funktsiya-nou-frost-chto-eto.html" class="pb-related-card">
+                <span class="pb-related-title">Холодильник No Frost: что это, принцип работы и плюсы</span>
+                <span class="pb-related-desc">Подробный разбор технологии No Frost в холодильниках. Как работает система, плюсы и минусы, сравнени</span>
+            </a><a href="/articles/c/ch/chto-takoe-ruchka-s-tolkatelem-na-kholodilnike.html" class="pb-related-card">
+                <span class="pb-related-title">Ручка с толкателем на холодильнике: устройство и замена</span>
+                <span class="pb-related-desc">Что такое ручка с толкателем в холодильнике? Разбор конструкции, принцип работы механизма выключател</span>
+            </a><a href="/articles/p/po/pochemu-nelzya-ubirat-goryachij-sup-v-kholodilnike.html" class="pb-related-card">
+                <span class="pb-related-title">Почему нельзя ставить горячий суп в холодильник: последствия для компрессора</span>
+                <span class="pb-related-desc">Узнайте, почему горячий суп нельзя ставить в холодильник. Разбор влияния на компрессор, образование </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

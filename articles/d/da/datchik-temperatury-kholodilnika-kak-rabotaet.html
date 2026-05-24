@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Как работает датчик температуры холодильника: устройство и принцип — Холодильник Инфо</title>
+    <meta name="description" content="Подробный разбор работы датчика температуры холодильника. Виды терморезисторов, причины поломок, диагностика мультиметром и замена своими руками.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/d/da/datchik-temperatury-kholodilnika-kak-rabotaet.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как работает датчик температуры холодильника: устройство и принцип">
+    <meta property="og:description" content="Подробный разбор работы датчика температуры холодильника. Виды терморезисторов, причины поломок, диагностика мультиметром и замена своими руками.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ustrojstvo-i-detali/">Устройство и детали</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как работает датчик температуры холодильника: устройство и принцип</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#физический-принцип-работы-терморезистора">Физический принцип работы терморезистора</a></li><li><a href="#разновидности-температурных-сенсоров-в-холодильной-технике">Разновидности температурных сенсоров в холодильной технике</a></li><li><a href="#роль-датчика-в-циклах-охлаждения-и-оттайки">Роль датчика в циклах охлаждения и оттайки</a></li><li><a href="#симптомы-неисправности-и-методы-диагностики">Симптомы неисправности и методы диагностики</a></li><li><a href="#процесс-замены-и-настройка-нового-элемента">Процесс замены и настройка нового элемента</a></li><li><a href="#влияние-внешних-факторов-на-точность-показаний">Влияние внешних факторов на точность показаний</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/n/na/na-skolko-amper-avtomat-na-kholodilnik.html">На сколько ампер автомат на холодильник: расчет и выбор</a></li><li><a href="/articles/f/fu/fuzzy-kholodilnik-chto-eto.html">Fuzzy холодильник: что это за технология и как она работает?</a></li><li><a href="/articles/k/kn/knopka-super-v-kholodilnike-khotpoint-ariston-dlya-chego.html">Кнопка Супер в холодильнике Хотпоинт Аристон: режимы и функции</a></li><li><a href="/articles/k/ku/kuda-sdat-kholodilnik-na-zapchasti.html">Куда сдать холодильник на запчасти: разборка, цены, сервисы</a></li><li><a href="/articles/c/ch/chto-oznachayut-zvezdochki-na-kholodilnike.html">Что означают звездочки на холодильнике: расшифровка и нормы</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как работает датчик температуры холодильника: устройство и диагностика</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#физический-принцип-работы-терморезистора">Физический принцип работы терморезистора</a></li><li><a href="#разновидности-температурных-сенсоров-в-холодильной-технике">Разновидности температурных сенсоров в холодильной технике</a></li><li><a href="#роль-датчика-в-циклах-охлаждения-и-оттайки">Роль датчика в циклах охлаждения и оттайки</a></li><li><a href="#симптомы-неисправности-и-методы-диагностики">Симптомы неисправности и методы диагностики</a></li><li><a href="#процесс-замены-и-настройка-нового-элемента">Процесс замены и настройка нового элемента</a></li><li><a href="#влияние-внешних-факторов-на-точность-показаний">Влияние внешних факторов на точность показаний</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Современный холодильник — это сложная электронная система, где каждый элемент выполняет критически важную функцию для сохранения свежести продуктов. Сердцем этой системы является <strong>датчик температуры</strong>, который непрерывно отслеживает микроклимат внутри камер и передает данные на электронный модуль управления. Именно от его корректной работы зависит, включится ли компрессор для охлаждения или, наоборот, отключится при достижении заданных параметров.</p>
+
+<p>Принцип действия устройства базируется на изменении электрического сопротивления в зависимости от степени нагрева или охлаждения среды. В отличие от старых механических термостатов, современные <em>терморезисторы (NTC)</em> не имеют подвижных контактов, что делает их более надежными, но требующими точной калибровки. Понимание того, как именно этот маленький элемент управляет огромным агрегатом, поможет вам быстрее диагностировать неисправность и избежать порчи продуктов.</p>
+
+<p>В этой статье мы детально разберем физическую основу работы сенсора, рассмотрим различия между аналоговыми и цифровыми системами контроля, а также научимся выявлять признаки выхода из строя. <mark>Критическим параметром исправности является соответствие сопротивления датчика заявленной температуре в конкретный момент времени.</mark> Если вы заметили, что ваш холодильник перестал морозить или, наоборот, превратил продукты в ледяной ком, проблема может крыться именно в искажении показаний температурного сенсора.</p>
+
+<h2 id="физический-принцип-работы-терморезистора">Физический принцип работы терморезистора</h2>
+
+<p>Основу конструкции большинства современных датчиков составляет полупроводниковый элемент, называемый терморезистором с отрицательным температурным коэффициентом (NTC). Это означает, что при снижении температуры его электрическое сопротивление растет, а при нагревании — падает. Электронный блок управления холодильника подает на датчик небольшое напряжение и измеряет проходящий ток, пересчитывая полученные значения в градусы по Цельсию согласно заложенной в память таблице соответствий.</p>
+
+<p>Точность измерений напрямую зависит от качества полупроводникового материала и стабильности контактных соединений. <strong>Термочувствительный элемент</strong> обычно помещен в герметичную капсулу из нержавеющей стали или специального пластика, чтобы защитить его от влаги и агрессивной среды внутри камеры. Любое нарушение герметичности этой капсулы приводит к окислению контактов и появлению ошибок в показаниях.</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Попытка восстановить герметичность поврежденного датчика с помощью изоленты или клея не даст результата, так как конденсат уже проник внутрь и изменил химический состав полупроводника. Такой элемент подлежит только полной замене.</blockquote>
+
+<p>Процесс считывания данных происходит циклически, обычно несколько раз в секунду, что позволяет системе реагировать на любые изменения теплового режима практически мгновенно. Если вы вскроете блок управления, то увидите, что провода от сенсора подключены к специальному разъему, который часто маркируется как "Temp Sensor" или имеет цветовую кодировку.</p>
+
+<details class="pb-accordion"><summary>Почему сопротивление падает при нагреве?</summary><div class="pb-accordion-body"><p>В полупроводниках NTC-типа повышение температуры увеличивает количество свободных носителей заряда (электронов и дырок), что облегчает протекание электрического тока и, соответственно, снижает сопротивление материала.</p></div></details>
+
+<h2 id="разновидности-температурных-сенсоров-в-холодильной-технике">Разновидности температурных сенсоров в холодильной технике</h2>
+
+<p>В зависимости от модели холодильника и года его выпуска, производители могут использовать различные типы датчиков, каждый из которых имеет свои конструктивные особенности. Наиболее распространены погружные сенсоры, которые устанавливаются непосредственно в испаритель или в стенку камеры, контактируя с охлаждающим элементом.</p>
+
+<p>Существуют также воздушные датчики, задача которых — контролировать температуру воздуха в рабочей зоне, а не самого испарителя. <strong>Комбинированные системы</strong> могут использовать оба типа сенсоров одновременно для более точного управления работой инверторного компрессора и вентиляторов.</p>
+
+<ul>
+    <li>🌡️ <strong>Погружные датчики:</strong> имеют металлический наконечник, вставляются в специальное гнездо испарителя, часто используются в системах No Frost.</li>
+    <li>💨 <strong>Воздушные сенсоры:</strong> располагаются в пластиковом корпусе на стенке камеры, измеряют температуру циркулирующего воздуха.</li>
+    <li>❄️ <strong>Дефрост-датчики:</strong> специализированные элементы для контроля процесса оттайки, срабатывают при достижении определенной температуры на испарителе.</li>
+</ul>
+
+<p>Отдельно стоит упомянуть инфракрасные датчики, которые начинают появляться в премиальных моделях. Они считывают температуру поверхности продуктов без физического контакта, что позволяет избежать погрешностей, связанных с теплопроводностью воздуха. Однако такие системы сложнее в диагностике и требуют специализированного оборудования для проверки.</p>
+
+<div class="pb-poll" id="poll-aa302f33"><div class="pb-poll-question">📊 Какой тип датчика установлен в вашем холодильнике?</div><div class="pb-poll-option" data-poll="aa302f33" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Погружной (металлический штырь)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="aa302f33" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Воздушный (пластиковая головка)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="aa302f33" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Инфракрасный</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="aa302f33" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю / Не проверял</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="роль-датчика-в-циклах-охлаждения-и-оттайки">Роль датчика в циклах охлаждения и оттайки</h2>
+
+<p>Функционирование холодильника строится на чередовании циклов охлаждения и оттайки, и датчик температуры является главным дирижером этого процесса. В режиме охлаждения он сигнализирует модулю о достижении заданной пользователем температуры, после чего компрессор останавливается. Без этого сигнала агрегат работал бы непрерывно, что привело бы к перемораживанию продуктов и чрезмерному расходу электроэнергии.</p>
+
+<p>В системах с автоматической оттайкой (No Frost) критически важен <strong>дефрост-термостат</strong> или датчик оттайки. Он контролирует нагрев испарителя ТЭНами: как только лед растает и температура поднимется до определенного значения (обычно +10...+15°C), он подает команду на отключение нагревателя. Если этот элемент неисправен, ТЭН может греться слишком долго, повреждая пластиковые детали, или недостаточно, оставляя ледяную шубу.</p>
+
+<p>Электроника холодильника постоянно сравнивает показания различных сенсоров. Например, если датчик воздуха показывает +5°C, а датчик испарителя -20°C, система может диагностировать неисправность вентилятора или обмерзание воздуховодов. Такая перекрестная проверка позволяет выявлять сложные технические проблемы на ранней стадии.</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Некорректная работа датчика оттайки часто приводит к тому, что холодильник перестает холодить через несколько дней после разморозки, так как ледяная пробка полностью перекрывает каналы циркуляции воздуха.</blockquote>
+
+<h2 id="симптомы-неисправности-и-методы-диагностики">Симптомы неисправности и методы диагностики</h2>
+
+<p>Определить, что датчик температуры вышел из строя, можно по ряду косвенных признаков, которые проявляются в работе холодильного оборудования. Чаще всего пользователи сталкиваются с ситуацией, когда компрессор работает без остановок, пытаясь достичь несуществующей низкой температуры, или, наоборот, вообще не включается, считая, что холод внутри уже есть.</p>
+
+<p>Для точной диагностики необходим <strong>мультиметр</strong>, настроенный на измерение сопротивления (Ом). Процедура проверки требует извлечения датчика из посадочного места и его охлаждения (например, положив в стакан с холодной водой со льдом), чтобы зафиксировать изменение показаний прибора.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Диагностика датчика мультиметром</h4><label class="check-item"><input type="checkbox"><span>Извлечь датчик из гнезда</span></label><label class="check-item"><input type="checkbox"><span>Подключить щупы мультиметра к контактам</span></label><label class="check-item"><input type="checkbox"><span>Замерить сопротивление при комнатной температуре</span></label><label class="check-item"><input type="checkbox"><span>Охладить датчик и повторить замер</span></label><label class="check-item"><input type="checkbox"><span>Сравнить данные с таблицей номиналов</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<p>Ниже приведена таблица с примерными значениями сопротивления для стандартных NTC-датчиков (номинал 10 кОм при +25°C), которые чаще всего встречаются в бытовой технике:</p>
+
+<div class="pb-table-wrap"><table>
+    <thead>
+        <tr>
+            <th>Температура среды (°C)</th>
+            <th>Сопротивление (кОм)</th>
+            <th>Статус системы</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>+25 (Комнатная)</td>
+            <td>10.0</td>
+            <td>Норма (базовое)</td>
+        </tr>
+        <tr>
+            <td>+10 (Холодильная камера)</td>
+            <td>20-22</td>
+            <td>Рабочий режим</td>
+        </tr>
+        <tr>
+            <td>0 (Граница замерзания)</td>
+            <td>30-33</td>
+            <td>Критическая точка</td>
+        </tr>
+        <tr>
+            <td>-18 (Морозильная камера)</td>
+            <td>80-90</td>
+            <td>Глубокая заморозка</td>
+        </tr>
+    </tbody>
+</table></div>
+
+<p>Если при измерении мультиметр показывает бесконечность (обрыв) или ноль (короткое замыкание), датчик однозначно неисправен. Также тревожным сигналом является отсутствие изменения сопротивления при изменении температуры среды — это говорит о деградации полупроводникового слоя.</p>
+
+<h2 id="процесс-замены-и-настройка-нового-элемента">Процесс замены и настройка нового элемента</h2>
+
+<p>Замена температурного сенсора — процедура, доступная для выполнения своими руками, но требующая аккуратности и соблюдения техники безопасности. Перед началом работ необходимо полностью обесточить холодильник, отключив его от электросети, чтобы избежать повреждения электронного модуля управления.</p>
+
+<p>Сам датчик обычно расположен в пластиковом кожухе на задней стенке холодильной или морозильной камеры. Аккуратно снимите декоративную панель, найдите провод, идущий к сенсору, и отсоедините разъем. При установке нового элемента важно не перегибать провода и ensure плотное прилегание чувствительного элемента к стенке испарителя или в воздушном канале.</p>
+
+<p>После физической замены и сборки корпуса необходимо провести тестовый запуск. В некоторых моделях холодильников <em>Samsung</em> или <em>LG</em> может потребоваться вход в сервисный режим для сброса ошибок и калибровки нового датчика, хотя во многих случаях система автоматически распознает новый элемент.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При покупке нового датчика обращайте внимание не только на сопротивление, но и на длину провода и тип разъема — они должны совпадать с оригиналом, иначе установка будет невозможна без пайки.</p></aside>
+
+<h2 id="влияние-внешних-факторов-на-точность-показаний">Влияние внешних факторов на точность показаний</h2>
+
+<p>Даже исправный датчик может выдавать некорректные данные, если на него влияют внешние факторы. Например, прямое попадание теплого воздуха при частом открывании дверей или размещение горячих продуктов рядом с сенсором может временно исказить картину, заставив компрессор работать интенсивнее.</p>
+
+<p>Также стоит учитывать влияние электромагнитных помех, особенно если проводка датчика проходит рядом с силовыми кабелями компрессора. В редких случаях налипание слоя жира или инея непосредственно на чувствительный элемент (если нарушена его изоляция) меняет теплопроводность и замедляет реакцию на изменения температуры.</p>
+
+<p>Регулярная разморозка и очистка холодильника от наледи помогает поддерживать корректную работу всех систем терморегуляции. Если вы заметили, что холодильник начал работать с перебоями после длительного периода эксплуатации без обслуживания, в первую очередь проверьте чистоту испарителя и состояние датчиков.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Точность работы холодильника зависит не только от исправности электроники, но и от условий теплообмена вокруг датчика — чистота и отсутствие наледи критически важны.</p></aside>
+
+<details>
+    <summary>Можно ли использовать универсальный датчик вместо оригинального?</summary>
+    <p>Да, можно, но только если его номинальное сопротивление при +25°C совпадает с оригиналом (например, 10 кОм, 5 кОм или 50 кОм). Однако кривая изменения сопротивления может отличаться, что приведет к погрешности в 2-4 градуса, что не всегда критично для бытового использования.</p>
+</details>
+
+<details>
+    <summary>Почему холодильник показывает ошибку температуры после замены датчика?</summary>
+    <p>Это может происходить, если новый датчик имеет другое сопротивление, либо если разъем был подключен не до конца. Также в некоторых моделях необходимо сбросить ошибку через сервисное меню или кратковременно отключить питание всего устройства.</p>
+</details>
+
+<details>
+    <summary>Как часто нужно менять датчик температуры?</summary>
+    <p>Срок службы NTC-терморезисторов составляет 10-15 лет. Замена требуется только при появлении симптомов неисправности (не держит холод, не выключается) или при физическом повреждении элемента. Плановая замена не требуется.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/n/na/na-skolko-amper-avtomat-na-kholodilnik.html" class="pb-related-card">
+                <span class="pb-related-title">На сколько ампер автомат на холодильник: расчет и выбор</span>
+                <span class="pb-related-desc">Какой автомат выбрать для холодильника: 10А или 16А? Расчет мощности, пусковых токов и сечения кабел</span>
+            </a><a href="/articles/f/fu/fuzzy-kholodilnik-chto-eto.html" class="pb-related-card">
+                <span class="pb-related-title">Fuzzy холодильник: что это за технология и как она работает?</span>
+                <span class="pb-related-desc">Разбираемся, что такое fuzzy-логика в холодильниках, как она управляет температурой, плюсы и минусы </span>
+            </a><a href="/articles/k/kn/knopka-super-v-kholodilnike-khotpoint-ariston-dlya-chego.html" class="pb-related-card">
+                <span class="pb-related-title">Кнопка Супер в холодильнике Хотпоинт Аристон: режимы и функции</span>
+                <span class="pb-related-desc">Узнайте, зачем нужна кнопка Супер в холодильнике Хотпоинт Аристон. Режимы быстрой заморозки, Super C</span>
+            </a><a href="/articles/k/ku/kuda-sdat-kholodilnik-na-zapchasti.html" class="pb-related-card">
+                <span class="pb-related-title">Куда сдать холодильник на запчасти: разборка, цены, сервисы</span>
+                <span class="pb-related-desc">Где сдать старый холодильник на запчасти? Полный гид по сервисам, разборке своими руками, стоимости </span>
+            </a><a href="/articles/c/ch/chto-oznachayut-zvezdochki-na-kholodilnike.html" class="pb-related-card">
+                <span class="pb-related-title">Что означают звездочки на холодильнике: расшифровка и нормы</span>
+                <span class="pb-related-desc">Подробная расшифровка звездочек на морозильной камере. Узнайте, сколько времени можно хранить продук</span>
+            </a><a href="/articles/a/ai/air-flow-kholodilnik-chto-eto-takoe.html" class="pb-related-card">
+                <span class="pb-related-title">Холодильник Air Flow: что это и как работает система</span>
+                <span class="pb-related-desc">Разбираем технологию Air Flow в холодильниках: принцип работы, плюсы и минусы, отличия от No Frost. </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

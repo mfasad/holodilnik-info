@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Как работает холодильник Bosch с дисплеем: инструкция — Холодильник Инфо</title>
+    <meta name="description" content="Разбор работы холодильников Bosch с дисплеем. Настройка температуры, расшифровка кодов ошибок, режимы NoFrost и индикация.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/k/ka/kak-rabotaet-kholodilnik-bosh-s-displeem.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как работает холодильник Bosch с дисплеем: инструкция">
+    <meta property="og:description" content="Разбор работы холодильников Bosch с дисплеем. Настройка температуры, расшифровка кодов ошибок, режимы NoFrost и индикация.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ustrojstvo-i-detali/">Устройство и детали</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как работает холодильник Bosch с дисплеем: инструкция</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#архитектура-системы-управления-и-датчики">Архитектура системы управления и датчики</a></li><li><a href="#интерфейс-дисплея-и-навигация-по-меню">Интерфейс дисплея и навигация по меню</a></li><li><a href="#настройка-температурных-режимов">Настройка температурных режимов</a></li><li><a href="#специальные-функции-и-их-индикация">Специальные функции и их индикация</a></li><li><a href="#диагностика-неисправностей-через-коды-ошибок">Диагностика неисправностей через коды ошибок</a></li><li><a href="#энергоэффективность-и-умное-управление">Энергоэффективность и умное управление</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kakie-kholodilniki-v-morge.html">Какие холодильники в морге: устройство, температура и типы камер</a></li><li><a href="/articles/s/sk/skolko-kilovatt-energii-potreblyaet-kholodilnik.html">Сколько кВт потребляет холодильник: расчет и экономия</a></li><li><a href="/articles/f/fr/freon-r600-v-kakikh-kholodilnikakh.html">Фреон R600 в каких холодильниках используется: список брендов и моделей</a></li><li><a href="/articles/s/sk/skolko-kilovatt-v-kholodilnike-indezit.html">Сколько киловатт потребляет холодильник Индезит: расход и экономия</a></li><li><a href="/articles/s/sk/skolko-mozhno-poluchit-na-metallolome-za-kholodilnik.html">Сколько стоит холодильник в металлоломе: цена за кг и тонну</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Принцип работы и настройка холодильника Bosch с дисплеем</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#архитектура-системы-управления-и-датчики">Архитектура системы управления и датчики</a></li><li><a href="#интерфейс-дисплея-и-навигация-по-меню">Интерфейс дисплея и навигация по меню</a></li><li><a href="#настройка-температурных-режимов">Настройка температурных режимов</a></li><li><a href="#специальные-функции-и-их-индикация">Специальные функции и их индикация</a></li><li><a href="#диагностика-неисправностей-через-коды-ошибок">Диагностика неисправностей через коды ошибок</a></li><li><a href="#энергоэффективность-и-умное-управление">Энергоэффективность и умное управление</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Современные холодильники немецкого бренда <em>Bosch</em> представляют собой сложные климатические системы, управление которыми выведено на удобный цифровой интерфейс. Наличие дисплея на передней панели не просто добавляет эстетики, но и позволяет пользователю в реальном времени отслеживать температурный режим, статус работы компрессора и наличие системных ошибок. Понимание логики работы этого электронного блока управления необходимо для эффективной эксплуатации и быстрой диагностики неисправностей.</p>
+
+<p>В отличие от механических регуляторов, где температура задавалась условными рисками, электронный контроллер обеспечивает точность до градуса. <strong>Цифровой модуль</strong> получает данные с термодатчиков, расположенных в разных зонах камеры, и автоматически регулирует мощность компрессора или открывает электромагнитные клапаны. Это позволяет поддерживать идеальный микроклимат для хранения продуктов, минимизируя перепады температур при открытии дверцы.</p>
+
+<p>В данном материале мы подробно разберем, как именно взаимодействуют компоненты умного холодильника, что означают загорающиеся индикаторы и как правильно настроить устройство под ваши нужды. Вы узнаете, как интерпретировать сигналы системы <em>NoFrost</em> и что делать, если на экране появились предупреждающие символы.</p>
+
+<h2 id="архитектура-системы-управления-и-датчики">Архитектура системы управления и датчики</h2>
+
+<p>Основой «интеллекта» любого холодильника <em>Bosch</em> с дисплеем является центральный процессор, который непрерывно опрашивает сеть внутренних сенсоров. Главным элементом здесь выступает <strong>терморезистор</strong> (датчик температуры), сопротивление которого меняется в зависимости от нагрева или охлаждения воздуха. Эти данные преобразуются в электрический сигнал, который процессор сравнивает с заданными пользоватemлем параметрами.</p>
+
+<p>Если фактическая температура в камере отличается от целевой более чем на 2-3 градуса, контроллер принимает решение о запуске или остановке холодильного агрегата. В моделях с системой <em>MultiAirflow</em> дисплей также координирует работу заслонок, регулирующих поток холодного воздуха между отделениями. Это обеспечивает равномерное распределение холода без образования локальных зон перегрева.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Электронные датчики чувствительны к резким скачкам напряжения в сети. Для защиты дорогостоящего модуля управления рекомендуется использовать сетевые фильтры или стабилизаторы, особенно в домах со старой проводкой.</p>
+</blockquote>
+
+<p>Дисплей на панели выступает в роли визуализатора состояния всей этой сложной системы. Он отображает не только текущие градусы, но и служебную информацию, такую как статус разморозки или активация функции суперзаморозки. Понимание того, что каждый пиксель на экране связан с физическим процессом внутри камеры, помогает владельцу лучше чувствовать работу техники.</p>
+
+<details class="pb-accordion"><summary>Скрытая диагностика</summary><div class="pb-accordion-body"><p>Многие пользователи не знают, что при определенном сочетании кнопок можно войти в сервисное меню, где отображаются показания датчиков в реальном времени без округления. Однако вход туда без специального оборудования может сбить заводские калибровки.</p></div></details>
+
+<h2 id="интерфейс-дисплея-и-навигация-по-меню">Интерфейс дисплея и навигация по меню</h2>
+
+<p>Панель управления холодильников <em>Bosch</em> обычно выполнена в виде сенсорной или кнопочной площадки с LED-индикацией. Интерфейс спроектирован так, чтобы быть интуитивно понятным: основные параметры, такие как температура холодильной и морозильной камер, выводятся крупными цифрами. Для изменения значений чаще всего используются кнопки «плюс» и «минус» или сенсорные зоны, реагирующие на легкое касание.</p>
+
+<p>На дисплее также располагаются индикаторы специальных режимов. Например, символ снежинки обозначает работу в экономичном режиме, а изображение рыбы или мяса сигнализирует о включенной функции <strong>SuperFrost</strong>. Активация этих режимов происходит путем (длительного нажатия) соответствующей кнопки в течение 3-5 секунд, что предотвращает случайное изменение настроек детьми.</p>
+
+<ul>
+<li>🌡️ <strong>Цифровое табло:</strong> отображает текущую температуру в градусах Цельсия для каждой зоны отдельно.</li>
+<li>🔔 <strong>Индикатор открытой двери:</strong> мигающий символ или звуковой сигнал, если дверца не закрыта более 2-3 минут.</li>
+<li>❄️ <strong>Индикатор разморозки:</strong> загорается во время автоматического цикла оттаивания испарителя.</li>
+<li>🔌 <strong>Индикатор питания:</strong> горит постоянно при подключении устройства к электросети.</li>
+</ul>
+
+<p>В некоторых продвинутых моделях с функцией <em>Home Connect</em> дисплей может показывать статус подключения к Wi-Fi. Управление через экран позволяет блокировать панель от детей, что выражается в появлении символа замка. Разблокировка также производится длительным нажатием специальной комбинации клавиш, о чем всегда есть напоминание в инструкции пользователя.</p>
+
+<div class="pb-poll" id="poll-20f4e075"><div class="pb-poll-question">📊 Какой тип управления у вашего холодильника?</div><div class="pb-poll-option" data-poll="20f4e075" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Сенсорный дисплей</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="20f4e075" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Механические кнопки</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="20f4e075" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Кнопки под дисплеем</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="20f4e075" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Нет дисплея, только лампочки</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="настройка-температурных-режимов">Настройка температурных режимов</h2>
+
+<p>Правильная установка температуры — залог долгого хранения продуктов и энергоэффективности устройства. Для холодильной камеры оптимальным значением считается диапазон от +3 до +5 °C. В этом интервале замедляется размножение бактерий, но продукты не замерзают. Морозильную камеру рекомендуется настраивать на -18 °C, что является стандартом для длительного хранения мясных и рыбных изделий.</p>
+
+<p>Чтобы изменить настройки, необходимо разблокировать панель (если включена защита), затем выбрать соответствующую зону. Нажимая кнопки регулировки, вы меняете целевое значение. После последнего нажатия система ждет несколько секунд для подтверждения выбора, после чего новый параметр сохраняется в памяти контроллера. Холодильник начнет плавно выходить на новый режим работы.</p>
+
+<pre><code>Последовательность настройки:
+<p>1. Нажать кнопку выбора зоны (Fridge/Freezer).</p>
+<p>2. Удерживать 3 секунды до мигания цифр.</p>
+<p>3. Кнопками +/- выставить нужное значение.</p>
+<p>4. Дождаться прекращения мигания (автосохранение).</code></pre></p>
+
+<p>Важно учитывать, что мгновенного изменения температуры внутри камер не произойдет. Компрессору требуется время, чтобы охладить или, наоборот, позволить температуре подняться до нового уровня. Обычно стабилизация занимает от 2 до 6 часов в зависимости от загруженности камер продуктами.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка температурного режима</h4><label class="check-item"><input type="checkbox"><span>Проверьте плотность прилегания уплотнителя</span></label><label class="check-item"><input type="checkbox"><span>Не ставьте горячие продукты внутрь</span></label><label class="check-item"><input type="checkbox"><span>Не набивайте камеру битком</span></label><label class="check-item"><input type="checkbox"><span>Проверьте работу вентилятора</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="специальные-функции-и-их-индикация">Специальные функции и их индикация</h2>
+
+<p>Холодильники <em>Bosch</em> оснащены рядом функций, которые значительно упрощают жизнь пользователя. Одной из самых полезных является <strong>SuperFrost</strong> (Суперзаморозка). При ее активации компрессор работает непрерывно, игнорируя стандартные циклы отдыха, чтобы максимально быстро заморозить свежие продукты. На дисплее при этом горит соответствующий индикатор, а через определенное время (обычно 65 часов) функция отключается автоматически.</p>
+
+<p>Еще одной важной опцией является режим «Отпуск» (Holiday Mode). Он предназначен для ситуаций, когда вы уезжаете на длительное время, но не хотите размораживать холодильник полностью. В этом режиме холодильная камера переходит в энергосберегающий режим с температурой около +14...+15 °C (чтобы не завелась плесень), а морозильник продолжает работать в штатном режиме.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Функция</th>
+<th>Обозначение на дисплее</th>
+<th>Принцип действия</th>
+<th>Время автоотключения</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SuperFrost</td>
+<td>Снежинка / Рыба</td>
+<td>Максимальная мощность компрессора</td>
+<td>65 часов</td>
+</tr>
+<tr>
+<td>Holiday</td>
+<td>Пальма / Чемодан</td>
+<td>+15°C в холодильном отделении</td>
+<td>До ручного выключения</td>
+</tr>
+<tr>
+<td>EcoMode</td>
+<td>Лист / E</td>
+<td>Снижение энергопотребления</td>
+<td>До смены режима</td>
+</tr>
+<tr>
+<td>Alarm</td>
+<td>Восклицательный знак</td>
+<td>Сигнал о повышении температуры</td>
+<td>После нормализации</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Также стоит упомянуть функцию быстрой охлады, которая полезна сразу после загрузки большого количества продуктов комнатной температуры. Она помогает быстрее восстановить температурный баланс, предотвращая порчу уже лежащих внутри запасов. Все активные функции отображаются на дисплее, позволяя контролировать режимы работы одним взглядом.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если вы включили режим SuperFrost заранее, перед походом в магазин, это поможет сохранить максимум витаминов в свежих продуктах благодаря шоковой заморозке.</p></aside>
+
+<h2 id="диагностика-неисправностей-через-коды-ошибок">Диагностика неисправностей через коды ошибок</h2>
+
+<p>Электронная система управления не только регулирует работу, но и самодиагностируется. При обнаружении аномалий в работе датчиков, вентиляторов или компрессора, на дисплее вместо температуры могут появиться буквенно-цифровые коды. Наиболее распространенные ошибки в технике <em>Bosch</em> связаны с нарушением температурного режима или неисправностью сенсоров.</p>
+
+<p>Например, мигающий индикатор температуры часто указывает на то, что фактическая температура в камере выше установленной. Это может быть вызвано загрузкой теплых продуктов, неплотно закрытой дверцей или поломкой уплотнителя. Если же горит код ошибки (например, E или F с цифрой), это требует более серьезного внимания.</p>
+
+<ul>
+<li>🔴 <strong>Код E1/E2:</strong> Неисправность датчика температуры испарителя или воздуха.</li>
+<li>🔴 <strong>Код F1/F2:</strong> Проблемы с датчиком в морозильной или холодильной камере.</li>
+<li>🔴 <strong>Код E9:</strong> Ошибка связи между модулем управления и дисплеем.</li>
+</ul>
+
+<blockquote>
+<p>⚠️ Внимание: Появление кода ошибки не всегда означает необходимость замены дорогостоящих узлов. Часто достаточно выполнить полный цикл перезагрузки устройства, отключив его от сети на 15-20 минут, чтобы сбросить ложный сигнал контроллера.</p>
+</blockquote>
+
+<p>Если после перезагрузки ошибка возвращается, необходимо свериться с таблицей кодов в инструкции к вашей конкретной модели. Игнорирование постоянных сигналов тревоги может привести к порче компрессора из-за работы в нештатном режиме или размораживанию продуктов.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Самостоятельный сброс ошибки путем отключения питания помогает в 60% случаев, если проблема была вызвана скачком напряжения в сети.</p></aside>
+
+<h2 id="энергоэффективность-и-умное-управление">Энергоэффективность и умное управление</h2>
+
+<p>Современные модели <em>Bosch</em> с дисплеями часто поддерживают технологию <strong>VitaFresh</strong> и интеллектуальное управление энергопотреблением. Система анализирует частоту открывания дверей и количество загруженных продуктов, адаптируя работу компрессора. Дисплей в таких моделях может показывать текущий класс энергопотребления или давать советы по оптимизации.</p>
+
+<p>Интеллектуальные алгоритмы позволяют избегать холостого хода компрессора. Если датчики фиксируют, что теплопотери минимальны (дверь не открывали несколько часов), система переходит в экономный режим поддержания температуры. Это снижает шум и расход электроэнергии, что особенно актуально для холодильников, работающих круглосуточно.</p>
+
+<p>Пользователь может самостоятельно влиять на энергоэффективность, правильно настраивая температурные зоны. Установка температуры в холодильной камере на +1°C ниже необходимого (например, +3 вместо +4) увеличивает расход энергии примерно на 6%. Поэтому точная настройка через дисплей — это не только комфорт, но и экономия бюджета.</p>
+
+<details>
+<summary>Что делать, если дисплей гаснет, но холодильник работает?</summary>
+<p>Если холодильник продолжает охлаждать, но экран погас, проверьте, не включен ли режим экономии энергии дисплея (если он предусмотрен моделью). Также возможно ослабление контакта шлейфа, идущего к панели управления. В редких случаях это может свидетельствовать о неисправности самого модуля индикации, что требует вызова мастера.</p>
+</details>
+
+<details>
+<summary>Можно ли мыть дисплей влажной тряпкой?</summary>
+<p>Да, но с осторожностью. Используйте слегка влажную мягкую ткань. Не допускайте попадания воды в зазоры между кнопками или сенсорной панелью. Категорически запрещается использовать агрессивные химические средства, абразивы или горячую воду, так как это может повредить защитное покрытие и электронные компоненты.</p>
+</details>
+
+<details>
+<summary>Почему дисплей показывает неверную температуру?</summary>
+<p>Расхождение в 1-2 градуса между показанием на дисплее и реальным термометром внутри камеры допустимо и является погрешностью измерения. Если разница составляет более 3-4 градусов, вероятна неисправность термодатчика или нарушение калибровки контроллера, что требует профессиональной диагностики.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kakie-kholodilniki-v-morge.html" class="pb-related-card">
+                <span class="pb-related-title">Какие холодильники в морге: устройство, температура и типы камер</span>
+                <span class="pb-related-desc">Какие холодильники в морге? Полный разбор профессионального оборудования: температура хранения, типы</span>
+            </a><a href="/articles/s/sk/skolko-kilovatt-energii-potreblyaet-kholodilnik.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько кВт потребляет холодильник: расчет и экономия</span>
+                <span class="pb-related-desc">Узнайте, сколько киловатт энергии потребляет холодильник в час, месяц и год. Факторы расхода, классы</span>
+            </a><a href="/articles/f/fr/freon-r600-v-kakikh-kholodilnikakh.html" class="pb-related-card">
+                <span class="pb-related-title">Фреон R600 в каких холодильниках используется: список брендов и моделей</span>
+                <span class="pb-related-desc">Узнайте, в каких холодильниках используется фреон R600. Полный список марок, особенности изобутана, </span>
+            </a><a href="/articles/s/sk/skolko-kilovatt-v-kholodilnike-indezit.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько киловатт потребляет холодильник Индезит: расход и экономия</span>
+                <span class="pb-related-desc">Подробный расчет, сколько киловатт в холодильнике Индезит. Нормы расхода, влияние режима работы и сп</span>
+            </a><a href="/articles/s/sk/skolko-mozhno-poluchit-na-metallolome-za-kholodilnik.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько стоит холодильник в металлоломе: цена за кг и тонну</span>
+                <span class="pb-related-desc">Узнайте, сколько можно получить за сдачу холодильника в металлолом. Актуальные расценки на 2026 год,</span>
+            </a><a href="/articles/k/ka/kakoj-freon-ispolzuetsya-v-kholodilnikakh.html" class="pb-related-card">
+                <span class="pb-related-title">Какой фреон в холодильнике: виды, маркировки и замена</span>
+                <span class="pb-related-desc">Узнайте, какой фреон используется в современных холодильниках. Обзор хладагентов R600a, R134a, R12. </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

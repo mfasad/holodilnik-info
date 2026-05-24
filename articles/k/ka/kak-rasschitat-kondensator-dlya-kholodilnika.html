@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Расчет конденсатора для холодильника: формулы и таблица — Холодильник Инфо</title>
+    <meta name="description" content="Как рассчитать конденсатор для компрессора холодильника: формулы, типы емкостей, пошаговая инструкция замены и таблица подбора.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/k/ka/kak-rasschitat-kondensator-dlya-kholodilnika.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Расчет конденсатора для холодильника: формулы и таблица">
+    <meta property="og:description" content="Как рассчитать конденсатор для компрессора холодильника: формулы, типы емкостей, пошаговая инструкция замены и таблица подбора.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-nav-active">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/remont-svoimi-rukami/">Ремонт своими руками</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Расчет конденсатора для холодильника: формулы и таблица</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#принцип-работы-пускового-конденсатора-в-холодильнике">Принцип работы пускового конденсатора в холодильнике</a></li><li><a href="#основные-параметры-для-расчета-емкости">Основные параметры для расчета емкости</a></li><li><a href="#формулы-и-методика-расчета">Формулы и методика расчета</a></li><li><a href="#таблица-подбора-конденсаторов-по-мощности-компрессора">Таблица подбора конденсаторов по мощности компрессора</a></li><li><a href="#типы-конденсаторов-и-их-маркировка">Типы конденсаторов и их маркировка</a></li><li><a href="#инструкция-по-замене-и-проверке">Инструкция по замене и проверке</a></li><li><a href="#частые-ошибки-и-диагностика-неисправностей">Частые ошибки и диагностика неисправностей</a></li><li><a href="#вопросы-и-ответы-faq">Вопросы и ответы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/r/re/rele-kholodilnika-kak-proverit-na-rabotosposobnost.html">Как проверить реле холодильника на работоспособность: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-otregulirovat-dvertsu-vstroennogo-kholodilnika.html">Как отрегулировать дверцу встроенного холодильника: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-snyat-zaglushku-kholodilnika.html">Как снять заглушку холодильника: замена ручки и заглушки</a></li><li><a href="/articles/k/ka/kak-snyat-rezinku-s-kholodilnika-indesit.html">Как снять резинку с холодильника Indesit: полная инструкция</a></li><li><a href="/articles/k/ka/kak-zapravlyat-kholodilnik-freonom.html">Как заправить холодильник фреоном: пошаговая инструкция 2026</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как правильно рассчитать конденсатор для холодильника</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#принцип-работы-пускового-конденсатора-в-холодильнике">Принцип работы пускового конденсатора в холодильнике</a></li><li><a href="#основные-параметры-для-расчета-емкости">Основные параметры для расчета емкости</a></li><li><a href="#формулы-и-методика-расчета">Формулы и методика расчета</a></li><li><a href="#таблица-подбора-конденсаторов-по-мощности-компрессора">Таблица подбора конденсаторов по мощности компрессора</a></li><li><a href="#типы-конденсаторов-и-их-маркировка">Типы конденсаторов и их маркировка</a></li><li><a href="#инструкция-по-замене-и-проверке">Инструкция по замене и проверке</a></li><li><a href="#частые-ошибки-и-диагностика-неисправностей">Частые ошибки и диагностика неисправностей</a></li><li><a href="#вопросы-и-ответы-faq">Вопросы и ответы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+<p>Ситуация, когда холодильник внезапно перестает запускаться или издает лишь гудящий звук без вращения вала двигателя, часто указывает на выход из строя пускового элемента. В большинстве случаев виновником такой неисправности становится <strong>пусковой конденсатор</strong>, который обеспечивает необходимый крутящий момент для старта мотора-компрессора. Правильный расчет и подбор этого компонента являются критически важными этапами восстановления работоспособности бытовой техники.</p>
+
+<p>Некорректный выбор емкости может привести к перегреву обмоток, срабатыванию теплового реле или даже полному сгоранию дорогостоящего компрессора. Владельцам агрегатов <em>Indesit</em>, <em>Atlant</em> или <em>Beko</em> необходимо понимать физические принципы работы однофазных двигателей, чтобы избежать повторных поломок. Ниже мы подробно разберем методику вычисления параметров и нюансы установки.</p>
+
+<p>Для начала следует определить тип вашего компрессора, так как от этого зависит необходимость наличия пусковой емкости. Современные инверторные модели часто не имеют классических пусковых конденсаторов, работая по иной схеме. Если же у вас классический агрегат с асинхронным двигателем, то точный <strong>расчет емкости</strong> станет ключом к успешному ремонту.</p>
+
+<h2 id="принцип-работы-пускового-конденсатора-в-холодильнике">Принцип работы пускового конденсатора в холодильнике</h2>
+<p>Однофазные электродвигатели, используемые в холодильной технике, не способны самостоятельно создать вращающееся магнитное поле при запуске. Для этого им требуется сдвиг фазы тока, который как раз и обеспечивает <strong>пусковой конденсатор</strong>. Он подключается к пусковой обмотке статора на короткое время — ровно на момент разгона ротора до рабочей скорости.</p>
+
+<p>После того как вал двигателя набирает около 75% от номинальных оборотов, центробежный выключатель или реле размыкает цепь, и конденсатор отключается. Если этого не происходит, обмотка быстро перегревается. В некоторых схемах, особенно в старых моделях <em>ЗИЛ</em> или <em>Минск</em>, могут использоваться и рабочие конденсаторы, которые остаются в цепи постоянно, но в современных бытовых холодильниках преобладает именно пусковая схема.</p>
+
+<p>Важно понимать разницу между емкостью, необходимой для создания фазового сдвига, и напряжением, которое должен выдерживать компонент. <strong>Электрическая емкость</strong> измеряется в микрофарадах (мкФ) и определяет силу пускового импульса. Недостаточная емкость приведет к тому, что компрессор будет гудеть, но не запустится, а избыточная — вызовет перегрев пусковой обмотки.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Никогда не используйте конденсаторы с рабочим напряжением ниже 250-300 Вольт для сети 220В. Кратковременные скачки напряжения в сети могут мгновенно пробить слабую изоляцию, что приведет к взрыву корпуса элемента.</p>
+</blockquote>
+
+<h2 id="основные-параметры-для-расчета-емкости">Основные параметры для расчета емкости</h2>
+<p>Прежде чем приступать к математическим вычислениям, необходимо собрать исходные данные с шильдика двигателя или технической документации. Главным параметром является мощность компрессора, которая обычно указывается в ваттах (Вт) или лошадиных силах (л.с.). Также критически важен коэффициент мощности (<strong>cos φ</strong>) и КПД двигателя.</p>
+
+<p>Для точного подбора элемента нужно знать напряжение питающей сети. В стандартных условиях это 220-230 Вольт, однако в некоторых регионах или при использовании генераторов напряжение может отличаться, что потребует коррекции расчетов. Частота тока в нашей стране составляет 50 Гц, что также является константой в формулах.</p>
+
+<p>Особое внимание следует уделить типу схемы подключения обмоток. В зависимости от конструкции двигателя, обмотки могут быть соединены по схеме "звезда" или "треугольник", что напрямую влияет на итоговое значение требуемой емкости. Ошибка в определении схемы приведет к неверному результату вычислений.</p>
+
+<div class="pb-poll" id="poll-c10825af"><div class="pb-poll-question">📊 Какой у вас холодильник?</div><div class="pb-poll-option" data-poll="c10825af" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Однокомпрессорный</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c10825af" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Двухкомпрессорный</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c10825af" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">No Frost</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c10825af" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Side-by-Side</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c10825af" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Инверторный</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="формулы-и-методика-расчета">Формулы и методика расчета</h2>
+<p>Существует несколько подходов к определению необходимой емкости. Самый простой, но менее точный метод — эмпирический, основанный на мощности двигателя. Считается, что на каждые 100 Вт мощности требуется примерно 7-8 мкФ емкости. Однако для профессионального ремонта лучше использовать формулы, учитывающие электрические параметры.</p>
+
+<p>Для схемы подключения "звезда" расчетная формула выглядит следующим образом: <br>
+<code>Cп = (2800 * I) / U</code>, где I — ток, U — напряжение. <br>
+<p>Если же обмотки соединены в "треугольник", формула меняется: <br></p>
+<code>Cп = (4800 * I) / U</code>.</p>
+
+<p>Ток (I) можно вычислить, зная мощность (P) и напряжение: <code>I = P / (U * cos φ)</code>. Подставив это значение в основную формулу, вы получите искомую емкость в микрофарадах. Округлять полученное значение следует в большую сторону до ближайшего стандартного номинала, выпускаемого промышленностью.</p>
+
+<details class="pb-accordion"><summary>Почему нельзя использовать конденсаторы большей емкости?</summary><div class="pb-accordion-body"><p>Использование емкости значительно выше расчетной (более 20%) приведет к резкому росту пускового тока. Это может вызвать ложное срабатывание защитного реле или повреждение контактов пускателя, а также ускоренное старение изоляции обмоток двигателя.</p></div></details>
+
+<h2 id="таблица-подбора-конденсаторов-по-мощности-компрессора">Таблица подбора конденсаторов по мощности компрессора</h2>
+<p>Для упрощения задачи мастера часто используют готовые таблицы соответствия, составленные на основе усредненных технических характеристик популярных компрессоров. Ниже приведены данные, актуальные для большинства бытовых моделей холодильников.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Мощность компрессора (Вт)</th>
+<th>Тип конденсатора</th>
+<th>Емкость (мкФ)</th>
+<th>Рабочее напряжение (В)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100 - 150</td>
+<td>Пусковой</td>
+<td>10 - 15</td>
+<td>250 - 300</td>
+</tr>
+<tr>
+<td>150 - 250</td>
+<td>Пусковой</td>
+<td>16 - 25</td>
+<td>300 - 350</td>
+</tr>
+<tr>
+<td>250 - 400</td>
+<td>Пусковой</td>
+<td>30 - 40</td>
+<td>350 - 400</td>
+</tr>
+<tr>
+<td>400 - 600</td>
+<td>Пусковой</td>
+<td>45 - 60</td>
+<td>400 - 450</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>При выборе элемента из таблицы всегда обращайте внимание на допуски. Стандартная погрешность заводских конденсаторов составляет ±5% или ±10%. Если вы нашли деталь с емкостью 22 мкФ вместо требуемых 20 мкФ, это допустимое отклонение. Однако установка 30 мкФ вместо 20 мкФ уже считается рискованной.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Характеристики компрессоров разных производителей (например, <em>Secop</em> против <em>Embraco</em>) могут отличаться даже при одинаковой мощности. Всегда сверяйтесь с маркировкой на самом двигателе, если она читаема.</p>
+</blockquote>
+
+<h2 id="типы-конденсаторов-и-их-маркировка">Типы конденсаторов и их маркировка</h2>
+<p>На рынке электроники представлено множество видов конденсаторов, но для холодильников подходят далеко не все. Основное требование — возможность работы в цепях переменного тока (AC). Электролитические конденсаторы, часто используемые в аудио-технике, для этой цели не годятся, так как они могут взорваться при подключении к сети 220В.</p>
+
+<p>Наиболее распространены металлизированные полипропиленовые пленочные конденсаторы (серии CBB60, CBB61, CBB65). Они обладают свойством самовосстановления при пробое и имеют компактный корпус. Маркировка на корпусе обычно содержит значение емкости (например, 20µF), напряжение (450VAC) и допуск (±5%).</p>
+
+<p>Также существуют специальные пусковые конденсаторы в черном пластиковом корпусе, предназначенные именно для электродвигателей. Они выдерживают высокие пусковые токи и кратковременные перегрузки. При замене старайтесь использовать компоненты от проверенных брендов, таких как <em>Jianghai</em> или <em>Run</em>, избегая безымянных аналогов.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если под рукой нет конденсатора нужной емкости, можно соединить два конденсатора параллельно. Их емкости суммируются (C1 + C2 = C_общ), но убедитесь, что рабочее напряжение каждого из них соответствует требованиям сети.</p></aside>
+
+<h2 id="инструкция-по-замене-и-проверке">Инструкция по замене и проверке</h2>
+<p>Процесс замены начинается с полного отключения холодильника от электросети. Это базовое правило безопасности, нарушение которого может привести к поражению электрическим током. После извлечения вилки из розницы необходимо снять защитную крышку компрессорного отсека, расположенную сзади агрегата.</p>
+
+<p>Далее следует аккуратно снять пусковое реле и тепловую защиту. Конденсатор обычно закреплен на корпусе компрессора или внутри реле с помощью хомута или клея. Перед демонтажем рекомендуется разрядить старый конденсатор, замкнув его контакты изолированной отверткой, чтобы избежать удара током.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Алгоритм замены конденсатора</h4><label class="check-item"><input type="checkbox"><span>Отключить холодильник от сети</span></label><label class="check-item"><input type="checkbox"><span>Снять заднюю крышку и реле</span></label><label class="check-item"><input type="checkbox"><span>Разрядить старый конденсатор</span></label><label class="check-item"><input type="checkbox"><span>Сфотографировать схему подключения</span></label><label class="check-item"><input type="checkbox"><span>Установить новый элемент по схеме</span></label><label class="check-item"><input type="checkbox"><span>Проверить работу компрессора</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 6</div></div>
+
+<p>Установка нового элемента производится в обратной последовательности. Важно надежно зафиксировать провода в клеммах, чтобы исключить искрение и нагрев контактов. После сборки включите холодильник и прислушайтесь: запуск должен быть плавным, без сильных щелчков реле и гудения.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Качество контакта проводов важнее бренда конденсатора. Плохой контакт вызовет нагрев и плавление изоляции даже при идеально подобранной емкости.</p></aside>
+
+<h2 id="частые-ошибки-и-диагностика-неисправностей">Частые ошибки и диагностика неисправностей</h2>
+<p>Одной из распространенных ошибок является игнорирование визуального осмотра. Вздувшийся корпус, потеки электролита или оплавленные клеммы свидетельствуют о том, что конденсатор вышел из строя. Однако иногда внешне исправный элемент может не держать емкость, что проверяется только мультиметром с функцией измерения capacitance.</p>
+
+<p>Еще одна ошибка — установка "на глаз" или использование первого попавшегося конденсатора из запасов. Как уже упоминалось, отклонение емкости более чем на 20% в любую сторону вредно для двигателя. Также не стоит забывать о проверке пускового реле, которое часто выходит из строя одновременно с конденсатором.</p>
+
+<p>Если после замены холодильник работает, но через некоторое время снова отключается по перегрузке, возможно, проблема кроется в самом компрессоре (межвитковое замыкание) или в низком напряжении в сети. В таких случаях простая замена конденсатора не решит проблему кардинально.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Не пытайтесь ремонтировать герметичные конденсаторы путем вскрытия корпуса. Это не только неэффективно, но и опасно из-за возможного содержания вредных веществ внутри.</p>
+</blockquote>
+
+<h2 id="вопросы-и-ответы-faq">Вопросы и ответы (FAQ)</h2>
+
+<details>
+<summary>Можно ли использовать конденсатор с большим рабочим напряжением, чем указано в спецификации?</summary>
+<p>Да, можно и даже нужно. Если расчетное напряжение 300В, а вы найдете деталь на 400В или 450В, это только увеличит запас прочности и срок службы элемента. Главное, чтобы емкость (мкФ) совпадала с расчетной.</p>
+</details>
+
+<details>
+<summary>Почему гудит компрессор, но не запускается после замены конденсатора?</summary>
+<p>Причин может быть несколько: неверно подобрана емкость (слишком малая), неисправно пусковое реле, заклинил сам компрессор или произошел обрыв в одной из обмоток двигателя. Также стоит проверить напряжение в розетке.</p>
+</details>
+
+<details>
+<summary>Как проверить конденсатор без специального прибора?</summary>
+<p>Точно измерить емкость без прибора невозможно. Однако можно проверить его на пробой или обрыв с помощью мультиметра в режиме прозвонки (омметра). При подключении щупов стрелка (или цифры) должна дрогнуть и уйти в бесконечность (для аналоговых) или показать рост сопротивления (для цифровых). Если показывает ноль — пробой, если сразу бесконечность — обрыв.</p>
+</details>
+
+<details>
+<summary>Влияет ли температура в помещении на работу конденсатора?</summary>
+<p>Да, влияет. Большинство конденсаторов рассчитаны на работу в диапазоне от -40 до +85 градусов Цельсия. Если холодильник стоит у горячей плиты или на прямом солнце, ресурс электролита внутри конденсатора может сократиться, что приведет к его преждевременному высыханию и потере емкости.</p>
+</details>
+
+<details>
+<summary>Нужно ли менять конденсатор профилактически?</summary>
+<p>Нет, конденсаторы не имеют строгого срока годности, как продукты. Их меняют только при появлении симптомов неисправности (не запускается компрессор, гудение, выбивает автомат) или при видимых повреждениях корпуса. Профилактическая замена исправного элемента не имеет экономического смысла.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/r/re/rele-kholodilnika-kak-proverit-na-rabotosposobnost.html" class="pb-related-card">
+                <span class="pb-related-title">Как проверить реле холодильника на работоспособность: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробное руководство по диагностике реле компрессора. Узнайте, как прозвонить пусковое реле мультим</span>
+            </a><a href="/articles/k/ka/kak-otregulirovat-dvertsu-vstroennogo-kholodilnika.html" class="pb-related-card">
+                <span class="pb-related-title">Как отрегулировать дверцу встроенного холодильника: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробный гид по регулировке дверей встроенного холодильника. Устранение перекосов, настройка петель</span>
+            </a><a href="/articles/k/ka/kak-snyat-zaglushku-kholodilnika.html" class="pb-related-card">
+                <span class="pb-related-title">Как снять заглушку холодильника: замена ручки и заглушки</span>
+                <span class="pb-related-desc">Подробная инструкция, как снять заглушку холодильника для замены ручки. Советы по демонтажу, замене </span>
+            </a><a href="/articles/k/ka/kak-snyat-rezinku-s-kholodilnika-indesit.html" class="pb-related-card">
+                <span class="pb-related-title">Как снять резинку с холодильника Indesit: полная инструкция</span>
+                <span class="pb-related-desc">Подробная инструкция по замене уплотнителя Indesit. Узнайте, как снять резинку с холодильника, выбра</span>
+            </a><a href="/articles/k/ka/kak-zapravlyat-kholodilnik-freonom.html" class="pb-related-card">
+                <span class="pb-related-title">Как заправить холодильник фреоном: пошаговая инструкция 2026</span>
+                <span class="pb-related-desc">Подробное руководство по самостоятельной заправке холодильника фреоном: инструменты, техника безопас</span>
+            </a><a href="/articles/k/ka/kak-samomu-pomenyat-rezinku-na-dveri-kholodilnika-indezit.html" class="pb-related-card">
+                <span class="pb-related-title">Как самому поменять резинку на двери холодильника Индезит</span>
+                <span class="pb-related-desc">Пошаговая инструкция по замене уплотнителя холодильника Indesit. Выбор детали, способы установки и р</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

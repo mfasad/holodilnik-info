@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Как работает дисплей холодильника Samsung: устройство и ремонт — Холодильник Инфо</title>
+    <meta name="description" content="Подробный разбор принципа работы дисплея холодильника Самсунг. Диагностика неисправностей, коды ошибок, устройство сенсорных панелей и советы по замене.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/k/ka/kak-rabotaet-displej-kholodilnika-samsung.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как работает дисплей холодильника Samsung: устройство и ремонт">
+    <meta property="og:description" content="Подробный разбор принципа работы дисплея холодильника Самсунг. Диагностика неисправностей, коды ошибок, устройство сенсорных панелей и советы по замене.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ustrojstvo-i-detali/">Устройство и детали</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как работает дисплей холодильника Samsung: устройство и ремонт</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#принцип-работы-сенсорной-панели-управления">Принцип работы сенсорной панели управления</a></li><li><a href="#основные-типы-дисплеев-в-холодильниках-самсунг">Основные типы дисплеев в холодильниках Самсунг</a></li><li><a href="#связь-дисплееля-с-основным-контроллером">Связь дисплееля с основным контроллером</a></li><li><a href="#расшифровка-индикации-и-кодов-ошибок">Расшифровка индикации и кодов ошибок</a></li><li><a href="#диагностика-неисправностей-дисплея">Диагностика неисправностей дисплея</a></li><li><a href="#ремонт-и-замена-панели-управления">Ремонт и замена панели управления</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/l/ld/ldogenerator-eto-chto-takoe-v-kholodilnike.html">Льдогенератор в холодильнике: что это, виды, принцип работы</a></li><li><a href="/articles/c/ch/chto-oznachaet-klass-kholodilnika-sn.html">Класс холодильника SN: что означает, расшифровка, диапазон</a></li><li><a href="/articles/k/ka/kakie-polki-v-kholodilnike.html">Какие полки в холодильнике: типы, материалы и их назначение</a></li><li><a href="/articles/f/fr/fresh-room-v-kholodilnike-samsung-chto-eto.html">Fresh Room в холодильнике Samsung: что это и как пользоваться</a></li><li><a href="/articles/g/gd/gde-kupit-polku-dlya-kholodilnika-atlant.html">Где купить полку для холодильника Атлант: цены, артикулы, адреса</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как работает дисплей холодильника Samsung: устройство и ремонт</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#принцип-работы-сенсорной-панели-управления">Принцип работы сенсорной панели управления</a></li><li><a href="#основные-типы-дисплеев-в-холодильниках-самсунг">Основные типы дисплеев в холодильниках Самсунг</a></li><li><a href="#связь-дисплееля-с-основным-контроллером">Связь дисплееля с основным контроллером</a></li><li><a href="#расшифровка-индикации-и-кодов-ошибок">Расшифровка индикации и кодов ошибок</a></li><li><a href="#диагностика-неисправностей-дисплея">Диагностика неисправностей дисплея</a></li><li><a href="#ремонт-и-замена-панели-управления">Ремонт и замена панели управления</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Современные холодильники <em>Samsung</em> — это сложные электронные системы, где дисплей выступает не просто индикатором температуры, а полноценным центром управления. Многие владельцы воспринимают панель управления как данность, пока она не перестанет реагировать на касания или не погаснет совсем. Понимание того, как именно устроена эта система, помогает быстрее диагностировать проблему и избежать дорогостоящего ремонта.</p>
+
+<p>В основе интерфейса лежит <strong>сенсорная технология</strong>, которая заменила механические кнопки еще в начале 2010-х годов. Это позволило сделать фронтальную панель герметичной и стильной, но добавило уязвимости к перепадам напряжения. Если ваш холодильник перестал «видеть» касания, проблема может крыться не в самом стекле, а в контроллере, который обрабатывает сигналы.</p>
+
+<p>Электроника холодильников <em>Samsung</em> построена по модульному принципу. Дисплей связан с основным блоком управления (Main PCB) через специальный шлейф, передающий данные о температуре и состоянии системы <strong>No Frost</strong>. Любое нарушение целостности этого соединения или скачок напряжения в сети может привести к сбоям, которые пользователь видит как «мерцание» или полный отказ панели.</p>
+
+<h2 id="принцип-работы-сенсорной-панели-управления">Принцип работы сенсорной панели управления</h2>
+
+<p>В большинстве моделей <em>Samsung</em> используются емкостные сенсоры, реагирующие на изменение электрического поля при касании пальцем. В отличие от резистивных экранов старых телефонов, здесь не нужно давление. Система считывает микроскопические изменения емкости конденсатора, встроенного под декоративной панелью. Именно поэтому управление может барахлить, если на поверхности есть вода или жир.</p>
+
+<p>Сигнал от сенсора поступает на микропроцессор, который преобразует его в команду для компрессора или ТЭНа. <strong>Цифровая обработка сигнала</strong> происходит за доли секунды. Если вы нажали кнопку «Eco», контроллер отправляет команду на изменение алгоритма работы мотора. Задержка реакции часто свидетельствует о перегрузке процессора или проблемах с питанием.</p>
+
+<p>Важно отметить, что панель управления постоянно опрашивает состояние датчиков. Она получает данные о температуре в камерах, работе вентилятора и статусе разморозки. Если связь с основным модулем теряется, дисплей может уйти в режим защиты, отображая только мигающие индикаторы или коды ошибок.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Попытки разобрать сенсорную панель без отключения холодильника от сети могут привести к короткому замыканию и выходу из строя основного контроллера, ремонт которого стоит значительно дороже замены шлейфа.</p>
+</blockquote>
+
+<p>Технология изготовления таких панелей предполагает многослойную структуру. Под декоративным стеклом <em>Samsung</em> находится прозрачная пленка с токопроводящими дороками. Повреждение даже одного микроскопического участка может сделать нерабочей целую зону кнопок. Восстановление таких дорожек в домашних условиях практически невозможно из-за их миниатюрности и сложности доступа.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед вызовом мастера протрите панель управления сухой мягкой тканью. Статическое электричество или капли воды часто имитируют неисправность сенсора, блокируя отклик системы.</p></aside>
+
+<h2 id="основные-типы-дисплеев-в-холодильниках-самсунг">Основные типы дисплеев в холодильниках Самсунг</h2>
+
+<p>Инженеры <em>Samsung</em> применяют несколько поколений интерфейсов в зависимости от серии холодильника. Понимание типа вашего дисплея важно при поиске запасных частей. Старые модели оснащались простыми <strong>LED-индикаторами</strong>, где каждая температура отображалась отдельным светодиодом.</p>
+
+<p>Более современные серии, такие как <em>Side-by-Side</em> или <em>Family Hub</em>, используют полноценные LCD или OLED матрицы. Они позволяют выводить графику, фотографии и даже транслировать изображение с камер внутри холодильника. Такие системы требуют более сложной диагностики и часто зависят от программного обеспечения.</p>
+
+<ul>
+<li>🔹 <strong>LED-панели:</strong> Простая конструкция, где каждый сегмент — это отдельный светодиод. Чаще всего выходят из строя из-за перегорания отдельных элементов или окисления контактов.</li>
+<li>🔹 <strong>Сенсорные пленочные модули:</strong> Распространены в моделях среднего сегмента. Представляют собой гибкий шлейф с нанесенными токопроводящими дорожками под пластиковой накладкой.</li>
+<li>🔹 <strong>Цифровые LCD-экраны:</strong> Используются в топовых моделях. Имеют собственную плату управления и требуют отдельной диагностики видеосигнала.</li>
+</ul>
+
+<p>Каждый тип дисплея имеет свои уязвимости. LED-модули страдают от скачков напряжения, пленочные — от влаги и механических повреждений, а LCD — от программных сбоев. При замене важно учитывать не только внешний вид, но и <strong>тип подключения</strong> шлейфа, так как они не всегда взаимозаменяемы даже в рамках одной серии.</p>
+
+<div class="pb-poll" id="poll-76c8302f"><div class="pb-poll-question">📊 Какой тип дисплея у вашего холодильника?</div><div class="pb-poll-option" data-poll="76c8302f" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Простые светодиоды (точки)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="76c8302f" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Сенсорные кнопки с цифрами</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="76c8302f" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Полноценный цветной экран</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="76c8302f" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю / Не видно</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="связь-дисплееля-с-основным-контроллером">Связь дисплееля с основным контроллером</h2>
+
+<p>Дисплей не является автономным устройством. Он выступает в роли терминала ввода-вывода для главной платы, расположенной обычно в нижней части холодильника или за задней стенкой. Связь между ними осуществляется через <strong>коммуникационный шлейф</strong>, который проходит через петлю двери.</p>
+
+<p>Это место — самое уязвимое во всей цепи. При постоянном открывании и закрывании двери шлейф испытывает механические нагрузки, сгибается и скручивается. Со временем внутренние проводники могут переломиться, что приведет к потере сигнала. Симптомы такой поломки часто проявляются intermittently: то горит, то гаснет.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип соединения</th>
+<th>Расположение шлейфа</th>
+<th>Частые проблемы</th>
+<th>Метод диагностики</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Прямой контакт</td>
+<td>На лицевой панели двери</td>
+<td>Окисление контактов</td>
+<td>Визуальный осмотр</td>
+</tr>
+<tr>
+<td>Через петлю двери</td>
+<td>Внутри верхней петли</td>
+<td>Перелом жил при открывании</td>
+<td>Прозвонка мультиметром</td>
+</tr>
+<tr>
+<td>Wi-Fi модуль</td>
+<td>Внутри корпуса (Smart)</td>
+<td>Сбой ПО, потеря сети</td>
+<td>Тест подключения</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Для проверки целостности соединения необходимо «прозвонить» контакты мультиметром. Если сопротивление на каком-то участке стремится к бесконечности, значит, цепь разорвана. В некоторых случаях помогает временное соединение напрямую, минуя шлейф в петле, чтобы подтвердить диагноз.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Характеристики шлейфов могут отличаться даже у внешне одинаковых моделей. Перед заказом запчасти всегда сверяйте артикул (Part Number) на самой детали, а не только модель холодильника.</p>
+</blockquote>
+
+<h2 id="расшифровка-индикации-и-кодов-ошибок">Расшифровка индикации и кодов ошибок</h2>
+
+<p>Дисплей холодильника <em>Samsung</em> — это главный инструмент коммуникации с пользователем. Когда система обнаруживает аномалию, она не просто мигает, а выдает конкретный код. Эти коды состоят из буквы, обозначающей узел, и цифр, указывающих на характер неисправности.</p>
+
+<p>Наиболее распространенные коды начинаются с буквы <strong>C</strong> (Cooling), что указывает на проблемы в холодильной камере, или <strong>F</strong> (Freezer) — в морозильной. Например, код <code>F1</code> или <code>F1E</code> часто свидетельствует об ошибке датчика температуры в морозилке. Если горит <code>E</code>, это может означать проблему с системой разморозки.</p>
+
+<details class="pb-accordion"><summary>Скрытые коды сервисного режима</summary><div class="pb-accordion-body"><p>В некоторых моделях комбинация кнопок"Freeze" +"Cooling" (удерживать 3-5 секунд) переводит дисплей в сервисный режим, где можно увидеть текущие показания всех датчиков в реальном времени, что полезно для точной диагностики.</p></div></details>
+
+<p>Мигание всех индикаторов одновременно обычно указывает на критическую ошибку связи между дисплеем и основным модулем или на отсутствие сигнала от датчика двери. В таких случаях холодильник может продолжать работать, но перестает регулировать температуру корректно.</p>
+
+<ul>
+<li>❄️ <strong>Код C1/C2:</strong> Неисправность датчика температуры холодильной камеры. Требуется замена сенсора.</li>
+<li>🧊 <strong>Код F1/F2:</strong> Проблема с датчиком в морозильнике или обледенение испарителя.</li>
+<li>💨 <strong>Код E:</strong> Ошибка системы разморозки (ТЭН или таймер).</li>
+<li>🔌 <strong>Мигание всех сегментов:</strong> Сбой связи Main PCB и Display PCB или скачок напряжения.</li>
+</ul>
+
+<p>Важно понимать, что код ошибки — это лишь симптом. Если дисплей показывает ошибку датчика, это не всегда значит, что умер сам датчик. Возможно, окислились контакты на разъеме или перебит провод в жгуте. Комплексная проверка цепи обязательна перед покупкой новых деталей.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Код ошибки на дисплее — это диагностики, а не окончательный диагноз. Всегда проверяйте целостность проводки и контактов перед заменой дорогостоящих узлов.</p></aside>
+
+<h2 id="диагностика-неисправностей-дисплея">Диагностика неисправностей дисплея</h2>
+
+<p>Если дисплей холодильника <em>Samsung</em> ведет себя странно, не спешите менять всю панель. Начните с базовой диагностики. Первым делом проверьте напряжение в сети. Скачки напряжения — главный враг электроники. Если в доме часто мигает свет, скорее всего, сгорел блок питания на плате управления.</p>
+
+<p>Второй шаг — визуальный осмотр. Снимите декоративную панель (обычно она держится на защелках) и осмотрите шлейфы. Ищите следы окисления, почернения или оплавления. Часто проблема решается простой <strong>чисткой контактов</strong> спиртом или поджатием разъемов.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Диагностика дисплея</h4><label class="check-item"><input type="checkbox"><span>Отключить холодильник от сети на 15 минут</span></label><label class="check-item"><input type="checkbox"><span>Проверить напряжение в розетке</span></label><label class="check-item"><input type="checkbox"><span>Снять панель управления</span></label><label class="check-item"><input type="checkbox"><span>Осмотреть шлейфы на окисление</span></label><label class="check-item"><input type="checkbox"><span>Прозвонить контакты мультиметром</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<p>Если визуально все чисто, но дисплей не работает, потребуется мультиметр. Проверьте наличие питающего напряжения на входе в плату дисплея. Обычно это 5В или 12В. Если напряжения нет, проблема в основной плате или блоке питания. Если напряжение есть, а экран не горит — неисправна сама панель.</p>
+
+<p>В редких случаях причиной сбоя становится статическое электричество. Попробуйте полностью обесточить холодильник, вынув вилку из розетки на 10-15 минут. Это позволит сбросить остаточный заряд с конденсаторов и перезагрузить контроллер. Если после включения проблема осталась, требуется ремонт.</p>
+
+<blockquote>
+<p>⚠️ Внимание: При работе с электроникой внутри холодильника избегайте касания металлических частей руками без антистатического браслета. Статический разряд может добить исправные микросхемы.</p>
+</blockquote>
+
+<h2 id="ремонт-и-замена-панели-управления">Ремонт и замена панели управления</h2>
+
+<p>Замена дисплея на холодильнике <em>Samsung</em> — процедура, доступная для человека с базовыми навыками работы с инструментами. Главное — аккуратность. Пластик, особенно на старых моделях, становится хрупким и легко ломается при неосторожном обращении.</p>
+
+<p>Для начала нужно снять верхнюю крышку холодильника или декоративную накладку на двери, где расположен модуль. Обычно она крепится на винтах, скрытых под заглушками, и пластиковых защелках. Используйте пластиковую карту или лопатку, чтобы не поцарапать поверхность.</p>
+
+<p>После доступа к модулю отсоедините шлейф. Делайте это аккуратно, отгибая фиксатор разъема. Новый модуль устанавливается в обратном порядке. Важно убедиться, что шлейф лег ровно и до упора, иначе контакт будет нестабильным.</p>
+
+<ul>
+<li>🛠️ <strong>Инструменты:</strong> Крестовая отвертка, пластиковая лопатка, мультиметр, изопропиловый спирт.</li>
+<li>🔍 <strong>Поиск запчасти:</strong> Ищите по артикулу на старой плате (например, DA97-XXXXX), а не только по модели холодильника.</li>
+<li>🧹 <strong>Чистка:</strong> Перед установкой новой детали протрите место крепления от пыли и жира.</li>
+</ul>
+
+<p>После сборки включите холодильник и проверьте работу всех функций. Если дисплей загорелся, но показывает неверную температуру, возможно, потребуется калибровка или замена датчиков. В некоторых случаях новая панель требует перепрошивки, но для большинства бытовых моделей <em>Samsung</em> они plug-and-play.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Сохраните упаковку от новой запчасти хотя бы на 2 недели. Если обнаружится брак или несовместимость, вернуть товар в магазин в оригинальной упаковке будет гораздо проще.</p></aside>
+
+<details>
+<summary>Почему дисплей гаснет при открытии двери?</summary>
+<p>Это штатное поведение для многих моделей <em>Samsung</em> с целью экономии энергии и ресурса светодиодов. Однако, если экран не загорается после закрытия или мигает, проверьте геркон (датчик открытия двери). Если он залип, холодильник «думает», что дверь открыта, и может блокировать некоторые функции или включать свет, гася дисплей.</p>
+</details>
+
+<details>
+<summary>Можно ли пользоваться холодильником, если не горит дисплей?</summary>
+<p>Да, в большинстве случаев холодильник продолжит охлаждать в последнем заданном режиме. Однако вы не сможете менять температуру или активировать специальные функции (например, <strong>Power Cool</strong>). Рекомендуется контролировать температуру термометром внутри камеры, так как визуального контроля не будет.</p>
+</details>
+
+<details>
+<summary>Что делать, если после замены дисплея появились новые ошибки?</summary>
+<p>Возможно, шлейф вставлен не до конца или перепутана последовательность контактов (если модель неоригинальная). Также могла сбиться калибровка. Попробуйте снова обесточить холодильник на 20 минут. Если ошибки остались, проверьте совместимость артикулов платы и самого холодильника.</p>
+</details>
+
+<details>
+<summary>Как сбросить ошибки на дисплее Самсунг?</summary>
+<p>Часто помогает длительное (более 10 минут) отключение от сети. В некоторых моделях работает комбинация кнопок: одновременное нажатие кнопок управления температурой в обеих камерах на 3-5 секунд. Однако, если неисправность физическая (сгорел датчик), сброс лишь временно уберет код, пока система снова не обнаружит проблему.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/l/ld/ldogenerator-eto-chto-takoe-v-kholodilnike.html" class="pb-related-card">
+                <span class="pb-related-title">Льдогенератор в холодильнике: что это, виды, принцип работы</span>
+                <span class="pb-related-desc">Подробно разбираем, льдогенератор это что такое в холодильнике. Виды систем, принцип работы, плюсы и</span>
+            </a><a href="/articles/c/ch/chto-oznachaet-klass-kholodilnika-sn.html" class="pb-related-card">
+                <span class="pb-related-title">Класс холодильника SN: что означает, расшифровка, диапазон</span>
+                <span class="pb-related-desc">Что значит класс SN у холодильника? Подробная расшифровка маркировки, допустимый диапазон температур</span>
+            </a><a href="/articles/k/ka/kakie-polki-v-kholodilnike.html" class="pb-related-card">
+                <span class="pb-related-title">Какие полки в холодильнике: типы, материалы и их назначение</span>
+                <span class="pb-related-desc">Какие полки в холодильнике бывают: сравнение стекла, пластика и решетки. Как правильно расставить пр</span>
+            </a><a href="/articles/f/fr/fresh-room-v-kholodilnike-samsung-chto-eto.html" class="pb-related-card">
+                <span class="pb-related-title">Fresh Room в холодильнике Samsung: что это и как пользоваться</span>
+                <span class="pb-related-desc">Подробный разбор функции Fresh Room в холодильниках Samsung. Настройка температуры, хранение продукт</span>
+            </a><a href="/articles/g/gd/gde-kupit-polku-dlya-kholodilnika-atlant.html" class="pb-related-card">
+                <span class="pb-related-title">Где купить полку для холодильника Атлант: цены, артикулы, адреса</span>
+                <span class="pb-related-desc">Ищете, где купить полку для холодильника Атлант? Полный гид по магазинам запчастей, артикулам стекла</span>
+            </a><a href="/articles/k/ka/kak-zapitat-kholodilnik-v-ark.html" class="pb-related-card">
+                <span class="pb-related-title">Как запитать холодильник в ARK: генераторы, инверторы, проводка</span>
+                <span class="pb-related-desc">Подробный гайд по подключению холодильника в ARK Survival Evolved. Выбор генератора, расчет энергии,</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

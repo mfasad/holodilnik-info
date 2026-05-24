@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Температура холодильника и нагревателя в тепловой машине: расчёт КПД — Холодильник Инфо</title>
+    <meta name="description" content="Как рассчитать КПД тепловой машины, если температура холодильника 400 К, а нагреватель горячее на 200 К? Формулы, примеры и практические советы для инженеров и студентов.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/t/te/temperatura-kholodilnika-teplovoj-mashiny-400-k-temperatura-nagrevatelya-na-200-k-bolshe-chem.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Температура холодильника и нагревателя в тепловой машине: расчёт КПД">
+    <meta property="og:description" content="Как рассчитать КПД тепловой машины, если температура холодильника 400 К, а нагреватель горячее на 200 К? Формулы, примеры и практические советы для инженеров и студентов.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ustrojstvo-i-detali/">Устройство и детали</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Температура холодильника и нагревателя в тепловой машине: расчёт КПД</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#основные-понятия-что-такое-холодильник-и-нагреватель-в-тепловой-машине">Основные понятия: что такое холодильник и нагреватель в тепловой машине</a></li><li><a href="#дано-температура-холодильника-400-к-нагреватель-горячее-на-200-к">Дано: температура холодильника 400 К, нагреватель горячее на 200 К</a></li><li><a href="#почему-реальный-кпд-всегда-ниже-теоретического">Почему реальный КПД всегда ниже теоретического</a></li><li><a href="#как-температура-влияет-на-работу-холодильника">Как температура влияет на работу холодильника</a></li><li><a href="#практический-пример-расчёт-для-кондиционера">Практический пример: расчёт для кондиционера</a></li><li><a href="#ошибки-при-расчётах-что-упускают-студенты-и-инженеры">Ошибки при расчётах: что упускают студенты и инженеры</a></li><li><a href="#применение-на-практике-как-оптимизировать-работу-техники">Применение на практике: как оптимизировать работу техники</a></li><li><a href="#faq-частые-вопросы-о-температуре-и-кпд">FAQ: Частые вопросы о температуре и КПД</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/s/sk/skolko-rabotaet-i-otdykhaet-kholodilnik.html">Сколько работает и отдыхает холодильник: цикл компрессора и нормы</a></li><li><a href="/articles/s/si/sistema-no-frost-v-kholodilnike-chto-eto-takoe-plyusy.html">Система No Frost в холодильнике: что это, плюсы и минусы</a></li><li><a href="/articles/k/ko/kompressor-acc-na-kakikh-kholodilnikakh.html">Компрессор ACC на каких холодильниках: список брендов</a></li><li><a href="/articles/g/gd/gde-kupit-uplotniteli-na-kholodilnik.html">Где купить уплотнитель для холодильника: 10 проверенных мест (2026)</a></li><li><a href="/articles/s/sk/skolko-let-zhivut-kholodilniki.html">Сколько лет живут холодильники: реальный срок службы</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>КПД тепловой машины при температуре холодильника 400 К и разнице нагревателя +200 К: расчёт и нюансы</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#основные-понятия-что-такое-холодильник-и-нагреватель-в-тепловой-машине">Основные понятия: что такое холодильник и нагреватель в тепловой машине</a></li><li><a href="#дано-температура-холодильника-400-к-нагреватель-горячее-на-200-к">Дано: температура холодильника 400 К, нагреватель горячее на 200 К</a></li><li><a href="#почему-реальный-кпд-всегда-ниже-теоретического">Почему реальный КПД всегда ниже теоретического</a></li><li><a href="#как-температура-влияет-на-работу-холодильника">Как температура влияет на работу холодильника</a></li><li><a href="#практический-пример-расчёт-для-кондиционера">Практический пример: расчёт для кондиционера</a></li><li><a href="#ошибки-при-расчётах-что-упускают-студенты-и-инженеры">Ошибки при расчётах: что упускают студенты и инженеры</a></li><li><a href="#применение-на-практике-как-оптимизировать-работу-техники">Применение на практике: как оптимизировать работу техники</a></li><li><a href="#faq-частые-вопросы-о-температуре-и-кпд">FAQ: Частые вопросы о температуре и КПД</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Когда речь заходит о тепловых машинах — будь то холодильники, кондиционеры или промышленные установки — ключевым параметром становится <strong>коэффициент полезного действия (КПД)</strong>. Но что делать, если известна только температура холодильника (400 К), а нагреватель горячее на 200 К? Эта задача типична для студентов технических вузов, инженеров-теплотехников и даже владельцев холодильного оборудования, которые хотят оптимизировать энергопотребление.</p>
+
+<p>В этой статье мы разберёмся, как <em>правильно рассчитать КПД идеальной тепловой машины</em> в таких условиях, какие формулы применить, и почему реальные устройства никогда не достигают теоретического максимума. А ещё выясним, как температура влияет на <strong>мощность компрессора</strong>, <strong>расход электроэнергии</strong> и даже на <strong>срок службы техники</strong>. Если вы когда-нибудь задумывались, почему холодильник греется сзади или почему кондиционер хуже работает в жару — ответы кроются именно в этих расчётах.</p>
+
+<h2 id="основные-понятия-что-такое-холодильник-и-нагреватель-в-тепловой-машине">Основные понятия: что такое холодильник и нагреватель в тепловой машине</h2>
+
+<p>В контексте термодинамики <strong>холодильник</strong> и <strong>нагреватель</strong> — это не бытовые приборы, а <em>тепловые резервуары</em> с фиксированными температурами:</p>
+<ul>
+  <li>🔥 <strong>Нагреватель</strong> — источник тепла (например, кипятильник, горячий газ в компрессоре или солнечный коллектор). Его температура <em>всегда выше</em>, чем у холодильника.</li>
+  <li>❄️ <strong>Холодильник</strong> — приёмник "лишнего" тепла (окружающая среда, радиатор или морозильная камера). Его температура <em>ниже</em>, чем у нагревателя.</li>
+  <li>⚙️ <strong>Рабочее тело</strong> — вещество, которое переносит тепло между резервуарами (фреон в холодильнике, пар в турбине).</li>
+</ul>
+
+<p>В классической формулировке <em>тепловая машина</em> (например, двигатель Карно) работает по циклу:</p>
+<ol>
+  <li>Рабочее тело нагревается от нагревателя, получая тепло <code>Q₁</code>.</li>
+  <li>Совершает работу <code>A</code> (например, вращает турбину или сжимает газ).</li>
+  <li>Отдаёт "лишнее" тепло <code>Q₂</code> холодильнику.</li>
+  <li>Возвращается в исходное состояние.</li>
+</ol>
+
+<p>КПД такой машины определяется как отношение <strong>полезной работы</strong> к <strong>затраченному теплу</strong>:
+<code>η = A / Q₁ = (Q₁ – Q₂) / Q₁</code>.</p>
+
+<div class="pb-poll" id="poll-7ba6ea2d"><div class="pb-poll-question">📊 С какой тепловой машиной вы чаще сталкиваетесь?</div><div class="pb-poll-option" data-poll="7ba6ea2d" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Холодильник</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7ba6ea2d" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Кондиционер</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7ba6ea2d" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Автомобильный двигатель</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7ba6ea2d" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Промышленное оборудование</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7ba6ea2d" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Другое</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="дано-температура-холодильника-400-к-нагреватель-горячее-на-200-к">Дано: температура холодильника 400 К, нагреватель горячее на 200 К</h2>
+
+<p>В условии задачи указано:</p>
+<ul>
+  <li>Температура холодильника <code>T₂ = 400 К</code>.</li>
+  <li>Температура нагревателя <em>на 200 К выше</em>, то есть <code>T₁ = T₂ + 200 К = 600 К</code>.</li>
+</ul>
+
+<p>Это <mark>классическая постановка для расчёта КПД цикла Карно</mark> — идеализированного процесса, который служит эталоном для реальных тепловых машин. Формула КПД через температуры выглядит так:</p>
+
+<p><code>η = (T₁ – T₂) / T₁ = 1 – (T₂ / T₁)</code>.</p>
+
+<p>Подставляем значения:</p>
+<p><code>η = (600 К – 400 К) / 600 К = 200 / 600 ≈ 0,333</code> или <strong>33,3%</strong>.</p>
+
+<p>Это значит, что даже в идеальных условиях <em>максимально возможный КПД</em> такой машины — всего <strong>одна треть</strong> от подведённого тепла. Остальные <strong>66,7%</strong> уходят в холодильник (например, в окружающую среду).</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если в задаче температура дана в градусах Цельсия, не забудьте перевести её в Кельвины: <code>T (К) = t (°C) + 273,15</code>. Например, 27°C = 300,15 К.</p></aside>
+
+<h2 id="почему-реальный-кпд-всегда-ниже-теоретического">Почему реальный КПД всегда ниже теоретического</h2>
+
+<p>Формула Карно даёт <em>предельное значение КПД</em>, но в жизни ни одна машина не достигает его по нескольким причинам:</p>
+
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr>
+      <th>Фактор</th>
+      <th>Влияние на КПД</th>
+      <th>Пример</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Трение</td>
+      <td>До 10–15% потерь</td>
+      <td>Износ поршней в компрессоре холодильника</td>
+    </tr>
+    <tr>
+      <td>Теплопотери</td>
+      <td>До 20%</td>
+      <td>Нагрев корпуса двигателя вместо совершения работы</td>
+    </tr>
+    <tr>
+      <td>Неидеальный цикл</td>
+      <td>До 30%</td>
+      <td>Реальные газы не подчиняются закону идеального газа</td>
+    </tr>
+    <tr>
+      <td>Гистерезис материалов</td>
+      <td>До 5%</td>
+      <td>Деформация уплотнителей в морозильной камере</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>Например, <strong>бытовой холодильник</strong> имеет КПД около <strong>20–25%</strong>, а <strong>автомобильный двигатель</strong> — <strong>25–40%</strong> (в зависимости от типа топлива и конструкции). Разница с теоретическим максимумом (33,3% в нашей задаче) обусловлена именно этими потерями.</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Если в техническом паспорте холодильника указан класс энергопотребления <em>A+++</em>, это не означает КПД 33%. Классификация основана на <strong>годовом расходе электроэнергии</strong>, а не на термодинамической эффективности.</blockquote>
+
+<h2 id="как-температура-влияет-на-работу-холодильника">Как температура влияет на работу холодильника</h2>
+
+<p>Вернёмся к бытовой технике. Если температура холодильника (в нашем случае — <code>400 К</code>, или <code>127°C</code>) кажется нереалистично высокой, то вы правы: в реальных холодильниках <strong>холодная часть</strong> (морозильная камера) имеет температуру около <code>–18°C (255 К)</code>, а <strong>горячая часть</strong> (радиатор на задней стенке) — <code>40–60°C (313–333 К)</code>.</p>
+
+<p>Но в <em>тепловых насосах</em> (например, в системах отопления "воздух-вода") температура холодильника может достигать <code>0–10°C (273–283 К)</code>, а нагревателя — <code>50–90°C (323–363 К)</code>. Чем больше разница температур (<code>ΔT = T₁ – T₂</code>), тем:</p>
+<ul>
+  <li>✅ Выше КПД (в теории).</li>
+  <li>❌ Больше нагрузка на компрессор.</li>
+  <li>⚠️ Быстрее изнашиваются детали.</li>
+</ul>
+
+<p>Поэтому в современных холодильниках используют:</p>
+<ul>
+  <li>🔄 <strong>Мультизональные системы</strong> (разные температуры для холодильной и морозильной камер).</li>
+  <li>🌡️ <strong>Инверторные компрессоры</strong>, которые плавно регулируют мощность.</li>
+  <li>💧 <strong>Дополнительные теплообменники</strong> для снижения <code>ΔT</code>.</li>
+</ul>
+
+<details class="pb-accordion"><summary>Почему в холодильниках No Frost температура выше, чем в капельных?</summary><div class="pb-accordion-body"><p>В системах No Frost используется принудительная циркуляция воздуха, что выравнивает температуру по всему объёму. В капельных моделях холод концентрируется у испарителя (задняя стенка), поэтому там может быть на 2–3°C холоднее.</p></div></details>
+
+<h2 id="практический-пример-расчёт-для-кондиционера">Практический пример: расчёт для кондиционера</h2>
+
+<p>Допустим, у нас <em>сплит-система</em>, где:</p>
+<ul>
+  <li>Температура в помещении (холодильник) — <code>25°C (298 К)</code>.</li>
+  <li>Температура на улице (нагреватель) — <code>45°C (318 К)</code>.</li>
+</ul>
+
+<p>КПД как холодильной машины (коэффициент <em>COP</em>) рассчитывается по формуле:</p>
+<p><code>COP = T₂ / (T₁ – T₂) = 298 / (318 – 298) = 298 / 20 = 14,9</code>.</p>
+
+<p>Это значит, что на <strong>1 кВт затраченной электроэнергии</strong> кондиционер перенесёт <strong>14,9 кВт тепла</strong> из помещения на улицу. Однако в реальности <em>COP</em> современных сплит-систем составляет <strong>3–5</strong> из-за потерь.</p>
+
+<p>Сравним с нашей исходной задачей (<code>T₁ = 600 К</code>, <code>T₂ = 400 К</code>):</p>
+<p><code>COP = 400 / (600 – 400) = 2</code>.</p>
+
+<p>То есть такая машина на <strong>1 кВт энергии</strong> перенесёт всего <strong>2 кВт тепла</strong> — в <strong>7 раз хуже</strong>, чем реальный кондиционер! Это подтверждает, что <mark>большая разница температур резко снижает эффективность</mark>.</p>
+
+
+<p>Температурный режим морозильной камеры|Класс энергопотребления (A+++ и выше)|Наличие инверторного компрессора|Уровень шума (не более 40 дБ)|Габариты и объём камер--></p>
+
+<h2 id="ошибки-при-расчётах-что-упускают-студенты-и-инженеры">Ошибки при расчётах: что упускают студенты и инженеры</h2>
+
+<p>Даже в простой задаче с заданными температурами легко допустить ошибки:</p>
+
+<ol>
+  <li><strong>Путаница с Кельвинами и Цельсиями</strong>:
+  <p>Если перевести <code>400°C</code> в Кельвины, получится <code>673 К</code>, а не <code>400 К</code>! Всегда уточняйте, в каких единицах дана температура.</p></li>
+
+  <li><strong>Неучёт знака работы</strong>:
+  <p>В цикле Карно работа <code>A</code> считается положительной, если она <em>совершается системой</em> (например, в двигателе). Для холодильника работа <em>подводится извне</em>, поэтому в формулах появляется знак "минус".</p></li>
+
+  <li><strong>Игнорирование реальных потерь</strong>:
+  <p>Теоретический КПД — это максимум, но в задачах иногда просят рассчитать <em>реальный КПД</em> с учётом потерь (например, 70% от идеального).</p></li>
+</ol>
+
+<blockquote>⚠️ <strong>Внимание:</strong> В некоторых учебниках формулу КПД для холодильника записывают как <code>η = Q₂ / A</code>, где <code>A</code> — затраченная работа. Это <strong>не противоречит</strong> классическому определению, но может сбить с толку. Всегда сверяйтесь с контекстом задачи!</blockquote>
+
+<h2 id="применение-на-практике-как-оптимизировать-работу-техники">Применение на практике: как оптимизировать работу техники</h2>
+
+<p>Знание термодинамики помогает <strong>сэкономить электроэнергию</strong> и <strong>продлить срок службы</strong> холодильника или кондиционера:</p>
+
+<ul>
+  <li>🌞 <strong>Избегайте прямых солнечных лучей</strong> на заднюю стенку холодильника — это повышает <code>T₁</code> и снижает КПД.</li>
+  <li>🧊 <strong>Не ставьте горячие продукты в камеру</strong> — это увеличивает нагрузку на компрессор.</li>
+  <li>🔧 <strong>Чистите конденсатор</strong> (решётку сзади) от пыли — грязь ухудшает теплообмен.</li>
+  <li>❄️ <strong>Разморозка</strong> (для не-No Frost моделей) снижает <code>ΔT</code> между испарителем и воздухом в камере.</li>
+</ul>
+
+<p>Для промышленных тепловых насосов актуальны:</p>
+<ul>
+  <li>📊 <strong>Автоматическая регулировка мощности</strong> в зависимости от уличной температуры.</li>
+  <li>💧 <strong>Использование низкозамерзающих теплоносителей</strong> (например, пропиленгликоля).</li>
+</ul>
+
+<p>Например, если в <em>тепловом насосе</em> снизить <code>T₁</code> с <code>50°C (323 К)</code> до <code>35°C (308 К)</code>, то при <code>T₂ = 0°C (273 К)</code> <em>COP</em> вырастет с <code>6,8</code> до <code>10,3</code> — почти в <strong>1,5 раза</strong>!</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Чем меньше разница температур между нагревателем и холодильником, тем эффективнее работает тепловая машина, но тем медленнее происходит теплообмен. Оптимальный баланс подбирается для каждой задачи индивидуально.</p></aside>
+
+<h2 id="faq-частые-вопросы-о-температуре-и-кпд">FAQ: Частые вопросы о температуре и КПД</h2>
+
+<details>
+  <summary>Может ли КПД тепловой машины быть больше 100%?</summary>
+  <p>Нет, это нарушило бы <strong>первый закон термодинамики</strong> (закон сохранения энергии). Однако <em>коэффициент преобразования тепла</em> (COP) у тепловых насосов может превышать 1 (например, 3–5), потому что они не "создают" тепло, а <strong>переносят</strong> его.</p>
+</details>
+
+<details>
+  <summary>Почему в холодильнике сзади горячий радиатор?</summary>
+  <p>Это <strong>конденсатор</strong>, который отдаёт тепло в окружающую среду. Температура здесь соответствует <code>T₁</code> (нагревателю) в цикле Карно. Чем она выше, тем хуже КПД, но быстрее происходит теплообмен.</p>
+</details>
+
+<details>
+  <summary>Как температура влияет на потребление электроэнергии?</summary>
+  <p>При увеличении <code>ΔT = T₁ – T₂</code> компрессору требуется больше энергии, чтобы "протолкнуть" тепло. Например, если летом в комнате <code>30°C</code>, а на улице <code>40°C</code>, кондиционер будет расходовать на <strong>20–30% больше</strong> электричества, чем весной при <code>20°C</code> снаружи.</p>
+</details>
+
+<details>
+  <summary>Можно ли использовать тепловую машину как вечный двигатель?</summary>
+  <p>Нет. Даже идеальная машина Карно имеет КПД <strong>менее 100%</strong>, а с учётом потерь реальные устройства ещё менее эффективны. <strong>Вечный двигатель второго рода</strong> (который полностью превращал бы тепло в работу) невозможен по <strong>второму закону термодинамики</strong>.</p>
+</details>
+
+<details>
+  <summary>Какая температура холодильника оптимальна для домашнего использования?</summary>
+  <p>Для холодильной камеры: <code>+4°C</code>, для морозильной: <code>–18°C</code>. При этом температура конденсатора (задней решётки) не должна превышать <code>50–60°C</code>, иначе возрастут потери энергии.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/s/sk/skolko-rabotaet-i-otdykhaet-kholodilnik.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько работает и отдыхает холодильник: цикл компрессора и нормы</span>
+                <span class="pb-related-desc">Сколько должен работать и отдыхать холодильник? Нормы времени работы компрессора, причины частых вкл</span>
+            </a><a href="/articles/s/si/sistema-no-frost-v-kholodilnike-chto-eto-takoe-plyusy.html" class="pb-related-card">
+                <span class="pb-related-title">Система No Frost в холодильнике: что это, плюсы и минусы</span>
+                <span class="pb-related-desc">Подробный разбор технологии No Frost: принцип работы, преимущества разморозки, влияние на продукты и</span>
+            </a><a href="/articles/k/ko/kompressor-acc-na-kakikh-kholodilnikakh.html" class="pb-related-card">
+                <span class="pb-related-title">Компрессор ACC на каких холодильниках: список брендов</span>
+                <span class="pb-related-desc">Узнайте, на каких холодильниках стоит компрессор ACC. Обзор брендов, расшифровка маркировки, техниче</span>
+            </a><a href="/articles/g/gd/gde-kupit-uplotniteli-na-kholodilnik.html" class="pb-related-card">
+                <span class="pb-related-title">Где купить уплотнитель для холодильника: 10 проверенных мест (2026)</span>
+                <span class="pb-related-desc">Ищем оригинальные и универсальные уплотнители для холодильников Indesit, Atlant, Samsung и др. Сравн</span>
+            </a><a href="/articles/s/sk/skolko-let-zhivut-kholodilniki.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько лет живут холодильники: реальный срок службы</span>
+                <span class="pb-related-desc">Узнайте, сколько лет живут холодильники разных марок. Факторы износа, таблица сроков службы компресс</span>
+            </a><a href="/articles/i/in/invertornyj-kompressor-v-kholodilnike-chto-eto-takoe.html" class="pb-related-card">
+                <span class="pb-related-title">Инверторный компрессор в холодильнике: что это, плюсы и минусы</span>
+                <span class="pb-related-desc">Полный разбор инверторного компрессора: принцип работы, отличие от обычного, срок службы и экономия.</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

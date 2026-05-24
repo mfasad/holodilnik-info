@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Как прозвонить холодильник мультиметром: пошаговая инструкция — Холодильник Инфо</title>
+    <meta name="description" content="Узнайте, как правильно проверить компрессор, термостат и другие элементы холодильника мультиметром. Пошаговые схемы, нормы сопротивления и советы по диагностике неисправностей.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/k/ka/kak-prozvonit-multimetrom-kholodilnik.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как прозвонить холодильник мультиметром: пошаговая инструкция">
+    <meta property="og:description" content="Узнайте, как правильно проверить компрессор, термостат и другие элементы холодильника мультиметром. Пошаговые схемы, нормы сопротивления и советы по диагностике неисправностей.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-nav-active">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/remont-svoimi-rukami/">Ремонт своими руками</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как прозвонить холодильник мультиметром: пошаговая инструкция</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#1-подготовка-к-прозвонке-безопасность-и-инструменты">1. Подготовка к прозвонке: безопасность и инструменты</a></li><li><a href="#2-проверка-компрессора-норма-сопротивления-и-типичные-неисправности">2. Проверка компрессора: норма сопротивления и типичные неисправности</a></li><li><a href="#3-диагностика-терморегулятора-термостата">3. Диагностика терморегулятора (термостата)</a></li><li><a href="#4-проверка-пускового-и-защитного-реле">4. Проверка пускового и защитного реле</a></li><li><a href="#5-тестирование-тэна-оттайки-для-систем-no-frost">5. Тестирование ТЭНа оттайки (для систем No Frost)</a></li><li><a href="#6-проверка-вентилятора-и-платы-управления">6. Проверка вентилятора и платы управления</a></li><li><a href="#7-типичные-ошибки-при-прозвонке-холодильника">7. Типичные ошибки при прозвонке холодильника</a></li><li><a href="#частые-вопросы-о-прозвонке-холодильника">Частые вопросы о прозвонке холодильника</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/d/da/daewoo-kholodilnik-pochemu-ne-morozit.html">Daewoo холодильник не морозит: причины, ремонт, ошибки</a></li><li><a href="/articles/k/ka/kak-proverit-ispravnost-tena-v-kholodilnike.html">Как проверить ТЭН в холодильнике: диагностика мультиметром</a></li><li><a href="/articles/k/ka/kak-proverit-ispraven-li-kompressor-v-kholodilnike.html">Как проверить исправен ли компрессор холодильника: диагностика</a></li><li><a href="/articles/k/kh/kholodilnik-bosch-kak-otklyuchit-alarm.html">Как отключить alarm в холодильнике Bosch: полная инструкция</a></li><li><a href="/articles/k/ka/kak-otregulirovat-dver-kholodilnika-hotpoint-ariston.html">Как отрегулировать дверь холодильника Hotpoint Ariston: пошаговая инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Прозвонка холодильника мультиметром: полное руководство для самостоятельной диагностики</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#1-подготовка-к-прозвонке-безопасность-и-инструменты">1. Подготовка к прозвонке: безопасность и инструменты</a></li><li><a href="#2-проверка-компрессора-норма-сопротивления-и-типичные-неисправности">2. Проверка компрессора: норма сопротивления и типичные неисправности</a></li><li><a href="#3-диагностика-терморегулятора-термостата">3. Диагностика терморегулятора (термостата)</a></li><li><a href="#4-проверка-пускового-и-защитного-реле">4. Проверка пускового и защитного реле</a></li><li><a href="#5-тестирование-тэна-оттайки-для-систем-no-frost">5. Тестирование ТЭНа оттайки (для систем No Frost)</a></li><li><a href="#6-проверка-вентилятора-и-платы-управления">6. Проверка вентилятора и платы управления</a></li><li><a href="#7-типичные-ошибки-при-прозвонке-холодильника">7. Типичные ошибки при прозвонке холодильника</a></li><li><a href="#частые-вопросы-о-прозвонке-холодильника">Частые вопросы о прозвонке холодильника</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Когда холодильник внезапно перестаёт морозить или издаёт подозрительные звуки, первая мысль — вызвать мастера. Но многие неисправности можно выявить самостоятельно с помощью обычного <strong>мультиметра</strong>, сэкономив на диагностике. Прозвонка электрических цепей холодильника — это не сложнее, чем проверить батарейку, если знать, <em>какие контакты и в какой последовательности тестировать</em>.</p>
+
+<p>В этой статье вы найдёте <mark>уникальные схемы проверки компрессора, терморегулятора, пускового реле и ТЭНа оттайки</mark> с учётом особенностей современных моделей <em>Indesit</em>, <em>Samsung</em>, <em>Atlant</em> и <em>Liebherr</em>. Мы разберём, какие значения сопротивления считаются нормальными, а какие сигнализируют о поломке — без воды и общих фраз. Если вы никогда не держали в руках тестер, не переживайте: здесь есть пошаговые фото и видео-примеры для новичков.</p>
+
+<h2 id="1-подготовка-к-прозвонке-безопасность-и-инструменты">1. Подготовка к прозвонке: безопасность и инструменты</h2>
+
+<p>Перед тем как хвататься за мультиметр, убедитесь, что холодильник <strong>полностью отключён от сети</strong>. Даже если он не работает, конденсаторы в схеме могут сохранять опасное напряжение. Вытащите вилку из розетки и подождите 5–10 минут — этого достаточно, чтобы разрядились все элементы.</p>
+
+<p>Вам понадобятся:</p>
+<ul>
+  <li>🔧 <strong>Мультиметр</strong> (подойдёт даже бюджетная модель с режимом прозвонки и измерения сопротивления до 2000 Ом).</li>
+  <li>🔌 <strong>Отвёртка крестовая/плоская</strong> — для снятия защитных панелей.</li>
+  <li>📏 <strong>Пинцет или зажимы «крокодил»</strong> — чтобы прицепиться к мелким контактам.</li>
+  <li>📝 <strong>Блокнот</strong> — для записи показаний (пригодится при обращении к мастеру).</li>
+</ul>
+
+<p>Если ваш холодильник с системой <em>No Frost</em>, приготовьтесь к тому, что доступ к некоторым элементам (например, ТЭНу оттайки) может быть затруднён. В этом случае потребуется частичная разборка внутренней панели морозильной камеры.</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Не пренебрегайте перчатками! Контакты компрессора и реле часто покрыты маслом или окислом, который может вызвать раздражение кожи. Также избегайте прикасаться к плате управления голыми руками — статическое электричество способно повредить микросхемы.</blockquote>
+
+<div class="pb-poll" id="poll-1dc665de"><div class="pb-poll-question">📊 Какой мультиметр вы используете?</div><div class="pb-poll-option" data-poll="1dc665de" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Цифровой (с автоподстройкой)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1dc665de" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Аналоговый (со стрелкой)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1dc665de" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Мультиметр в смартфоне (через переходник)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1dc665de" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Ещё не покупал</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="2-проверка-компрессора-норма-сопротивления-и-типичные-неисправности">2. Проверка компрессора: норма сопротивления и типичные неисправности</h2>
+
+<p>Компрессор — это «сердце» холодильника, и его поломка чаще всего приводит к полному отказу техники. Чтобы проверить обмотки, найдите <strong>пусковое реле</strong> (обычно расположено рядом с компрессором в нижней части холодильника) и снимите его. Под реле вы увидите три вывода компрессора, промаркированные буквами:</p>
+<ul>
+  <li><code>C</code> — общий вывод (common).</li>
+  <li><code>S</code> — пусковая обмотка (start).</li>
+  <li><code>R</code> — рабочая обмотка (run).</li>
+</ul>
+
+<p>Переведите мультиметр в режим измерения сопротивления (<code>200 Ом</code> или <code>2000 Ом</code>) и выполните замеры:</p>
+
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr>
+      <th>Параметр</th>
+      <th>Нормальное сопротивление</th>
+      <th>Что означает отклонение</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Между <code>C</code> и <code>S</code> (пусковая обмотка)</td>
+      <td>20–40 Ом</td>
+      <td>Больше 50 Ом — обрыв; меньше 15 Ом — межвитковое замыкание</td>
+    </tr>
+    <tr>
+      <td>Между <code>C</code> и <code>R</code> (рабочая обмотка)</td>
+      <td>10–20 Ом</td>
+      <td>Больше 30 Ом — обрыв; меньше 8 Ом — короткое замыкание</td>
+    </tr>
+    <tr>
+      <td>Между <code>S</code> и <code>R</code></td>
+      <td>Сумма двух предыдущих значений (30–60 Ом)</td>
+      <td>Любое другое значение — неисправность обмоток</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>Если мультиметр показывает <code>OL</code> (обрыв) или <code>0</code> (короткое замыкание) на любом из участков, компрессор подлежит замене. Также обратите внимание на <strong>корпус компрессора</strong> — если он пробивает на массу (проверяется прибором в режиме <code>2000k Ом</code> между выводами и корпусом), это опасно для жизни!</p>
+
+
+<p>Отключить холодильник от сети и снять пусковое реле|</p>
+<p>Замерить сопротивление между C-S, C-R, S-R|</p>
+<p>Сравнить показания с нормативными (см. таблицу)|</p>
+<p>Проверить отсутствие пробоя на корпус (режим 2000k Ом)|</p>
+<p>При отклонениях — не включать холодильник до ремонта!--></p>
+
+<h2 id="3-диагностика-терморегулятора-термостата">3. Диагностика терморегулятора (термостата)</h2>
+
+<p>Термостат отвечает за включение/выключение компрессора в зависимости от температуры. Если холодильник не отключается или, наоборот, не запускается, проблема может быть в нём. Чтобы проверить терморегулятор:</p>
+<ol>
+  <li>Снимите ручку регулировки температуры (обычно она просто сдёргивается или откручивается).</li>
+  <li>Под ней вы увидите пластиковый корпус термостата с клеммами. Аккуратно отсоедините провода (лучше сфотографировать их расположение!).</li>
+  <li>Прозвоните контакты <code>3</code> и <code>4</code> (на большинстве моделей) в режиме проверки цепи (значок диода на мультиметре).</li>
+</ol>
+
+<p>При комнатной температуре термостат должен быть <strong>замкнут</strong> (мультиметр издаст звуковой сигнал). Если цепь разомкнута — термостат неисправен. Для дополнительной проверки поместите датчик термостата в стакан с холодной водой на 2–3 минуты и снова прозвоните контакты. Исправный термостат разомкнётся.</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> В холодильниках с электронным управлением (например, <em>Samsung RB37J5240SA</em> или <em>LG GA-B489YGQZ</em>) вместо механического термостата используется <strong>датчик температуры</strong> (термистор). Его проверяют по другому принципу — измеряют сопротивление при разных температурах (норма: 5–10 кОм при 25°C).</blockquote>
+
+<details class="pb-accordion"><summary>Как найти термостат в холодильнике с электронным управлением?</summary><div class="pb-accordion-body"><p>
+<p>В таких моделях термостат заменён на плату управления и датчики. Основной датчик температуры обычно расположен внутри морозильной камеры, за пластиковой панелью. Он выглядит как небольшой цилиндр на проводе. Чтобы до него добраться, снимите внутреннюю крышку (аккуратно поддев отвёрткой) и отсоедините разъём датчика от платы.</p></div></details></p>
+
+<h2 id="4-проверка-пускового-и-защитного-реле">4. Проверка пускового и защитного реле</h2>
+
+<p>Реле — это «посредник» между компрессором и сетью. Оно защищает мотор от перегрузок и обеспечивает правильный запуск. В 30% случаев «мёртвого» холодильника виновато именно реле. Его проверка включает два этапа:</p>
+
+<p><strong>1. Внешний осмотр:</strong> снимите крышку реле и осмотрите контакты. Если они подгорели, почернели или деформированы — реле подлежит замене. Также проверьте <strong>пружинку</strong> внутри: она должна быть упругой, без следов коррозии.</p>
+
+<p><strong>2. Прозвонка мультиметром:</strong>
+<ul>
+  <li>Проверьте <strong>целостность катушки</strong> реле: прибор должен показать сопротивление <code>50–150 Ом</code> между выводами катушки.</li>
+  <li>Убедитесь, что <strong>контакты реле замыкаются</strong> при подаче напряжения (для этого можно использовать батарейку 9V, подключённую к выводам катушки — должен раздаться щелчок).</li>
+</ul>
+</p>
+
+<p>Если реле не щёлкает или контакты не замыкаются, его необходимо заменить. Для моделей <em>Atlant</em> и <em>Biryusa</em> подойдёт универсальное реле <em>РТК-Х</em> или <em>DANFOSS 103N0020</em>.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если под рукой нет нового реле для проверки, можно временно подключить компрессор напрямую, минуя реле. Для этого соедините провода <code>C</code> (общий) и <code>R</code> (рабочая обмотка) с сетевым кабелем через вилку. <strong>Внимание:</strong> такой запуск опасен — компрессор может сгореть без защиты! Используйте только для кратковременной диагностики.</p></aside>
+
+<h2 id="5-тестирование-тэна-оттайки-для-систем-no-frost">5. Тестирование ТЭНа оттайки (для систем No Frost)</h2>
+
+<p>В холодильниках с системой <em>No Frost</em> за оттаивание льда отвечает <strong>нагревательный элемент (ТЭН)</strong>. Если он сгорел, в морозильной камере образуется лёд, а вентилятор начинает гудеть. Чтобы проверить ТЭН:</p>
+<ol>
+  <li>Отключите холодильник и доберитесь до задней стенки морозильной камеры (потребуется снять внутреннюю панель).</li>
+  <li>ТЭН обычно расположен под испарителем и выглядит как изогнутая трубка с двумя выводами.</li>
+  <li>Отсоедините провода от ТЭНа и измерьте его сопротивление. Нормальное значение: <code>20–60 Ом</code>.</li>
+</ol>
+
+<p>Если мультиметр показывает <code>OL</code> — ТЭН сгорел и нуждается в замене. Также проверьте <strong>предохранитель оттайки</strong> (часто идёт в одном блоке с ТЭНом): его сопротивление должно быть близко к <code>0 Ом</code>.</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> В некоторых моделях (например, <em>Liebherr CNes 4866</em>) ТЭН оттайки интегрирован в испаритель и не подлежит отдельной замене. В этом случае потребуется замена всего испарительного блока.</blockquote>
+
+<h2 id="6-проверка-вентилятора-и-платы-управления">6. Проверка вентилятора и платы управления</h2>
+
+<p>Вентилятор в системах <em>No Frost</em> отвечает за циркуляцию холодного воздуха. Если он не работает, холодильник будет плохо морозить, а компрессор — перегреваться. Чтобы проверить вентилятор:</p>
+<ul>
+  <li>Снимите заднюю панель в морозильной камере.</li>
+  <li>Отсоедините разъём питания вентилятора и прозвоните его обмотку. Сопротивление должно быть в пределах <code>100–300 Ом</code>.</li>
+  <li>Убедитесь, что лопасти вентилятора вращаются свободно (без заклинивания).</li>
+</ul>
+
+<p>Плата управления — самый сложный элемент для диагностики. Если все остальные компоненты исправны, но холодильник не работает, проблема может быть в плате. Визуально осмотрите её на предмет:
+<ul>
+  <li>🔥 Подгоревших дорожек или резисторов.</li>
+  <li>💧 Следов коррозии или влаги.</li>
+  <li>🔌 Вздутых конденсаторов.</li>
+</ul>
+</p>
+
+<p>Самостоятельный ремонт платы требует навыков пайки и знания схемотехники. Если вы не уверены — лучше обратиться к мастеру или заменить плату на новую (для популярных моделей, таких как <em>Indesit BIAA 13</em>, запчасти легко найти).</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если холодильник включается, но через 5–10 секунд выключается, в 90% случаев виновато пусковое реле или плата управления. Компрессор при этом обычно исправен.</p></aside>
+
+<h2 id="7-типичные-ошибки-при-прозвонке-холодильника">7. Типичные ошибки при прозвонке холодильника</h2>
+
+<p>Даже опытные мастера иногда допускают ошибки, которые ведут к неверному диагнозу. Вот что нельзя делать:</p>
+<ul>
+  <li>🚫 <strong>Прозванивать компоненты под напряжением</strong> — это не только опасно, но и искажает показания мультиметра.</li>
+  <li>🚫 <strong>Игнорировать окислы на контактах</strong> — перед замерами зачистите выводы наждачной бумагой или спиртом.</li>
+  <li>🚫 <strong>Путать выводы компрессора</strong> — если перепутать <code>S</code> и <code>R</code>, можно спалить обмотки.</li>
+  <li>🚫 <strong>Счищать заводскую маркировку</strong> с реле или термостата — без неё будет сложно подобрать замену.</li>
+</ul>
+
+<p>Ещё одна распространённая ошибка — <strong>не проверять цепь полностью</strong>. Например, если прозвонить только компрессор, но не проверить реле, можно пропустить настоящую причину поломки. Всегда тестируйте элементы в логической последовательности: сначала питание, затем управление (термостат/плату), потом исполнительные механизмы (компрессор, вентилятор).</p>
+
+<h2 id="частые-вопросы-о-прозвонке-холодильника">Частые вопросы о прозвонке холодильника</h2>
+
+<details>
+  <summary><strong>Можно ли прозвонить холодильник без отключения от сети?</strong></summary>
+  <p>Нет! Это смертельно опасно. Даже если холодильник «выключен», конденсаторы в схеме могут сохранять заряд до <code>300V</code>. Всегда вытаскивайте вилку из розетки и разряжайте конденсаторы, замкнув их выводы отвёрткой с изолированной ручкой (для моделей с электромеханическим управлением).</p>
+</details>
+
+<details>
+  <summary><strong>Мультиметр показывает «1» при прозвонке компрессора. Что это значит?</strong></summary>
+  <p>Значение «1» (или <code>OL</code>) указывает на <strong>обрыв цепи</strong>. В компрессоре это означает, что одна из обмоток перегорела. Попробуйте повторно замерить сопротивление между всеми выводами (<code>C-S</code>, <code>C-R</code>, <code>S-R</code>). Если «1» сохраняется — компрессор неисправен.</p>
+</details>
+
+<details>
+  <summary><strong>Как понять, что сгорело реле, а не компрессор?</strong></summary>
+  <p>Отсоедините реле от компрессора и проверьте сопротивление обмоток компрессора отдельно (как описано в разделе 2). Если их значения в норме, проблема в реле. Также осмотрите реле на предмет <strong>оплавленных контактов</strong> или характерного запаха гари.</p>
+</details>
+
+<details>
+  <summary><strong>Нужно ли размораживать холодильник перед прозвонкой?</strong></summary>
+  <p>Обязательно! Лёд и конденсат могут искажать показания мультиметра, особенно при проверке датчиков или ТЭНа оттайки. Отключите холодильник, оставьте дверцы открытыми на 12–24 часа и вытрите все поверхности насухо.</p>
+</details>
+
+<details>
+  <summary><strong>Можно ли отремонтировать компрессор самостоятельно?</strong></summary>
+  <p>Теоретически — да, если проблема в <strong>пусковом конденсаторе</strong> или <strong>окисленных контактах</strong>. Но в 95% случаев обрыв или межвитковое замыкание обмоток не ремонтируется. Замена компрессора требует специального оборудования (вакуумного насоса, баллона с фреоном) и навыков, поэтому лучше доверить это профессионалу.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/d/da/daewoo-kholodilnik-pochemu-ne-morozit.html" class="pb-related-card">
+                <span class="pb-related-title">Daewoo холодильник не морозит: причины, ремонт, ошибки</span>
+                <span class="pb-related-desc">Почему холодильник Daewoo перестал морозить? Разбор поломок, кодов ошибок, инструкции по ремонту сво</span>
+            </a><a href="/articles/k/ka/kak-proverit-ispravnost-tena-v-kholodilnike.html" class="pb-related-card">
+                <span class="pb-related-title">Как проверить ТЭН в холодильнике: диагностика мультиметром</span>
+                <span class="pb-related-desc">Пошаговая инструкция, как проверить исправность ТЭНа в холодильнике. Диагностика мультиметром, поиск</span>
+            </a><a href="/articles/k/ka/kak-proverit-ispraven-li-kompressor-v-kholodilnike.html" class="pb-related-card">
+                <span class="pb-related-title">Как проверить исправен ли компрессор холодильника: диагностика</span>
+                <span class="pb-related-desc">Узнайте, как проверить исправен ли компрессор в холодильнике. Инструкция по диагностике, запуску мот</span>
+            </a><a href="/articles/k/kh/kholodilnik-bosch-kak-otklyuchit-alarm.html" class="pb-related-card">
+                <span class="pb-related-title">Как отключить alarm в холодильнике Bosch: полная инструкция</span>
+                <span class="pb-related-desc">Гудит сигнал тревоги? Узнайте, как отключить alarm в холодильнике Bosch, почему он пищит и что делат</span>
+            </a><a href="/articles/k/ka/kak-otregulirovat-dver-kholodilnika-hotpoint-ariston.html" class="pb-related-card">
+                <span class="pb-related-title">Как отрегулировать дверь холодильника Hotpoint Ariston: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробное руководство по регулировке перекошенных дверей холодильника Hotpoint Ariston. Настройка пе</span>
+            </a><a href="/articles/k/ka/kak-vytashchit-dvigatel-iz-kholodilnika.html" class="pb-related-card">
+                <span class="pb-related-title">Как вытащить двигатель из холодильника: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробное руководство по демонтажу компрессора. Безопасное отключение, отпайка трубок и снятие крепл</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

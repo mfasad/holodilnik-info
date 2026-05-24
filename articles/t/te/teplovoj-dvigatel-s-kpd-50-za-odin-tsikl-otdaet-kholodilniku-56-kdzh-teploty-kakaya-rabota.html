@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Тепловой двигатель с КПД 50%: как рассчитать работу при Qхол=56 кДж — Холодильник Инфо</title>
+    <meta name="description" content="Подробный разбор задачи: тепловой двигатель с КПД 50% отдает холодильнику 56 кДж. Формулы, расчет работы, нюансы термодинамики и ошибки.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/t/te/teplovoj-dvigatel-s-kpd-50-za-odin-tsikl-otdaet-kholodilniku-56-kdzh-teploty-kakaya-rabota.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Тепловой двигатель с КПД 50%: как рассчитать работу при Qхол=56 кДж">
+    <meta property="og:description" content="Подробный разбор задачи: тепловой двигатель с КПД 50% отдает холодильнику 56 кДж. Формулы, расчет работы, нюансы термодинамики и ошибки.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Тепловой двигатель с КПД 50%: как рассчитать работу при Qхол=56 кДж</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#1-разбор-условия-задачи-что-дано-и-что-требуется-найти">1. Разбор условия задачи: что дано и что требуется найти</a></li><li><a href="#2-пошаговый-расчёт-работы-двигателя">2. Пошаговый расчёт работы двигателя</a></li><li><a href="#3-типичные-ошибки-при-решении-подобных-задач">3. Типичные ошибки при решении подобных задач</a></li><li><a href="#4-связь-с-реальными-тепловыми-машинами">4. Связь с реальными тепловыми машинами</a></li><li><a href="#5-практическое-применение-расчётов-кпд">5. Практическое применение расчётов КПД</a></li><li><a href="#6-альтернативные-подходы-к-решению-задачи">6. Альтернативные подходы к решению задачи</a></li><li><a href="#7-частые-вопросы-и-заблуждения">7. Частые вопросы и заблуждения</a></li><li><a href="#8-заключение-ключевые-выводы">8. Заключение: ключевые выводы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/g/gd/gde-mozhno-sdavat-starye-kholodilniki.html">Куда сдать старый холодильник: пункты приема, утилизация, деньги</a></li><li><a href="/articles/k/ka/kak-zapustit-novyj-kholodilnik-atlant.html">Как запустить новый холодильник Атлант: пошаговая инструкция</a></li><li><a href="/articles/k/kh/kholodilnik-minsk-15m-skolko-medi.html">Холодильник Минск 15М: сколько меди, вес и устройство</a></li><li><a href="/articles/p/po/pochemu-ne-morozit-morozilnaya-kamera-v-kholodilnike-atlant-dvukhkompressornyj.html">Не морозит морозилка Атлант двухкомпрессорный: причины</a></li><li><a href="/articles/k/ka/kak-vystavlyat-temperaturu-v-kholodilnike-libkher.html">Температура в холодильнике Liebherr: настройка и режимы</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Тепловой двигатель с КПД 50% отдаёт 56 кДж холодильнику — как найти выполненную работу?</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#1-разбор-условия-задачи-что-дано-и-что-требуется-найти">1. Разбор условия задачи: что дано и что требуется найти</a></li><li><a href="#2-пошаговый-расчёт-работы-двигателя">2. Пошаговый расчёт работы двигателя</a></li><li><a href="#3-типичные-ошибки-при-решении-подобных-задач">3. Типичные ошибки при решении подобных задач</a></li><li><a href="#4-связь-с-реальными-тепловыми-машинами">4. Связь с реальными тепловыми машинами</a></li><li><a href="#5-практическое-применение-расчётов-кпд">5. Практическое применение расчётов КПД</a></li><li><a href="#6-альтернативные-подходы-к-решению-задачи">6. Альтернативные подходы к решению задачи</a></li><li><a href="#7-частые-вопросы-и-заблуждения">7. Частые вопросы и заблуждения</a></li><li><a href="#8-заключение-ключевые-выводы">8. Заключение: ключевые выводы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Задачи на расчёт работы тепловых двигателей часто вызывают затруднения у студентов и инженеров, особенно когда речь идёт о связке <strong>КПД</strong>, отданного тепла и полезной работы. В этой статье разберём типичную задачу: <em>тепловой двигатель с КПД 50% за один цикл отдаёт холодильнику 56 кДж теплоты — какую работу он совершает?</em> На первый взгляд вопрос прост, но здесь кроются нюансы, связанные с пониманием <strong>первого закона термодинамики</strong>, циклов Карно и реальных потерь энергии.</p>
+
+<p>Мы не только дадим готовый ответ, но и объясним, почему многие ошибаются, путая <strong>полезную работу</strong> с общим количеством теплоты, а также разберём практическое применение таких расчётов — от автомобильных двигателей до промышленных турбин. Если вы когда-либо сомневались, как правильно применять формулу КПД или что такое <em>Q<sub>хол</sub></em> и <em>Q<sub>нагр</sub></em>, этот материал для вас.</p>
+
+<p>Для начала уточним термины: в задаче фигурирует <strong>КПД 50%</strong> — это значит, что половина теплоты, полученной от нагревателя, превращается в полезную работу, а вторая половина уходит в холодильник. Но почему тогда отданное холодильнику тепло (<em>Q<sub>хол</sub></em> = 56 кДж) не равно половине подведённой энергии? Здесь многие допускают критическую ошибку, приравнивая <em>Q<sub>хол</sub></em> к "потерянной" доле. На самом деле <em>Q<sub>хол</sub></em> — это именно то тепло, которое двигатель <strong>отдал</strong> холодильнику, а не разница между подведённой и полезной энергией.</p>
+
+<p>Чтобы избежать путаницы, вспомним ключевое уравнение для тепловых машин:</p>
+<pre><code>КПД = (Qнагр - Qхол) / Qнагр = A / Qнагр</code></pre>
+<p>где <em>A</em> — работа, <em>Qнагр</em> — тепло от нагревателя, <em>Qхол</em> — тепло, переданное холодильнику. Именно из этой формулы и выведем решение.</p>
+
+<h2 id="1-разбор-условия-задачи-что-дано-и-что-требуется-найти">1. Разбор условия задачи: что дано и что требуется найти</h2>
+
+<p>Условие задачи сформулировано кратко, но содержит все необходимые данные:</p>
+<ul>
+  <li>🔥 <strong>КПД двигателя (η)</strong> = 50% (или 0.5 в десятичной форме).</li>
+  <li>❄️ <strong>Тепло, отданное холодильнику (<em>Q<sub>хол</sub></strong>)</em> = 56 кДж.</li>
+  <li>⚙️ <strong>Требуется найти</em>: работу <em>A</em>, совершённую двигателем за один цикл.</li>
+</ul>
+
+<p>На первый взгляд может показаться, что достаточно просто умножить <em>Q<sub>хол</sub></em> на 2, ведь КПД 50% "подразумевает" равенство полезной работы и "отходов". Однако это грубая ошибка! <mark>КПД 50% означает, что работа равна половине подведённого тепла (<em>A = 0.5 × Qнагр</em>), но <em>Q<sub>хол</sub></em> — это не "вторая половина", а разница между <em>Qнагр</em> и <em>A</em>.</mark> Иначе говоря, <em>Q<sub>хол</sub> = Qнагр - A</em>.</p>
+
+<p>Подставим известные значения в уравнение КПД:</p>
+<pre><code>η = A / Qнагр = (Qнагр - Qхол) / Qнагр</code></pre>
+<p>Отсюда выразим <em>A</em> через <em>Q<sub>хол</sub></em> и <em>η</em>.</p>
+
+<div class="pb-poll" id="poll-593c5418"><div class="pb-poll-question">📊 Какой тип теплового двигателя вам знаком лучше всего?</div><div class="pb-poll-option" data-poll="593c5418" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Двигатель внутреннего сгорания</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="593c5418" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Паровая турбина</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="593c5418" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Дизельный двигатель</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="593c5418" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Холодильный компрессор</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="593c5418" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Другой</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="2-пошаговый-расчёт-работы-двигателя">2. Пошаговый расчёт работы двигателя</h2>
+
+<p>Используем формулу КПД для вывода рабочей формулы:</p>
+<pre><code>η = 1 - (Qхол / Qнагр)</code></pre>
+<p>Отсюда найдём <em>Qнагр</em>:</p>
+<pre><code>Qнагр = Qхол / (1 - η) = 56 кДж / (1 - 0.5) = 112 кДж</code></pre>
+
+<p>Теперь, когда известно <em>Qнагр</em>, найдём работу <em>A</strong>:</p>
+<pre><code>A = η × Qнагр = 0.5 × 112 кДж = 56 кДж</code></pre>
+
+<p>Таким образом, двигатель совершает работу <strong>56 кДж</em> за один цикл. Интересно, что численно работа совпала с <em>Q<sub>хол</sub></em>, но это лишь частный случай для КПД = 50%! Например, при КПД 30% результат был бы иным.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При КПД 50% работа численно равна теплу, отданному холодильнику, но это совпадение — в общем случае <em>A = η × Qнагр</em>, где <em>Qнагр = Qхол / (1 - η)</em>.</p></aside>
+
+<p>Проверим результат через альтернативную формулу:</p>
+<pre><code>A = Qнагр - Qхол = 112 кДж - 56 кДж = 56 кДж</code></pre>
+<p>Сходимость подтверждает корректность расчётов.</p>
+
+<h2 id="3-типичные-ошибки-при-решении-подобных-задач">3. Типичные ошибки при решении подобных задач</h2>
+
+<p>Даже опытные студенты часто допускают ошибки в задачах на КПД. Вот самые распространённые:</p>
+<ul>
+  <li>🔥 <strong>Путаница между <em>Qнагр</strong> и <em>Qхол</em></em>: многие считают, что <em>Qхол</em> — это "потери", равные (1 - η) × <em>Qнагр</em>, но забывают, что <em>Qхол</em> дано напрямую.</li>
+  <li>⚖️ <strong>Неправильное выражение работы</strong>: пытаются найти <em>A</em> как <em>Qнагр - Qхол</em>, не зная <em>Qнагр</em>.</li>
+  <li>📉 <strong>Игнорирование единиц измерения</strong>: КПД в долях (0.5), а не в процентах (50%) — это критично для формул!</li>
+  <li>🔄 <strong>Подмена циклов</strong>: путают одноцикловую работу с мощностью или многократными циклами.</li>
+</ul>
+
+<p>Рассмотрим пример ошибочного решения:</p>
+<pre><code>Некорректно:
+<p>A = Qхол × η = 56 кДж × 0.5 = 28 кДж  // Ошибка! Так находим долю от Qхол, а не работу.</p>
+</code></pre>
+
+<p>Правильный подход — всегда выражать искомую величину через известные, используя определение КПД.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если в задаче дано <em>Qхол</em> и КПД, сначала найдите <em>Qнагр</em> через формулу <code>Qнагр = Qхол / (1 - η)</code>, а затем рассчитайте работу <em>A = η × Qнагр</em>.</p></aside>
+
+<h2 id="4-связь-с-реальными-тепловыми-машинами">4. Связь с реальными тепловыми машинами</h2>
+
+<p>Теоретический расчёт КПД 50% — это идеализированный случай. В реальных двигателях значение ниже из-за:</p>
+<ul>
+  <li>🔥 <strong>Трения</strong> в механических частях (поршни, подшипники).</li>
+  <li>🌡️ <strong>Тепловых потерь</strong> через корпус, выхлопные газы.</li>
+  <li>⚡ <strong>Неполного сгорания топлива</strong> (в ДВС).</li>
+  <li>🌀 <strong>Гистерезиса</strong> в материалах (например, в турбинах).</li>
+</ul>
+
+<p>Для сравнения, КПД современных двигателей:</p>
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr><th>Тип двигателя</th><th>Максимальный КПД</th><th>Примеры применения</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Бензиновый ДВС</td><td>20–30%</td><td>Автомобили, мотоциклы</td></tr>
+    <tr><td>Дизельный ДВС</td><td>30–45%</td><td>Грузовики, корабли</td></tr>
+    <tr><td>Паровая турбина</td><td>35–50%</td><td>Электростанции</td></tr>
+    <tr><td>Газовая турбина</td><td>25–40%</td><td>Авиация, энергетика</td></tr>
+    <tr><td>Двигатель Стирлинга</td><td>15–30%</td><td>Подводные лодки, солнечные установки</td></tr>
+  </tbody>
+</table></div>
+
+<p>Как видно, 50% — это предел для самых эффективных промышленных турбин, достижимый только при оптимальных условиях (например, в комбинированных циклах с регенерацией тепла).</p>
+
+<details class="pb-accordion"><summary>Почему КПД не может быть 100%?</summary><div class="pb-accordion-body"><p>Согласно второму закону термодинамики, невозможно создать тепловую машину, которая полностью преобразует тепло в работу без отдачи части тепла холодильнику. Даже в идеальном цикле Карно КПД зависит от разницы температур нагревателя и холодильника: <code>η = (Tнагр - Tхол) / Tнагр</code>.</p></div></details>
+
+<h2 id="5-практическое-применение-расчётов-кпд">5. Практическое применение расчётов КПД</h2>
+
+<p>Понимание связи между <em>Qнагр</em>, <em>Qхол</em> и <em>A</em> критично для:</p>
+<ul>
+  <li>🚗 <strong>Автоинженеров</strong>: оптимизация расхода топлива, выбор турбин.</li>
+  <li>⚡ <strong>Энергетиков</strong>: проектирование электростанций с максимальным КПД.</li>
+  <li>❄️ <strong>Специалистов по холодильной технике</strong>: расчёт обратных циклов (холодильников, кондиционеров).</li>
+  <li>🏭 <strong>Промышленников</strong>: оценка эффективности котлов, печей, компрессоров.</li>
+</ul>
+
+<p>Например, в холодильниках используется <em>обратный цикл</em>, где "полезным" эффектом является отбор тепла из камеры (<em>Qхол</em>), а работа <em>A</em> тратится на перекачку тепла в окружающую среду. Формулы аналогичны, но интерпретация меняется.</p>
+
+<p>Для автомобильных двигателей знание КПД позволяет:</p>
+<ul>
+  <li>Оценить реальный расход топлива при заданной мощности.</li>
+  <li>Спрогнозировать тепловую нагрузку на систему охлаждения.</li>
+  <li>Оптимизировать передаточные числа коробки передач.</li>
+</ul>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка расчётов КПД</h4><label class="check-item"><input type="checkbox"><span>Убедиться, что КПД в формуле — в долях (0.5, а не 50%)</span></label><label class="check-item"><input type="checkbox"><span>Проверить размерности (кДж, Дж, кВт·ч)</span></label><label class="check-item"><input type="checkbox"><span>Сверить <em>Qнагр = Qхол + A</em></span></label><label class="check-item"><input type="checkbox"><span>Учесть потери, если задача про реальный двигатель</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="6-альтернативные-подходы-к-решению-задачи">6. Альтернативные подходы к решению задачи</h2>
+
+<p>Помимо классического метода через КПД, задачу можно решить с помощью:</p>
+<ol>
+  <li><strong>Первого закона термодинамики</strong>:
+     <pre><code>ΔU = Qнагр - Qхол - A</code></pre>
+<p>Для цикла <em>ΔU = 0</em> (внутренняя энергия не меняется), поэтому <em>A = Qнагр - Qхол</em>.</li></p>
+  <li><strong>Цикла Карно</strong>:
+<p>Если двигатель работает по циклу Карно, КПД выражается через температуры:</p>
+     <pre><code>η = (Tнагр - Tхол) / Tнагр</code></pre>
+<p>Но в нашей задаче температуры не даны, поэтому метод не применим.</li></p>
+  <li><strong>Графического анализа</strong>:
+<p>На <em>PV-диаграмме</em> работа равна площади цикла, но без дополнительных данных этот способ не поможет.</li></p>
+</ol>
+
+<p>Для учебных задач первый метод (через КПД) — самый универсальный. Однако в реальных инженерных расчётах часто комбинируют подходы. Например, для паровой турбины могут быть известны:</p>
+<ul>
+  <li>📊 Давление и температура пара на входе/выходе.</li>
+  <li>🔧 Механические потери в подшипниках.</li>
+  <li>💧 Потери на трение пара о лопатки.</li>
+</ul>
+<p>В таких случаях используют <em>эффективный КПД</em>, учитывающий все виды потерь.</p>
+
+<div class="pb-poll" id="poll-5e4f3837"><div class="pb-poll-question">📊 Какой метод решения задач на КПД вам кажется самым понятным?</div><div class="pb-poll-option" data-poll="5e4f3837" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Через формулу η = A / Qнагр</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="5e4f3837" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Через первый закон термодинамики</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="5e4f3837" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Через температуры (цикл Карно)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="5e4f3837" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Графический (PV-диаграмма)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="7-частые-вопросы-и-заблуждения">7. Частые вопросы и заблуждения</h2>
+
+<p>Разберём типичные вопросы, возникающие при решении подобных задач:</p>
+
+<details>
+  <summary>❓ Почему работа не равна просто 50% от 56 кДж?</summary>
+  <p>Потому что 56 кДж — это <em>Qхол</em>, а не <em>Qнагр</em>. КПД 50% означает, что работа составляет половину от <em>подведённого</em> тепла (<em>Qнагр</em>), которое в данном случае равно 112 кДж. Если бы <em>Qнагр</em> было 56 кДж, то работа была бы 28 кДж, но тогда <em>Qхол</em> составило бы тоже 28 кДж, что противоречит условию.</p>
+</details>
+
+<details>
+  <summary>❓ Может ли КПД быть больше 50%?</summary>
+  <p>В реальных двигателях — да, но только в комбинированных циклах (например, парогазовые установки достигают 60%). Однако для <em>одного</em> цикла Карно КПД ограничен разницей температур: <code>η = (Tнагр - Tхол)/Tнагр</code>. При <em>Tхол</em> = 0К (недостижимо) η стремится к 100%, но на практике максимальные значения — около 50–60%.</p>
+</details>
+
+<details>
+  <summary>❓ Как связаны КПД и мощность двигателя?</summary>
+  <p>КПД определяет, сколько топлива преобразуется в <em>работу за цикл</em>, а мощность — это работа в единицу времени. Например, если двигатель совершает 56 кДж за цикл и делает 1000 циклов в минуту, его мощность: <code>P = 56 кДж × 1000 / 60 с ≈ 933 Вт</code>.</p>
+</details>
+
+<details>
+  <summary>❓ Почему в холодильниках "КПД" больше 100%?</summary>
+  <p>В холодильниках используется <em>коэффициент эффективности</em> (COP), равный <code>Qхол / A</code>. Он может быть >1, потому что "полезный эффект" — это <em>отбор тепла</em> (<em>Qхол</em>), а затрачивается работа <em>A</em>. Например, COP = 3 означает, что на 1 кДж затраченной электроэнергии из камеры отводится 3 кДж тепла.</p>
+</details>
+
+<details>
+  <summary>❓ Как КПД зависит от температуры?</summary>
+  <p>Для идеального цикла Карно КПД растёт с увеличением разницы температур нагревателя и холодильника. Формула: <code>η = 1 - Tхол/Tнагр</code>. Например, если <em>Tнагр</em> = 800 К, а <em>Tхол</em> = 300 К, то η = 1 - 300/800 = 62.5%. В реальных двигателях зависимость сложнее из-за необратимых процессов.</p>
+</details>
+
+<h2 id="8-заключение-ключевые-выводы">8. Заключение: ключевые выводы</h2>
+
+<p>Разобранная задача иллюстрирует фундаментальные принципы термодинамики:</p>
+<ol>
+  <li>КПД теплового двигателя всегда меньше 100% (даже в идеальном цикле Карно).</li>
+  <li>Работа <em>A</em> и тепло <em>Qхол</em> связаны через <em>Qнагр</em>: <code>A = Qнагр - Qхол</code>.</li>
+  <li>При КПД 50% работа численно совпадает с <em>Qхол</em>, но это частный случай.</li>
+  <li>Реальные двигатели имеют КПД значительно ниже теоретического из-за потерь.</li>
+</ol>
+
+<p>Для закрепления материала рекомендуем:</p>
+<ul>
+  <li>📚 Решить аналогичную задачу с КПД 40% и <em>Qхол</em> = 60 кДж.</li>
+  <li>🔍 Сравнить КПД бензинового и дизельного двигателей в википедии.</li>
+  <li>🧮 Построить график зависимости КПД цикла Карно от температуры холодильника.</li>
+</ul>
+
+<p>Понимание этих принципов поможет не только в учёбе, но и при выборе техники — например, при покупке автомобиля или кондиционера, где КПД напрямую влияет на экономичность.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>В задачах на КПД всегда начинайте с уравнения <code>η = (Qнагр - Qхол)/Qнагр</code> и выражайте неизвестные через известные величины. Не путайте <em>Qхол</em> с "потерями" — это тепло, фактически переданное холодильнику.</p></aside></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/g/gd/gde-mozhno-sdavat-starye-kholodilniki.html" class="pb-related-card">
+                <span class="pb-related-title">Куда сдать старый холодильник: пункты приема, утилизация, деньги</span>
+                <span class="pb-related-desc">Полный гид по утилизации холодильников. Где сдать бесплатно, получить деньги или скидку на новый. Эк</span>
+            </a><a href="/articles/k/ka/kak-zapustit-novyj-kholodilnik-atlant.html" class="pb-related-card">
+                <span class="pb-related-title">Как запустить новый холодильник Атлант: пошаговая инструкция</span>
+                <span class="pb-related-desc">Правильный запуск холодильника Атлант после покупки. Сколько отстаивать, как мыть, когда включать в </span>
+            </a><a href="/articles/k/kh/kholodilnik-minsk-15m-skolko-medi.html" class="pb-related-card">
+                <span class="pb-related-title">Холодильник Минск 15М: сколько меди, вес и устройство</span>
+                <span class="pb-related-desc">Сколько меди в холодильнике Минск 15М? Подробный разбор конструкции, вес компрессора и системы, нюан</span>
+            </a><a href="/articles/p/po/pochemu-ne-morozit-morozilnaya-kamera-v-kholodilnike-atlant-dvukhkompressornyj.html" class="pb-related-card">
+                <span class="pb-related-title">Не морозит морозилка Атлант двухкомпрессорный: причины</span>
+                <span class="pb-related-desc">Почему двухкомпрессорный холодильник Атлант перестал морозить? Полный разбор поломок, диагностика си</span>
+            </a><a href="/articles/k/ka/kak-vystavlyat-temperaturu-v-kholodilnike-libkher.html" class="pb-related-card">
+                <span class="pb-related-title">Температура в холодильнике Liebherr: настройка и режимы</span>
+                <span class="pb-related-desc">Как выставить температуру в холодильнике Либхер. Подробная инструкция для моделей с SmartFrost и NoF</span>
+            </a><a href="/articles/k/ka/kak-sokhranit-myaso-svezhim-v-kholodilnike-bez-zamorozki.html" class="pb-related-card">
+                <span class="pb-related-title">Как сохранить мясо свежим в холодильнике: сроки и правила</span>
+                <span class="pb-related-desc">Узнайте, как сохранить мясо свежим в холодильнике без заморозки. Точные сроки, температурные режимы,</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

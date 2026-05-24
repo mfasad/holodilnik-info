@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Тепловая машина с КПД 60%: как рассчитать полезную работу при Qхол=100 Дж — Холодильник Инфо</title>
+    <meta name="description" content="Подробный разбор задачи: тепловая машина отдает холодильнику 100 Дж при КПД 60%. Формулы, примеры расчетов и физический смысл для холодильных систем.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/t/te/teplovaya-mashina-s-kpd-60-za-tsikl-raboty-otdaet-kholodilniku-100-dzh-kakuyu-poleznuyu-rabotu.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Тепловая машина с КПД 60%: как рассчитать полезную работу при Qхол=100 Дж">
+    <meta property="og:description" content="Подробный разбор задачи: тепловая машина отдает холодильнику 100 Дж при КПД 60%. Формулы, примеры расчетов и физический смысл для холодильных систем.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ustrojstvo-i-detali/">Устройство и детали</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Тепловая машина с КПД 60%: как рассчитать полезную работу при Qхол=100 Дж</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#1-основные-формулы-термодинамики-для-тепловых-машин">1. Основные формулы термодинамики для тепловых машин</a></li><li><a href="#2-пошаговый-расчёт-полезной-работы">2. Пошаговый расчёт полезной работы</a></li><li><a href="#3-физический-смысл-результата-что-означают-150-дж">3. Физический смысл результата: что означают 150 Дж?</a></li><li><a href="#4-связь-с-холодильными-машинами-обратный-цикл">4. Связь с холодильными машинами: обратный цикл</a></li><li><a href="#5-практические-примеры-от-теории-к-ремонту">5. Практические примеры: от теории к ремонту</a></li><li><a href="#6-ошибки-в-расчётах-и-как-их-избежать">6. Ошибки в расчётах и как их избежать</a></li><li><a href="#7-таблица-сравнения-прямой-vs-обратный-цикл">7. Таблица сравнения: прямой vs. обратный цикл</a></li><li><a href="#часто-задаваемые-вопросы">Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/f/fr/frost-free-kholodilnik-chto-eto.html">Frost Free холодильник что это: принцип работы и плюсы</a></li><li><a href="/articles/k/ku/kuda-techet-voda-v-kholodilnike.html">Куда течет вода в холодильнике: устройство дренажа</a></li><li><a href="/articles/g/gd/gde-nakhoditsya-ventilyator-na-kholodilnike-bosh.html">Где находится вентилятор в холодильнике Бош: схемы и ремонт</a></li><li><a href="/articles/s/sh/shoker-kholodilnik-chto-eto.html">Шокер холодильник: что это такое и как работает в 2026 году</a></li><li><a href="/articles/k/kn/knopka-v-kholodilnike-dlya-chego.html">Кнопка в холодильнике: зачем нужна, функции и настройки</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Тепловая машина с КПД 60% отдает холодильнику 100 Дж: как найти полезную работу за цикл</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#1-основные-формулы-термодинамики-для-тепловых-машин">1. Основные формулы термодинамики для тепловых машин</a></li><li><a href="#2-пошаговый-расчёт-полезной-работы">2. Пошаговый расчёт полезной работы</a></li><li><a href="#3-физический-смысл-результата-что-означают-150-дж">3. Физический смысл результата: что означают 150 Дж?</a></li><li><a href="#4-связь-с-холодильными-машинами-обратный-цикл">4. Связь с холодильными машинами: обратный цикл</a></li><li><a href="#5-практические-примеры-от-теории-к-ремонту">5. Практические примеры: от теории к ремонту</a></li><li><a href="#6-ошибки-в-расчётах-и-как-их-избежать">6. Ошибки в расчётах и как их избежать</a></li><li><a href="#7-таблица-сравнения-прямой-vs-обратный-цикл">7. Таблица сравнения: прямой vs. обратный цикл</a></li><li><a href="#часто-задаваемые-вопросы">Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Физика тепловых машин лежит в основе работы холодильников, кондиционеров и даже автомобильных двигателей. Но что делать, если в задаче дан <strong>КПД 60%</strong> и количество тепла, отданное холодильнику — <strong>100 Дж</strong>, а требуется найти <strong>полезную работу</strong>? Эта ситуация типична для студентов технических вузов и инженеров, занимающихся проектированием климатической техники. В статье разберём пошаговое решение, раскроем физический смысл параметров и покажем, как эти знания применяются на практике — от диагностики холодильных агрегатов до оптимизации энергопотребления.</p>
+
+<p>Многие ошибочно путают <strong>КПД тепловой машины</strong> с эффективностью холодильника, хотя это разные понятия. Здесь мы сосредоточимся на <strong>прямом цикле Карно</strong>, где машина <em>превращает тепло в работу</em>, а не наоборот (как в холодильнике). Разобрав эту задачу, вы сможете самостоятельно анализировать технические характеристики компрессоров, оценивать потери энергии в системах охлаждения и даже прогнозировать износ деталей по тепловым параметрам.</p>
+
+<p>Для начала уточним термины:</p>
+<ul>
+  <li>🔥 <strong>Q₁</strong> — количество тепла, полученное от нагревателя (например, горячего пара в турбине).</li>
+  <li>❄️ <strong>Q₂</strong> — тепло, отданное холодильнику (в задаче это <em>100 Дж</em>).</li>
+  <li>⚡ <strong>A</strong> — полезная работа, которую нужно найти.</li>
+  <li>📊 <strong>η</strong> — КПД машины (<em>60% или 0.6</em>).</li>
+</ul>
+
+<h2 id="1-основные-формулы-термодинамики-для-тепловых-машин">1. Основные формулы термодинамики для тепловых машин</h2>
+
+<p>В классической термодинамике КПД тепловой машины определяется как отношение полезной работы к количеству тепла, полученному от нагревателя:</p>
+
+<p><strong>η = A / Q₁</strong>, где:</p>
+<ul>
+  <li><strong>A</strong> — работа (Дж),</li>
+  <li><strong>Q₁</strong> — тепло от нагревателя (Дж).</li>
+</ul>
+
+<p>Но в задаче дано <strong>Q₂</strong> — тепло, отданное холодильнику. Здесь поможет <strong>закон сохранения энергии</strong> для цикла:</p>
+
+<p><strong>Q₁ = A + Q₂</strong></p>
+
+<p>Подставляя КПД в первую формулу, получаем:</p>
+<p><strong>A = η × Q₁ = η × (A + Q₂)</strong></p>
+
+<p>Это уравнение легко решить относительно <strong>A</strong>. Но перед тем как перейти к расчётам, разберём физический смысл каждого параметра на примере реальных устройств.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если в задаче дан КПД в процентах, обязательно переведите его в доли: 60% = 0.6. Это избавит от ошибок в расчётах.</p></aside>
+
+<h2 id="2-пошаговый-расчёт-полезной-работы">2. Пошаговый расчёт полезной работы</h2>
+
+<p>Итак, у нас есть:</p>
+<ul>
+  <li>КПД <strong>η = 0.6</strong>,</li>
+  <li>Тепло, отданное холодильнику <strong>Q₂ = 100 Дж</strong>.</li>
+</ul>
+
+<p>Подставляем данные в уравнение <strong>A = η × (A + Q₂)</strong>:</p>
+<p><strong>A = 0.6 × (A + 100)</strong></p>
+
+<p>Раскрываем скобки:</p>
+<p><strong>A = 0.6A + 60</strong></p>
+
+<p>Переносим <strong>0.6A</strong> влево:</p>
+<p><strong>A − 0.6A = 60</strong></p>
+<p><strong>0.4A = 60</strong></p>
+
+<p>Находим <strong>A</strong>:</p>
+<p><strong>A = 60 / 0.4 = 150 Дж</strong></p>
+
+<p><mark>Полезная работа тепловой машины за цикл составляет 150 Дж.</mark></p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Полезная работа всегда меньше количества тепла, полученного от нагревателя (Q₁), так как часть энергии неизбежно передаётся холодильнику (Q₂).</p></aside>
+
+<p>Теперь проверим результат через альтернативный метод: сначала найдём <strong>Q₁</strong>, затем <strong>A</strong>.</p>
+
+<p>Из закона сохранения энергии:</p>
+<p><strong>Q₁ = A + Q₂ = 150 + 100 = 250 Дж</strong></p>
+
+<p>Проверим КПД:</p>
+<p><strong>η = A / Q₁ = 150 / 250 = 0.6 (60%)</strong> — совпадает с условием задачи.</p>
+
+<h2 id="3-физический-смысл-результата-что-означают-150-дж">3. Физический смысл результата: что означают 150 Дж?</h2>
+
+<p>Полезная работа <strong>150 Дж</strong> — это энергия, которую можно использовать для:</p>
+<ul>
+  <li>🔌 Поднятия груза массой <em>15 кг</em> на высоту <em>1 метр</em> (в поле тяжести Земли).</li>
+  <li>⚡ Запуска вентилятора холодильника на <em>0.1–0.3 секунды</em> (в зависимости от модели).</li>
+  <li>🔋 Зарядки смартфона на <em>~0.001%</em> (для батареи 3000 мА·ч).</li>
+</ul>
+
+<p>В контексте холодильных систем эта работа соответствует энергии, которую компрессор тратит на сжатие хладагента за один цикл. Чем выше КПД, тем меньше тепла уходит впустую (в нашем случае <strong>40%</strong> от <strong>Q₁</strong> передаётся холодильнику как <strong>Q₂</strong>).</p>
+
+<p>Для сравнения: в реальных холодильниках КПД редко превышает <strong>30–40%</strong> из-за потерь на трение, теплопроводность и неидеальность цикла. <strong>60%</strong> — это теоретический предел для идеализированных условий.</p>
+
+<div class="pb-poll" id="poll-af743db7"><div class="pb-poll-question">📊 С какой целью вы изучаете термодинамику?</div><div class="pb-poll-option" data-poll="af743db7" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Учёба в вузе</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="af743db7" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Проектирование техники</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="af743db7" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Ремонт холодильников</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="af743db7" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Любопытство</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="af743db7" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Другое</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="4-связь-с-холодильными-машинами-обратный-цикл">4. Связь с холодильными машинами: обратный цикл</h2>
+
+<p>В холодильниках и кондиционерах используется <strong>обратный цикл</strong>, где работа тратится на перенос тепла от холодного тела к горячему. Здесь ключевой параметр — <strong>холодильный коэффициент (ε)</strong>:</p>
+
+<p><strong>ε = Q₂ / A</strong>, где:</p>
+<ul>
+  <li><strong>Q₂</strong> — тепло, забранное из холодильной камеры,</li>
+  <li><strong>A</strong> — работа компрессора.</li>
+</ul>
+
+<p>Для идеального цикла Карно:</p>
+<p><strong>ε = T₂ / (T₁ − T₂)</strong>, где <strong>T₁</strong> и <strong>T₂</strong> — температуры нагревателя и холодильника (в Кельвинах).</p>
+
+<p>Если в прямом цикле КПД не может превышать <strong>1 (100%)</strong>, то холодильный коэффициент теоретически не ограничен. В реальных устройствах он колеблется от <strong>2 до 6</strong>.</p>
+
+<details class="pb-accordion"><summary>Почему КПД холодильника не может быть 100%?</summary><div class="pb-accordion-body"><p>В обратном цикле работа тратится на перенос тепла против градиента температур. Даже в идеальных условиях часть энергии рассеивается, поэтому ε всегда больше 1, но КПД (как отношение полезного эффекта к затратам) остаётся ниже 100%.</p></div></details>
+
+<h2 id="5-практические-примеры-от-теории-к-ремонту">5. Практические примеры: от теории к ремонту</h2>
+
+<p>Знание термодинамики помогает диагностировать неисправности холодильников:</p>
+<ul>
+  <li>🛠️ <strong>Повышенное Q₂</strong> (тепло, отданное конденсатором) при той же работе компрессора (<strong>A</strong>) говорит о <em>загрязнении теплообменника</em> или <em>утечке хладагента</em>.</li>
+  <li>⚡ <strong>Снижение A</strong> при том же потреблении электроэнергии может указывать на <em>износ компрессора</em> или <em>неисправность пускового реле</em>.</li>
+  <li>❄️ Если холодильник плохо охлаждает, но компрессор работает без остановки, проверьте <strong>ε</strong>: возможно, fell ниже нормы из-за <em>неправильной заправки фреона</em>.</li>
+</ul>
+
+<p>Рассмотрим реальный случай: холодильник <em>Atlant ХМ 4625-100</em> потребляет <strong>1.2 кВт·ч/сутки</strong>, но не охлаждает до заданной температуры. Измерения показывают, что конденсатор отдаёт <strong>Q₂ = 800 кДж/час</strong>. Как оценить эффективность?</p>
+
+<p>Сначала переведём мощность в джоули: <strong>1.2 кВт·ч = 4320 кДж/сутки ≈ 180 кДж/час</strong>. Если <strong>A ≈ 180 кДж/час</strong>, а <strong>Q₂ = 800 кДж/час</strong>, то:</p>
+<p><strong>ε = Q₂ / A = 800 / 180 ≈ 4.44</strong></p>
+
+<p>Это близко к норме для бытовых холодильников (ε = 2–6). Но если ранее ε был выше, стоит проверить:</p>
+
+<p>Проверьте температуру конденсатора (должна быть ~40–50°C)|Измерьте ток компрессора (сравните с паспортными данными)|Оцените время работы/отдыха (оптимально 1:2)|Проверьте герметичность дверных уплотнителей--></p>
+
+<h2 id="6-ошибки-в-расчётах-и-как-их-избежать">6. Ошибки в расчётах и как их избежать</h2>
+
+<p>Типичные mistake при решении подобных задач:</p>
+<ul>
+  <li>🔢 <strong>Путаница между Q₁ и Q₂</strong>: в прямом цикле <strong>Q₁ > Q₂</strong>, в обратном — наоборот.</li>
+  <li>📉 <strong>Неправильный перевод процентов</strong>: 60% ≠ 60 в формулах (нужно 0.6!).</li>
+  <li>⚖️ <strong>Игнорирование единиц измерения</strong>: джоули, ватты, калории — приведите всё к одной системе (СИ).</li>
+  <li>🔄 <strong>Подмена формул</strong>: КПД и холодильный коэффициент рассчитываются по-разному.</li>
+</ul>
+
+<p>Пример ошибки: если в задаче дано <strong>Q₂ = 100 Дж</strong> и <strong>η = 60%</strong>, но ученик пытается найти <strong>Q₁</strong> как <strong>Q₂ / η = 100 / 0.6 ≈ 166.67 Дж</strong>, это неверно. Правильно использовать <strong>Q₁ = A + Q₂</strong>, где <strong>A = η × Q₁</strong>.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Всегда рисуйте схему цикла: нагреватель → машина → холодильник. Это поможет не путать, какое тепло куда идёт.</p></aside>
+
+<blockquote>⚠️ <strong>Внимание</strong>: В реальных холодильниках КПД и холодильный коэффициент зависят от температуры окружающей среды, типа хладагента и конструкции компрессора. Данные из паспорта устройства могут отличаться от расчётных идеальных значений.</blockquote>
+
+<h2 id="7-таблица-сравнения-прямой-vs-обратный-цикл">7. Таблица сравнения: прямой vs. обратный цикл</h2>
+
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr>
+      <th>Параметр</th>
+      <th>Прямой цикл (тепловая машина)</th>
+      <th>Обратный цикл (холодильник)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Цель</strong></td>
+      <td>Преобразовать тепло в работу</td>
+      <td>Перенести тепло от холодного тела к горячему</td>
+    </tr>
+    <tr>
+      <td><strong>Ключевой коэффициент</strong></td>
+      <td>КПД (η) = A / Q₁</td>
+      <td>Холодильный коэффициент (ε) = Q₂ / A</td>
+    </tr>
+    <tr>
+      <td><strong>Максимальное значение</strong></td>
+      <td>η < 1 (100%)</td>
+      <td>ε может быть > 1 (например, ε = 5)</td>
+    </tr>
+    <tr>
+      <td><strong>Примеры устройств</strong></td>
+      <td>ДВС, турбины, паровые машины</td>
+      <td>Холодильники, кондиционеры, тепловые насосы</td>
+    </tr>
+    <tr>
+      <td><strong>Формула Карно</strong></td>
+      <td>η = (T₁ − T₂) / T₁</td>
+      <td>ε = T₂ / (T₁ − T₂)</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<h2 id="часто-задаваемые-вопросы">Часто задаваемые вопросы</h2>
+
+<details>
+  <summary>Почему КПД тепловой машины не может быть 100%?</summary>
+  <p>Согласно <strong>второму закону термодинамики</strong>, невозможно создать машину, которая полностью преобразует тепло в работу без потерь. Часть тепла всегда передаётся холодильнику (в нашем случае <strong>40%</strong> от <strong>Q₁</strong>). Это связано с необратимостью реальных процессов и наличием трения.</p>
+</details>
+
+<details>
+  <summary>Как связан КПД с мощностью холодильника?</summary>
+  <p>Мощность холодильника (в ваттах) показывает, сколько работы (<strong>A</strong>) он совершает в единицу времени. Чем выше КПД компрессора, тем меньше электроэнергии тратится на перенос того же количества тепла (<strong>Q₂</strong>). Например, при <strong>ε = 5</strong> на 1 кВт затраченной электроэнергии приходится 5 кВт "отобранного" тепла.</p>
+</details>
+
+<details>
+  <summary>Можно ли использовать эту формулу для расчёта кондиционера?</summary>
+  <p>Да, но с поправкой на обратный цикл. Для кондиционера важнее <strong>холодильный коэффициент (ε)</strong>, а не КПД. Формула будет: <strong>ε = Q₂ / A</strong>, где <strong>Q₂</strong> — тепло, забранное из помещения, а <strong>A</strong> — электроэнергия, потраченная на работу компрессора.</p>
+</details>
+
+<details>
+  <summary>Что будет, если КПД тепловой машины превысит 60%?</summary>
+  <p>В реальных условиях КПД выше <strong>60%</strong> достигается только в высокотехнологичных установках (например, парогазовых турбинах). Для бытовых холодильников это невозможно из-за ограничений цикла Карно и потерь. Если в задаче дан КПД > 100%, это ошибка — такие значения противоречат законам физики.</p>
+</details>
+
+<details>
+  <summary>Как измерить Q₂ в домашнем холодильнике?</summary>
+  <p>Практически это сложно, но приблизительно <strong>Q₂</strong> можно оценить по температуре конденсатора (задней решётки) и времени его работы. Используйте инфракрасный термометр и формулу: <strong>Q₂ = c × m × ΔT</strong>, где <strong>c</strong> — теплоёмкость воздуха, <strong>m</strong> — масса нагретого воздуха за час, <strong>ΔT</strong> — разница температур.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/f/fr/frost-free-kholodilnik-chto-eto.html" class="pb-related-card">
+                <span class="pb-related-title">Frost Free холодильник что это: принцип работы и плюсы</span>
+                <span class="pb-related-desc">Подробный разбор технологии Frost Free: как работает, в чем отличие от No Frost, нужна ли разморозка</span>
+            </a><a href="/articles/k/ku/kuda-techet-voda-v-kholodilnike.html" class="pb-related-card">
+                <span class="pb-related-title">Куда течет вода в холодильнике: устройство дренажа</span>
+                <span class="pb-related-desc">Узнайте, куда девается вода из вашего холодильника. Подробно о дренажной системе, лотке испарителя и</span>
+            </a><a href="/articles/g/gd/gde-nakhoditsya-ventilyator-na-kholodilnike-bosh.html" class="pb-related-card">
+                <span class="pb-related-title">Где находится вентилятор в холодильнике Бош: схемы и ремонт</span>
+                <span class="pb-related-desc">Подробная инструкция по поиску и замене вентилятора в холодильниках Bosch. Разборка, диагностика No </span>
+            </a><a href="/articles/s/sh/shoker-kholodilnik-chto-eto.html" class="pb-related-card">
+                <span class="pb-related-title">Шокер холодильник: что это такое и как работает в 2026 году</span>
+                <span class="pb-related-desc">Разбираемся, что такое шокер в холодильнике, как он влияет на хранение продуктов и почему его путают</span>
+            </a><a href="/articles/k/kn/knopka-v-kholodilnike-dlya-chego.html" class="pb-related-card">
+                <span class="pb-related-title">Кнопка в холодильнике: зачем нужна, функции и настройки</span>
+                <span class="pb-related-desc">Подробный разбор функций кнопок в холодильнике. Узнайте, зачем нужны Super Cool, Eco, Lock и другие </span>
+            </a><a href="/articles/c/ch/chto-luchshe-sukhaya-ili-vlazhnaya-zona-svezhesti-v-kholodilnike.html" class="pb-related-card">
+                <span class="pb-related-title">Сухая или влажная зона свежести: что выбрать для холодильника?</span>
+                <span class="pb-related-desc">Сравнение сухой и влажной зон свежести. Узнайте, где лучше хранить мясо, овощи и фрукты, чтобы продл</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

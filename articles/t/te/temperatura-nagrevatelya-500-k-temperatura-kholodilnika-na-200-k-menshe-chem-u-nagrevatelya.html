@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Температура нагревателя 500 К: расчет КПД цикла Карно — Холодильник Инфо</title>
+    <meta name="description" content="Разбор задачи физики: температура нагревателя 500 К, холодильника на 200 К меньше. Формулы, расчет КПД и работа идеального газа.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/t/te/temperatura-nagrevatelya-500-k-temperatura-kholodilnika-na-200-k-menshe-chem-u-nagrevatelya.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Температура нагревателя 500 К: расчет КПД цикла Карно">
+    <meta property="og:description" content="Разбор задачи физики: температура нагревателя 500 К, холодильника на 200 К меньше. Формулы, расчет КПД и работа идеального газа.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ustrojstvo-i-detali/">Устройство и детали</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Температура нагревателя 500 К: расчет КПД цикла Карно</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#физический-смысл-температурных-режимов">Физический смысл температурных режимов</a></li><li><a href="#расчет-максимальной-эффективности-кпд-карно">Расчет максимальной эффективности (КПД Карно)</a></li><li><a href="#теплообмен-и-количество-теплоты">Теплообмен и количество теплоты</a></li><li><a href="#рабочее-тело-и-его-состояние">Рабочее тело и его состояние</a></li><li><a href="#влияние-параметров-на-мощность-двигателя">Влияние параметров на мощность двигателя</a></li><li><a href="#практическое-применение-и-ограничения">Практическое применение и ограничения</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kakaya-nagruzka-na-polki-v-kholodilnike.html">Нагрузка на полки в холодильнике: нормы, схемы и безопасность</a></li><li><a href="/articles/s/st/staticheskaya-sistema-okhlazhdeniya-kholodilnika-chto-eto-takoe.html">Статическая система охлаждения холодильника: что это и как работает</a></li><li><a href="/articles/k/ka/kak-snyat-ruchki-s-kholodilnika-lg.html">Как снять ручки с холодильника LG: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kakie-lampochki-v-kholodilnike-khotpoint-ariston.html">Какие лампочки в холодильнике Хотпоинт Аристон: выбор и замена</a></li><li><a href="/articles/g/gd/gde-kupit-vyklyuchatel-sveta-dlya-kholodilnika.html">Где купить выключатель света для холодильника: адреса и модели</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Расчет параметров цикла Карно: Нагреватель 500 К и Холодильник</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#физический-смысл-температурных-режимов">Физический смысл температурных режимов</a></li><li><a href="#расчет-максимальной-эффективности-кпд-карно">Расчет максимальной эффективности (КПД Карно)</a></li><li><a href="#теплообмен-и-количество-теплоты">Теплообмен и количество теплоты</a></li><li><a href="#рабочее-тело-и-его-состояние">Рабочее тело и его состояние</a></li><li><a href="#влияние-параметров-на-мощность-двигателя">Влияние параметров на мощность двигателя</a></li><li><a href="#практическое-применение-и-ограничения">Практическое применение и ограничения</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>В термодинамике и физике часто встречаются задачи, где ключевыми параметрами являются температурные режимы теплообменников. Когда температура нагревателя составляет 500 К, а температура холодильника на 200 К меньше, мы сталкиваемся с классическим примером работы <strong>теплового двигателя</strong>. Это не просто абстрактные цифры, а фундамент для понимания того, как преобразуется энергия в механическую работу.</p>
+<p>В данном контексте под нагревателем понимается источник теплоты с более высокой температурой, а под холодильником — приемник теплоты, отдающий энергию в окружающую среду. Разница в 200 К между ними создает необходимый градиент, без которого невозможен сам процесс функционирования системы. Давайте разберем, как эти значения влияют на эффективность.</p>
+<p>Для начала необходимо четко определить исходные данные, чтобы избежать путаницы в единицах измерения. Температура нагревателя <em>T₁</em> равна 500 Кельвинов. Температура холодильника <em>T₂</em> меньше на 200 Кельвинов. Это означает, что <em>T₂</em> = 500 - 200 = 300 К. Именно эти два значения станут основой для всех последующих вычислений и теоретических выводов.</p>
+
+<h2 id="физический-смысл-температурных-режимов">Физический смысл температурных режимов</h2>
+<p>Температура в термодинамике — это мера средней кинетической энергии молекул. Когда мы говорим, что температура нагревателя 500 К, мы подразумеваем состояние вещества, при котором его молекулы движутся с определенной высокой скоростью. В свою очередь, холодильник с температурой 300 К (что примерно соответствует 27°C, комнатной температуре) обладает меньшей энергией теплового движения.</p>
+<p>Разница температур в 200 К является движущей силой процесса. Без этой разницы, согласно второму закону термодинамики, тепло самопроизвольно не может переходить от менее нагретого тела к более нагретому, и цикл работы двигателя был бы невозможен. <strong>Тепловой поток</strong> всегда направлен от нагревателя к холодильнику, и часть этого потока преобразуется в полезную работу.</p>
+<blockquote>
+<p>⚠️ Внимание: При работе с физическими задачами всегда проверяйте единицы измерения. Если температура дана в градусах Цельсия, её необходимо перевести в Кельвины, добавив 273,15. В нашем случае исходные данные уже даны в абсолютной шкале, что упрощает расчет.</p>
+</blockquote>
+<p>Важно понимать, что 500 К — это достаточно высокая температура, эквивалентная 226,85°C. В реальных двигателях внутреннего сгорания или паровых турбинах такие температуры являются рабочими, но требуют использования жаропрочных материалов. Холодильник же при 300 К может быть просто атмосферным воздухом или водой из системы охлаждения.</p>
+
+<h2 id="расчет-максимальной-эффективности-кпд-карно">Расчет максимальной эффективности (КПД Карно)</h2>
+<p>Для оценки того, насколько эффективно двигатель использует подведенную теплоту, используется понятие коэффициента полезного действия (КПД). Идеальным случаем, к которому стремятся инженеры, является <strong>цикл Карно</strong>. Его КПД зависит только от температур нагревателя и холодильника и не зависит от устройства самого двигателя.</p>
+<p>Формула для расчета КПД идеального цикла выглядит следующим образом: <code>η = (T₁ - T₂) / T₁</code>. Подставим наши значения: температура нагревателя 500 К, а холодильника 300 К. Разность температур составляет 200 К. Разделив 200 на 500, мы получаем значение 0,4. Это означает, что максимальный КПД составляет 40%.</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>КПД реального двигателя всегда ниже теоретического предела Карно из-за трения, теплопотерь и неидеальности процессов сгорания.</p></aside>
+<p>Что это значит на практике? Из всей энергии, полученной от нагревателя, только 40% может быть превращено в полезную механическую работу. Оставшиеся 60% энергии обязательно должны быть отданы холодильнику. Это фундаментальное ограничение природы, которое нельзя обойти никакими ухищрениями.</p>
+<p>Рассмотрим факторы, влияющие на этот показатель:</p>
+<ul>
+<li>🔥 <strong>Рост температуры нагревателя:</strong> Увеличение <em>T₁</em> при постоянном <em>T₂</em> повышает КПД.</li>
+<li>❄️ <strong>Снижение температуры холодильника:</strong> Уменьшение <em>T₂</em> также ведет к росту эффективности.</li>
+<li>⚙️ <strong>Материалы:</em> Способность деталей выдерживать высокие температуры без разрушения.</li>
+</ul>
+
+<h2 id="теплообмен-и-количество-теплоты">Теплообмен и количество теплоты</h2>
+<p>В процессе работы двигателя происходит передача энергии. Пусть <em>Q₁</em> — это количество теплоты, полученное от нагревателя, а <em>Q₂</em> — количество теплоты, отданное холодильнику. Полезная работа <em>A</em> равна разности этих величин: <code>A = Q₁ - Q₂</code>.</p>
+<p>Для идеального газа в цикле Карно отношение переданных теплот равно отношению температур: <code>Q₂ / Q₁ = T₂ / T₁</code>. В нашем случае это отношение равно 300 / 500 = 0,6. Следовательно, если двигатель получил от нагревателя 1000 Дж энергии, то 600 Дж он обязан отдать холодильнику, а 400 Дж превратить в работу.</p>
+<details class="pb-accordion"><summary>Почему нельзя отдать холодильнику 0 Дж теплоты?</summary><div class="pb-accordion-body"><p>Если Q₂ = 0, то КПД был бы равен 100%. Это означало бы создание вечного двигателя второго рода, что запрещено законами термодинамики. Часть энергии всегда рассеивается.</p></div></details>
+<p>Теплообмен происходит через специальные поверхности. Нагреватель должен интенсивно отдавать тепло рабочему телу (газу или пару), а холодильник — эффективно отбирать его. Скорость этого процесса зависит от разности температур, которая у нас фиксирована на уровне 200 К.</p>
+<p>В реальных установках инженеры стремятся минимизировать потери при теплообмене. Однако даже при идеальных условиях <mark>разница в 200 К между 500 К и 300 К</mark> диктует жесткие рамки возможной эффективности. Увеличить работу можно только за счет увеличения объема потребляемого топлива или повышения температуры сгорания.</p>
+
+<h2 id="рабочее-тело-и-его-состояние">Рабочее тело и его состояние</h2>
+<p>В качестве рабочего тела в таких циклах чаще всего выступает идеальный газ. Его состояние описывается уравнением Менделеева-Клапейрона. При температуре 500 К газ находится в состоянии высокого давления и объема (после расширения), а при 300 К он сжат.</p>
+<p>Процессы, происходящие с газом, делятся на изотермические и адиабатные. Во время изотермического расширения при температуре нагревателя (500 К) газ получает тепло и совершает работу. Во время изотермического сжатия при температуре холодильника (300 К) газ отдает тепло внешней среде.</p>
+<p>Адиабатные процессы связывают эти две изотермы. В ходе адиабатного расширения температура газа падает с 500 К до 300 К без теплообмена. При адиабатном сжатии температура вновь растет с 300 К до 500 К.</p>
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Значение</th>
+<th>Единица измерения</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Температура нагревателя (T₁)</td>
+<td>500</td>
+<td>К (Кельвин)</td>
+</tr>
+<tr>
+<td>Температура холодильника (T₂)</td>
+<td>300</td>
+<td>К (Кельвин)</td>
+</tr>
+<tr>
+<td>Разность температур (ΔT)</td>
+<td>200</td>
+<td>К</td>
+</tr>
+<tr>
+<td>Максимальный КПД (η)</td>
+<td>0.4</td>
+<td>(40%)</td>
+</tr>
+</tbody>
+</table></div>
+
+<h2 id="влияние-параметров-на-мощность-двигателя">Влияние параметров на мощность двигателя</h2>
+<p>КПД показывает эффективность, но не мощность. Мощность зависит от того, как быстро протекают процессы. Даже при фиксированных 500 К и 300 К можно создать маленький двигатель низкой мощности или огромную турбину.</p>
+<p>Однако, если мы хотим увеличить мощность, сохраняя КПД, нам нужно увеличивать количество циклов в секунду или объем рабочего тела. При этом тепловая нагрузка на детали растет. Материалы, контактирующие с нагревателем, должны выдерживать 500 К без потери прочности.</p>
+<div class="pb-poll" id="poll-62f61b85"><div class="pb-poll-question">📊 Какой параметр важнее для двигателя?</div><div class="pb-poll-option" data-poll="62f61b85" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Максимальный КПД</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="62f61b85" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Высокая мощность</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="62f61b85" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Низкая стоимость</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="62f61b85" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Экологичность</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+<p>С другой стороны, если температура холодильника (300 К) является температурой окружающей среды, то понизить её искусственно (например, до 250 К) было бы энергозатратно. Поэтому в наземных двигателях <em>T₂</strong> часто ограничена климатическими условиями.</p>
+<p>Рассмотрим основные направления модернизации таких систем:</p>
+<ul>
+<li>🚀 <strong>Повышение жаропрочности:</strong> Использование керамических композитов для работы при T₁ > 500 К.</li>
+<li>💨 <strong>Улучшение аэродинамики:</strong> Снижение потерь на трение рабочего тела о стенки.</li>
+<li>♻️ <strong>Утилизация тепла:</em> Использование энергии, отдаваемой холодильнику, для других нужд (когенерация).</li>
+</ul>
+
+<h2 id="практическое-применение-и-ограничения">Практическое применение и ограничения</h2>
+<p>Задача с температурой нагревателя 500 К и холодильника 300 К типична для учебных курсов, но она имеет прямые аналоги в промышленности. Например, паровые турбины могут работать при более высоких температурах, но принцип остается тем же. Двигатели Стирлинга также близки к идеальному циклу.</p>
+<blockquote>
+<p>⚠️ Внимание: В реальных условиях температура "холодильника" не всегда постоянна. Летом она может быть 310-320 К, что снижает КПД двигателя. Зимой, при 270 К, эффективность возрастает.</p>
+</blockquote>
+<p>Важно отметить, что 500 К — это не предел. Современные газовые турбины работают при температурах, превышающих 1500 К, что требует сложнейших систем охлаждения лопаток. Однако для базового понимания термодинамики связка 500/300 К является "золотым стандартом" для расчетов.</p>
+<p>Инженерам необходимо учитывать, что реальный цикл всегда отличается от идеального. Потери на трение поршней, негерметичность клапанов и конечная скорость теплообмена снижают итоговый результат. Поэтому реальный КПД двигателя с такими параметрами составит около 30-35%, а не теоретические 40%.</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Разница температур в 200 К является движущей силой, но реализовать полный потенциал этой разницы можно только в идеально изолированной системе без трения.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+<details>
+<summary>Что произойдет с КПД, если температуру нагревателя увеличить до 600 К?</summary>
+<p>Если T₁ станет 600 К, а T₂ останется 300 К, то разность температур составит 300 К. Новый КПД будет равен 300/600 = 0,5 (50%). Эффективность вырастет на 10 процентных пунктов.</p>
+</details>
+<details>
+<summary>Почему нельзя сделать холодильник с температурой 0 К?</summary>
+<p>Абсолютный ноль (0 К) недостижим согласно третьему закону термодинамики. Кроме того, для поддержания такой низкой температуры потребовалось бы затратить больше энергии, чем выработает двигатель.</p>
+</details>
+<details>
+<summary>Зависит ли КПД от вида топлива?</summary>
+<p>Для идеального цикла Карно — нет, КПД зависит только от температур. Однако в реальности вид топлива влияет на максимальную температуру горения, которую можно достичь (параметр T₁).</p>
+</details>
+<details>
+<summary>Может ли КПД быть больше 1?</summary>
+<p>Нет, КПД больше 1 (или 100%) означал бы создание энергии из ничего, что противоречит закону сохранения энергии. Максимально возможный КПД всегда меньше единицы.</p>
+</details>
+<details>
+<summary>Как перевести 500 К в градусы Цельсия?</summary>
+<p>Для перевода нужно вычесть 273,15. 500 - 273,15 = 226,85°C. Температура холодильника 300 К равна 26,85°C.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kakaya-nagruzka-na-polki-v-kholodilnike.html" class="pb-related-card">
+                <span class="pb-related-title">Нагрузка на полки в холодильнике: нормы, схемы и безопасность</span>
+                <span class="pb-related-desc">Какая нагрузка допустима на полки в холодильнике? Таблица грузоподъемности, правила расстановки прод</span>
+            </a><a href="/articles/s/st/staticheskaya-sistema-okhlazhdeniya-kholodilnika-chto-eto-takoe.html" class="pb-related-card">
+                <span class="pb-related-title">Статическая система охлаждения холодильника: что это и как работает</span>
+                <span class="pb-related-desc">Полный разбор статической системы охлаждения холодильника: принцип работы, плюсы и минусы, отличие о</span>
+            </a><a href="/articles/k/ka/kak-snyat-ruchki-s-kholodilnika-lg.html" class="pb-related-card">
+                <span class="pb-related-title">Как снять ручки с холодильника LG: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробная инструкция, как снять ручки с холодильника LG. Разборка моделей с потайными винтами и накл</span>
+            </a><a href="/articles/k/ka/kakie-lampochki-v-kholodilnike-khotpoint-ariston.html" class="pb-related-card">
+                <span class="pb-related-title">Какие лампочки в холодильнике Хотпоинт Аристон: выбор и замена</span>
+                <span class="pb-related-desc">Узнайте, какие лампочки нужны для холодильника Hotpoint Ariston. Типы цоколей E14 и G4, мощность 15-</span>
+            </a><a href="/articles/g/gd/gde-kupit-vyklyuchatel-sveta-dlya-kholodilnika.html" class="pb-related-card">
+                <span class="pb-related-title">Где купить выключатель света для холодильника: адреса и модели</span>
+                <span class="pb-related-desc">Ищете, где купить выключатель света для холодильника? Полный гид: интернет-магазины, рынки, артикулы</span>
+            </a><a href="/articles/c/ch/chto-takoe-frost-v-kholodilnikakh.html" class="pb-related-card">
+                <span class="pb-related-title">Что такое фрост в холодильниках: виды, устройство и уход</span>
+                <span class="pb-related-desc">Полный разбор технологий No Frost и Direct Cool. Как работает система оттайки, нужно ли размораживат</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>КПД тепловой машины: расчет, формулы и объяснение задачи — Холодильник Инфо</title>
+    <meta name="description" content="Как найти КПД, если машина получила 100 Дж и отдала 60 Дж? Полный разбор формулы, теории и практического применения в физике.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/t/te/teplovaya-mashina-za-tsikl-poluchaet-ot-nagrevatelya-100-dzh-i-otdaet-kholodilniku-60-dzh-chemu-raven-kpd.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="КПД тепловой машины: расчет, формулы и объяснение задачи">
+    <meta property="og:description" content="Как найти КПД, если машина получила 100 Дж и отдала 60 Дж? Полный разбор формулы, теории и практического применения в физике.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ustrojstvo-i-detali/">Устройство и детали</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">КПД тепловой машины: расчет, формулы и объяснение задачи</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#физическая-сущность-теплового-цикла">Физическая сущность теплового цикла</a></li><li><a href="#математический-расчет-эффективности">Математический расчет эффективности</a></li><li><a href="#сравнение-параметров-тепловых-машин">Сравнение параметров тепловых машин</a></li><li><a href="#влияние-температур-на-эффективность">Влияние температур на эффективность</a></li><li><a href="#практическое-применение-расчетов">Практическое применение расчетов</a></li><li><a href="#ограничения-и-законы-термодинамики">Ограничения и законы термодинамики</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/g/gd/gde-kupit-datchik-na-kholodilnik.html">Где купить датчик на холодильник: цены, бренды и советы по выбору</a></li><li><a href="/articles/k/ka/kak-rabotaet-nou-frost-v-kholodilnike-ariston.html">Как работает Ноу Фрост в холодильнике Аристон: принцип действия</a></li><li><a href="/articles/k/ka/kak-podklyuchit-dvigatel-ot-kholodilnika-s-tremya-vykhodami.html">Как подключить двигатель от холодильника с 3 выходами: схема и инструкция</a></li><li><a href="/articles/e/es/esli-vy-postavite-kholodilnik-v-komnate-gde-temperatura-dostigaet-30-gradusov-to-potreblenie-energii.html">Холодильник при 30 градусах: расход энергии, риски и нормы</a></li><li><a href="/articles/k/ka/kak-nazvat-kholodilnik-po-drugomu.html">Как назвать холодильник по-другому: синонимы и термины</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Расчет КПД тепловой машины: от теории к решению задач</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#физическая-сущность-теплового-цикла">Физическая сущность теплового цикла</a></li><li><a href="#математический-расчет-эффективности">Математический расчет эффективности</a></li><li><a href="#сравнение-параметров-тепловых-машин">Сравнение параметров тепловых машин</a></li><li><a href="#влияние-температур-на-эффективность">Влияние температур на эффективность</a></li><li><a href="#практическое-применение-расчетов">Практическое применение расчетов</a></li><li><a href="#ограничения-и-законы-термодинамики">Ограничения и законы термодинамики</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>В физике часто встречаются задачи, где необходимо быстро и точно определить эффективность работы устройства. Классическим примером является ситуация, когда тепловая машина за цикл получает от нагревателя 100 дж и отдает холодильнику 60 дж, и требуется найти, чему равен её коэффициент полезного действия (КПД). Понимание этого процесса фундаментально для изучения термодинамики и оценки реальных двигателей.</p>
+
+<p>Ответ на поставленный вопрос кроется в соотношении полезной работы и затраченной энергии. В данном конкретном случае, когда входная энергия составляет 100 джоулей, а потери в холодильник уносят 60 джоулей, эффективность работы цикла будет равна 40%. Это означает, что лишь две пятых части всей полученной энергии превращаются в полезную механическую работу.</p>
+
+<p>Однако простое подставление цифр в формулу не дает полного понимания физических процессов. Важно разобраться, почему энергия не может быть превращена в работу полностью и как именно происходит этот обмен теплотой между разными телами. Мы подробно рассмотрим теоретические основы, которые стоят за этими вычислениями.</p>
+
+<h2 id="физическая-сущность-теплового-цикла">Физическая сущность теплового цикла</h2>
+
+<p>Любая тепловая машина работает по принципу циклического процесса. <strong>Рабочее тело</strong>, которое может быть газом или паром, получает определенное количество теплоты от источника с высокой температурой, называемого нагревателем. В условиях нашей задачи это количество энергии равно 100 джоулям. Это стартовая точка любого термодинамического цикла.</p>
+
+<p>Полученная энергия не исчезает бесследно. Часть её расходуется на совершение механической работы, например, на движение поршня или вращение турбины. Оставшаяся часть энергии, которую невозможно превратить в работу из-за законов природы, передается телу с более низкой температурой, именуемому холодильником. В рассматриваемом примере холодильнику передается 60 джоулей энергии.</p>
+
+<blockquote>
+<p>⚠️ Внимание: В реальных физических системах невозможно создать машину, которая превращала бы 100% полученной теплоты в работу. Часть энергии всегда будет отдаваться холодильнику, будь то окружающий воздух или специальная охлаждающая система.</p>
+</blockquote>
+
+<p>Разница между полученной от нагревателя энергией и отданной холодильнику как раз и составляет ту самую полезную работу. Именно этот баланс энергий позволяет нам судить о том, насколько эффективно работает механизм. Если бы машина отдавала холодильнику столько же, сколько получила, полезная работа была бы равна нулю.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Запомните простое правило: полезная работа всегда равна разности между теплотой, полученной от нагревателя, и теплотой, отданной холодильнику.</p></aside>
+
+<h2 id="математический-расчет-эффективности">Математический расчет эффективности</h2>
+
+<p>Для определения эффективности работы тепловой машины используется специальная формула, связывающая работу и затраченное тепло. Коэффициент полезного действия (КПД), обозначаемый греческой буквой <em>эта</em>, представляет собой отношение полезной работы к количеству теплоты, полученному от нагревателя.</p>
+
+<p>Рассмотрим расчет пошагово, опираясь на данные из условия задачи:</p>
+<ul>
+    <li>🔢 Сначала определим полезную работу: она равна разности полученной энергии (100 Дж) и отданной энергии (60 Дж), что составляет 40 Дж.</li>
+    <li>📉 Затем разделим полученную работу на полную затраченную энергию: 40 делим на 100.</li>
+    <li>📊 В результате получаем дробное число 0,4, которое при переводе в проценты дает искомые 40%.</li>
+</ul>
+
+<p>Важно понимать, что <strong>КПД</strong> — это безразмерная величина. Она показывает долю полезной энергии в общем балансе. В нашем примере значение 0,4 говорит о том, что 40% энергии идет на выполнение полезной функции, а 60% теряется, переходя к холодильнику.</p>
+
+<p>Формула для расчета выглядит следующим образом:</p>
+<pre><code>η = (Q1 - Q2) / Q1</code></pre>
+<p>Где Q1 — теплота от нагревателя (100 Дж), а Q2 — теплота холодильнику (60 Дж).</p>
+
+<h2 id="сравнение-параметров-тепловых-машин">Сравнение параметров тепловых машин</h2>
+
+<p>Чтобы лучше понять, насколько эффективна машина с КПД 40%, полезно сравнить её с другими возможными вариантами устройств. Различные типы двигателей имеют разную эффективность преобразования энергии. Ниже приведена таблица, демонстрирующая распределение энергии в разных сценариях.</p>
+
+<div class="pb-table-wrap"><table>
+    <thead>
+        <tr>
+            <th>Тип машины</th>
+            <th>Q1 (Дж)</th>
+            <th>Q2 (Дж)</th>
+            <th>КПД (%)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Наша задача</td>
+            <td>100</td>
+            <td>60</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>Паровая машина</td>
+            <td>100</td>
+            <td>85</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>Двигатель Карно</td>
+            <td>100</td>
+            <td>30</td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td>Реальный ДВС</td>
+            <td>100</td>
+            <td>75</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+</table></div>
+
+<p>Как видно из таблицы, значение 40% является достаточно высоким показателем для многих реальных устройств, но недостижимым идеалом. <strong>Цикл Карно</strong>, который является теоретическим пределом эффективности, в данном сравнении показывает лучший результат, однако в реальности создать такую машину невозможно из-за трения и теплопотерь.</p>
+
+<p>Сравнение помогает инженерам оценивать, насколько близко их разработки подходят к теоретическому максимуму. Увеличение разницы между температурой нагревателя и холодильника — основной путь повышения эффективности.</p>
+
+<div class="pb-poll" id="poll-ef703c98"><div class="pb-poll-question">📊 Какой показатель КПД вы считаете реалистичным для современного двигателя?</div><div class="pb-poll-option" data-poll="ef703c98" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">10-20%</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="ef703c98" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">30-40%</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="ef703c98" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">50-60%</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="ef703c98" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Более 70%</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="влияние-температур-на-эффективность">Влияние температур на эффективность</h2>
+
+<p>Хотя в задаче даны значения энергии в джоулях, эффективность тепловой машины напрямую зависит от температур нагревателя и холодильника. Чем выше температура нагревателя и ниже температура холодильника, тем больше теоретически возможный <strong>КПД</strong>.</p>
+
+<p>Это связано с тем, что теплота самопроизвольно переходит только от горячего тела к холодному. Чтобы превратить эту теплоту в работу, нужен перепад температур. Если бы температуры были равны, поток энергии прекратился бы, и работа стала невозможной.</p>
+
+<blockquote>
+<p>⚠️ Внимание: При решении задач всегда проверяйте единицы измерения. Если температуры даны в градусах Цельсия, для термодинамических расчетов их необходимо переводить в Кельвины, добавляя 273.</p>
+</blockquote>
+
+<p>В реальных двигателях внутреннего сгорания температура сгорания топлива может достигать тысяч градусов, что обеспечивает высокий потенциал эффективности. Однако материалы двигателя не выдерживают экстремальных температур, что накладывает ограничения на практическое применение теории.</p>
+
+<details class="pb-accordion"><summary>Почему нельзя охладить холодильник до абсолютного нуля?</summary><div class="pb-accordion-body"><p>Абсолютный ноль (-273.15 °C) — это предельная низкая температура, достижение которой невозможно согласно третьему закону термодинамики. Даже если бы мы могли создать такой холодильник, затраты энергии на его охлаждение превысили бы выгоду от повышения КПД машины.</p></div></details>
+
+<h2 id="практическое-применение-расчетов">Практическое применение расчетов</h2>
+
+<p>Знание того, как рассчитывать эффективность, необходимо не только для решения школьных задач, но и для инженерной практики. При проектировании электростанций, двигателей автомобилей и даже холодильных установок инженеры постоянно оперируют этими значениями.</p>
+
+<p>Одной из главных задач современной энергетики является повышение КПД. Увеличение эффективности даже на несколько процентов в масштабах крупной электростанции дает колоссальную экономию топлива и снижает вредные выбросы в атмосферу.</p>
+
+<p>Для систематизации процесса расчета эффективности можно использовать следующий алгоритм действий:</p>
+<ul>
+    <li>📝 Запишите данные задачи: количество теплоты от нагревателя (Q1) и холодильнику (Q2).</li>
+    <li>🧮 Вычислите полезную работу по формуле A = Q1 - Q2.</li>
+    <li>📐 Разделите работу на Q1 и умножьте на 100%, чтобы получить ответ в процентах.</li>
+    <li>✅ Проверьте логику: КПД не может быть больше 100% и меньше 0%.</li>
+</ul>
+
+<p>Такой подход позволяет минимизировать ошибки при вычислениях. Важно также помнить, что в реальных условиях всегда существуют дополнительные потери, не учтенные в идеализированной модели задачи.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка решения задачи</h4><label class="check-item"><input type="checkbox"><span>Данные записаны правильно: Q1=100, Q2=60</span></label><label class="check-item"><input type="checkbox"><span>Найдена разница: 100-60=40</span></label><label class="check-item"><input type="checkbox"><span>Выполнено деление: 40/100=0.4</span></label><label class="check-item"><input type="checkbox"><span>Ответ переведен в проценты: 40%</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="ограничения-и-законы-термодинамики">Ограничения и законы термодинамики</h2>
+
+<p>Существует фундаментальный предел эффективности, который нельзя превысить ни в одной тепловой машине. Этот предел задается <strong>вторым законом термодинамики</strong>. Он гласит, что невозможно создать периодически действующий двигатель, который совершал бы работу, только охлаждая одно тело.</p>
+
+<p>Это означает, что наличие холодильника, которому отдается часть энергии, является обязательным условием работы любой тепловой машины. Невозможно превратить всю теплоту (100 джоулей в нашем случае) в работу без остатка.</p>
+
+<p>Идеальная машина, работающая по циклу Карно, имеет максимально возможный КПД для данных температур нагревателя и холодильника. Однако даже она не достигает 100%. В нашей задаче машина с отдачей 60 джоулей имеет запас для улучшения, так как теоретический предел может быть выше.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Законы термодинамики являются универсальными. Никакие новые технологии или изобретения не могут нарушить запрет на создание вечного двигателя второго рода.</p>
+</blockquote>
+
+<p>Понимание этих ограничений помогает избежать futile attempts создать сверхэффективные устройства, нарушающие законы физики. Инженеры сосредотачиваются на приближении к теоретическому максимуму, а не на его преодолении.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Максимально возможный КПД зависит только от температур нагревателя и холодильника и не может достигать 100%.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+    <summary>Может ли КПД тепловой машины быть равен 100%?</summary>
+    <p>Нет, это невозможно согласно второму закону термодинамики. Часть энергии всегда должна отдаваться холодильнику. КПД всегда меньше единицы (или 100%).</p>
+</details>
+
+<details>
+    <summary>Что произойдет, если уменьшить отдачу холодильнику до 50 Дж?</summary>
+    <p>Если Q2 уменьшится до 50 Дж при том же Q1 (100 Дж), то полезная работа вырастет до 50 Дж. КПД в этом случае составит 50%, что означает повышение эффективности машины.</p>
+</details>
+
+<details>
+    <summary>Зависит ли КПД от вида топлива?</summary>
+    <p>Непосредственно в формуле КПД вид топлива не фигурирует, важны только количества теплоты Q1 и Q2. Однако вид топлива влияет на максимальную температуру нагревателя, что косвенно определяет теоретический предел эффективности.</p>
+</details>
+
+<details>
+    <summary>Почему в задаче используются именно джоули?</summary>
+    <p>Джоуль — это стандартная единица измерения энергии и работы в системе СИ. Использование единой системы единиц позволяет проводить корректные расчеты и сравнивать результаты разных experiments.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/g/gd/gde-kupit-datchik-na-kholodilnik.html" class="pb-related-card">
+                <span class="pb-related-title">Где купить датчик на холодильник: цены, бренды и советы по выбору</span>
+                <span class="pb-related-desc">Ищете, где купить датчик на холодильник? Полный гид по выбору температурного сенсора, совместимости </span>
+            </a><a href="/articles/k/ka/kak-rabotaet-nou-frost-v-kholodilnike-ariston.html" class="pb-related-card">
+                <span class="pb-related-title">Как работает Ноу Фрост в холодильнике Аристон: принцип действия</span>
+                <span class="pb-related-desc">Подробный разбор системы No Frost в холодильниках Ariston. Устройство испарителя, работа тэна и вент</span>
+            </a><a href="/articles/k/ka/kak-podklyuchit-dvigatel-ot-kholodilnika-s-tremya-vykhodami.html" class="pb-related-card">
+                <span class="pb-related-title">Как подключить двигатель от холодильника с 3 выходами: схема и инструкция</span>
+                <span class="pb-related-desc">Подробная инструкция, как подключить компрессор от холодильника. Схема подключения с тремя выводами,</span>
+            </a><a href="/articles/e/es/esli-vy-postavite-kholodilnik-v-komnate-gde-temperatura-dostigaet-30-gradusov-to-potreblenie-energii.html" class="pb-related-card">
+                <span class="pb-related-title">Холодильник при 30 градусах: расход энергии, риски и нормы</span>
+                <span class="pb-related-desc">Как работает холодильник при температуре +30°C? Узнайте, как изменится расход электроэнергии, износ </span>
+            </a><a href="/articles/k/ka/kak-nazvat-kholodilnik-po-drugomu.html" class="pb-related-card">
+                <span class="pb-related-title">Как назвать холодильник по-другому: синонимы и термины</span>
+                <span class="pb-related-desc">Как еще называют холодильник? Обзор бытовых, профессиональных и сленговых названий. Синонимы, жаргон</span>
+            </a><a href="/articles/c/ch/child-lock-na-kholodilnike-chto-eto-takoe.html" class="pb-related-card">
+                <span class="pb-related-title">Child Lock на холодильнике: что это и как включить</span>
+                <span class="pb-related-desc">Подробный разбор функции Child Lock в холодильниках. Узнайте, как активировать блокировку панели, дл</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

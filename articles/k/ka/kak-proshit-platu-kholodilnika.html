@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Прошивка платы холодильника: инструкция по обновлению ПО — Холодильник Инфо</title>
+    <meta name="description" content="Подробная инструкция по прошивке модуля управления холодильника. Разбор методов обновления ПО через USB и сервисное меню. Диагностика и устранение ошибок.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/k/ka/kak-proshit-platu-kholodilnika.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Прошивка платы холодильника: инструкция по обновлению ПО">
+    <meta property="og:description" content="Подробная инструкция по прошивке модуля управления холодильника. Разбор методов обновления ПО через USB и сервисное меню. Диагностика и устранение ошибок.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-nav-active">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/remont-svoimi-rukami/">Ремонт своими руками</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Прошивка платы холодильника: инструкция по обновлению ПО</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#диагностика-и-подготовка-к-перепрошивке">Диагностика и подготовка к перепрошивке</a></li><li><a href="#необходимое-оборудование-и-программное-обеспечение">Необходимое оборудование и программное обеспечение</a></li><li><a href="#методы-прошивки-usb-сервисное-меню-и-программатор">Методы прошивки: USB, сервисное меню и программатор</a></li><li><a href="#пошаговая-инструкция-по-прошивке-через-программатор">Пошаговая инструкция по прошивке через программатор</a></li><li><a href="#таблица-распространенных-ошибок-и-их-устранение">Таблица распространенных ошибок и их устранение</a></li><li><a href="#частые-ошибки-при-обновлении-по-и-как-их-избежать">Частые ошибки при обновлении ПО и как их избежать</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-opredelit-chto-ne-rabotaet-termoregulyator-v-kholodilnike.html">Как понять, что сломан терморегулятор холодильника: признаки и проверка</a></li><li><a href="/articles/p/po/pochemu-ne-rabotaet-staryj-kholodilnik.html">Почему не работает старый холодильник: диагностика неисправностей</a></li><li><a href="/articles/k/ka/kak-otregulirovat-dver-kholodilnika-atlant.html">Как отрегулировать дверь холодильника Атлант: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-proverit-datchik-temperatury-v-kholodilnike-nou-frost.html">Как проверить датчик температуры в холодильнике No Frost: пошаговая инструкция</a></li><li><a href="/articles/k/kh/kholodilnik-vklyuchaetsya-i-srazu-otklyuchaetsya-pochemu.html">Холодильник включается и сразу отключается: причины и ремонт</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Прошивка платы холодильника: пошаговая инструкция и нюансы</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#диагностика-и-подготовка-к-перепрошивке">Диагностика и подготовка к перепрошивке</a></li><li><a href="#необходимое-оборудование-и-программное-обеспечение">Необходимое оборудование и программное обеспечение</a></li><li><a href="#методы-прошивки-usb-сервисное-меню-и-программатор">Методы прошивки: USB, сервисное меню и программатор</a></li><li><a href="#пошаговая-инструкция-по-прошивке-через-программатор">Пошаговая инструкция по прошивке через программатор</a></li><li><a href="#таблица-распространенных-ошибок-и-их-устранение">Таблица распространенных ошибок и их устранение</a></li><li><a href="#частые-ошибки-при-обновлении-по-и-как-их-избежать">Частые ошибки при обновлении ПО и как их избежать</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>В современных моделях холодильников, особенно оснащенных инверторными компрессорами и системами No Frost, электроника играет роль головного мозга. Именно программное обеспечение (ПО) модуля управления координирует работу всех узлов, от датчиков температуры до компрессора. Иногда возникает необходимость обновить или восстановить прошивку платы. Это может потребоваться после скачка напряжения, сбоя в работе электроники или при установке новой платы управления, которая поставляется без предустановленного ПО.</p>
+
+<p>Процесс перепрошивки — это не просто замена деталей, а тонкая настройка логической части устройства. Ошибки в этом процессе могут привести к тому, что холодильник перестанет реагировать на команды или будет работать в аварийном режиме. <strong>Программатор</strong> для холодильников — это специализированное устройство, позволяющее записывать код непосредственно в память микросхемы. В некоторых случаях можно обойтись без сложного оборудования, используя встроенные функции сервиса, но это зависит от конкретной модели и производителя.</p>
+
+<p>Прежде чем приступать к активным действиям, необходимо убедиться в диагнозе. Часто проблемы, которые пользователи принимают за сбой ПО, на самом деле являются неисправностью аппаратной части: сгоревших конденсаторов, реле или датчиков. Если вы уверены, что проблема кроется именно в программном обеспечении, то дальнейшие действия потребуют внимательности и соблюдения мер безопасности. <mark>Прошивка контроллера холодильника без соответствующего оборудования и знаний может привести к необратимому выходу платы из строя.</mark></p>
+
+<h2 id="диагностика-и-подготовка-к-перепрошивке">Диагностика и подготовка к перепрошивке</h2>
+
+<p>Первым этапом всегда должна быть тщательная диагностика. Не спешите разбирать агрегат, пока не убедитесь в необходимости вмешательства. Современные холодильники, такие как <em>LG</em>, <em>Samsung</em> или <em>Bosch</em>, часто имеют систему самодиагностики. Вывод кода ошибки на дисплей или мигание индикаторов в определенной последовательности может указать на сбой в памяти EEPROM.</p>
+
+<p>> ⚠️ <strong>Внимание:</strong> Перед началом любых работ по диагностике и ремонту обязательно отключите холодильник от электросети. Работа с электроникой под напряжением запрещена и опасна для жизни.</p>
+
+<p>Для проведения работ вам потребуется базовый набор инструментов. Это не только отвертки, но и мультиметр для проверки цепей питания. Если вы планируете использовать внешний программатор, убедитесь, что он совместим с типом микросхемы на вашей плате. Часто встречаются чипы серий 24Cxx или 25xx, но могут быть и другие варианты.</p>
+
+<ul>
+<li>🔧 Набор отверток с изолированными ручками для вскрытия корпуса.</li>
+<li>🔌 Мультиметр для проверки напряжения и целостности контактов.</li>
+<li>💻 Программатор (например, CH341A) и клипса для подключения к микросхеме.</li>
+<li>📥 Файл прошивки, соответствующий точной модели вашего холодильника.</li>
+</ul>
+
+<p>Важно найти точную модель вашего устройства. Она обычно указана на наклейке внутри холодильной камеры или на задней стенке. Прошивка от холодильника <em>Samsung RB30</em> может не подойти для модели <em>RB32</em> даже при визуальной идентичности плат. Различия могут заключаться в алгоритмах работы компрессора или калибровке датчиков.</p>
+
+<div class="pb-poll" id="poll-eee849da"><div class="pb-poll-question">📊 С каким производителем холодильника вы столкнулись?</div><div class="pb-poll-option" data-poll="eee849da" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">LG</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="eee849da" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Samsung</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="eee849da" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Bosch</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="eee849da" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Indesit</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="eee849da" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Другой</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="необходимое-оборудование-и-программное-обеспечение">Необходимое оборудование и программное обеспечение</h2>
+
+<p>Для успешной перепрошивки недостаточно просто скачать файл из интернета. Вам потребуется специализированное оборудование. Если производитель предусмотрел обновление через USB-порт, то достаточно будет флеш-накопителя. Однако в большинстве случаев, особенно при ремонте модулей управления, требуется прямой доступ к памяти.</p>
+
+<p>Наиболее универсальным инструментом считается программатор <em>CH341A</em>. Это недорогое устройство, которое подключается к компьютеру через USB и позволяет считывать и записывать данные в различные типы микросхем. Для работы с платой холодильника часто используется клипса-адаптер, которая позволяет подключиться к выводам чипа без выпаивания.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Интерфейсы сервисных меню и методы доступа к ним могут меняться в зависимости от версии программного обеспечения производителя. Всегда сверяйте актуальные данные для вашей конкретной серии холодильников в официальной технической документации.</p>
+</blockquote>
+
+<p>Кроме hardware-части, нужен соответствующий софт. Для программатора <em>CH341A</em> обычно используется стандартная утилита, идущая в комплекте. Она позволяет выбрать тип микросхемы, прочитать текущий дамп (резервную копию) и записать новый файл. Файлы прошивок имеют расширения <code>.bin</code>, <code>.hex</code> или <code>.rom</code>.</p>
+
+<ul>
+<li>💾 Программное обеспечение для работы с программатором (например, NeoProgrammer).</li>
+<li>📂 Архив с дампами прошивок для вашей модели холодильника.</li>
+<li>🔌 Адаптер-клипса SOIC8 для подключения к микросхеме на плате.</li>
+</ul>
+
+<h2 id="методы-прошивки-usb-сервисное-меню-и-программатор">Методы прошивки: USB, сервисное меню и программатор</h2>
+
+<p>Существует несколько способов обновления ПО, и выбор зависит от доступных ресурсов и модели холодильника. Самый простой и безопасный метод — обновление через USB-порт. Многие современные модели поддерживают эту функцию. Вам нужно скачать файл обновления на флешку, отформатированную в FAT32, вставить её в порт холодильника и запустить процесс через меню или комбинацию кнопок.</p>
+
+<p>Второй метод — вход в сервисное меню. Инженеры используют его для тестирования, но иногда там скрыта функция сброса или обновления. Вход в такое меню осуществляется через секретные комбинации кнопок на панели управления. Например, на некоторых моделях <em>LG</em> нужно одновременно зажать кнопки "Freezer" и "Fridge" на несколько секунд.</p>
+
+<p>> ⚠️ <strong>Внимание:</strong> Вход в сервисное меню и изменение параметров без точного понимания их назначения может сбить заводские калибровки. Это приведет к некорректной работе температурных режимов.</p>
+
+<p>Третий, самый сложный метод — прямая перепрошивка микросхемы. Он применяется, когда холодильник не включается, не реагирует на кнопки или USB-метод не работает. В этом случае модуль управления снимается, и прошивка считывается/записывается напрямую с чипа памяти. Этот метод требует навыков пайки или работы с клипсой.</p>
+
+<details class="pb-accordion"><summary>Риски использования чужих прошивок</summary><div class="pb-accordion-body"><p>Использование прошивки от другой модели может привести к тому, что компрессор будет работать непрерывно, не выключаясь, что вызовет его перегрев и быстрый выход из строя. Также могут некорректно работать датчики оттайки.</p></div></details>
+
+<h2 id="пошаговая-инструкция-по-прошивке-через-программатор">Пошаговая инструкция по прошивке через программатор</h2>
+
+<p>Если вы выбрали путь прямого программирования микросхемы, следуйте алгоритму действий. Сначала необходимо обеспечить доступ к плате управления. Снимите защитную крышку модуля, обычно она находится в верхней части холодильника или за цоколем. Найдите на плате микросхему памяти, часто она маркирована как EEPROM или Flash.</p>
+
+<p>Процесс записи данных требует стабильного соединения. Если вы используете клипсу, убедитbiтесь, что контакты плотно прилегают к ножкам микросхемы. Любое дрожание рук или смещение может прервать запись и повредить данные.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Алгоритм прошивки платы</h4><label class="check-item"><input type="checkbox"><span>Снять плату управления и найти микросхему памяти</span></label><label class="check-item"><input type="checkbox"><span>Подключить программатор через клипсу к чипу</span></label><label class="check-item"><input type="checkbox"><span>Считать и сохранить резервную копию (дам)</span></label><label class="check-item"><input type="checkbox"><span>Записать новый файл прошивки в микросхему</span></label><label class="check-item"><input type="checkbox"><span>Проверить контрольную сумму и установить плату обратно</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<p>После подключения программатора к компьютеру запустите утилиту. Выберите тип вашей микросхемы из списка. Первым делом нажмите кнопку "Read" (Считать), чтобы сохранить текущее содержимое памяти в файл на компьютере. Это ваша страховка на случай, если новая прошивка не заработает. Затем откройте файл новой прошивки и нажмите "Write" (Записать).</p>
+
+<p>После успешной записи проверьте данные кнопкой "Verify". Если проверка пройдена, можно отключать программатор и устанавливать плату на место. При первом включении холодильник может долго "думать" и проводить первичную инициализацию систем.</p>
+
+<h2 id="таблица-распространенных-ошибок-и-их-устранение">Таблица распространенных ошибок и их устранение</h2>
+
+<p>В процессе прошивки могут возникать различные ошибки. Понимание их природы поможет быстрее решить проблему. Ниже приведена таблица с наиболее частыми симптомами и методами их устранения.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Симптом</th>
+<th>Возможная причина</th>
+<th>Метод устранения</th>
+</tr>
+<tr>
+<td>Холодильник не включается</td>
+<td>Ошибка в коде прошивки или сбой EEPROM</td>
+<td>Перепрошить плату заново, проверив целостность файла</td>
+</tr>
+<tr>
+<td>Горят все индикаторы</td>
+<td>Сбой инициализации дисплея</td>
+<td>Выполнить полный сброс (Hard Reset) или перепрошить</td>
+</tr>
+<tr>
+<td>Компрессор гудит, но не запускается</td>
+<td>Неверные параметры работы инвертора в ПО</td>
+<td>Установить прошивку строго для данной модели компрессора</td>
+</tr>
+<tr>
+<td>Не работает панель управления</td>
+<td>Несовместимость версии ПО и платы</td>
+<td>Проверить ревизию платы и скачать соответствующую версию</td>
+</tr>
+</tbody>
+</table></div>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Успешная прошивка не гарантирует исправление механических поломок. Если после обновления ПО проблема осталась, ищите неисправность в датчиках, проводке или компрессоре.</p></aside>
+
+<h2 id="частые-ошибки-при-обновлении-по-и-как-их-избежать">Частые ошибки при обновлении ПО и как их избежать</h2>
+
+<p>Одна из самых грубых ошибок — использование прошивки "на глаз". Визуально платы могут быть identical, но иметь разные ревизии. Прошивка, залитая в плату с неверной ревизией, может заблокировать работу контроллера. Всегда сверяйте коды, напечатанные на самой плате и на микросхемах.</p>
+
+<p>Еще одна проблема — прерывание процесса записи. Если во время прошивки дернется провод или моргнет свет, микросхему можно "запороть". В этом случае поможет только полный цикл стирания и записи, либо, в худшем случае, замена чипа памяти. Используйте источник бесперебойного питания или убедитесь в надежности розетки.</p>
+
+<ul>
+<li>🚫 Не пытайтесь прерывать процесс записи, даже если кажется, что он завис.</li>
+<li>🚫 Не используйте файлы прошивок из непроверенных источников без проверки контрольных сумм.</li>
+<li>🚫 Не трогайте другие микросхемы на плате, кроме той, которую планируете прошивать.</li>
+</ul>
+
+<p>Также стоит упомянуть о статическом электричестве. При работе с открытой электроникой всегда используйте антистатический браслет или хотя бы касайтесь заземленного металлического предмета перед касанием платы. Статический разряд может убить чувствительную электронику мгновенно и незаметно.</p>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Можно ли прошить холодильник через USB без программатора?</summary>
+<p>Это возможно только если такая функция предусмотрена производителем для вашей конкретной модели. Обычно это касается обновления ПО для улучшения энергоэффективности или исправления мелких багов. Для восстановления "мертвой" платы USB-метод, как правило, не работает.</p>
+</details>
+
+<details>
+<summary>Где взять оригинальную прошивку для холодильника?</summary>
+<p>Официальные прошивки доступны только авторизованным сервисным центрам через закрытые порталы производителей. В открытом доступе находятся дампы, снятые мастерами с исправных холодильников. Используйте специализированные форумы по ремонту бытовой техники.</p>
+</details>
+
+<details>
+<summary>Сбросит ли прошивка настройки пользователя?</summary>
+<p>Да, при перепрошивке микросхемы памяти все пользовательские настройки, включая температурные режимы и установленные таймеры, будут сброшены к заводским значениям. После включения их придется настроить заново.</p>
+</details>
+
+<details>
+<summary>Что делать, если после прошивки холодильник работает неправильно?</summary>
+<p>Необходимо снова снять плату и восстановить сохраненную ранее резервную копию (дамп) старой прошивки. Если резервной копии нет, придется искать другой файл прошивки или обращаться к профессионалам.</p>
+</details>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Сохраняйте резервные копии (дампы) оригинальных прошивок всех отремонтированных вами холодильников в отдельной папке с указанием модели. Это сэкономит время в будущем, если понадобится восстановить оригинальное ПО.</p></aside></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-opredelit-chto-ne-rabotaet-termoregulyator-v-kholodilnike.html" class="pb-related-card">
+                <span class="pb-related-title">Как понять, что сломан терморегулятор холодильника: признаки и проверка</span>
+                <span class="pb-related-desc">Холодильник не выключается или слабо морозит? Узнайте точные признаки поломки термостата, методы диа</span>
+            </a><a href="/articles/p/po/pochemu-ne-rabotaet-staryj-kholodilnik.html" class="pb-related-card">
+                <span class="pb-related-title">Почему не работает старый холодильник: диагностика неисправностей</span>
+                <span class="pb-related-desc">Старый холодильник перестал морозить? Разбираем причины: от проблем с компрессором до утечки фреона.</span>
+            </a><a href="/articles/k/ka/kak-otregulirovat-dver-kholodilnika-atlant.html" class="pb-related-card">
+                <span class="pb-related-title">Как отрегулировать дверь холодильника Атлант: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробная инструкция по регулировке дверей холодильника Атлант. Устранение перекосов, замена петель </span>
+            </a><a href="/articles/k/ka/kak-proverit-datchik-temperatury-v-kholodilnike-nou-frost.html" class="pb-related-card">
+                <span class="pb-related-title">Как проверить датчик температуры в холодильнике No Frost: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробный гид по диагностике термодатчика в холодильнике No Frost. Методы проверки мультиметром, код</span>
+            </a><a href="/articles/k/kh/kholodilnik-vklyuchaetsya-i-srazu-otklyuchaetsya-pochemu.html" class="pb-related-card">
+                <span class="pb-related-title">Холодильник включается и сразу отключается: причины и ремонт</span>
+                <span class="pb-related-desc">Почему холодильник щелкает и выключается? Разбор причин: пусковое реле, термостат, компрессор. Диагн</span>
+            </a><a href="/articles/k/ka/kak-perevesit-dver-kholodilnika-leran.html" class="pb-related-card">
+                <span class="pb-related-title">Как перевесить дверь холодильника Леран: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробный гид по перевешиванию двери холодильника Leran. Снятие ручек, демонтаж петель, перестановка</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

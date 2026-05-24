@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Холодильник в тепловом двигателе: роль, функции и примеры — Холодильник Инфо</title>
+    <meta name="description" content="Подробный разбор того, что является холодильником в тепловом двигателе. Разбор циклов Карно, Дизеля и конденсации в бытовых приборах.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/c/ch/chto-yavlyaetsya-kholodilnikom-v-teplovom-dvigatele.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Холодильник в тепловом двигателе: роль, функции и примеры">
+    <meta property="og:description" content="Подробный разбор того, что является холодильником в тепловом двигателе. Разбор циклов Карно, Дизеля и конденсации в бытовых приборах.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ustrojstvo-i-detali/">Устройство и детали</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Холодильник в тепловом двигателе: роль, функции и примеры</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#термодинамическая-суть-понятия-холодильник">Термодинамическая суть понятия «холодильник»</a></li><li><a href="#роль-холодильника-в-двигателе-внутреннего-сгорания">Роль холодильника в двигателе внутреннего сгорания</a></li><li><a href="#холодильник-в-паровых-турбинах-и-тэс">Холодильник в паровых турбинах и ТЭС</a></li><li><a href="#специфика-работы-в-холодильных-машинах">Специфика работы в холодильных машинах</a></li><li><a href="#сравнение-эффективности-различных-сред">Сравнение эффективности различных сред</a></li><li><a href="#влияние-температуры-холодильника-на-кпд-двигателя">Влияние температуры холодильника на КПД двигателя</a></li><li><a href="#практические-примеры-из-быта-и-промышленности">Практические примеры из быта и промышленности</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/s/sk/skolko-potreblyaet-srednij-kholodilnik.html">Сколько потребляет средний холодильник: расчет и экономия</a></li><li><a href="/articles/k/ko/kogda-vklyuchaetsya-kompressor-kholodilnika-nou-frost.html">Когда включается компрессор холодильника Ноу Фрост: тайминг и нормы</a></li><li><a href="/articles/k/ko/kondensator-v-kholodilnike-chto-eto.html">Конденсатор в холодильнике: функции, неисправности, замена</a></li><li><a href="/articles/s/sk/skolko-potreblyaet-kholodilnik-bosh-elektroenergii.html">Сколько потребляет холодильник Bosch: норма расхода кВт</a></li><li><a href="/articles/s/sk/skolko-kholodilnik-potreblyaet-elektroenergii-v-sutki-indezit.html">Сколько потребляет холодильник Индезит: расход кВт/сутки</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Что является холодильником в тепловом двигателе: физика и практика</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#термодинамическая-суть-понятия-холодильник">Термодинамическая суть понятия «холодильник»</a></li><li><a href="#роль-холодильника-в-двигателе-внутреннего-сгорания">Роль холодильника в двигателе внутреннего сгорания</a></li><li><a href="#холодильник-в-паровых-турбинах-и-тэс">Холодильник в паровых турбинах и ТЭС</a></li><li><a href="#специфика-работы-в-холодильных-машинах">Специфика работы в холодильных машинах</a></li><li><a href="#сравнение-эффективности-различных-сред">Сравнение эффективности различных сред</a></li><li><a href="#влияние-температуры-холодильника-на-кпд-двигателя">Влияние температуры холодильника на КПД двигателя</a></li><li><a href="#практические-примеры-из-быта-и-промышленности">Практические примеры из быта и промышленности</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Понимание принципов работы тепловой машины начинается с осознания того, что ни один двигатель не может работать без отвода лишнего тепла. В классической термодинамике существует понятие, которое часто вызывает путаницу у студентов и энтузиастов, изучающих устройство бытовых приборов. <strong>Холодильник</strong> в контексте теплового двигателя — это не шкаф на кухне, а ключевой элемент цикла, отвечающий за охлаждение рабочего тела.</p>
+
+<p>Многие ошибочно полагают, что речь идет исключительно о морозильных камерах, но в физике этот термин имеет гораздо более широкое значение. Это любой объект или среда, которые принимают отработанное тепло от двигателя после совершения полезной работы. Без этого компонента замкнутый цикл был бы невозможен, а КПД установки упал бы до нуля.</p>
+
+<p>В данном материале мы детально разберем, какие элементы в различных типах двигателей и бытовых приборов выполняют эту роль. Вы узнаете, почему атмосферный воздух, вода в реке или даже радиатор автомобиля могут считаться «холодильниками» в термодинамическом смысле. <em>Циклический процесс</em> требует возврата системы в исходное состояние, и именно этот этап критически важен.</p>
+
+<p>Рассмотрение вопроса важно не только для сдачи экзаменов по физике, но и для понимания принципов энергосбережения. Когда вы знаете, куда уходит энергия и как именно происходит теплообмен, легче диагностировать неисправности или оптимизировать работу систем охлаждения. <strong>Теплопередача</strong> — фундаментальный процесс, который мы наблюдаем ежедневно.</p>
+
+<h2 id="термодинамическая-суть-понятия-холодильник">Термодинамическая суть понятия «холодильник»</h2>
+
+<p>В теории тепловых машин под холодильником понимается тело с более низкой температурой, которому рабочее тело отдает часть внутренней энергии. Это обязательное условие второго закона термодинамики. Невозможно превратить всю полученную теплоту в механическую работу без потерь. Часть энергии <strong>обязательно</strong> должна быть передана менее нагретому телу.</p>
+
+<p>Если представить идеальный цикл Карно, то холодильник — это изотермический процесс сжатия, при котором газ отдает тепло внешней среде. В реальных устройствах роль такого охладителя может играть огромный объем вещества, температура которого практически не меняется при контакте с двигателем. Это обеспечивает стабильный перепад температур.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Не путайте термодинамический холодильник (источник холода для цикла) с бытовым холодильником (устройством, потребляющим энергию). В тепловом двигателе холодильник — это потребитель тепла, а не электроэнергии.</p>
+</blockquote>
+
+<p>Эффективность любого двигателя напрямую зависит от разницы температур между нагревателем и холодильником. Чем холоднее холодильник, тем выше теоретический предел КПД. Именно поэтому тепловые электростанции строят рядом с водоемами или оснащают градирнями для максимального охлаждения пара перед его возвратом в котел.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Для повышения эффективности любого теплового процесса старайтесь минимизировать температуру среды, отводящей тепло, но учитывайте ограничения окружающей среды.</p></aside>
+
+<h2 id="роль-холодильника-в-двигателе-внутреннего-сгорания">Роль холодильника в двигателе внутреннего сгорания</h2>
+
+<p>В автомобильных двигателях внутреннего сгорания (ДВС) роль холодильника выполняет окружающая атмосфера. После того как газы сгорели и толкнули поршень, они все еще имеют высокую температуру. Если их не охладить и не выпустить, следующий цикл всасывания свежей смеси станет невозможным или малоэффективным.</p>
+
+<p>Система охлаждения автомобиля, включая радиатор, фактически является теплообменником, передающим тепло от двигателя (нагревателя) к воздуху (холодильнику). <strong>Атмосферный воздух</strong> здесь выступает в качестве бесконечного резервуара, принимающего тепловую энергию. В дизельных двигателях этот процесс особенно важен из-за высокой степени сжатия.</p>
+
+<ul>
+<li>🌡️ Выхлопные газы передают тепло атмосфере напрямую или через турбину.</li>
+<li>💧 Антифриз в системе охлаждения забирает тепло от стенок цилиндров.</li>
+<li>🌬️ Радиатор отдает накопленное тепло набегающему потоку воздуха.</li>
+</ul>
+
+<p>Интересно, что в реактивных двигателях холодильником также является атмосферный воздух, но процесс выглядит иначе. Струя газа, вырывающаяся из сопла, смешивается с холодным воздухом окружающей среды, отдавая ему своюную энергию. <em>Турбореактивный двигатель</em> демонстрирует этот принцип в чистом виде.</p>
+
+<div class="pb-poll" id="poll-2f3e0898"><div class="pb-poll-question">📊 Какой тип двигателя чаще встречается в вашей технике?</div><div class="pb-poll-option" data-poll="2f3e0898" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Бензиновый ДВС</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="2f3e0898" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Дизельный ДВС</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="2f3e0898" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Электродвигатель</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="2f3e0898" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Газовая турбина</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="холодильник-в-паровых-турбинах-и-тэс">Холодильник в паровых турбинах и ТЭС</h2>
+
+<p>На тепловых электростанциях масштабы процессов требуют огромных мощностей для отвода тепла. Здесь холодильником выступает вода из близлежащего водоема или воздух в градирнях. Пар, отработавший в турбине, должен быть конденсирован обратно в воду, чтобы насос мог снова подать его в котел.</p>
+
+<p>Этот процесс конденсации происходит в конденсаторе, который и является техническим воплощением холодильника в данной системе. Температура воды в конденсаторе значительно ниже температуры пара, что создает необходимый перепад давлений. Без этого <strong>вакуум</strong> на выходе из турбины был бы невозможен, и КПД станции упал бы в разы.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип охлаждения</th>
+<th>Источник холода</th>
+<th>Эффективность</th>
+<th>Экологичность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Прямоточное</td>
+<td>Река или море</td>
+<td>Высокая</td>
+<td>Низкая (тепловое загрязнение)</td>
+</tr>
+<tr>
+<td>Градирни</td>
+<td>Атмосферный воздух</td>
+<td>Средняя</td>
+<td>Высокая</td>
+</tr>
+<tr>
+<td>Пруды-охладители</td>
+<td>Искусственный водоем</td>
+<td>Средняя</td>
+<td>Средняя</td>
+</tr>
+<tr>
+<td>Сухие градирни</td>
+<td>Воздух (без испарения)</td>
+<td>Низкая</td>
+<td>Очень высокая</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Использование оборотного водоснабжения позволяет снизить тепловую нагрузку на природные водоемы. В градирнях вода охлаждается за счет частичного испарения и контакта с воздухом. Это классический пример того, как природа выступает в роли гигантского термодинамического холодильника.</p>
+
+<details class="pb-accordion"><summary>Почему из градирен идет пар?</summary><div class="pb-accordion-body"><p>Пар, который вы видите над градирнями — это не дым, а водяной пар, образовавшийся в результате испарения части воды для охлаждения оставшейся массы. Это признак работы системы.</p></div></details>
+
+<h2 id="специфика-работы-в-холодильных-машинах">Специфика работы в холодильных машинах</h2>
+
+<p>Здесь возникает парадокс, который часто сбивает с толку. В бытовом холодильнике или кондиционере, которые работают по обратному циклу, «холодильником» в термодинамическом смысле является окружающая среда (кухня или улица). Именно туда устройство сбрасывает тепло, откачанное из внутренней камеры.</p>
+
+<p>Рабочее тело (фреон) сжимается компрессором, нагревается и поступает в конденсатор (решетка сзади прибора). Здесь он отдает тепло воздуху в комнате. Таким образом, для цикла Карно, реализуемого в компрессоре, <strong>атмосфера помещения</strong> и есть тот самый холодильник, принимающий тепло.</p>
+
+<p>Однако, если мы рассматриваем задачу охлаждения продуктов, то внутренняя камера холодильника выступает как объект, от которого отводится тепло. Но в строгой терминологологии теплового двигателя (цикла), где тепло превращается в работу или передается, роль приемника тепла (холодильника цикла) выполняет внешняя среда.</p>
+
+<blockquote>
+<p>⚠️ Внимание: При установке холодильника оставляйте зазор у задней стенки. Если теплообмен с «холодильником цикла» (воздухом кухни) нарушен, компрессор будет работать на износ.</p>
+</blockquote>
+
+<p>В промышленных холодильных установках, таких как <em>аммиачные системы</em>, роль холодильника цикла может выполнять градирня на крыше здания. Принцип остается неизменным: тепло должно быть передано телу с более низкой температурой, чтобы цикл мог продолжаться.</p>
+
+<h2 id="сравнение-эффективности-различных-сред">Сравнение эффективности различных сред</h2>
+
+<p>Выбор среды, выполняющей роль холодильника, влияет на экономику и экологию процесса. Вода обладает гораздо большей теплоемкостью, чем воздух, поэтому водяное охлаждение всегда эффективнее воздушного при прочих равных условиях. Однако доступность воды часто ограничена.</p>
+
+<p>Воздушное охлаждение проще в реализации, но требует больших площадей теплообменников или мощных вентиляторов. В авиации, например, выбора нет — холодильником может быть только забортный воздух. В наземных системах инженеры стремятся использовать комбинированные методы.</p>
+
+<ul>
+<li>🌊 Вода: высокая плотность теплового потока, риск коррозии и обрастания.</li>
+<li>💨 Воздух: доступность, но низкая теплоемкость и шум при работе вентиляторов.</li>
+<li>❄️ Лед/Снег: используется в экстренных ситуациях или специфических условиях (Арктика).</li>
+</ul>
+
+<p>Разница температур между рабочим телом и холодильником определяет скорость теплообмена. Чем она больше, тем интенсивнее идет процесс, но тем больше термодинамические потери на необратимость. Инженеры ищут баланс между размером оборудования и эффективностью цикла.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка системы теплоотвода</h4><label class="check-item"><input type="checkbox"><span>Очистка радиатора от пыли</span></label><label class="check-item"><input type="checkbox"><span>Проверка уровня антифриза</span></label><label class="check-item"><input type="checkbox"><span>Тест работы вентилятора</span></label><label class="check-item"><input type="checkbox"><span>Проверка герметичности патрубков</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="влияние-температуры-холодильника-на-кпд-двигателя">Влияние температуры холодильника на КПД двигателя</h2>
+
+<p>Формула Карно гласит, что максимальный КПД равен <code>1 - T2/T1</code>, где T2 — температура холодильника, а T1 — температура нагревателя. Из формулы видно: чем ниже T2, тем выше КПД. Это фундаментальный закон природы, который нельзя обойти.</p>
+
+<p>Именно поэтому в зимнее время двигатели внутреннего сгорания работают чуть эффективнее, а тепловые электростанции выдают больше мощности. Холодный воздух лучше охлаждает конденсаторы и радиаторы. Летом же, когда температура «холодильника» (атмосферы) высока, наблюдается спад производительности.</p>
+
+<p>Попытки искусственно охладить холодильник (например, замораживать воду для конденсатора ТЭС) обычно экономически нецелесообразны. Затраты энергии на получение холода превысят выигрыш в КПД двигателя. Природа предоставляет бесплатные, хотя и переменчивые, ресурсы.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Снижение температуры среды-охладителя — самый эффективный способ повышения КПД теплового двигателя, но он ограничен климатическими условиями.</p></aside>
+
+<h2 id="практические-примеры-из-быта-и-промышленности">Практические примеры из быта и промышленности</h2>
+
+<p>Рассмотрим конкретные устройства, чтобы закрепить понимание. В микроволновой печи, которая тоже является тепловым устройством (хоть и не двигателем в классическом смысле), магнетрон охлаждается вентилятором. Воздух здесь — холодильник для электроники.</p>
+
+<p>В ядерных реакторах роль первичного холодильника часто играет вода или жидкий натрий, которые отводят тепло от активной зоны. Затем это тепло передается во второй контур. В конечном итоге, огромные градирни АЭС сбрасывают тепло в атмосферу, выполняя роль финального звена цепи.</p>
+
+<p>Даже человеческое тело можно рассматривать как тепловую машину. Мы потребляем энергию (еду) и совершаем работу. Избыточное тепло мы сбрасываем в окружающую среду через кожу и дыхание. Воздух вокруг нас — наш персональный термодинамический холодильник.</p>
+
+<details>
+<summary>Может ли КПД двигателя быть 100%?</summary>
+<p>Нет, это невозможно согласно второму закону термодинамики. Для этого температура холодильника должна быть абсолютным нулем (-273.15°C), что недостижимо, или температура нагревателя должна быть бесконечной.</p>
+</details>
+
+<details>
+<summary>Почему зимой машина расходует меньше топлива?</summary>
+<p>Один из факторов — более низкая температура воздуха («холодильника»), что улучшает наполнение цилиндров и эффективность охлаждения, хотя прогрев двигателя зимой может компенсировать эту экономию.</p>
+</details>
+
+<details>
+<summary>Что будет, если закрыть доступ воздуха к радиатору?</summary>
+<p>Температура «холодильника» (воздуха в подкапотном пространстве) резко вырастет, перепад температур упадет, теплообмен прекратится, и двигатель перегреется, что приведет к заклиниванию.</p>
+</details>
+
+<details>
+<summary>Является ли космос холодильником?</summary>
+<p>Да, в космическом вакууме тепло можно отвести только излучением. Космическое пространство с температурой около 3К является идеальным, но труднодоступным холодильником для космических аппаратов.</p>
+</details>
+
+<details>
+<summary>Как часто нужно менять антифриз?</summary>
+<p>Рекомендуется проверять состояние охлаждающей жидкости каждые 40-60 тысяч км или раз в 2-3 года, так как со временем теряются его антикоррозийные свойства и температура кипения.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/s/sk/skolko-potreblyaet-srednij-kholodilnik.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько потребляет средний холодильник: расчет и экономия</span>
+                <span class="pb-related-desc">Узнайте, сколько кВт в месяц потребляет холодильник. Таблица классов энергопотребления, формулы расч</span>
+            </a><a href="/articles/k/ko/kogda-vklyuchaetsya-kompressor-kholodilnika-nou-frost.html" class="pb-related-card">
+                <span class="pb-related-title">Когда включается компрессор холодильника Ноу Фрост: тайминг и нормы</span>
+                <span class="pb-related-desc">Узнайте, через сколько минут после отключения должен включаться компрессор холодильника No Frost. Но</span>
+            </a><a href="/articles/k/ko/kondensator-v-kholodilnike-chto-eto.html" class="pb-related-card">
+                <span class="pb-related-title">Конденсатор в холодильнике: функции, неисправности, замена</span>
+                <span class="pb-related-desc">Разбираем, что такое конденсатор в холодильнике. Симптомы поломки, проверка мультиметром, замена дет</span>
+            </a><a href="/articles/s/sk/skolko-potreblyaet-kholodilnik-bosh-elektroenergii.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько потребляет холодильник Bosch: норма расхода кВт</span>
+                <span class="pb-related-desc">Узнайте, сколько электроэнергии потребляет холодильник Бош. Нормы расхода для разных классов, фактор</span>
+            </a><a href="/articles/s/sk/skolko-kholodilnik-potreblyaet-elektroenergii-v-sutki-indezit.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько потребляет холодильник Индезит: расход кВт/сутки</span>
+                <span class="pb-related-desc">Узнайте, сколько электроэнергии потребляет холодильник Индезит в сутки. Реальные цифры, таблицы расх</span>
+            </a><a href="/articles/s/sk/skolko-zhret-kholodilnik-v-vattakh.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько ватт потребляет холодильник: расчет и нормы</span>
+                <span class="pb-related-desc">Узнайте, сколько ватт в час потребляет холодильник. Таблица расхода, формулы расчета и способы эконо</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

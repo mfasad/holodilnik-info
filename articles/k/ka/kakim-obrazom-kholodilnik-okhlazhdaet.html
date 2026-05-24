@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Как холодильник охлаждает: принцип работы и физика процесса — Холодильник Инфо</title>
+    <meta name="description" content="Подробное объяснение, как работает холодильник: от компрессора до фреона. Разбираем физику охлаждения, типы систем и почему морозит, а не греет.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/k/ka/kakim-obrazom-kholodilnik-okhlazhdaet.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как холодильник охлаждает: принцип работы и физика процесса">
+    <meta property="og:description" content="Подробное объяснение, как работает холодильник: от компрессора до фреона. Разбираем физику охлаждения, типы систем и почему морозит, а не греет.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ustrojstvo-i-detali/">Устройство и детали</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как холодильник охлаждает: принцип работы и физика процесса</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#физика-охлаждения-почему-газ-забирает-тепло">Физика охлаждения: почему газ забирает тепло</a></li><li><a href="#компрессор-сердце-холодильника-и-его-роль">Компрессор: "сердце" холодильника и его роль</a></li><li><a href="#хладагент-какой-газ-используется-и-почему-не-воду">Хладагент: какой газ используется и почему не воду</a></li><li><a href="#теплообменники-испаритель-и-конденсатор">Теплообменники: испаритель и конденсатор</a></li><li><a href="#термостат-и-электроника-как-холодильник-понимает-когда-включаться">Термостат и электроника: как холодильник "понимает", когда включаться</a></li><li><a href="#системы-no-frost-low-frost-и-капельная-разморозка">Системы No Frost, Low Frost и капельная разморозка</a></li><li><a href="#почему-холодильник-не-охлаждает-топ-5-причин">Почему холодильник не охлаждает: топ-5 причин</a></li><li><a href="#faq-частые-вопросы-об-охлаждении-холодильника">FAQ: Частые вопросы об охлаждении холодильника</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-sdelat-v-minecraft-kholodilnik.html">Как сделать холодильник в Minecraft: схемы и материалы</a></li><li><a href="/articles/s/sk/skolko-medi-soderzhitsya-v-kompressore-kholodilnika.html">Медь в компрессоре холодильника: вес, типы и цена лома</a></li><li><a href="/articles/n/no/nou-frost-kholodilnik-indezit-chto-eto.html">Ноу Фрост в холодильнике Индезит: что это и как работает</a></li><li><a href="/articles/c/ch/chem-otlichaetsya-invertornyj-kompressor-ot-obychnogo-v-kholodilnikakh.html">Инверторный или обычный компрессор: отличия в холодильниках</a></li><li><a href="/articles/k/kh/kholodilnik-atlant-kuda-stekaet-voda-pri-razmorozke.html">Куда стекает вода при разморозке холодильника Атлант: схема отвода</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как холодильник создаёт холод: физика, детали и секреты эффективности</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#физика-охлаждения-почему-газ-забирает-тепло">Физика охлаждения: почему газ забирает тепло</a></li><li><a href="#компрессор-сердце-холодильника-и-его-роль">Компрессор: "сердце" холодильника и его роль</a></li><li><a href="#хладагент-какой-газ-используется-и-почему-не-воду">Хладагент: какой газ используется и почему не воду</a></li><li><a href="#теплообменники-испаритель-и-конденсатор">Теплообменники: испаритель и конденсатор</a></li><li><a href="#термостат-и-электроника-как-холодильник-понимает-когда-включаться">Термостат и электроника: как холодильник "понимает", когда включаться</a></li><li><a href="#системы-no-frost-low-frost-и-капельная-разморозка">Системы No Frost, Low Frost и капельная разморозка</a></li><li><a href="#почему-холодильник-не-охлаждает-топ-5-причин">Почему холодильник не охлаждает: топ-5 причин</a></li><li><a href="#faq-частые-вопросы-об-охлаждении-холодильника">FAQ: Частые вопросы об охлаждении холодильника</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Холодильник — один из немногих бытовых приборов, который работает круглосуточно, но редко вызывает вопросы, <em>пока не сломается</em>. Между тем, его принцип действия основан на сложных физических процессах, которые скрыты за лаконичным корпусом. Почему внутри камеры температура падает до +4°C, а сзади агрегата горячо? Как несколько литров газа могут поддерживать низкую температуру годами? И почему холодильник не "производит холод", а <strong>отводит тепло</strong>?</p>
+
+<p>Многие ошибочно думают, что устройство просто "вырабатывает холод" как кондиционер. На самом деле всё наоборот: холодильник <strong>забирает тепло</strong> из внутреннего пространства и выбрасывает его наружу — в комнату. Этот процесс невозможен без трёх ключевых элементов: <strong>компрессора</strong>, <strong>хладагента</strong> (обычно фреона) и <strong>теплообменников</strong> (испарителя и конденсатора). Даже если вы никогда не разбирали технику, понимать основы полезно: это поможет диагностировать неисправности, экономить электроэнергию и правильно эксплуатировать прибор.</p>
+
+<p>В этой статье мы разберёмся, как именно происходит охлаждение — от молекулярного уровня до практических советов. А ещё выясним, почему современные модели потребляют меньше энергии, чем их советские аналоги, и можно ли обойтись без фреона.</p>
+
+<h2 id="физика-охлаждения-почему-газ-забирает-тепло">Физика охлаждения: почему газ забирает тепло</h2>
+
+<p>Чтобы понять, как холодильник охлаждает, нужно вспомнить два ключевых закона физики: <strong>испарение</strong> и <strong>конденсацию</strong>. Представьте, как пот высыхает на коже в жаркий день — вы чувствуете прохладу. Это происходит потому, что жидкость (пот) испаряется, забирая тепло с поверхности тела. Холодильник использует тот же принцип, но в замкнутом цикле с газом.</p>
+
+<p>Внутри системы циркулирует <em>хладагент</em> (обычно фреон или его современные аналоги). Когда он попадает в испаритель (тонкие трубки внутри холодильной камеры), давление резко падает, и газ начинает <strong>кипеть</strong> — переходить из жидкого состояния в газообразное. Этот процесс требует энергии, которую хладагент "забирает" у окружающего воздуха, охлаждая его. Температура внутри камеры падает, а фреон, теперь уже в виде газа, движется дальше — к компрессору.</p>
+
+<p>Здесь важно понимать: <mark>холодильник не "создаёт холод", а перемещает тепло изнутри наружу</mark>. Если прикоснуться к задней стенке работающего агрегата, она будет горячей — это тепло, "отобранное" из камеры и выведенное в комнату. Эффективность процесса зависит от типа хладагента, давления в системе и конструкции теплообменников.</p>
+
+<ul>
+  <li>🔬 <strong>Испарение</strong>: жидкий фреон кипит в испарителе, забирая тепло из камеры.</li>
+  <li>🔄 <strong>Циркуляция</strong>: компрессор "гоняет" газ по замкнутому контуру.</li>
+  <li>🔥 <strong>Конденсация</strong>: в конденсаторе (задняя решётка) фреон отдаёт тепло и снова становится жидким.</li>
+</ul>
+
+<h2 id="компрессор-сердце-холодильника-и-его-роль">Компрессор: "сердце" холодильника и его роль</h2>
+
+<p>Компрессор — это насос, который обеспечивает движение хладагента по системе. Его задача — <strong>сжимать газ</strong>, повышая его температуру и давление, чтобы затем передать в конденсатор. Чем эффективнее работает компрессор, тем меньше энергии тратит холодильник.</p>
+
+<p>В современных моделях используются два типа компрессоров:
+<strong>поршневые</strong> (классические, с движущимися деталями) и <strong>инверторные</strong> (бесшумные, с плавной регулировкой мощности). Инверторные компрессоры дороже, но они потребляют на 30–50% меньше электроэнергии и служат дольше благодаря отсутствию резких пусков и остановок.</p>
+
+<p>Любопытный факт: в старых холодильниках компрессор включался и выключался с громким щелчком, а в новых моделях он может работать непрерывно, но с разной интенсивностью. Это не поломка, а особенность инверторной технологии. Если ваш холодильник <em>Samsung RF23</em> или <em>LG InstaView</em> тихо гудит без пауз — это норма.</p>
+
+<blockquote>⚠️ Внимание: Если компрессор перегревается (температура корпуса выше 60°C) или работает без остановки более 2 часов, это может указывать на утечку фреона, засор капиллярной трубки или неисправность термостата. В этом случае требуется диагностика.</blockquote>
+
+<div class="pb-poll" id="poll-d910457a"><div class="pb-poll-question">📊 Какой тип компрессора в вашем холодильнике?</div><div class="pb-poll-option" data-poll="d910457a" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Поршневой (классический)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="d910457a" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Инверторный (бесшумный)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="d910457a" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="d910457a" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Другой</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="хладагент-какой-газ-используется-и-почему-не-воду">Хладагент: какой газ используется и почему не воду</h2>
+
+<p>В первых холодильниках (начало XX века) в качестве хладагента использовались аммиак, диоксид серы и даже <em>метилхлорид</em> — вещества токсичные и взрывоопасные. Сегодня их заменили <strong>фреоны</strong> (группа фторсодержащих углеводородов), которые безопасны для человека, но вредны для озонового слоя. С 2020 года в ЕС и России постепенно отказываются от фреонов <em>R-134a</em> и <em>R-404A</em> в пользу более экологичных альтернатив, например, <em>R-600a</em> (изобутан).</p>
+
+<p>Почему нельзя использовать воду? Всё дело в температуре кипения: вода закипает при +100°C, а фреон — при −26°C (для <em>R-134a</em>). Это позволяет системе работать в диапазоне от −30°C (морозильная камера) до +10°C (холодильное отделение). Кроме того, вода корродирует металлические трубки, а фреон инертен.</p>
+
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr>
+      <th>Тип хладагента</th>
+      <th>Температура кипения</th>
+      <th>Применение</th>
+      <th>Экологичность</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><em>R-134a</em></td>
+      <td>−26°C</td>
+      <td>Бытовые холодильники (до 2010-х)</td>
+      <td>Средняя (вред для озонового слоя)</td>
+    </tr>
+    <tr>
+      <td><em>R-600a</em> (изобутан)</td>
+      <td>−12°C</td>
+      <td>Современные модели (<em>Liebherr</em>, <em>Beko</em>)</td>
+      <td>Высокая (природный газ)</td>
+    </tr>
+    <tr>
+      <td><em>R-290</em> (пропан)</td>
+      <td>−42°C</td>
+      <td>Промышленные холодильники</td>
+      <td>Высокая</td>
+    </tr>
+    <tr>
+      <td><em>R-32</em></td>
+      <td>−52°C</td>
+      <td>Кондиционеры и новые модели</td>
+      <td>Средняя (низкий GWP)</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>Если в вашем холодильнике используется <em>R-600a</em>, знайте: он более экологичный, но требует большего объёма газа из-за низкого давления. Это увеличивает размер компрессора, но снижает энергопотребление на 10–15%.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При покупке холодильника уточните тип хладагента. Модели на <em>R-600a</em> или <em>R-290</em> обойдутся дороже, но сэкономят электроэнергию и снизят нагрузку на окружающую среду.</p></aside>
+
+<h2 id="теплообменники-испаритель-и-конденсатор">Теплообменники: испаритель и конденсатор</h2>
+
+<p>Испаритель и конденсатор — это "лёгкие" холодильника, где происходит обмен теплом. <strong>Испаритель</strong> (тонкие трубки внутри камеры) поглощает тепло, а <strong>конденсатор</strong> (решётка сзади или снизу) отдаёт его в комнату.</p>
+
+<p>В современных моделях испаритель часто скрыт за пластиковой панелью (система <em>No Frost</em>), а конденсатор может быть встроен в боковые стенки (как в <em>Samsung SpaceMax</em>). Это уменьшает габариты прибора, но усложняет ремонт. Если холодильник перестал охлаждать, первая проверка — чистота конденсатора: пыль и шерсть домашних животных ухудшают теплоотдачу, заставляя компрессор работать на износ.</p>
+
+<ul>
+  <li>❄️ <strong>Испаритель</strong>: обычно расположен за задней стенкой холодильной камеры. В моделях с <em>No Frost</em> его не видно — он спрятан за вентилятором.</li>
+  <li>🔥 <strong>Конденсатор</strong>: решётка на задней стенке или внизу. Должна быть чистой для эффективной теплоотдачи.</li>
+  <li>🌀 <strong>Капиллярная трубка</strong>: тонкий канал, где фреон теряет давление перед испарителем.</li>
+</ul>
+
+<blockquote>⚠️ Внимание: Если конденсатор горячий, но холодильник не охлаждает, возможна утечка фреона или засор капиллярной трубки. Не пытайтесь чистить систему самостоятельно — требуется вакуумирование и заправка хладагента.</blockquote>
+
+<h2 id="термостат-и-электроника-как-холодильник-понимает-когда-включаться">Термостат и электроника: как холодильник "понимает", когда включаться</h2>
+
+<p>Термостат (или электронный блок управления в современных моделях) следит за температурой внутри камеры и включает/выключает компрессор. В механических термостатах используется <strong>сильфон</strong> — гофрированная трубка с газом, которая расширяется при нагреве и замыкает контакты. В электронных — датчики температуры и микроконтроллер.</p>
+
+<p>Если холодильник <em>Atlant</em> или <em>Indesit</em> внезапно перестал выключаться, виноват может быть:
+<p>- неисправный термостат (не размыкает цепь);</p>
+<p>- поломка датчика температуры;</p>
+<p>- утечка фреона (компрессор работает "вхолостую").</p>
+<p>Диагностировать проблему можно, измерив сопротивление термостата мультиметром или проверив напряжение на компрессоре.</p></p>
+
+
+<p>Отключите холодильник от сети|Снимите защитный кожух термостата|Прозвоните контакты мультиметром в режиме сопротивления|Если сопротивление не меняется при вращении ручки — термостат неисправен--></p>
+
+<p>В моделях с <em>No Frost</em> за охлаждение отвечает не только термостат, но и <strong>таймер оттаивания</strong>, который включает нагреватель испарителя для удаления льда. Если таймер сломался, в морозильной камере образуется снежная "шуба", а компрессор работает без остановки.</p>
+
+<h2 id="системы-no-frost-low-frost-и-капельная-разморозка">Системы No Frost, Low Frost и капельная разморозка</h2>
+
+<p>Способ охлаждения напрямую влияет на то, как часто придётся размораживать холодильник. Рассмотрим три основные системы:</p>
+
+<ol>
+  <li><strong>Капельная (статическая)</strong>: испаритель расположен на задней стенке, влага стекает в поддон и испаряется. Дешёвая, но требует ручной разморозки 1–2 раза в год. Пример: <em>Biryusa</em>, <em>Snaige</em>.</li>
+  <li><strong>Low Frost</strong>: испаритель вморожен в стенки камеры, лёд образуется медленнее. Размораживать нужно раз в 6–12 месяцев. Пример: <em>Bosh Serie 4</em>.</li>
+  <li><strong>No Frost</strong>: вентилятор равномерно распределяет холод, а нагреватель периодически растапливает лёд. Не требует разморозки, но сушит продукты и потребляет больше энергии. Пример: <em>Samsung RB</em>, <em>LG GC</em>.</li>
+</ol>
+
+<p>Система <em>No Frost</em> не означает, что холодильник "не замёрзнет никогда". Если дверца долго открыта или уплотнитель изношен, влага проникает внутрь, и лёд образуется даже в таких моделях. Кроме того, <em>No Frost</em> бывает только в морозильной камере (<em>Frost Free</em>) или в обеих камерах (<em>Total No Frost</em>).</p>
+
+<details class="pb-accordion"><summary>Чем опасна снежная "шуба" в холодильнике?</summary><div class="pb-accordion-body"><p>
+<p>Слой льда толщиной 5 мм увеличивает энергопотребление на 20–30%. Если не размораживать холодильник годами, компрессор будет работать на пределе мощности, что приведёт к его перегреву и поломке. Кроме того, лёд занимает полезный объём и может деформировать пластиковые полки.</p></div></details></p>
+
+<h2 id="почему-холодильник-не-охлаждает-топ-5-причин">Почему холодильник не охлаждает: топ-5 причин</h2>
+
+<p>Если холодильник включён, но не морозит, проверьте следующие моменты:</p>
+
+<ul>
+  <li>🔌 <strong>Питание</strong>: возможно, сработал автомат в щитке или отошёл шнур. Проверьте напряжение в розетке (должно быть 220–230 В).</li>
+  <li>🧊 <strong>Уплотнитель</strong>: изношенная резина пропускает тёплый воздух. Проведите тест с листом бумаги — если он легко вытягивается при закрытой двери, уплотнитель нужно заменить.</li>
+  <li>❄️ <strong>Засор капиллярной трубки</strong>: если компрессор горячий, но холодильник не охлаждает, возможен засор. Требуется прочистка или замена трубки.</li>
+  <li>💨 <strong>Вентилятор</strong> (в <em>No Frost</em>): если он не крутится, холод не поступает в камеру. Частая причина — обледенение лопастей.</li>
+  <li>🧪 <strong>Утечка фреона</strong>: если трубки конденсатора холодные, а компрессор работает без остановки, скорее всего, произошла утечка. Требуется заправка.</li>
+</ul>
+
+<p>Большинство поломок связаны с нарушением теплообмена. Например, если холодильник стоит вплотную к стене, конденсатор не может отдать тепло, и компрессор перегревается. Оптимальное расстояние до стены — 5–10 см.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>90% неисправностей холодильников связаны с нарушением циркуляции хладагента или теплообмена. Регулярная чистка конденсатора и проверка уплотнителя продлевают срок службы прибора на 30–50%.</p></aside>
+
+<h2 id="faq-частые-вопросы-об-охлаждении-холодильника">FAQ: Частые вопросы об охлаждении холодильника</h2>
+
+<details>
+  <summary>Можно ли использовать холодильник без фреона?</summary>
+  <p>Нет. Фреон (или его аналоги) — это рабочее тело системы. Без него компрессор будет работать "вхолостую", но охлаждения не произойдёт. В старых моделях иногда использовали аммиак, но сегодня это запрещено из-за токсичности. Если фреон вытек, требуется заправка — самостоятельно это сделать невозможно.</p>
+</details>
+
+<details>
+  <summary>Почему новый холодильник сильно греется сзади?</summary>
+  <p>Это нормально. Конденсатор (решётка сзади) отдаёт тепло, "отобранное" из камеры. В первых днях работы греться может сильнее — система выходит на оптимальный режим. Если через неделю нагрев не уменьшился, проверьте чистоту конденсатора и расстояние до стены (должно быть ≥5 см).</p>
+</details>
+
+<details>
+  <summary>Сколько времени холодильник должен работать до первого отключения?</summary>
+  <p>В зависимости от модели и температуры в комнате — от 30 минут до 2 часов. Современные инверторные компрессоры могут работать непрерывно, но с разной интенсивностью. Если холодильник не отключается более 3 часов, это повод проверить термостат или датчики.</p>
+</details>
+
+<details>
+  <summary>Можно ли поставить холодильник на балконе зимой?</summary>
+  <p>Нет, если температура ниже +10°C. Масло в компрессоре густеет, и он может не запуститься. Кроме того, электронные блоки управления не рассчитаны на мороз. Исключение — модели с климатическим классом <em>SN-T</em> (например, <em>Liebherr IK 3560</em>), которые работают при +10...+43°C.</p>
+</details>
+
+<details>
+  <summary>Почему в холодильнике с No Frost всё равно образуется лёд?</summary>
+  <p>Причины могут быть разные:
+<p>- Частое или долгое открывание двери (влажный воздух попадает внутрь).</p>
+<p>- Износ уплотнителя.</p>
+<p>- Поломка нагревателя оттаивания или таймера.</p>
+<p>- Засор дренажного отверстия (вода не стекает в поддон).</p>
+<p>В любом случае требуется диагностика.</p></p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-sdelat-v-minecraft-kholodilnik.html" class="pb-related-card">
+                <span class="pb-related-title">Как сделать холодильник в Minecraft: схемы и материалы</span>
+                <span class="pb-related-desc">Полная инструкция: как построить работающий холодильник в Minecraft. Схемы с ведром льда, поршнями и</span>
+            </a><a href="/articles/s/sk/skolko-medi-soderzhitsya-v-kompressore-kholodilnika.html" class="pb-related-card">
+                <span class="pb-related-title">Медь в компрессоре холодильника: вес, типы и цена лома</span>
+                <span class="pb-related-desc">Сколько меди в компрессоре холодильника? Вес, виды моторов, таблица содержания цветных металлов и ню</span>
+            </a><a href="/articles/n/no/nou-frost-kholodilnik-indezit-chto-eto.html" class="pb-related-card">
+                <span class="pb-related-title">Ноу Фрост в холодильнике Индезит: что это и как работает</span>
+                <span class="pb-related-desc">Подробный разбор технологии No Frost в холодильниках Indesit. Плюсы, минусы, частые неисправности и </span>
+            </a><a href="/articles/c/ch/chem-otlichaetsya-invertornyj-kompressor-ot-obychnogo-v-kholodilnikakh.html" class="pb-related-card">
+                <span class="pb-related-title">Инверторный или обычный компрессор: отличия в холодильниках</span>
+                <span class="pb-related-desc">Чем отличается инверторный компрессор от обычного в холодильнике? Разбор принципов работы, плюсов, м</span>
+            </a><a href="/articles/k/kh/kholodilnik-atlant-kuda-stekaet-voda-pri-razmorozke.html" class="pb-related-card">
+                <span class="pb-related-title">Куда стекает вода при разморозке холодильника Атлант: схема отвода</span>
+                <span class="pb-related-desc">Подробный разбор системы отвода конденсата в холодильниках Атлант. Где находится сливное отверстие, </span>
+            </a><a href="/articles/o/os/osushitel-v-kholodilnike-chto-eto.html" class="pb-related-card">
+                <span class="pb-related-title">Осушитель в холодильнике: устройство, функции и ремонт</span>
+                <span class="pb-related-desc">Что такое осушитель в холодильнике? Разбираем устройство капиллярной трубки, признаки засора, замену</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

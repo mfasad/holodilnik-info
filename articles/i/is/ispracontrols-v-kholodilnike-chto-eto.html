@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Ispra Controls в холодильнике: что это и как работает — Холодильник Инфо</title>
+    <meta name="description" content="Подробный обзор контроллера ispra controls. Что это за плата, как она управляет температурой и почему мигает индикатор. Разбор неисправностей.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/i/is/ispracontrols-v-kholodilnike-chto-eto.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Ispra Controls в холодильнике: что это и как работает">
+    <meta property="og:description" content="Подробный обзор контроллера ispra controls. Что это за плата, как она управляет температурой и почему мигает индикатор. Разбор неисправностей.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ustrojstvo-i-detali/">Устройство и детали</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Ispra Controls в холодильнике: что это и как работает</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#что-такое-ispra-controls-и-где-применяется">Что такое ispra controls и где применяется</a></li><li><a href="#принцип-работы-электронного-модуля-управления">Принцип работы электронного модуля управления</a></li><li><a href="#основные-функции-и-возможности-системы">Основные функции и возможности системы</a></li><li><a href="#диагностика-неисправностей-и-коды-ошибок">Диагностика неисправностей и коды ошибок</a></li><li><a href="#типичные-проблемы-и-методы-их-устранения">Типичные проблемы и методы их устранения</a></li><li><a href="#стоимость-замены-и-целесообразность-ремонта">Стоимость замены и целесообразность ремонта</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/p/po/pochemu-freon-ispolzuyut-v-kholodilnike.html">Зачем в холодильнике фреон: принцип работы и альтернативы</a></li><li><a href="/articles/c/ch/chto-takoe-nou-frost-v-kholodilnike-prostymi-slovami.html">Что такое Ноу Фрост в холодильнике: устройство и принцип работы</a></li><li><a href="/articles/s/sk/skolko-kilovatt-energii-potreblyaet-kholodilnik.html">Сколько кВт потребляет холодильник: расчет и экономия</a></li><li><a href="/articles/g/gd/gde-kupit-lampochku-dlya-kholodilnika-samsung.html">Где купить лампочку для холодильника Samsung: модели, размеры, цены</a></li><li><a href="/articles/s/sk/skolko-potreblyaet-kholodilnik-vitrina.html">Сколько потребляет холодильник-витрина: расход кВт и экономия</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Ispra Controls в холодильнике: назначение и функции</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#что-такое-ispra-controls-и-где-применяется">Что такое ispra controls и где применяется</a></li><li><a href="#принцип-работы-электронного-модуля-управления">Принцип работы электронного модуля управления</a></li><li><a href="#основные-функции-и-возможности-системы">Основные функции и возможности системы</a></li><li><a href="#диагностика-неисправностей-и-коды-ошибок">Диагностика неисправностей и коды ошибок</a></li><li><a href="#типичные-проблемы-и-методы-их-устранения">Типичные проблемы и методы их устранения</a></li><li><a href="#стоимость-замены-и-целесообразность-ремонта">Стоимость замены и целесообразность ремонта</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>При поиске информации о компонентах холодильника пользователи часто сталкиваются с аббревиатурой <strong>ispra controls</strong>, что вызывает вопросы о назначении и происхождении этого узла. На самом деле, речь идет не о загадочном отдельном устройстве, а о системе управления, часто устанавливаемой в холодильной технике таких брендов, как Indesit и Ariston. <em>Ispra Controls</em> — это название подразделения или торговой марки электронных компонентов, которые интегрируются в бытовую технику для точного регулирования температурных режимов.</p>
+
+<p>Понимание того, что представляет собой этот элемент, критически важно для владельцев современной техники, так как именно этот модуль отвечает за стабильность работы всего агрегата. В отличие от старых механических термостатов, <strong>электронная плата управления</strong> собирает данные с множества датчиков и принимает сложные логические решения. Если ваш холодильник перестал морозить или, наоборот, начал замораживать продукты в холодильной камере, причина чаще всего кроется именно в сбоях работы этой системы.</p>
+
+<p>В данной статье мы детально разберем устройство, принцип работы и типичные проблемы, связанные с блоком управления <em>ispra controls</em>. Вы узнаете, как интерпретировать сигналы индикаторов и когда необходимо вмешательство специалиста, а не просто перезагрузка устройства. <mark>Система ispra controls базируется на микропроцессорной технологии, которая позволяет адаптировать работу компрессора к текущей тепловой нагрузке, что невозможно в механических системах.</mark></p>
+
+<h2 id="что-такое-ispra-controls-и-где-применяется">Что такое ispra controls и где применяется</h2>
+
+<p><strong>Ispra Controls</strong> представляет собой специализированный блок электронного управления, разработанный для оптимизации энергопотребления и точности поддержания температуры в холодильных установках. Название происходит от города Ис-пра в Италии, где исторически располагались инженерные центры разработки электроники для бытовой техники. Эти компоненты широко используются в холодильниках, выпускаемых концерном Whirlpool, включая бренды <em>Indesit</em>, <em>Ariston</em> и <em>Hotpoint</em>.</p>
+
+<p>Основная задача данного модуля заключается в координации работы всех исполнительных механизмов холодильника. Он получает сигналы от температурных сенсоров, расположенных в различных зонах камеры, и на основе заложенного алгоритма управляет включением и выключением компрессора, вентиляторов и системы No Frost. <em>Электроника ispra controls</em> обеспечивает плавный старт двигателя, что снижает пусковые токи и продлевает срок службы компрессора.</p>
+
+<p>Применение таких систем стало стандартом для современных моделей холодильников класса энергоэффективности А+ и выше. Механическое управление не способно обеспечить ту точность (до 0,5 градуса), которую демонстрируют цифровые контроллеры. Это особенно важно для хранения скоропортящихся продуктов, где даже кратковременное повышение температуры может быть критичным.</p>
+
+<ul>
+<li>🔹 Обеспечивает точное поддержание заданной температуры в разных камерах.</li>
+<li>🔹 Управляет системой оттайки испарителя в режиме No Frost.</li>
+<li>🔹 Контролирует работу вентиляторов циркуляции воздуха.</li>
+<li>🔹 Диагностирует неисправности и выводит коды ошибок на панель индикации.</li>
+</ul>
+
+<blockquote>
+<p>⚠️ Внимание: Попытка самостоятельной замены платы управления без соответствующей квалификации может привести к выходу из строя компрессора или повреждению проводки. Электронные компоненты чувствительны к статическому электричеству.</p>
+</blockquote>
+
+<h2 id="принцип-работы-электронного-модуля-управления">Принцип работы электронного модуля управления</h2>
+
+<p>Фундаментальным отличием <strong>ispra controls</strong> от аналоговых систем является цифровой характер обработки сигналов. В основе системы лежит микроконтроллер, который постоянно сканирует состояние датчиков. Каждый сенсор (термистор) меняет свое электрическое сопротивление в зависимости от температуры окружающей среды. Плата управления преобразует эти изменения сопротивления в цифровые значения, которые сравниваются с эталонными данными, зашитыми в память.</p>
+
+<p>Алгоритм работы <em>контроллера</em> учитывает не только текущую температуру, но и инерционность системы. Например, при достижении заданного минимума компрессор отключается не мгновенно, а с учетом остаточного холода, который еще будет выработан испарителем. Это предотвращает перемораживание продуктов и снижает количество циклов включения-выключения.</p>
+
+<p>Кроме температурного контроля, модуль отвечает за тайминги. Он отслеживает время работы компрессора и, при необходимости, инициирует цикл разморозки. В моделях с <strong>No Frost</strong> именно <em>ispra controls</em> подает напряжение на ТЭН оттайки и нагреватель дверного проема, если такая функция предусмотрена конструкцией. Все эти процессы синхронизированы для максимальной эффективности.</p>
+
+<div class="pb-poll" id="poll-53c764bd"><div class="pb-poll-question">📊 Как часто ваш холодильник издает посторонние звуки?</div><div class="pb-poll-option" data-poll="53c764bd" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Ежедневно</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="53c764bd" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Раз в неделю</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="53c764bd" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Редко</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="53c764bd" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Никогда</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>Важно отметить, что система постоянно проводит самодиагностику. Если показания датчика выходят за пределы физически возможных значений (например, обрыв цепи или короткое замыкание), контроллер переходит в аварийный режим. В этом случае холодильник может продолжать работать, но с фиксированными временными интервалами, игнлируя показания неисправного сенсора, чтобы сохранить продукты.</p>
+
+<h2 id="основные-функции-и-возможности-системы">Основные функции и возможности системы</h2>
+
+<p>Современные версии <strong>ispra controls</em> обладают расширенным функционалом, выходящим далеко за рамки простого включения мотора. Одной из ключевых функций является адаптивное управление. Система анализирует частоту открывания дверей (косвенно, по скорости роста температуры) и корректирует работу компрессора. Если вы часто открываете холодильник, система будет работать интенсивнее.</p>
+
+<p>Еще одной важной возможностью является защита от скачков напряжения. Встроенные в плату <em>ispra controls</strong> фильтры и стабилизаторы сглаживают резкие перепады в бытовой сети, защищая чувствительную электронику и обмотки компрессора. Однако при критических перегрузках система может блокировать запуск двигателя до нормализации параметров сети.</p>
+
+<p>Также стоит упомянуть функцию «Отпуск» или «Eco», которая часто реализуется именно через программное обеспечение контроллера. При активации этого режима <strong>модуль управления</strong> поддерживает в холодильной камере температуру около +12...+15°C, предотвращая появление плесени и запаха, но значительно экономя электроэнергию, так как морозильная камера продолжает работать в штатном режиме.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Функция</th>
+<th>Описание</th>
+<th>Влияние на работу</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Точная терморегуляция</td>
+<td>Поддержание температуры с шагом 0.5°C</td>
+<td>Продление срока хранения продуктов</td>
+</tr>
+<tr>
+<td>Управление оттайкой</td>
+<td>Автоматический запуск ТЭНа по таймеру или датчику</td>
+<td>Предотвращение обрастания льдом</td>
+</tr>
+<tr>
+<td>Диагностика</td>
+<td>Считывание кодов ошибок с датчиков</td>
+<td>Упрощение поиска неисправностей</td>
+</tr>
+<tr>
+<td>Защита компрессора</td>
+<td>Контроль времени простоя перед пуском</td>
+<td>Предотвращение гидроудара</td>
+</tr>
+</tbody>
+</table></div>
+
+
+
+<h2 id="диагностика-неисправностей-и-коды-ошибок">Диагностика неисправностей и коды ошибок</h2>
+
+<p>Когда в системе <strong>ispra controls</em> происходит сбой, холодильник не просто перестает работать, а пытается сообщить владельцу о характере проблемы. Наиболее распространенным способом индикации является мигание светодиодов на передней панели или на самой плате внутри корпуса. Количество миганий или комбинация горящих индикаторов соответствует определенному коду ошибки.</p>
+
+<p>Наиболее часто встречающиеся проблемы связаны с датчиками температуры. Если <em>контроллер</em> фиксирует обрыв цепи сенсора, он переводит систему в аварийный режим. Также возможны ошибки, связанные с «залипанием» реле управления компрессором или вентилятором. В таких случаях на плате может быть слышен характерный треск или щелчки.</p>
+
+<p>Для точной диагностики мастера используют мультиметр. Проверка начинается с измерения напряжения на входе платы, а затем проверяются цепи питания исполнительных механизмов. Если на выходе на компрессор напряжение подается, а мотор не запускается, проблема, скорее всего, не в <strong>ispra controls</strong>, а в пускозащитном реле или самом компрессоре.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Первичная диагностика холодильника</h4><label class="check-item"><input type="checkbox"><span>Проверить наличие напряжения в розетке</span></label><label class="check-item"><input type="checkbox"><span>Прослушать работу компрессора</span></label><label class="check-item"><input type="checkbox"><span>Замерить температуру в камерах</span></label><label class="check-item"><input type="checkbox"><span>Проверить индикацию на панели</span></label><label class="check-item"><input type="checkbox"><span>Осмотреть плату на предмет гари</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<blockquote>
+<p>⚠️ Внимание: Интерпретация мигания индикаторов может отличаться в зависимости от конкретной модели холодильника и года выпуска. Всегда сверяйтесь с технической документацией для вашей серии техники.</p>
+</blockquote>
+
+<h2 id="типичные-проблемы-и-методы-их-устранения">Типичные проблемы и методы их устранения</h2>
+
+<p>Одной из распространенных проблем плат <strong>ispra controls</strong> является выход из строя элементов питания из-за скачков напряжения в сети. В результате может сгореть предохранитель или варистор на плате. Визуально это часто почернение компонентов или вздутие конденсаторов. В таких случаях требуется замена сгоревших элементов или всей платы целиком.</p>
+
+<p>Еще одна частая неисправность — окисление контактов разъемов. В условиях повышенной влажности внутри холодильного шкафа (особенно при неисправной системе оттайки) на контактах платы <em>ispra controls</strong> может образовываться коррозионный налет. Это приводит к нарушению контакта и ложным показаниям датчиков. Очистка контактов спиртом и специальными средствами иногда возвращает устройству работоспособность.</p>
+
+<p>Сбои в программном обеспечении (прошивке) встречаются реже, но возможны. В этом случае холодильник может вести себя неадекватно: хаотично включать и выключать свет, издавать звуковые сигналы без причины или не реагировать на кнопки управления. Решением проблемы часто является полный сброс системы (отключение от сети на 15-20 минут) или перепрошивка модуля в сервисном центре.</p>
+
+<ul>
+<li>🔸 Вздутие конденсаторов — требует замены компонентов платы.</li>
+<li>🔸 Окисление контактов — необходима чистка спиртом и восстановление дорожек.</li>
+<li>🔸 Сгоревший варистор — указывает на скачок напряжения в сети.</li>
+<li>🔸 Неисправность датчиков — замена сенсоров на новые с аналогичными параметрами.</li>
+</ul>
+
+
+
+<h2 id="стоимость-замены-и-целесообразность-ремонта">Стоимость замены и целесообразность ремонта</h2>
+
+<p>Вопрос ремонта или замены модуля <strong>ispra controls</strong> часто упирается в экономику. Стоимость оригинальной платы управления может составлять значительную часть от цены нового холодильника, особенно для моделей среднего ценового сегмента. Однако, в большинстве случаев, ремонт самой платы (замена сгоревших радиоэлементов) обходится значительно дешевле покупки нового блока.</p>
+
+<p>Целесообразность ремонта зависит от возраста холодильника. Если технике более 10-12 лет, поиск оригинальной платы <em>ispra controls</strong> может быть затруднен, а стоимость восстановленного модуля будет высокой. В таких случаях иногда дешевле и надежнее установить универсальный электронный модуль управления, адаптировав его под конкретную модель, хотя это требует высокой квалификации мастера.</p>
+
+<p>Важно учитывать, что замена платы — это не всегда гарантия решения проблемы. Если причиной выхода из строя электроники стал неисправный компрессор (например, межвитковое замыкание), то установка нового <strong>блока управления</em> приведет лишь к повторному сгоранию дорогостоящего компонента. Поэтому комплексная диагностика всей цепочки обязательна.</p>
+
+
+
+<blockquote>
+<p>⚠️ Внимание: Использование неоригинальных или дешевых аналогов плат управления может привести к некорректной работе холодильника, повышенному расходу электроэнергии и сокращению срока службы компрессора.</p>
+</blockquote>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Можно ли отремонтировать плату ispra controls самостоятельно?</summary>
+<p>Без глубоких знаний в электронике и наличия паяльного оборудования — нет. Платы содержат многослойную структуру и миниатюрные компоненты. Непрофессиональный ремонт может усугубить ситуацию. Однако заменить сгоревший предохранитель или почистить контакты от окисления может попробовать любой аккуратный пользователь.</p>
+</details>
+
+<details>
+<summary>Почему мигает индикатор температуры после отключения света?</summary>
+<p>Мигание индикатора обычно сигнализирует о разморозке продуктов во время отсутствия электричества или о неисправности датчика. Если после восстановления питания и остывания камер мигание не прекращается через несколько часов, возможно, вышел из строя один из сенсоров системы <em>ispra controls</em>.</p>
+</details>
+
+<details>
+<summary>Где найти схему платы управления для моего холодильника?</summary>
+<p>Официальные сервисные схемы (service manuals) редко находятся в открытом доступе. Их можно найти на специализированных форумах мастеров по ремонту бытовой техники или запросить у производителя. Часто маркировка на самой плате содержит код, по которому можно найти аналогичные решения.</p>
+</details>
+
+<details>
+<summary>Как сбросить ошибки на плате ispra controls?</summary>
+<p>Самый простой способ — обесточить холодильник, выдернув вилку из розетки, на 15-20 минут. Это позволит конденсаторам разрядиться, и контроллер выполнит полный сброс (hard reset). Если ошибка аппаратная (сгорел датчик), сброс не поможет — индикатор загорится вновь после прохода цикла диагностики.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/p/po/pochemu-freon-ispolzuyut-v-kholodilnike.html" class="pb-related-card">
+                <span class="pb-related-title">Зачем в холодильнике фреон: принцип работы и альтернативы</span>
+                <span class="pb-related-desc">Почему фреон незаменим в холодильниках? Разбираем физику охлаждения, виды хладагентов, экологические</span>
+            </a><a href="/articles/c/ch/chto-takoe-nou-frost-v-kholodilnike-prostymi-slovami.html" class="pb-related-card">
+                <span class="pb-related-title">Что такое Ноу Фрост в холодильнике: устройство и принцип работы</span>
+                <span class="pb-related-desc">Подробно разберем, что такое Ноу Фрост в холодильнике. Узнайте принцип работы системы, плюсы и минус</span>
+            </a><a href="/articles/s/sk/skolko-kilovatt-energii-potreblyaet-kholodilnik.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько кВт потребляет холодильник: расчет и экономия</span>
+                <span class="pb-related-desc">Узнайте, сколько киловатт энергии потребляет холодильник в час, месяц и год. Факторы расхода, классы</span>
+            </a><a href="/articles/g/gd/gde-kupit-lampochku-dlya-kholodilnika-samsung.html" class="pb-related-card">
+                <span class="pb-related-title">Где купить лампочку для холодильника Samsung: модели, размеры, цены</span>
+                <span class="pb-related-desc">Полный гид по поиску лампочки для холодильника Самсунг. Типоразмеры цоколей E14, E12, LED-панели. Ад</span>
+            </a><a href="/articles/s/sk/skolko-potreblyaet-kholodilnik-vitrina.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько потребляет холодильник-витрина: расход кВт и экономия</span>
+                <span class="pb-related-desc">Узнайте реальное потребление холодильной витрины в кВт в сутки. Факторы влияния, сравнение моделей и</span>
+            </a><a href="/articles/c/ch/chto-znachit-invertornyj-motor-kholodilnika.html" class="pb-related-card">
+                <span class="pb-related-title">Инверторный мотор холодильника: что это и зачем нужен</span>
+                <span class="pb-related-desc">Разбираем, что значит инверторный мотор в холодильнике. Плюсы, минусы, отличие от обычного компрессо</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

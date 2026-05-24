@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Энергопотребление: 1 холодильник, 2 микроволновки, 3 чайника — Холодильник Инфо</title>
+    <meta name="description" content="Расчет нагрузки на сеть и счет за электричество от одного холодильника, двух микроволновых печей и трех чайников. Анализ пиковых мощностей.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/i/iz/izvestno-chto-odin-kholodilnik-dve-mikrovolnovye-pechi-i-tri-elektricheskikh-chajnika.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Энергопотребление: 1 холодильник, 2 микроволновки, 3 чайника">
+    <meta property="og:description" content="Расчет нагрузки на сеть и счет за электричество от одного холодильника, двух микроволновых печей и трех чайников. Анализ пиковых мощностей.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ustrojstvo-i-detali/">Устройство и детали</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Энергопотребление: 1 холодильник, 2 микроволновки, 3 чайника</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#анализ-базовой-нагрузки-холодильник-как-постоянный-потребитель">Анализ базовой нагрузки: Холодильник как постоянный потребитель</a></li><li><a href="#микроволновые-печи-двойная-мощность-и-режимы-работы">Микроволновые печи: Двойная мощность и режимы работы</a></li><li><a href="#электрические-чайники-пиковые-нагрузки-и-скорость-нагрева">Электрические чайники: Пиковые нагрузки и скорость нагрева</a></li><li><a href="#расчет-суммарной-мощности-и-нагрузки-на-сеть">Расчет суммарной мощности и нагрузки на сеть</a></li><li><a href="#влияние-на-ежемесячный-счет-за-электроэнергию">Влияние на ежемесячный счет за электроэнергию</a></li><li><a href="#правила-безопасной-эксплуатации-и-распределения-нагрузки">Правила безопасной эксплуатации и распределения нагрузки</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-rasschitat-koeffitsient-raboty-kholodilnika.html">Расчет коэффициента работы холодильника: формулы и нормы</a></li><li><a href="/articles/k/ka/kak-nazyvaetsya-v-kholodilnike-motor.html">Как называется мотор в холодильнике: устройство и виды компрессоров</a></li><li><a href="/articles/c/ch/chemu-ravna-moshchnost-kholodilnika-vo-vremya-zamorozki-vt.html">Мощность холодильника при заморозке: сколько Вт потребляет компрессор</a></li><li><a href="/articles/g/gd/gde-kupit-petli-dlya-kholodilnika-lg.html">Где купить петли для холодильника LG: оригиналы и аналоги</a></li><li><a href="/articles/s/st/staryj-kompressor-ot-kholodilnika-kuda-sdavat.html">Куда сдать старый компрессор от холодильника: пункты приема и цена</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Энергетический баланс: один холодильник, две микроволновки и три чайника</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#анализ-базовой-нагрузки-холодильник-как-постоянный-потребитель">Анализ базовой нагрузки: Холодильник как постоянный потребитель</a></li><li><a href="#микроволновые-печи-двойная-мощность-и-режимы-работы">Микроволновые печи: Двойная мощность и режимы работы</a></li><li><a href="#электрические-чайники-пиковые-нагрузки-и-скорость-нагрева">Электрические чайники: Пиковые нагрузки и скорость нагрева</a></li><li><a href="#расчет-суммарной-мощности-и-нагрузки-на-сеть">Расчет суммарной мощности и нагрузки на сеть</a></li><li><a href="#влияние-на-ежемесячный-счет-за-электроэнергию">Влияние на ежемесячный счет за электроэнергию</a></li><li><a href="#правила-безопасной-эксплуатации-и-распределения-нагрузки">Правила безопасной эксплуатации и распределения нагрузки</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Когда в доме появляется новый набор бытовой техники, многие пользователи задумываются о том, как именно изменится их ежемесячный счет за электроэнергию. Ситуация, где на одной кухне работают <strong>один холодильник, две микроволновые печи и три электрических чайника</strong>, является отличным примером для анализа пиковых нагрузок и общего потребления. Такое сочетание приборов характерно для больших семей, офисных кухонь или помещений, где проживает несколько арендаторов, использующих общую инфраструктуру.</p>
+
+<p>Понимание принципов работы каждого устройства позволяет не только сэкономить деньги, но и обезопасить электропроводку от перегрузок. Холодильник работает постоянно, микроволновые печи включаются эпизодически, а чайники создают кратковременные, но мощные скачки напряжения. В этой статье мы детально разберем, как взаимодействуют эти приборы в одной электрической цепи.</p>
+
+<p><em>Важно учитывать, что суммарная мощность всех одновременно включенных приборов может превысить допустимые значения для стандартной розетки или линии.</em> Поэтому перед эксплуатацией такого количества техники необходимо провести грамотный расчет.</p>
+
+<h2 id="анализ-базовой-нагрузки-холодильник-как-постоянный-потребитель">Анализ базовой нагрузки: Холодильник как постоянный потребитель</h2>
+
+<p>Холодильник является единственным устройством в нашем списке, которое потребляет электроэнергию круглосуточно. Даже если его дверца не открывается, <strong>компрессор</strong> периодически включается для поддержания заданной температуры внутри камер. Современные модели класса энергоэффективности A++ или A+++ потребляют значительно меньше, чем старые советские агрегаты, но их вклад в общий счет все равно значителен из-за непрерывности работы.</p>
+
+<p>Средняя мощность холодильника варьируется от 150 до 400 Вт в момент работы компрессора. Однако в режиме ожидания или при работе только системы <em>No Frost</em> (вентиляция) потребление падает до минимума. Ключевым параметром здесь является не пиковая мощность, а класс энергопотребления и объем камер.</p>
+
+<blockquote>⚠️ Внимание: Старые холодильники с изношенной резиновой уплотнительной прокладкой могут потреблять до 40% больше электроэнергии из-за частых включений компрессора. Регулярно проверяйте герметичность дверцы.</blockquote>
+
+<p>Для точного понимания расходов стоит учитывать сезонность. Летом, когда температура окружающей среды высока, холодильнику требуется больше энергии для отвода тепла через конденсатор, расположенный сзади корпуса. Зимой, наоборот, потребление может снижаться, если устройство стоит в прохладном помещении.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Размещайте холодильник подальше от плиты и прямых солнечных лучей — это снизит нагрузку на компрессор и уменьшит расход электроэнергии.</p></aside>
+
+<h2 id="микроволновые-печи-двойная-мощность-и-режимы-работы">Микроволновые печи: Двойная мощность и режимы работы</h2>
+
+<p>Наличие двух микроволновых печей на одной кухне часто указывает на высокую интенсивность использования или необходимость разогревать большое количество порций одновременно. Мощность таких устройств обычно составляет от 700 до 1200 Вт в режиме микроволн и до 2500 Вт, если включен режим <strong>гриля</strong> или конвекции.</p>
+
+<p>Когда работают две микроволновки одновременно, нагрузка на сеть удваивается. Это создает серьезный риск для старой проводки, особенно если на этой же линии висят другие мощные потребители. Современные инверторные модели способны регулировать мощность магнетрона, что делает их работу более плавной для электросети.</p>
+
+<ul>
+<li>🔌 Стандартная микроволновка потребляет около 1 кВт в час при непрерывной работе на максимальной мощности.</li>
+<li>🍗 Режим гриля увеличивает потребление почти в два раза по сравнению с обычным разогревом.</li>
+<li>⏱️ Кратковременность включения (2-5 минут) компенсирует высокую мгновенную мощность в итоговом счете.</li>
+</ul>
+
+<p>Стоит отметить, что две печи, стоящие рядом, могут создавать интерференцию, хотя в бытовых условиях это встречается редко. Более важно следить за вентиляционными отверстиями: если две микроволновки установлены в нишу плотно друг к другу без зазоров, они могут перегреваться и уходить в защиту.</p>
+
+<details class="pb-accordion"><summary>Почему микроволновка гудит?</summary><div class="pb-accordion-body"><p>Гудение вызывает трансформатор и вентилятор охлаждения. В двух одновременно работающих печах этот шум может создавать ощутимый акустический дискомфорт на кухне.</p></div></details>
+
+<h2 id="электрические-чайники-пиковые-нагрузки-и-скорость-нагрева">Электрические чайники: Пиковые нагрузки и скорость нагрева</h2>
+
+<p>Три электрических чайника — это сценарий, создающий самые высокие пиковые нагрузки. Мощность чайников обычно варьируется от 1500 до 3000 Вт. Если включить три таких прибора одновременно, суммарная мощность может достигнуть 6-9 кВт, что является критическим значением для стандартной квартирной проводки, рассчитанной на 3.5-5 кВт на одну линию.</p>
+
+<p>Основная задача чайника — быстро вскипятить воду, поэтому он работает на пределе своих возможностей все время включения. Нагревательный элемент (<strong>ТЭН</strong>) потребляет максимальный ток. В отличие от холодильника, здесь нет циклов включения-выключения в процессе работы — чайник греет постоянно, пока не сработает термореле.</p>
+
+<p>Использование трех чайников оправдано только в офисах или очень больших семьях, где нужно набрать горячую воду в термосы или приготовить еду для большого количества людей одновременно. В обычных условиях это избыточно и опасно.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Одновременное включение трех чайников может вызвать выбивание автоматического выключателя (пробок) в щитке, если линия не рассчитана на такую мощность.</p></aside>
+
+<h2 id="расчет-суммарной-мощности-и-нагрузки-на-сеть">Расчет суммарной мощности и нагрузки на сеть</h2>
+
+<p>Чтобы понять, выдержит ли проводка одновременную работу всего этого парка техники, необходимо сложить их максимальные мощности. Давайте рассмотрим усредненные значения для типичного сценария использования.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Прибор</th>
+<th>Количество</th>
+<th>Средняя мощность (Вт)</th>
+<th>Суммарная мощность (Вт)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Холодильник</td>
+<td>1</td>
+<td>200</td>
+<td>200</td>
+</tr>
+<tr>
+<td>Микроволновая печь</td>
+<td>2</td>
+<td>1000</td>
+<td>2000</td>
+</tr>
+<tr>
+<td>Электрический чайник</td>
+<td>3</td>
+<td>2200</td>
+<td>6600</td>
+</tr>
+<tr>
+<td><strong>ИТОГО</strong></td>
+<td><strong>6</strong></td>
+<td>-</td>
+<td><strong>8800</strong></td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Как видно из таблицы, в пиковый момент (когда все чайники и микроволновки включены одновременно) потребление составляет почти 9 кВт. Стандартный автоматический выключатель на 16 Ампер, который часто стоит в старых квартирах, рассчитан примерно на 3.5 кВт. Даже автомат на 25 Ампер выдержит лишь около 5.5 кВт.</p>
+
+<p>Это означает, что одновременная работа всех перечисленных приборов на одной линии невозможна без замены проводки и вводного автомата. Однако в реальной жизни чайники и микроволновки работают короткими циклами, поэтому средняя потребляемая мощность за час будет значительно ниже пиковой.</p>
+
+<div class="pb-poll" id="poll-747bb75a"><div class="pb-poll-question">📊 Что у вас чаще всего выбивает пробки?</div><div class="pb-poll-option" data-poll="747bb75a" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Чайник + микроволновка</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="747bb75a" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Стиральная машина</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="747bb75a" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Фен + плойка</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="747bb75a" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Все работает нормально</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="влияние-на-ежемесячный-счет-за-электроэнергию">Влияние на ежемесячный счет за электроэнергию</h2>
+
+<p>Расчет стоимости эксплуатации такого набора техники зависит от тарифов вашего региона и частоты использования. Холодильник составляет базовую часть счета, в то время как чайники и микроволновки добавляют переменную часть.</p>
+
+<p>Если исходить из того, что холодильник потребляет около 30-40 кВт*ч в месяц, то его вклад стабилен. Две микроволновки, используемые по 20 минут в день каждая, добавят еще около 40 кВт*ч. Три чайника при активном использовании (например, 10 включений в день по 3 минуты) могут потребить до 30-40 кВт*ч.</p>
+
+<p>Таким образом, общий расход может составить около 120-150 кВт*ч в месяц только на эту группу приборов. Для сравнения, средняя семья из трех человек потребляет 200-300 кВт*ч в месяц со всей прочей техникой (свет, ТВ, стирка).</p>
+
+<blockquote>⚠️ Внимание: Тарифы на электроэнергию могут меняться. Для точного расчета умножьте потребляемые киловатт-часы на актуальный тариф в вашем личном кабинете энергосбытовой компании.</blockquote>
+
+<h2 id="правила-безопасной-эксплуатации-и-распределения-нагрузки">Правила безопасной эксплуатации и распределения нагрузки</h2>
+
+<p>Чтобы избежать аварийных ситуаций при наличии такого количества мощной техники, необходимо грамотно распределить их по розеткам. Идеальный вариант — когда чайники, микроволновки и холодильник запитаны от разных автоматических выключателей в щитке.</p>
+
+<p>Ни в коем случае не используйте дешевые удлинители и тройники для подключения трех чайников или двух микроволновок в одну розетку. Контакты таких устройств не рассчитаны на токи свыше 16 Ампер и могут расплавиться, вызвав пожар.</p>
+
+<ul>
+<li>🛡️ Используйте только качественные сетевые фильтры с защитой от перегрузок.</li>
+<li>🔌 Проверяйте состояние вилок и розеток: почернение пластика — признак перегрева.</li>
+<li>⚡ Не включайте все три чайника одновременно, если в этот момент работает микроволновка.</li>
+</ul>
+
+<p>Регулярная проверка затяжки контактов в розетках также необходима. Под воздействием вибрации и тепловых расширений винты могут ослабевать, что приводит к искрению и нагреву.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка электробезопасности кухни</h4><label class="check-item"><input type="checkbox"><span>Визуальный осмотр розеток</span></label><label class="check-item"><input type="checkbox"><span>Проверка вилок приборов</span></label><label class="check-item"><input type="checkbox"><span>Тест автоматических выключателей</span></label><label class="check-item"><input type="checkbox"><span>Отсутствие запаха гари</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли включать два чайника и микроволновку в один удлинитель?</summary>
+<p>Категорически не рекомендуется. Суммарная мощность этих приборов превысит допустимую нагрузку на удлинитель (обычно 3.5 кВт), что приведет к его перегреву и возможному возгоранию.</p>
+</details>
+
+<details>
+<summary>Почему мигает свет, когда включается холодильник?</summary>
+<p>Это свидетельствует о пусковых токах компрессора. Если свет мигает сильно или гаснет, возможно, проводка слишком тонкая или контакты в щитке ослаблены.</p>
+</details>
+
+<details>
+<summary>Какой класс энергоэффективности выбрать для нового холодильника?</summary>
+<p>Рекомендуется выбирать класс A++ или выше. Несмотря на более высокую начальную стоимость, разница в потреблении электроэнергии окупится за 2-3 года эксплуатации.</p>
+</details>
+
+<details>
+<summary>Вредно ли для микроволновки частое включение и выключение?</summary>
+<p>Современные микроволновые печи рассчитаны на множество циклов включения. Однако частое включение на полную мощность без нагрузки (пустой камеры) может повредить магнетрон.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-rasschitat-koeffitsient-raboty-kholodilnika.html" class="pb-related-card">
+                <span class="pb-related-title">Расчет коэффициента работы холодильника: формулы и нормы</span>
+                <span class="pb-related-desc">Узнайте, как рассчитать коэффициент работы компрессора. Нормы, формулы, причины частого включения и </span>
+            </a><a href="/articles/k/ka/kak-nazyvaetsya-v-kholodilnike-motor.html" class="pb-related-card">
+                <span class="pb-related-title">Как называется мотор в холодильнике: устройство и виды компрессоров</span>
+                <span class="pb-related-desc">Узнайте, как правильно называется мотор в холодильнике. Разбор типов компрессоров, принцип работы, п</span>
+            </a><a href="/articles/c/ch/chemu-ravna-moshchnost-kholodilnika-vo-vremya-zamorozki-vt.html" class="pb-related-card">
+                <span class="pb-related-title">Мощность холодильника при заморозке: сколько Вт потребляет компрессор</span>
+                <span class="pb-related-desc">Разбираемся, как рассчитать мощность холодильника в режиме заморозки (Вт), от чего зависит энергопот</span>
+            </a><a href="/articles/g/gd/gde-kupit-petli-dlya-kholodilnika-lg.html" class="pb-related-card">
+                <span class="pb-related-title">Где купить петли для холодильника LG: оригиналы и аналоги</span>
+                <span class="pb-related-desc">Ищете, где купить петли для холодильника LG? Полный гид по выбору, артикулам и совместимости дверей.</span>
+            </a><a href="/articles/s/st/staryj-kompressor-ot-kholodilnika-kuda-sdavat.html" class="pb-related-card">
+                <span class="pb-related-title">Куда сдать старый компрессор от холодильника: пункты приема и цена</span>
+                <span class="pb-related-desc">Узнайте, где сдать компрессор от холодильника на металлолом или в утилизацию. Актуальные цены, пункт</span>
+            </a><a href="/articles/k/ka/kak-rasschitat-potreblenie-elektroenergii-kholodilnika.html" class="pb-related-card">
+                <span class="pb-related-title">Как рассчитать потребление электроэнергии холодильника: формулы</span>
+                <span class="pb-related-desc">Узнайте, как точно вычислить расход электричества холодильником. Разбор формул, влияние класса энерг</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

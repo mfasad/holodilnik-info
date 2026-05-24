@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Как устроен инверторный компрессор холодильника: принцип работы — Холодильник Инфо</title>
+    <meta name="description" content="Подробный разбор устройства инверторного компрессора. Чем он отличается от обычного, плюсы и минусы, особенности конструкции и диагностики неисправностей.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/k/ka/kak-ustroen-invertornyj-kompressor-kholodilnika.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как устроен инверторный компрессор холодильника: принцип работы">
+    <meta property="og:description" content="Подробный разбор устройства инверторного компрессора. Чем он отличается от обычного, плюсы и минусы, особенности конструкции и диагностики неисправностей.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ustrojstvo-i-detali/">Устройство и детали</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как устроен инверторный компрессор холодильника: принцип работы</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#базовый-принцип-работы-и-отличие-от-линейных-моделей">Базовый принцип работы и отличие от линейных моделей</a></li><li><a href="#конструктивные-особенности-инверторного-двигателя">Конструктивные особенности инверторного двигателя</a></li><li><a href="#роль-электронного-блока-управления">Роль электронного блока управления</a></li><li><a href="#сравнительная-таблица-характеристик">Сравнительная таблица характеристик</a></li><li><a href="#преимущества-и-недостатки-технологии">Преимущества и недостатки технологии</a></li><li><a href="#диагностика-и-типичные-неисправности">Диагностика и типичные неисправности</a></li><li><a href="#советы-по-эксплуатации-и-продлению-срока-службы">Советы по эксплуатации и продлению срока службы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/kh/kholodilnik-zil-chto-tsennogo.html">Холодильник ЗИЛ: что ценного в советской модели</a></li><li><a href="/articles/s/st/stinol-kto-proizvoditel-kholodilnikov-strana-proizvoditel.html">Стинол: кто производитель, страна бренда и история холодильников</a></li><li><a href="/articles/s/sk/skolko-kv-v-chas-potreblyaet-kholodilnik.html">Сколько кВт в час потребляет холодильник: расчеты и нормы</a></li><li><a href="/articles/a/av/avtomobilnye-kholodilniki-kak-rabotayut.html">Как работают автомобильные холодильники: устройство и принцип действия</a></li><li><a href="/articles/k/ka/kak-razobrat-staryj-kholodilnik-na-med.html">Как разобрать старый холодильник на медь: пошаговая инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как устроен инверторный компрессор холодильника: устройство и принцип</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#базовый-принцип-работы-и-отличие-от-линейных-моделей">Базовый принцип работы и отличие от линейных моделей</a></li><li><a href="#конструктивные-особенности-инверторного-двигателя">Конструктивные особенности инверторного двигателя</a></li><li><a href="#роль-электронного-блока-управления">Роль электронного блока управления</a></li><li><a href="#сравнительная-таблица-характеристик">Сравнительная таблица характеристик</a></li><li><a href="#преимущества-и-недостатки-технологии">Преимущества и недостатки технологии</a></li><li><a href="#диагностика-и-типичные-неисправности">Диагностика и типичные неисправности</a></li><li><a href="#советы-по-эксплуатации-и-продлению-срока-службы">Советы по эксплуатации и продлению срока службы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Современная бытовая техника претерпевает значительные изменения, стремясь к максимальной энергоэффективности и снижению уровня шума. Центральным элементом этой эволюции стал <strong>инверторный компрессор</strong>, который постепенно вытесняет традиционные линейные аналоги. Понимание того, как именно работает этот механизм, помогает не только выбрать надежный холодильник, но и правильно обслуживать его в будущем, продлевая срок службы дорогостоящего оборудования.</p>
+
+<p>В отличие от старых моделей, которые работали по принципу «включился-выключился», новая технология позволяет двигателю изменять скорость вращения вала в зависимости от текущей нагрузки. Это обеспечивает более плавное охлаждение камер и отсутствие резких скачков температуры. <em>Инверторная система</em> управляет мощностью подачи хладагента, что делает работу агрегата практически бесшумной и экономичной.</p>
+
+<p>В данной статье мы детально разберем внутреннюю конструкцию, физические принципы работы и ключевые отличия от классических решений. Вы узнаете, почему производители массово переходят на этот стандарт и какие скрытые особенности нужно учитывать при эксплуатации. Знание устройства поможет вам быстрее диагностировать проблемы или просто оценить качество приобретаемой техники.</p>
+
+<h2 id="базовый-принцип-работы-и-отличие-от-линейных-моделей">Базовый принцип работы и отличие от линейных моделей</h2>
+
+<p>Основное различие кроется в характере работы электродвигателя. Классический <strong>линейный компрессор</strong> всегда работает на полную мощность, пока не достигнет заданной температуры, после чего полностью отключается. Когда температура в камере поднимается, цикл повторяется. Этот процесс сопровождается характерным щелчком запуска и вибрацией.</p>
+
+<p>Инверторный мотор, в свою очередь, после первоначального запуска не останавливается полностью. Он лишь снижает обороты до минимально необходимых для поддержания холода. Управление происходит за счет преобразования переменного тока сети в постоянный, а затем снова в переменный, но уже с требуемой частотой. Это позволяет <em>плавно регулировать</em> производительность без резких пусковых токов.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Инверторные системы крайне чувствительны к перепадам напряжения в электросети. Резкие скачки могут повредить электронную плату управления, поэтому использование стабилизатора напряжения является обязательным условием для долговечной работы.</p>
+</blockquote>
+
+<p>Такой подход устраняет износ механических частей, возникающий при постоянных пусках и остановках. В результате ресурс двигателя значительно увеличивается, а потребление электроэнергии снижается на 20-30% по сравнению с классическими моделями. <strong>Энергоэффективность</strong> становится главным козырем данной технологии.</p>
+
+<div class="pb-poll" id="poll-7a060506"><div class="pb-poll-question">📊 Какой тип компрессора у вашего холодильника?</div><div class="pb-poll-option" data-poll="7a060506" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Обычный (слышно как включается/выключается)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7a060506" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Инверторный (работает тихо и постоянно)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7a060506" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю / Не обращал внимание</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7a060506" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">У меня вообще нет холодильника</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="конструктивные-особенности-инверторного-двигателя">Конструктивные особенности инверторного двигателя</h2>
+
+<p>Внутреннее устройство инверторного компрессора сложнее, чем у его предшественников. Ключевым элементом является встроенный <strong>инвертор</strong> (частотный преобразователь), который отвечает за изменение частоты тока. Этот блок интегрирован непосредственно в корпус компрессора или вынесен в отдельный модуль управления холодильника.</p>
+
+<p>Сам двигатель часто выполняется по бесщеточной схеме. Отсутствие трущихся щеток исключает искрение и механический износ контактной группы. Ротор двигателя закреплен на валу, который приводит в движение поршневую группу. В некоторых моделях, например, у бренда <em>LG</em> или <em>Samsung</em>, используется конструкция, где мотор крепится непосредственно на компрессорной части, что снижает вибрацию.</p>
+
+<p>Система смазки также имеет свои особенности. Поскольку компрессор редко останавливается, масло должно постоянно циркулировать и не вспениваться при низких оборотах. Используются специальные синтетические масла, устойчивые к разным температурным режимам и скоростям вращения вала.</p>
+
+<details class="pb-accordion"><summary>Почему инверторные компрессоры крепят на пружинах?</summary><div class="pb-accordion-body"><p>Несмотря на заявленную тишину, двигатель все равно создает микровибрации при работе. Крепление на пружинах или резиновых амортизаторах необходимо, чтобы эти вибрации не передавались на корпус холодильника и не усиливали гул в помещении.</p></div></details>
+
+<p>Важно отметить наличие мощной электронной платы управления. Именно она считывает данные с термодатчиков и принимает решение об изменении частоты вращения. <strong>Микроконтроллер</strong> анализирует множество параметров в секунду, обеспечивая точность поддержания температуры до градуса.</p>
+
+<h2 id="роль-электронного-блока-управления">Роль электронного блока управления</h2>
+
+<p>«Мозгом» всей системы является электронный модуль. Он преобразует входящее напряжение из бытовой сети (220В, 50Гц) в постоянное, а затем формирует трехфазный ток нужной частоты для двигателя. От качества этого блока зависит стабильность работы всего холодильника.</p>
+
+<p>Блок управления получает сигналы от датчиков температуры, расположенных в холодильной и морозильной камерах. На основе этих данных алгоритм выбирает оптимальную скорость вращения вала. Если вы открыли дверцу и загрузили теплые продукты, система мгновенно увеличит мощность для быстрого охлаждения.</p>
+
+<ul>
+<li>🔹 Преобразует переменный ток сети в постоянный для питания двигателя.</li>
+<li>🔹 Регулирует частоту вращения ротора в диапазоне от 0 до 4500 оборотов в минуту.</li>
+<li>🔹 Защищает двигатель от перегрева, перегрузок и скачков напряжения.</li>
+<li>🔹 Обеспечивает плавный старт без бросков тока.</li>
+</ul>
+
+<p>Современные модели оснащены системами самодиагностики. При возникновении неисправности <strong>электроника</strong> может вывести код ошибки на дисплей или сигнализировать миганием индикаторов. Это значительно упрощает ремонт и диагностику для мастера.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При покупке холодильника с инверторным компрессором обязательно уточните наличие гарантии на электронный блок. Часто гарантия на сам компрессор составляет 10 лет, а на электронику — всего 1 год.</p></aside>
+
+<h2 id="сравнительная-таблица-характеристик">Сравнительная таблица характеристик</h2>
+
+<p>Чтобы лучше понять разницу между технологиями, рассмотрим сравнительные характеристики. Данные могут незначительно отличаться в зависимости от конкретной модели и производителя, но общая тенденция сохраняется.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Характеристика</th>
+<th>Линейный компрессор</th>
+<th>Инверторный компрессор</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Принцип работы</td>
+<td>Включение/Выключение</td>
+<td>Плавная регулировка мощности</td>
+</tr>
+<tr>
+<td>Уровень шума</td>
+<td>Высокий (щелчки, гудение)</td>
+<td>Низкий (ровный гул)</td>
+</tr>
+<tr>
+<td>Потребление энергии</td>
+<td>Стандартное (класс A, B)</td>
+<td>Экономное (класс A+, A++, A+++)</td>
+</tr>
+<tr>
+<td>Износ деталей</td>
+<td>Высокий (из-за пусков)</td>
+<td>Минимальный</td>
+</tr>
+<tr>
+<td>Точность температуры</td>
+<td>Погрешность 2-3°C</td>
+<td>Погрешность 0.5-1°C</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Как видно из таблицы, <strong>инверторная технология</strong> выигрывает по всем параметрам, кроме, пожалуй, первоначальной стоимости и сложности ремонта. Однако экономия на электричестве со временем окупает разницу в цене.</p>
+
+<h2 id="преимущества-и-недостатки-технологии">Преимущества и недостатки технологии</h2>
+
+<p>Главным преимуществом является долговечность. Отсутствие циклов постоянного запуска и остановки снижает нагрузку на механические узлы. <em>Ресурс работы</em> таких компрессоров часто превышает 10 лет активной эксплуатации без необходимости замены.</p>
+
+<p>Второй важный плюс — это низкий уровень шума. Холодильник с инверторным мотором работает почти бесшумно, что особенно важно для квартир-студий или открытых планировок, где кухня совмещена с гостиной. Вы не услышите привычных щелчков реле.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Несмотря на надежность, ремонт инверторных компрессоров требует специального оборудования и высокой квалификации мастера. Обычными методами их часто восстановить невозможно, требуется замена узла целиком.</p>
+</blockquote>
+
+<p>К недостаткам можно отнести высокую чувствительность к качеству электропитания. В регионах с нестабильной электросетью риск выхода из строя электроники значительно выше. Также стоимость таких холодильников изначально выше, что может стать барьером для некоторых покупателей.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Признаки исправной работы инвертора</h4><label class="check-item"><input type="checkbox"><span>Холодильник гудит равномерно, без резких изменений тона</span></label><label class="check-item"><input type="checkbox"><span>Отсутствуют щелчки реле при наборе температуры</span></label><label class="check-item"><input type="checkbox"><span>Температура в камерах стабильна, без скачков</span></label><label class="check-item"><input type="checkbox"><span>Потребление энергии соответствует заявленному классу</span></label><label class="check-item"><input type="checkbox"><span>Компрессор не нагревается чрезмерно при касании</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="диагностика-и-типичные-неисправности">Диагностика и типичные неисправности</h2>
+
+<p>Несмотря на надежность, техника может ломаться. Чаще всего из строя выходит не механическая часть, а <strong>электронная плата</strong> управления. Симптомы могут быть разными: холодильник не включается, работает только на полную мощность или постоянно отключается через несколько секунд.</p>
+
+<p>Если компрессор гудит, но не запускается, или запускается и сразу глохнет, проблема может быть в обмотках двигателя или в самом инверторе. Диагностика требует замера сопротивления обмоток и проверки сигналов на выходе платы управления.</p>
+
+<p>Иногда причиной нестабильной работы становится утечка фреона. Система пытается компенсировать нехватку хладагента, повышая обороты, но эффективность падает. В этом случае требуется поиск утечки, вакуумирование системы и заправка <em>хладагента</em>.</p>
+
+<p>Важно отличать нормальный режим работы от неисправности. Инверторный холодильник может работать сутками, не выключаясь, но потреблять при этом минимум энергии. Если внутри холод, а шум ровный — это штатный режим, а не поломка.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Главный признак поломки инверторного компрессора — это не постоянная работа, а отсутствие холода при работающем моторе или появление ошибок на дисплее управления.</p></aside>
+
+<h2 id="советы-по-эксплуатации-и-продлению-срока-службы">Советы по эксплуатации и продлению срока службы</h2>
+
+<p>Для максимальной longevity вашего холодильника обеспечьте ему правильные условия работы. В первую очередь, это установка вдали от (батареи, плиты) и обеспечение зазора для вентиляции задней стенки. Перегрев компрессора — враг любой техники.</p>
+
+<p>Не загружайте в камеру одновременно большое количество теплых продуктов. Это заставляет <strong>систему</strong> работать на пределе возможностей длительное время, что хоть и предусмотрено конструкцией, но сокращает общий ресурс.</p>
+
+<p>Регулярно размораживайте холодильник, если он не оснащен системой No Frost. Наледь на испарителе ухудшает теплообмен, заставляя компрессор работать интенсивнее. Даже в системах No Frost рекомендуется профилактическая разморозка раз в год.</p>
+
+<p>Следите за чистотой конденсатора (решетки сзади). Пыль и шерсть животных действуют как теплоизолятор, мешая отводу тепла. Чистка пылесосом раз в полгода творит чудеса для эффективности охлаждения.</p>
+
+<details>
+<summary>Можно ли заменить обычный компрессор на инверторный?</summary>
+<p>Теоретически это возможно, но практически крайне сложно и дорого. Потребуется замена не только мотора, но и электронной платы управления, перенастройка системы, а также изменение креплений. Экономически это нецелесообразно, проще купить новый холодильник.</p>
+</details>
+
+<details>
+<summary>Правда ли, что инверторные холодильники боятся мороза?</summary>
+<p>Да, электроника чувствительна к экстремально низким температурам. Если вы везете холодильник зимой в неотапливаемой машине, дайте ему постоять в тепле минимум 24 часа перед включением, чтобы конденсат испарился и масла восстановили вязкость.</p>
+</details>
+
+<details>
+<summary>Как узнать, какой компрессор стоит в моем холодильнике?</summary>
+<p>Посмотрите техническую наклейку внутри камеры или на задней стенке. Также можно включить холодильник: если он работает циклами с паузами и щелчками — это линейный. Если гудит тихо и постоянно, меняя тональность — скорее всего, инверторный.</p>
+</details>
+
+<details>
+<summary>Сильно ли греется инверторный компрессор при работе?</summary>
+<p>Он может быть теплым или даже горячим (до 50-60°C), особенно в режиме активного охлаждения. Это нормально, так как тепло отводится через стенки корпуса или конденсатор. Главное, чтобы не было запаха гари или плавления изоляции.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/kh/kholodilnik-zil-chto-tsennogo.html" class="pb-related-card">
+                <span class="pb-related-title">Холодильник ЗИЛ: что ценного в советской модели</span>
+                <span class="pb-related-desc">Анализ конструкции холодильника ЗИЛ. Что ценного внутри: мотор-компрессор, теплоизоляция, цветные ме</span>
+            </a><a href="/articles/s/st/stinol-kto-proizvoditel-kholodilnikov-strana-proizvoditel.html" class="pb-related-card">
+                <span class="pb-related-title">Стинол: кто производитель, страна бренда и история холодильников</span>
+                <span class="pb-related-desc">Кто производитель холодильников Стинол? Узнайте историю бренда, где собирают технику, как отличить о</span>
+            </a><a href="/articles/s/sk/skolko-kv-v-chas-potreblyaet-kholodilnik.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько кВт в час потребляет холодильник: расчеты и нормы</span>
+                <span class="pb-related-desc">Узнайте, сколько кВт потребляет холодильник в час. Анализ классов энергопотребления, формулы расчета</span>
+            </a><a href="/articles/a/av/avtomobilnye-kholodilniki-kak-rabotayut.html" class="pb-related-card">
+                <span class="pb-related-title">Как работают автомобильные холодильники: устройство и принцип действия</span>
+                <span class="pb-related-desc">Подробный разбор принципов работы компрессорных и термоэлектрических автохолодильников. Особенности </span>
+            </a><a href="/articles/k/ka/kak-razobrat-staryj-kholodilnik-na-med.html" class="pb-related-card">
+                <span class="pb-related-title">Как разобрать старый холодильник на медь: пошаговая инструкция</span>
+                <span class="pb-related-desc">Полный гайд по утилизации холодильника: где искать медь, как безопасно извлечь компрессор и радиатор</span>
+            </a><a href="/articles/p/po/pochemu-nelzya-otkryvat-zagruzochnye-dveri-kholodilnika.html" class="pb-related-card">
+                <span class="pb-related-title">Почему нельзя открывать загрузочные двери холодильника</span>
+                <span class="pb-related-desc">Разбираем, почему нельзя открывать загрузочные двери холодильника. Влияние на компрессор, расход эне</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

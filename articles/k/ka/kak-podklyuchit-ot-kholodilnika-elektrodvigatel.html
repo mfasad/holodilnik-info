@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Как подключить электродвигатель от холодильника: пошаговая схема — Холодильник Инфо</title>
+    <meta name="description" content="Полное руководство по подключению компрессора от холодильника. Схемы подключения пускового реле, выбор конденсатора и меры безопасности при сборке.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/k/ka/kak-podklyuchit-ot-kholodilnika-elektrodvigatel.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как подключить электродвигатель от холодильника: пошаговая схема">
+    <meta property="og:description" content="Полное руководство по подключению компрессора от холодильника. Схемы подключения пускового реле, выбор конденсатора и меры безопасности при сборке.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-nav-active">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/remont-svoimi-rukami/">Ремонт своими руками</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как подключить электродвигатель от холодильника: пошаговая схема</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#устройство-и-принцип-работы-компрессора">Устройство и принцип работы компрессора</a></li><li><a href="#определение-контактов-и-маркировка-выводов">Определение контактов и маркировка выводов</a></li><li><a href="#схема-подключения-через-штатное-реле">Схема подключения через штатное реле</a></li><li><a href="#запуск-без-реле-использование-конденсатора">Запуск без реле: использование конденсатора</a></li><li><a href="#организация-системы-охлаждения-и-безопасности">Организация системы охлаждения и безопасности</a></li><li><a href="#типичные-ошибки-и-troubleshooting">Типичные ошибки и troubleshooting</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/p/po/pochemu-ne-morozit-kholodilnik-indezit-dvukhkamernyj.html">Почему не морозит двухкамерный холодильник Indesit: причины и ремонт</a></li><li><a href="/articles/k/ka/kak-samomu-zapravit-freon-v-kholodilnik-video.html">Как заправить фреон в холодильник своими руками: видео-инструкция</a></li><li><a href="/articles/k/ka/kak-pomenyat-v-kholodilnike-dver-s-pravoj-na-levuyu.html">Как перевесить дверь холодильника: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-perevesit-dver-kholodilnika-snaige.html">Как перевесить дверь холодильника Snaige: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-otregulirovat-dvertsu-kholodilnika-lg.html">Как отрегулировать дверцу холодильника LG: пошаговая инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как подключить электродвигатель от холодильника: схемы и инструкции</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#устройство-и-принцип-работы-компрессора">Устройство и принцип работы компрессора</a></li><li><a href="#определение-контактов-и-маркировка-выводов">Определение контактов и маркировка выводов</a></li><li><a href="#схема-подключения-через-штатное-реле">Схема подключения через штатное реле</a></li><li><a href="#запуск-без-реле-использование-конденсатора">Запуск без реле: использование конденсатора</a></li><li><a href="#организация-системы-охлаждения-и-безопасности">Организация системы охлаждения и безопасности</a></li><li><a href="#типичные-ошибки-и-troubleshooting">Типичные ошибки и troubleshooting</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Использование старого компрессора от вышедшего из строя холодильника — это отличный способ получить мощный и относительно недорогой воздушный насос для гаражных нужд. Многие мастера собирают на их базе компрессоры для покрасочных камер, пневмоинструмента или даже аэрографов. Однако, прежде чем устройство начнет работать, необходимо правильно <strong>подключить электрическую схему</strong>, так как напрямую в розетку его включать нельзя.</p>
+
+<p>Основная сложность заключается в наличии пускового и защитного реле, без которых асинхронный двигатель не сможет запуститься или сгорит через несколько секунд. В этой статье мы разберем физический принцип работы, способы определения контактов и порядок сборки рабочей цепи. Вам понадобятся минимальные навыки работы с электричеством и базовый набор инструментов.</p>
+
+<p>Следует сразу отметить, что безопасность здесь стоит на первом месте. Работа с <strong>сетевым напряжением 220 Вольт</strong> требует предельной осторожности и соблюдения всех норм электробезопасности. Любая ошибка при коммутации проводов может привести к короткому замыканию или поражению током.</p>
+
+<h2 id="устройство-и-принцип-работы-компрессора">Устройство и принцип работы компрессора</h2>
+
+<p>Электродвигатель, установленный внутри герметичного кожуха холодильника, представляет собой асинхронный однофазный агрегат. Он состоит из статора с двумя обмотками и ротора. Для запуска вращения ротора необходима сдвинутая по фазе вторая обмотка, которую называют <strong>пусковой</strong>. Основная обмотка отвечает за дальнейшую работу двигателя.</p>
+
+<p>В отличие от промышленных трехфазных моторов, бытовые компрессоры не могут запуститься самостоятельно. Им требуется кратковременный импульс на пусковую обмотку, который создает необходимый вращающий момент. Этим процессом управляет специальное <strong>пусковое реле</strong>, которое автоматически отключает пусковую обмотку после разгона ротора.</p>
+
+<p>Также в цепи присутствует тепловое реле защиты. Оно размыкает контакты, если ток в обмотках превышает допустимые значения, например, при заклинивании поршневой группы или перегрузке сети. Без этого элемента риск пожара или выхода из строя обмоток при неисправности компрессора крайне велик.</p>
+
+<ul>
+<li>🔧 <strong>Основная обмотка</strong> — работает постоянно во время вращения вала.</li>
+<li>🔧 <strong>Пусковая обмотка</strong> — включается только на момент старта (1-3 секунды).</li>
+<li>🔧 <strong>Пусковое реле</strong> — коммутирует ток на пусковую обмотку.</li>
+<li>🔧 <strong>Тепловое реле</strong> — защищает двигатель от перегрева и перегрузок.</li>
+</ul>
+
+<blockquote>
+<p>⚠️ Внимание: Внутри кожуха компрессора находится фреон и масло. Категорически запрещено вскрывать герметичный корпус или перепиливать трубки под давлением без специального оборудования. Мы рассматриваем только электрическую часть внешних выводов.</p>
+</blockquote>
+
+<h2 id="определение-контактов-и-маркировка-выводов">Определение контактов и маркировка выводов</h2>
+
+<p>Первым шагом перед подключением является идентификация выводов на контактной колодке электродвигателя. Обычно на компрессоре есть три вывода, расположенные треугольником, и иногда четвертый, идущий на заземление корпуса. На современных моделях часто нанесена маркировка, но на старых агрегатах она может быть стерта или отсутствовать.</p>
+
+<p>Стандартная маркировка выглядит следующим образом: буква <em>C</em> (Common) обозначает общий провод, <em>R</em> (Run) — рабочую обмотку, а <em>S</em> (Start) — пусковую. В советских и российских моделях могут использоваться обозначения <strong>О</strong> (общий), <strong>Р</strong> (рабочий) и <strong>П</strong> (пусковой). Если маркировки нет, придется использовать мультиметр.</p>
+
+<p>Процесс прозвонки занимает несколько минут. Необходимо перевести мультиметр в режим измерения сопротивления (Ом) и поочередно измерить сопротивление между каждой парой контактов. Наибольшее сопротивление будет между концами пусковой и рабочей обмоток (суммарное сопротивление). Сопротивление между общим проводом и рабочей обмоткой будет средним, а между общим и пусковым — наименьшим.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед прозвонкой обязательно зачистите контакты на колодке до металлического блеска, так как окислы могут сильно исказить показания прибора.</p></aside>
+
+<p>Ниже приведена таблица, помогающая идентифицировать выводы по результатам замеров:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Пара контактов</th>
+<th>Сопротивление (Ом)</th>
+<th>Описание</th>
+</tr>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Вывод 1 — Вывод 2</td>
+<td>Высокое (сумма)</td>
+<td>Рабочая + Пусковая обмотки</td>
+</tr>
+<tr>
+<td>Вывод 1 — Вывод 3</td>
+<td>Среднее</td>
+<td>Общий — Рабочая обмотка</td>
+</tr>
+<tr>
+<td>Вывод 2 — Вывод 3</td>
+<td>Низкое</td>
+<td>Общий — Пусковая обмотка</td>
+</tr>
+<tr>
+<td>Вывод — Корпус</td>
+<td>Бесконечность</td>
+<td>Проверка на пробой изоляции</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Если мультиметр показывает бесконечность между всеми выводами, значит, обмотка сгорела и двигатель подлежит утилизации. В случае, когда сопротивление близко к нулю, произошло межвитковое замыкание.</p>
+
+<h2 id="схема-подключения-через-штатное-реле">Схема подключения через штатное реле</h2>
+
+<p>Самый надежный и правильный способ запустить компрессор — использовать его штатное пусковое реле. Оно подобрано заводом-изготовителем именно под характеристики данного двигателя. Реле обычно крепится непосредственно на боковой или задней стенке компрессора и надевается на контакты.</p>
+
+<p>Для подключения вам понадобится электрический шнур с вилкой. Один конец шнура (фаза) подключается к одному из контактов теплового реле, а второй (ноль) — к свободному контакту на колодке двигателя, который не задействован в пусковой схеме напрямую, или через корпус реле, если позволяет конструкция. Точная схема зависит от типа реле: позисторное или индукционное.</p>
+
+<p>В позисторных реле, которые встречаются чаще всего в современных моделях, пусковой ток проходит через терморезистор. Он нагревается, его сопротивление растет, и ток на пусковую обмотку прекращает поступать. В индукционных реле размыкание происходит механически за счет падения тока в основной обмотке при разгоне ротора.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка перед запуском</h4><label class="check-item"><input type="checkbox"><span>Закрепить реле на контактах до щелчка</span></label><label class="check-item"><input type="checkbox"><span>Проверить надежность крепления проводов</span></label><label class="check-item"><input type="checkbox"><span>Убедиться в отсутствии короткого замыкания</span></label><label class="check-item"><input type="checkbox"><span>Подготовить огнетушитель на всякий случай</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Важно правильно ориентировать реле. На его корпусе всегда есть стрелка, указывающая направление "Верх". Если установить реле вверх ногами, механизм не сработает, и пусковая обмотка сгорит. После установки реле надевается защитный кожух.</p>
+
+<h2 id="запуск-без-реле-использование-конденсатора">Запуск без реле: использование конденсатора</h2>
+
+<p>Иногда штатное реле выходит из строя, а аналог найти не удается. В таких случаях можно запустить двигатель принудительно, используя кнопку или конденсатор. Этот метод считается временным или экспериментальным, так как лишает двигатель автоматической защиты при повторном запуске.</p>
+
+<p>Для реализации схемы с конденсатором необходимо подать напряжение на рабочую обмотку постоянно, а на пусковую — кратковременно через кнопку. Конденсатор включается последовательно с пусковой обмоткой. Емкость конденсатора подбирается экспериментально, обычно в диапазоне от 4 до 10 мкФ для холодильных компрессоров.</p>
+
+<p>Процесс запуска выглядит так: вы подаете питание на рабочую обмотку, затем нажимаете кнопку подачи напряжения на пусковую обмотку (через конденсатор). Двигатель гудит и начинает вращаться. Как только он наберет обороты (через 1-2 секунды), кнопку нужно отпустить. Если держать кнопку дольше, обмотка перегреется.</p>
+
+<blockquote>
+<p>⚠️ Внимание: При использовании кнопочной схемы вы берете функцию защиты на себя. Забудьте отпустить кнопку вовремя — двигатель выйдет из строя. Используйте этот метод только если установка реле невозможна.</p>
+</blockquote>
+
+<details class="pb-accordion"><summary>Расчет емкости конденсатора</summary><div class="pb-accordion-body"><p>Точный расчет требует знания тока двигателя, но эмпирически для компрессоров холодильника действует правило: 1 мкФ на каждые 100 Вт мощности. Однако пусковые конденсаторы должны быть рассчитаны на напряжение не менее 350-400 Вольт, иначе они взорвутся.</p></div></details>
+
+<p>Существует также схема с постоянно включенным конденсатором, но она снижает пусковой момент и КПД двигателя, поэтому для компрессоров, которым нужно преодолевать давление в системе, не рекомендуется.</p>
+
+<h2 id="организация-системы-охлаждения-и-безопасности">Организация системы охлаждения и безопасности</h2>
+
+<p>После того как электрическая часть собрана, нужно решить вопрос с охлаждением. В холодильнике мотор омывается парами фреона и маслом внутри кожуха. При работе на "воздухе" (в качестве компрессора) он будет сильно нагреваться, так как штатного охлаждения нет.</p>
+
+<p>Для длительной работы необходимо организовать принудительный обдув. Можно использовать вентилятор от компьютера или промышленный кулер, направив поток воздуха непосредственно на корпус компрессора. Перегрев масла внутри приведет к его коксованию и заклиниванию поршневой группы.</p>
+
+<p>Также стоит позаботиться о фильтрации всасываемого воздуха. На входной патрубок (самая короткая трубка) следует установить воздушный фильтр, например, от автомобиля или самодельный из карбюратора. Это предотвратит попадание пыли и абразива внутрь цилиндров, что быстро выведет агрегат из строя.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Отсутствие охлаждения корпуса при работе вне холодильника — главная причина поломки переделанного компрессора. Обдув обязателен!</p></aside>
+
+<p>Не забудьте заземлить корпус. Металлический кожух должен быть соединен с заземляющим контуром вашей проводки, чтобы исключить удар током в случае пробоя изоляции обмоток на корпус.</p>
+
+<h2 id="типичные-ошибки-и-troubleshooting">Типичные ошибки и troubleshooting</h2>
+
+<p>При сборке схемы новички часто допускают ошибки, которые приводят к гудению двигателя без вращения или мгновенному сгоранию предохранителей. Одна из самых частых ошибок — перепутанные провода пусковой и рабочей обмотки. Если подать 220В на пусковую обмотку постоянно, она сгорит за секунды.</p>
+
+<p>Другая распространенная проблема — использование слишком слабого конденсатора или отсутствие нагрузки на старте. Компрессору трудно сорваться с места, если в ресивере уже есть давление. В таких случаях помогает установка обратного клапана и более мощного пускового конденсатора.</p>
+
+<ul>
+<li>🔥 <strong>Двигатель гудит, но не крутится</strong> — проверьте пусковое реле или емкость конденсатора.</li>
+<li>🔥 <strong>Выбивает автомат</strong> — возможно короткое замыкание в обмотках или пробой на корпус.</li>
+<li>🔥 <strong>Сильная вибрация</strong> — проверьте крепление компрессора к раме, возможно, износились резиновые демпферы.</li>
+</ul>
+
+<p>Если компрессор работает рывками и постоянно щелкает реле, значит, либо не хватает напряжения в сети, либо неисправна пусковая цепь. В этом случае необходимо проверить напряжение мультиметром и целостность контактов.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Технические характеристики компрессоров могут отличаться в зависимости от производителя и года выпуска. Всегда сверяйтесь с маркировкой на шильдике конкретного устройства перед сборкой схемы.</p>
+</blockquote>
+
+<div class="pb-poll" id="poll-fe2605e9"><div class="pb-poll-question">📊 С какой целью вы планируете использовать компрессор?</div><div class="pb-poll-option" data-poll="fe2605e9" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Для покраски авто</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="fe2605e9" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Для пневмоинструмента</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="fe2605e9" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Для аквариума/аэрации</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="fe2605e9" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Просто ради эксперимента</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="fe2605e9" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Другое</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли использовать компрессор от холодильника для накачки шин?</summary>
+<p>Теоретически можно, но это неэффективно. Холодильные компрессоры рассчитаны на создание разрежения и циркуляцию газа, а не на быструю закачку больших объемов воздуха под высоким давлением. Производительность у них низкая, и процесс займет очень много времени.</p>
+</details>
+
+<details>
+<summary>Какой конденсатор нужен для запуска без реле?</summary>
+<p>Обычно используют пусковые конденсаторы (CBB60 или аналоги) емкостью от 4 до 10 мкФ и напряжением не менее 400 Вольт. Точное значение подбирается экспериментально: двигатель должен уверенно запускаться без сильного гудения.</p>
+</details>
+
+<details>
+<summary>Почему компрессор сильно нагревается при работе?</summary>
+<p>В холодильнике охлаждение происходит за счет всасываемых паров фреона. На воздухе этот эффект отсутствует. Без принудительного обдува вентилятором корпус нагреется до 80-90 градусов, что опасно для масла и изоляции.</p>
+</details>
+
+<details>
+<summary>Нужно ли менять масло в компрессоре при переделке?</summary>
+<p>Менять масло не нужно, если компрессор был исправен. Однако, если вы планируете использовать его для покраски (где важно отсутствие масляного тумана), то нужно ставить мощный маслоотделитель на выходе, так как компрессор будет выбрасывать часть масла вместе с воздухом.</p>
+</details>
+
+<details>
+<summary>Сколько может проработать такой компрессор?</summary>
+<p>При правильной организации охлаждения и фильтрации воздуха, а также соблюдении режима работы (не более 20-30 минут непрерывно с перерывами), компрессор может служить годами. Ресурс зависит от качества сборки и условий эксплуатации.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/p/po/pochemu-ne-morozit-kholodilnik-indezit-dvukhkamernyj.html" class="pb-related-card">
+                <span class="pb-related-title">Почему не морозит двухкамерный холодильник Indesit: причины и ремонт</span>
+                <span class="pb-related-desc">Разбираем причины, почему холодильник Indesit перестал морозить. Диагностика, ошибки, поломки компре</span>
+            </a><a href="/articles/k/ka/kak-samomu-zapravit-freon-v-kholodilnik-video.html" class="pb-related-card">
+                <span class="pb-related-title">Как заправить фреон в холодильник своими руками: видео-инструкция</span>
+                <span class="pb-related-desc">Узнайте, как заправить фреон в холодильник самостоятельно. Подробная инструкция, видео, таблица давл</span>
+            </a><a href="/articles/k/ka/kak-pomenyat-v-kholodilnike-dver-s-pravoj-na-levuyu.html" class="pb-related-card">
+                <span class="pb-related-title">Как перевесить дверь холодильника: пошаговая инструкция</span>
+                <span class="pb-related-desc">Узнайте, как поменять сторону открывания двери холодильника. Подробная инструкция по перевешиванию р</span>
+            </a><a href="/articles/k/ka/kak-perevesit-dver-kholodilnika-snaige.html" class="pb-related-card">
+                <span class="pb-related-title">Как перевесить дверь холодильника Snaige: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробное руководство по самостоятельному перевешиванию двери холодильника Snaige: инструменты, нюан</span>
+            </a><a href="/articles/k/ka/kak-otregulirovat-dvertsu-kholodilnika-lg.html" class="pb-related-card">
+                <span class="pb-related-title">Как отрегулировать дверцу холодильника LG: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробный гид по выравниванию дверей холодильника LG. Устранение перекосов, регулировка петель, заме</span>
+            </a><a href="/articles/p/po/pochemu-v-kholodilnike-atlant-na-zadnej-stenke-sneg.html" class="pb-related-card">
+                <span class="pb-related-title">Почему в холодильнике Атлант намерзает снег на стенке</span>
+                <span class="pb-related-desc">Снег на задней стенке холодильника Атлант: причины намерзания льда, неисправности и способы их устра</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

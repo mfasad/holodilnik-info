@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Пусковой ток компрессора холодильника: как рассчитать и проверить — Холодильник Инфо</title>
+    <meta name="description" content="Узнайте, какой пусковой ток у компрессора холодильника. Таблицы значений, формулы расчета, причины скачков и защита проводки от перегрузок.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/k/ka/kakoj-puskovoj-tok-u-kompressora-kholodilnika.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Пусковой ток компрессора холодильника: как рассчитать и проверить">
+    <meta property="og:description" content="Узнайте, какой пусковой ток у компрессора холодильника. Таблицы значений, формулы расчета, причины скачков и защита проводки от перегрузок.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ustrojstvo-i-detali/">Устройство и детали</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Пусковой ток компрессора холодильника: как рассчитать и проверить</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#физика-процесса-почему-возникает-скачок-напряжения">Физика процесса: почему возникает скачок напряжения</a></li><li><a href="#типовые-значения-пусковых-токов-для-разных-моделей">Типовые значения пусковых токов для разных моделей</a></li><li><a href="#расчет-мощности-для-генераторов-и-ибп">Расчет мощности для генераторов и ИБП</a></li><li><a href="#проблемы-с-проводкой-и-автоматикой-защиты">Проблемы с проводкой и автоматикой защиты</a></li><li><a href="#диагностика-неисправностей-по-потреблению-тока">Диагностика неисправностей по потреблению тока</a></li><li><a href="#способы-снижения-пусковых-нагрузок">Способы снижения пусковых нагрузок</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kakoj-kompressor-v-kholodilnike-bosch.html">Какой компрессор в холодильнике Bosch: типы, серии и отличия</a></li><li><a href="/articles/f/fu/funktsiya-v-kholodilnike-zashchita-ot-detej-chto-eto.html">Защита от детей в холодильнике: как включить и настроить</a></li><li><a href="/articles/s/su/super-friz-v-kholodilnike-chto-eto.html">Супер Фриз в холодильнике: что это и зачем нужно</a></li><li><a href="/articles/c/ch/chem-zapravlen-kholodilnik-samsung.html">Чем заправлен холодильник Samsung: виды хладагента</a></li><li><a href="/articles/g/gd/gde-garantiya-togo-chto-moj-kholodilnik-ne-prevratitsya-v-optimusa-prajma.html">Почему холодильник не станет роботом: реальность vs мифы</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Какой пусковой ток у компрессора холодильника: нормы, замеры и риски</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#физика-процесса-почему-возникает-скачок-напряжения">Физика процесса: почему возникает скачок напряжения</a></li><li><a href="#типовые-значения-пусковых-токов-для-разных-моделей">Типовые значения пусковых токов для разных моделей</a></li><li><a href="#расчет-мощности-для-генераторов-и-ибп">Расчет мощности для генераторов и ИБП</a></li><li><a href="#проблемы-с-проводкой-и-автоматикой-защиты">Проблемы с проводкой и автоматикой защиты</a></li><li><a href="#диагностика-неисправностей-по-потреблению-тока">Диагностика неисправностей по потреблению тока</a></li><li><a href="#способы-снижения-пусковых-нагрузок">Способы снижения пусковых нагрузок</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Запуск холодильного агрегата — это всегда момент максимальной нагрузки на электрическую сеть квартиры или дома. В эту долю секунды, когда ротор двигателя еще неподвижен, а обмотки уже находятся под напряжением, происходит резкий скачок потребления энергии. Именно этот параметр, известный как пусковой ток, часто становится причиной выбивания автоматов, мерцания света или выхода из строя слабых инверторов.</p>
+
+<p>Понимание природы этого явления необходимо не только инженерам, но и обычным пользователям, желающим продлить жизнь своей технике. <strong>Номинальная мощность</strong>, указанная на шильдике, может составлять 150-200 Вт, но в момент старта потребление кратковременно возрастает в 3, 5, а иногда и в 7 раз. Если не учитывать этот фактор при подборе стабилизаторов или ИБП, оборудование может просто не запуститься.</p>
+
+<p>В этой статье мы детально разберем физику процесса, рассмотрим типичные значения для разных типов моторов и выясним, как правильно рассчитать необходимую мощность защитной аппаратуры. Также коснемся вопроса, почему <em>стартовые токи</em> могут расти со временем и что это говорит о техническом состоянии вашего холодильника.</p>
+
+<h2 id="физика-процесса-почему-возникает-скачок-напряжения">Физика процесса: почему возникает скачок напряжения</h2>
+
+<p>В основе работы компрессора лежит электродвигатель, чаще всего асинхронного типа. В момент, когда вы слышите щелчок реле и подается питание, ротор двигателя находится в состоянии покоя. Чтобы сдвинуть его с места и преодолеть инерцию, а также давление фреона в системе, требуется колоссальное усилие. Электрическим эквивалентом этого усилия и является ток.</p>
+
+<p>Согласно законам электротехники, в начальный момент вращения сопротивление обмоток минимально, так как еще не возникла <strong>ЭДС самоиндукции</strong>, которая в рабочем режиме ограничивает ток. Фактически, в первые миллисекунды двигатель представляет собой почти короткое замыкание. Напряжение в сети может кратковременно "просесть", что визуально проявляется как мигание ламп накаливания.</p>
+
+<blockquote>⚠️ Внимание: Частые скачки напряжения в момент запуска компрессора могут негативно сказываться на другой чувствительной электронике в доме, например, на блоках питания компьютеров или аудиосистемах.</blockquote>
+
+<p>Длительность этого процесса обычно составляет от 0,5 до 2 секунд. За это время ротор набирает рабочие обороты, в системе появляется противо-ЭДС, и потребление падает до <strong>номинальных значений</strong>. Если этот процесс затягивается, в дело вступает тепловое реле защиты, отключающее мотор во избежание перегрева обмоток.</p>
+
+<details class="pb-accordion"><summary>Влияние температуры на пуск</summary><div class="pb-accordion-body"><p>При низких температурах окружающей среды вязкость масла в компрессоре увеличивается. Это создает дополнительное механическое сопротивление, из-за чего пусковой ток может быть выше обычного, а время разгона двигателя — дольше.</p></div></details>
+
+<h2 id="типовые-значения-пусковых-токов-для-разных-моделей">Типовые значения пусковых токов для разных моделей</h2>
+
+<p>Величина скачка напрямую зависит от мощности двигателя и его конструкции. Для бытовых холодильников среднего класса характерны определенные диапазоны значений. Важно различать однофазные двигатели с пусковой обмоткой и более современные инверторные модели, где пусковые процессы сглажены электроникой.</p>
+
+<p>В таблице ниже приведены усредненные данные для распространенных типов компрессоров. Обратите внимание, что реальные показатели могут отличаться в зависимости от производителя и конкретного года выпуска <em>агрегата</em>.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип компрессора</th>
+<th>Номинальная мощность (Вт)</th>
+<th>Пусковой ток (А)</th>
+<th>Кратность превышения</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Однофазный (старый тип)</td>
+<td>100 - 140</td>
+<td>15 - 25</td>
+<td>5-7 раз</td>
+</tr>
+<tr>
+<td>Однофазный (современный)</td>
+<td>120 - 180</td>
+<td>10 - 18</td>
+<td>4-5 раз</td>
+</tr>
+<tr>
+<td>Инверторный</td>
+<td>80 - 150</td>
+<td>2 - 5</td>
+<td>1.2-1.5 раз</td>
+</tr>
+<tr>
+<td>Двухкомпрессорный (суммарно)</td>
+<td>200 - 300</td>
+<td>20 - 35</td>
+<td>Зависит от синхронизации</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Как видно из данных, классические модели создают наибольшую нагрузку. Именно поэтому в старых домах с алюминиевой проводкой одновременный запуск холодильника и, например, стиральной машины мог приводить к нагреву контактов в розетках. Современные <strong>энергоэффективные модели</strong> часто лишены этого недостатка благодаря использованию инверторных технологий.</p>
+
+<div class="pb-poll" id="poll-c723230a"><div class="pb-poll-question">📊 Сталкивались ли вы с выбиванием пробок при включении холодильника?</div><div class="pb-poll-option" data-poll="c723230a" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Да, регулярно</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c723230a" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Было пару раз</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c723230a" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Никогда</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c723230a" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю, не следил</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="расчет-мощности-для-генераторов-и-ибп">Расчет мощности для генераторов и ИБП</h2>
+
+<p>Если вы планируете использовать холодильник в условиях нестабильного электроснабжения, на даче или в автодоме, вопрос подбора источника бесперебойного питания (ИБП) или генератора становится критическим. Многие совершают ошибку, суммируя только номинальную мощность приборов, забывая про <strong>пусковые нагрузки</strong>.</p>
+
+<p>Для корректного расчета необходимо знать не только ватты, но и амперы. Формула проста: умножаем мощность прибора на коэффициент пускового тока (обычно берем 3 или 4 для запаса). Например, для компрессора мощностью 200 Вт с коэффициентом 4 требуемая мощность генератора составит 800 Вт. Однако, это лишь активная мощность.</p>
+
+<p>Важно учитывать полную мощность в Вольт-Амперах (ВА), так как двигатели имеют низкий <strong>коэффициент мощности (cos φ)</strong>. Для электродвигателей он часто составляет 0.6–0.8. Поэтому ИБП нужно подбирать с запасом не менее 30-40% от расчетной пиковой мощности.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При выборе генератора обращайте внимание на способность overload (перегрузочную способность). Некоторые модели могут кратковременно выдавать двойную мощность, что идеально подходит для запуска холодильников.</p></aside>
+
+<h2 id="проблемы-с-проводкой-и-автоматикой-защиты">Проблемы с проводкой и автоматикой защиты</h2>
+
+<p>Высокий пусковой ток — это стресс не только для самого компрессора, но и для всей домашней электросети. Ослабленные контакты в розетках, старые автоматы и тонкие провода могут не выдерживать регулярных скачков. Со временем это приводит к окислению контактов и нагреву.</p>
+
+<p>Если автоматический выключатель выбивает именно в момент щелчка реле холодильника, это верный признак того, что его номинал подобран неправильно или проводка находится в плачевном состоянии. Часто в старых щитках стоят автоматы на 6А или 10А, которые физически не могут пропустить пусковой ток современного мощного компрессора без ложного срабатывания.</p>
+
+<p>Стоит также помнить о явлении "ложного старта". Если напряжение в сети упало ниже критического уровня, двигатель может попытаться запуститься, не провернуть вал до конца, и снова остановиться. Повторяющиеся попытки запуска с высоким током могут быстро вывести из строя <strong>пусковое реле</strong> или сжечь обмотку.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка состояния проводки</h4><label class="check-item"><input type="checkbox"><span>Визуальный осмотр розетки на предмет оплавления</span></label><label class="check-item"><input type="checkbox"><span>Проверка затяжки винтов в автомате</span></label><label class="check-item"><input type="checkbox"><span>Замер напряжения в сети под нагрузкой</span></label><label class="check-item"><input type="checkbox"><span>Аудит номинала автоматического выключателя</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="диагностика-неисправностей-по-потреблению-тока">Диагностика неисправностей по потреблению тока</h2>
+
+<p>Измерение тока — один из самых точных способов диагностики состояния компрессора. Для этого используется прибор токоизмерительные клещи. Нормальным считается, если пусковой ток превышает рабочий в 3-5 раз и быстро падает. Если же ток остается высоким или падает очень медленно, это сигнал о механических проблемах.</p>
+
+<p>Высокий пусковой ток может указывать на заклинивание поршневой группы, загустевшее масло или проблемы с электрической частью двигателя, например, межвитковое замыкание. В таких случаях реле защиты может не успевать сработать, и обмотки сгорают. Также стоит проверить <strong>конденсатор</strong>, если он предусмотрен конструкцией, так как его неисправность меняет фазу и увеличивает нагрузку.</p>
+
+<blockquote>⚠️ Внимание: Проводить замеры токовыми клещами следует с осторожностью. Не прикасайтесь к оголенным проводам под напряжением и убедитесь, что прибор рассчитан на измеряемый диапазон токов.</blockquote>
+
+<p>Если вы заметили, что свет в квартире стал меркнуть сильнее обычного при запуске холодильника, это может свидетельствовать о деградации мотора. Со временем износ трущихся деталей увеличивает сопротивление, требуя большего тока для старта. В такой ситуации лучше задуматься о замене агрегата, пока он не устроил пожар в щитке.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Резкое увеличение пускового тока по сравнению с паспортными данными — верный признак скорого выхода компрессора из строя или проблем с электропитанием.</p></aside>
+
+<h2 id="способы-снижения-пусковых-нагрузок">Способы снижения пусковых нагрузок</h2>
+
+<p>Существуют технические решения, позволяющие смягчить удар по сети. Самый распространенный метод — использование устройств плавного пуска (soft start). Они постепенно повышают напряжение на обмотках двигателя, позволяя ротору раскручиваться без резкого броска тока.</p>
+
+<p>Однако, для бытовых холодильников установка таких устройств требует вмешательства в электрическую схему, что может нарушить гарантию. Более простой способ — разнесение во времени включения мощных потребителей. Некоторые современные системы "Умный дом" могут отслеживать запуск холодильника и временно отключать менее важные приборы, например, бойлер.</p>
+
+<p>Также эффективным решением является установка отдельной линии проводки для холодильника, идущей напрямую от щитка, с использованием медного кабеля сечением не менее 2.5 мм². Это минимизирует падение напряжения и снижает риски для остальной техники.</p>
+
+<details class="pb-accordion"><summary>Можно ли использовать стабилизатор?</summary><div class="pb-accordion-body"><p>Да, но его мощность должна быть рассчитана именно на пусковой ток, а не на номинал. Обычный стабилизатор на 1 кВА может не потянуть запуск, если его пиковая мощность ограничена.</p></div></details>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Почему холодильник гудит и щелкает, но не запускается?</summary>
+<p>Скорее всего, пускового тока не хватает, чтобы провернуть вал из-за низкого напряжения в сети или неисправности пускового реле. Также возможно заклинивание компрессора.</p>
+</details>
+
+<details>
+<summary>Вреден ли частый запуск и остановка для компрессора?</summary>
+<p>Да, каждый пуск — это механический и тепловой стресс. Оптимальный цикл работы предполагает работу в течение 10-15 минут и отдых, равный по времени работе. Частые включения говорят о проблемах с терморегулятором или утечке фреона.</p>
+</details>
+
+<details>
+<summary>Может ли пусковой ток повредить телевизор?</summary>
+<p>При резком скачке потребления холодильником может произойти кратковременное проседание напряжения во всей сети. Если проводка слабая, это может вызвать перезагрузку чувствительной электроники, но редко приводит к поломкам, если нет серьезных аварий в сети.</p>
+</details>
+
+<details>
+<summary>Как узнать точный пусковой ток моей модели?</summary>
+<p>Точные данные есть только в технической документации производителя. На практике используют расчетный метод: умножают номинальный ток, указанный на шильдике, на коэффициент 3-5.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kakoj-kompressor-v-kholodilnike-bosch.html" class="pb-related-card">
+                <span class="pb-related-title">Какой компрессор в холодильнике Bosch: типы, серии и отличия</span>
+                <span class="pb-related-desc">Узнайте, какой компрессор установлен в вашем холодильнике Bosch. Разбор инверторных и линейных модел</span>
+            </a><a href="/articles/f/fu/funktsiya-v-kholodilnike-zashchita-ot-detej-chto-eto.html" class="pb-related-card">
+                <span class="pb-related-title">Защита от детей в холодильнике: как включить и настроить</span>
+                <span class="pb-related-desc">Подробный гид по функции защиты от детей в холодильниках. Как активировать блокировку панели, что де</span>
+            </a><a href="/articles/s/su/super-friz-v-kholodilnike-chto-eto.html" class="pb-related-card">
+                <span class="pb-related-title">Супер Фриз в холодильнике: что это и зачем нужно</span>
+                <span class="pb-related-desc">Узнайте, что такое режим Супер Фриз в холодильнике и как он продлевает жизнь продуктам. Разбираем пр</span>
+            </a><a href="/articles/c/ch/chem-zapravlen-kholodilnik-samsung.html" class="pb-related-card">
+                <span class="pb-related-title">Чем заправлен холодильник Samsung: виды хладагента</span>
+                <span class="pb-related-desc">Подробный гид: какой фреон в холодильниках Самсунг, отличия R600a и R134a, инструкция по дозаправке </span>
+            </a><a href="/articles/g/gd/gde-garantiya-togo-chto-moj-kholodilnik-ne-prevratitsya-v-optimusa-prajma.html" class="pb-related-card">
+                <span class="pb-related-title">Почему холодильник не станет роботом: реальность vs мифы</span>
+                <span class="pb-related-desc">Разбираем реальные риски умных холодильников: от взлома до сбоев ПО. Узнайте, возможна ли автономия </span>
+            </a><a href="/articles/i/is/isparitel-v-kholodilnike-chto-eto.html" class="pb-related-card">
+                <span class="pb-related-title">Испаритель в холодильнике: что это, функции и причины поломок</span>
+                <span class="pb-related-desc">Подробно о том, что такое испаритель в холодильнике, как он работает, где находится и почему возника</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

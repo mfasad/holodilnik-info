@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Как работает холодильник LG: устройство, инвертор и диагностика — Холодильник Инфо</title>
+    <meta name="description" content="Подробный разбор принципа работы холодильников LG: инверторный компрессор, система No Frost, датчики Smart Diagnosis. Разбираем устройство и логику циклов.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/k/ka/kak-rabotaet-kholodilnik-eldzhi.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как работает холодильник LG: устройство, инвертор и диагностика">
+    <meta property="og:description" content="Подробный разбор принципа работы холодильников LG: инверторный компрессор, система No Frost, датчики Smart Diagnosis. Разбираем устройство и логику циклов.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ustrojstvo-i-detali/">Устройство и детали</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как работает холодильник LG: устройство, инвертор и диагностика</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#сердце-системы-инверторный-компрессор">Сердце системы: Инверторный компрессор</a></li><li><a href="#циркуляция-холода-система-multi-air-flow-и-doorcooling">Циркуляция холода: Система Multi Air Flow и DoorCooling+</a></li><li><a href="#борьба-с-наледью-технология-total-no-frost">Борьба с наледью: Технология Total No Frost</a></li><li><a href="#электронное-управление-и-датчики">Электронное управление и датчики</a></li><li><a href="#зоны-свежести-и-дополнительные-функции">Зоны свежести и дополнительные функции</a></li><li><a href="#типичные-режимы-работы-и-диагностика-проблем">Типичные режимы работы и диагностика проблем</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/g/gd/gde-prodayutsya-rezinki-na-kholodilnik.html">Где купить резинку на холодильник: цены, бренды, советы</a></li><li><a href="/articles/k/ka/kak-rabotaet-kholodilnik-polair.html">Как работает холодильник Polair: устройство, цикл и принцип работы</a></li><li><a href="/articles/k/ka/kakogo-goda-kholodilnik-sviyaga.html">Какого года холодильник Свияга: определение по коду и этикетке</a></li><li><a href="/articles/k/ka/kak-mozhno-ispolzovat-staryj-kompressor-ot-kholodilnika.html">Второе сердце холодильника: 7 идей для старого компрессора</a></li><li><a href="/articles/r/re/refrizherator-v-kholodilnike-chto-eto-takoe.html">Рефрижератор в холодильнике: что это такое и зачем он нужен</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Принцип работы и устройство холодильника LG: от инвертора до No Frost</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#сердце-системы-инверторный-компрессор">Сердце системы: Инверторный компрессор</a></li><li><a href="#циркуляция-холода-система-multi-air-flow-и-doorcooling">Циркуляция холода: Система Multi Air Flow и DoorCooling+</a></li><li><a href="#борьба-с-наледью-технология-total-no-frost">Борьба с наледью: Технология Total No Frost</a></li><li><a href="#электронное-управление-и-датчики">Электронное управление и датчики</a></li><li><a href="#зоны-свежести-и-дополнительные-функции">Зоны свежести и дополнительные функции</a></li><li><a href="#типичные-режимы-работы-и-диагностика-проблем">Типичные режимы работы и диагностика проблем</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Современный бытовой климат — это сложная инженерная система, где каждый элемент выполняет строго отведенную роль для поддержания идеальных условий хранения. Когда вы задаетесь вопросом, как именно работает холодильник LG, важно понимать, что речь идет не просто о «замораживании», а о точном управлении тепловыми потоками внутри замкнутого контура. Южнокорейский концерн LG Electronics внедрил ряд уникальных технологий, которые кардинально отличают их агрегаты от конкурентов, делая упор на энергоэффективность и снижение шума.</p>
+<p>В основе всей системы лежит <strong>цикл охлаждения</strong>, который базируется на физических свойствах хладагента изменять свое агрегатное состояние при varying давления. В отличие от старых советских моделей, современные устройства LG управляются сложной электроникой, которая считывает показания десятков датчиков. Это позволяет системе адаптироваться не только к внешней температуре, но и к тому, как часто вы открываете дверцу или сколько продуктов загрузили внутрь.</p>
+<p>Понимание логики работы <em>Linear Cooling</em> или <em>DoorCooling+</em> поможет вам не только грамотно настроить прибор, но и вовремя заметить первые признаки неисправности. Многие пользователи ошибочно полагают, что холод создается непосредственно компрессором, однако это лишь «сердце», которое гоняет «кровь» системы — фреон. Реальное охлаждение происходит в испарителе, а качество этого процесса зависит от слаженности работы всех узлов.</p>
+
+<h2 id="сердце-системы-инверторный-компрессор">Сердце системы: Инверторный компрессор</h2>
+<p>Главным отличием большинства моделей LG является использование <strong>инверторного линейного компрессора</strong>. В традиционных холодильниках мотор работает по принципу «включился на полную мощность — выключился», что создает постоянные скачки температуры и высокий уровень шума. Технология <em>Linear Inverter Compressor</em> работает иначе: он поддерживает постоянное движение поршня, плавно регулируя свою мощность в зависимости от текущей потребности в холоде.</p>
+<p>Такой подход позволяет исключить резкие пусковые токи, что значительно продлевает срок службы агрегата. Когда вы только что загрузили теплые продукты, компрессор работает интенсивнее. Как только заданная температура достигнута, он не отключается полностью, а переходит в режим поддержания, работая на минимальных оборотах. Это обеспечивает стабильный температурный фон без перепадов, что критически важно для сохранности свежести овощей и мяса.</p>
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Инверторные компрессоры крайне чувствительны к перепадам напряжения в электросети. Для защиты дорогостоящей электроники и мотора настоятельно рекомендуется использовать стабилизатор напряжения или сетевой фильтр с функцией защиты от скачков.</p>
+</blockquote>
+<p>Срок службы таких компрессоров часто заявляется производителем до 20 лет, что подтверждается длительной гарантией на сам узел (обычно 10 лет). Однако стоит помнить, что гарантия часто распространяется только на механическую часть, а не на работы по замене или электронную плату управления.</p>
+<div class="pb-poll" id="poll-cdb4cbdf"><div class="pb-poll-question">📊 Какой у вас тип компрессора в холодильнике?</div><div class="pb-poll-option" data-poll="cdb4cbdf" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Обычный (слышно как включается/выключается)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="cdb4cbdf" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Инверторный (работает тихо и постоянно)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="cdb4cbdf" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю, нужно проверить</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="cdb4cbdf" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">У меня вообще не LG</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="циркуляция-холода-система-multi-air-flow-и-doorcooling">Циркуляция холода: Система Multi Air Flow и DoorCooling+</h2>
+<p>Равномерное распределение холодного воздуха — вторая ключевая особенность, объясняющая, как работает холодильник LG. Классическая система <strong>Multi Air Flow</strong> предполагает подачу охлажденного воздуха через множество вентиляционных отверстий, расположенных на разных уровнях камер. Это создает эффект «душа», который быстро обволакивает продукты со всех сторон, исключая образование теплых зон в углах.</p>
+<p>Более продвинутая технология <em>DoorCooling+</em> решает проблему хранения продуктов на дверных полках, которые традиционно являются самым теплым местом из-за постоянного контакта с комнатным воздухом при открывании. В верхней части холодильной камеры устанавливается дополнительная панель с двумя отверстиями, через которые мощный поток холодного воздуха направляется непосредственно на дверные полки.</p>
+<ul>
+    <li>🌬️ <strong>Быстрое охлаждение:</strong> Температура на дверных полках снижается на 35% быстрее по сравнению с обычными моделями.</li>
+    <li>❄️ <strong>Стабильность:</strong> Даже после 5-минутного открытия дверцы система быстро восстанавливает температурный режим.</li>
+    <li>🥩 <strong>Сохранение качества:</strong> Мясо и рыба на дверце не успевают «подтаять» или потерять влагу.</li>
+</ul>
+<p>Вентилятор, отвечающий за циркуляцию, управляется отдельной электроникой и включается синхронно с работой компрессора. Если вы слышите периодический шум воздуха, это штатная работа системы, а не поломка.</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Не закрывайте вентиляционные отверстия внутри камеры продуктами. Для нормальной циркуляции воздуха оставляйте зазор минимум в 2-3 см между задней стенкой и пакетами.</p></aside>
+
+<h2 id="борьба-с-наледью-технология-total-no-frost">Борьба с наледью: Технология Total No Frost</h2>
+<p>Вопрос «как работает холодильник LG без инея» волнует многих владельцев, уставших от разморозки. Система <strong>Total No Frost</strong> (или просто No Frost) означает, что и в холодильном, и в морозильном отделении не образуется ледяная корка. В отличие от капельной системы, где влага конденсируется на задней стенке и стекает, здесь используется принцип принудительной циркуляции очень сухого воздуха.</p>
+<p>Влага из продуктов и воздуха, попадающего при открытии дверцы, оседает на специальном пластинчатом испарителе, который скрыт за пластиковой панелью (обычно на задней стенке морозильной камеры или за ней). Периодически, по сигналу таймера или датчика, включается <strong>ТЭН оттайки</strong>. Он кратковременно нагревает испаритель, растапливая накопившийся иней. Получившаяся вода стекает в специальный лоток над компрессором, где благополучно испаряется.</p>
+<details class="pb-accordion"><summary>Почему иногда все-таки появляется лед?</summary><div class="pb-accordion-body"><p>Если вы видите лед на стенках, это может означать неплотное прилегание уплотнителя, частое открытие дверцы или неисправность датчика оттайки. В таких случаях система не успевает удалять влагу, и она примерзает к продуктам или стенкам.</p></div></details>
+<p>Важно отметить, что «сухой» воздух No Frost требует правильной упаковки продуктов. Если вы оставите тарелку с супом без крышки, влага быстро испарится, продукт заветрится, а на испарителе образуется лишняя наледь, которую системе придется удалять, расходуя лишнюю энергию.</p>
+
+<h2 id="электронное-управление-и-датчики">Электронное управление и датчики</h2>
+<p>Современный холодильник LG — это компьютер, который умеет охлаждать. За всем процессом следит <strong>главная плата управления</strong>, которая получает данные от множества сенсоров. В типовой модели установлено от 5 до 9 датчиков температуры, расположенных в разных точках: в холодильной камере, в морозилке, на испарителе, в зоне свежести и даже в самом корпусе компрессора.</p>
+<p>Алгоритм работы строится на постоянном сравнении показаний датчиков с заданными пользователем значениями. Если датчик в холодильной камере показывает +6°C при установке +4°C, плата дает команду компрессору увеличить мощность, а вентилятору — ускорить циркуляцию. Такая точность позволяет достигать минимальных отклонений температуры, часто в пределах ±0.5 градуса.</p>
+<p>Особого внимания заслуживает система <em>Smart Diagnosis</em>. Она позволяет проводить самодиагностику неисправностей. При возникновении ошибки (например, сгорел ТЭН или отказал датчик), холодильник не просто молча перестает морозить, а выдает код ошибки на дисплей или транслирует звуковые сигналы. Смартфон с приложением LG ThinQ может считать эти звуки и сказать пользователю, что именно сломалось.</p>
+<ul>
+    <li>🔍 <strong>Датчикambiense:</strong> Следит за температурой в помещении и корректирует режим работы, чтобы холодильник не перегревался летом.</li>
+    <li>🌡️ <strong>Датчик испарителя:</strong> Контролирует процесс оттайки, отключая ТЭН сразу после таяния льда для экономии энергии.</li>
+    <li>🚪 <strong>Датчик открытия двери:</strong> Если дверь забыли закрыть, через определенное время раздается звуковой сигнал и загорается индикатор.</li>
+</ul>
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Электронные платы управления чувствительны к статическому электричеству и влаге. При проведении влажной уборки внутри камеры избегайте попадания воды на панель управления и электронные модули за ней.</p>
+</blockquote>
+
+<h2 id="зоны-свежести-и-дополнительные-функции">Зоны свежести и дополнительные функции</h2>
+<p>Помимо базового охлаждения, инженеры LG реализовали специальные зоны для различных типов продуктов. Наиболее известная технология — <strong>Zero Degree</strong> или «Зона свежести». В этом отделении поддерживается температура, близкая к 0°C, но не переходящая границу замерзания. Это идеально для хранения свежего мяса, рыбы или охлажденных полуфабрикатов, которые вы планируете приготовить в ближайшие дни.</p>
+<p>В некоторых моделях присутствует функция <em>Moist Balance Crisper</em>. Дно ящика для овощей имеет специальную ячеистую структуру, которая задерживает излишнюю влагу, стекающую с продуктов, и возвращает ее в виде пара при повышении температуры. Это создает оптимальный микроклимат, предотвращая увядание листьев салата или гниение фруктов.</p>
+<p>Отдельно стоит упомянуть режим «Отпуск» (Eco Friendly). Если вы уезжаете надолго, холодильник переводится в экономичный режим: в холодильной камере температура повышается до +15°C (чтобы не завелась плесень, но не тратилась энергия на охлаждение), а морозильник продолжает работать в штатном режиме. Это позволяет сохранить замороженные продукты и не переплачивать за электричество.</p>
+
+<h2 id="типичные-режимы-работы-и-диагностика-проблем">Типичные режимы работы и диагностика проблем</h2>
+<p>Понимание того, как работает холодильник LG в штатном режиме, помогает отличить норму от поломки. Например, цикл работы может выглядеть так: 20 минут активного охлаждения, 5 минут паузы (или работы на минимуме), затем 2 минуты оттайки (в морозилке). Шум булькающей жидкости — это нормальное движение фреона по трубкам.</p>
+<p>Однако существуют признаки, требующие вмешательства. Если компрессор гудит непрерывно более часа, не выключаясь, а температура не падает — возможно, утечка фреона или потеря производительности компрессора. Если на задней стенке холодильной камеры растет «снежная шуба» вместо капель — неисправен датчик оттайки или ТЭН.</p>
+<p>Для первичной диагностики можно использовать таблицу соответствия симптомов и вероятных причин:</p>
+
+<div class="pb-table-wrap"><table>
+    <thead>
+        <tr>
+            <th>Симптом</th>
+            <th>Вероятная причина</th>
+            <th>Действия пользователя</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Громкий стук или вибрация</td>
+            <td>Неровная установка, касание трубками стены</td>
+            <td>Выровнять ножки, отодвинуть от стены</td>
+        </tr>
+        <tr>
+            <td>Лед в холодильной камере</td>
+            <td>Засор дренажного отверстия, неплотная дверь</td>
+            <td>Прочистить дренаж, проверить уплотнитель</td>
+        </tr>
+        <tr>
+            <td>Компрессор не запускается</td>
+            <td>Скачок напряжения, сбой электроники</td>
+            <td>Отключить от сети на 15 минут, включить снова</td>
+        </tr>
+        <tr>
+            <td>Посторонний запах</td>
+            <td>Попавшие продукты, грязный фильтр</td>
+            <td>Промыть камеру, заменить дезодоратор (если есть)</td>
+        </tr>
+    </tbody>
+</table></div>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Диагностика перед вызовом мастера</h4><label class="check-item"><input type="checkbox"><span>Холодильник стоит ровно и не шатается?:Да</span></label><label class="check-item"><input type="checkbox"><span>Нет (регулируем ножки)</span></label><label class="check-item"><input type="checkbox"><span>Вентиляционные зазоры соблюдены?:Да</span></label><label class="check-item"><input type="checkbox"><span>Нет</span></label><label class="check-item"><input type="checkbox"><span>Питание в розетке есть?:Да</span></label><label class="check-item"><input type="checkbox"><span>Нет</span></label><label class="check-item"><input type="checkbox"><span>Температура выставлена корректно?:Да</span></label><label class="check-item"><input type="checkbox"><span>Нет</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 8</div></div>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Самостоятельная диагностика возможна только при внешних признаках (шум, лед, свет). Если холодильник перестал морозить, но компрессор работает — скорее всего, требуется профессиональный ремонт с вакуумированием системы.</p></aside>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+<details>
+    <summary>Почему боковые стенки холодильника LG горячие?</summary>
+    <p>Это абсолютно нормально. В современных моделях конденсатор (радиатор, отдающий тепло) встроен в боковые стенки корпуса, а не находится сзади в виде черной решетки. При активной работе компрессора стенки могут нагреваться до 40-50°C, отдавая тепло в помещение.</p>
+</details>
+<details>
+    <summary>Как часто нужно размораживать холодильник LG с No Frost?</summary>
+    <p>Технически система No Frost не требует разморозки для удаления льда, так как делает это автоматически. Однако производители рекомендуют 1-2 раза в год полностью отключать прибор, мыть его и просушивать для соблюдения гигиены и удаления запахов.</p>
+</details>
+<details>
+    <summary>Что означает мигающий индикатор температуры?</summary>
+    <p>Мигающий индикатор обычно сигнализирует о повышении температуры внутри камеры выше допустимого порога. Это может случиться после загрузки большого объема теплых продуктов или длительного открытия двери. Если мигание продолжается более суток при закрытой двери — возможна неисправность.</p>
+</details>
+<details>
+    <summary>Можно ли устанавливать холодильник LG около батареи?</summary>
+    <p>Категорически не рекомендуется размещать прибор ближе 50 см от отопительных приборов. Избыточное тепло нарушает теплообмен конденсатора, заставляя компрессор работать на износ, что ведет к поломке.</p>
+</details>
+<details>
+    <summary>Зачем нужен Wi-Fi в холодильнике?</summary>
+    <p>Функция Smart ThinQ позволяет удаленно управлять температурой, получать уведомления об открытой двери или неисправностях на смартфон, а также скачивать рецепты и адаптировать режимы работы под конкретные продукты.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/g/gd/gde-prodayutsya-rezinki-na-kholodilnik.html" class="pb-related-card">
+                <span class="pb-related-title">Где купить резинку на холодильник: цены, бренды, советы</span>
+                <span class="pb-related-desc">Ищете уплотнительную резину для холодильника? Узнайте, где купить оригинальные и универсальные манже</span>
+            </a><a href="/articles/k/ka/kak-rabotaet-kholodilnik-polair.html" class="pb-related-card">
+                <span class="pb-related-title">Как работает холодильник Polair: устройство, цикл и принцип работы</span>
+                <span class="pb-related-desc">Подробный разбор принципа работы холодильников Polair. Устройство компрессора, системы No Frost, дат</span>
+            </a><a href="/articles/k/ka/kakogo-goda-kholodilnik-sviyaga.html" class="pb-related-card">
+                <span class="pb-related-title">Какого года холодильник Свияга: определение по коду и этикетке</span>
+                <span class="pb-related-desc">Узнайте, как точно определить год выпуска холодильника Свияга. Расшифровка заводского кода, штрих-ко</span>
+            </a><a href="/articles/k/ka/kak-mozhno-ispolzovat-staryj-kompressor-ot-kholodilnika.html" class="pb-related-card">
+                <span class="pb-related-title">Второе сердце холодильника: 7 идей для старого компрессора</span>
+                <span class="pb-related-desc">Как использовать компрессор от холодильника для аэрографа, нагнетателя или вакууматора. Полная инстр</span>
+            </a><a href="/articles/r/re/refrizherator-v-kholodilnike-chto-eto-takoe.html" class="pb-related-card">
+                <span class="pb-related-title">Рефрижератор в холодильнике: что это такое и зачем он нужен</span>
+                <span class="pb-related-desc">Полный разбор термина «рефрижератор». Узнайте, как работает холодильная установка, чем она отличаетс</span>
+            </a><a href="/articles/s/sk/skolko-beret-kholodilnik-pri-zapuske.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько берет холодильник при запуске: ток, мощность, скачки</span>
+                <span class="pb-related-desc">Узнайте пусковой ток холодильника, разницу с рабочей мощностью и влияние на проводку. Таблицы, расче</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

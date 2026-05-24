@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Как проверить датчик температуры холодильника: полная инструкция — Холодильник Инфо</title>
+    <meta name="description" content="Подробный гид по диагностике термодатчика. Узнайте, как мультиметром проверить NTC-термистор, расшифровать коды ошибок и заменить неисправный элемент.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/k/ka/kak-proverit-temperaturnyj-datchik-kholodilnika.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как проверить датчик температуры холодильника: полная инструкция">
+    <meta property="og:description" content="Подробный гид по диагностике термодатчика. Узнайте, как мультиметром проверить NTC-термистор, расшифровать коды ошибок и заменить неисправный элемент.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-nav-active">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/remont-svoimi-rukami/">Ремонт своими руками</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как проверить датчик температуры холодильника: полная инструкция</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#симптомы-неисправности-термостата-и-термистора">Симптомы неисправности термостата и термистора</a></li><li><a href="#подготовка-к-диагностике-инструменты-и-безопасность">Подготовка к диагностике: инструменты и безопасность</a></li><li><a href="#визуальный-осмотр-и-поиск-обрывов">Визуальный осмотр и поиск обрывов</a></li><li><a href="#проверка-мультиметром-статический-и-динамический-методы">Проверка мультиметром: статический и динамический методы</a></li><li><a href="#таблица-соответствия-сопротивления-и-коды-ошибок">Таблица соответствия сопротивления и коды ошибок</a></li><li><a href="#замена-и-калибровка-нового-датчика">Замена и калибровка нового датчика</a></li><li><a href="#частые-вопросы-по-диагностике-датчиков">Частые вопросы по диагностике датчиков</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-sbrosit-vosklitsatelnyj-znak-na-kholodilnike-beko.html">Как убрать восклицательный знак на холодильнике Beko: сброс ошибки</a></li><li><a href="/articles/k/ka/kak-proverit-rabotosposobnost-puskovogo-rele-na-kholodilnike.html">Как проверить пусковое реле холодильника: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-dobratsya-do-isparitelya-kholodilnika.html">Как добраться до испарителя холодильника: инструкция</a></li><li><a href="/articles/k/ka/kak-zamenit-kompressor-na-kholodilnike-v-domashnikh-usloviyakh.html">Замена компрессора холодильника своими руками: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-sdelat-morozilku-iz-dvukhkamernogo-kholodilnika.html">Как сделать морозилку из двухкамерного холодильника: пошаговая инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как проверить температурный датчик холодильника: пошаговая диагностика</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#симптомы-неисправности-термостата-и-термистора">Симптомы неисправности термостата и термистора</a></li><li><a href="#подготовка-к-диагностике-инструменты-и-безопасность">Подготовка к диагностике: инструменты и безопасность</a></li><li><a href="#визуальный-осмотр-и-поиск-обрывов">Визуальный осмотр и поиск обрывов</a></li><li><a href="#проверка-мультиметром-статический-и-динамический-методы">Проверка мультиметром: статический и динамический методы</a></li><li><a href="#таблица-соответствия-сопротивления-и-коды-ошибок">Таблица соответствия сопротивления и коды ошибок</a></li><li><a href="#замена-и-калибровка-нового-датчика">Замена и калибровка нового датчика</a></li><li><a href="#частые-вопросы-по-диагностике-датчиков">Частые вопросы по диагностике датчиков</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+<p>Если ваш холодильник внезапно перестал морозить или, наоборот, начал превращать продукты в ледяные глыбы, проблема часто кроется в системе контроля климата. <strong>Температурный датчик</strong> — это «глаза» электронного модуля управления, и если он слепнет или врет, агрегат не сможет работать корректно. Самостоятельная проверка этого элемента позволяет сэкономить значительную сумму на вызове мастера и точно определить, нужна ли сложная диагностика платы или достаточно простой замены детали.</p>
+
+<p>В большинстве современных моделей, будь то <em>Indesit</em>, <em>Bosch</em> или <em>LG</em>, используются термисторы с отрицательным температурным коэффициентом (NTC). Это означает, что при нагревании их сопротивление падает, а при охлаждении — растет. Понимание этого принципа является ключевым для правильной <strong>диагностики неисправностей</strong>. В этой статье мы разберем, как выявить поломку без специального оборудования и как провести точные замеры мультиметром.</p>
+
+<p>Прежде чем разбирать технику, необходимо убедиться, что симптомы указывают именно на датчик. <em>Частое включение компрессора</em>, отсутствие оттайки или постоянная работа мотора могут быть вызваны не только сбоем сенсора, но и утечкой фреона или залипанием пускового реле. Однако, если на дисплее горит код ошибки, связанный с температурой, или наблюдается явное несоответствие между установленным режимом и реальностью, проверка термистора становится первым логичным шагом.</p>
+
+<h2 id="симптомы-неисправности-термостата-и-термистора">Симптомы неисправности термостата и термистора</h2>
+<p>Первым признаком выхода из строя <strong>контроллера температуры</strong> является хаотичное поведение холодильной камеры. Продукты могут не замораживаться вообще, либо, что хуже, в морозилке образуется «шуба», а в основном отсеке все покрывается инеем. Электроника, получая неверные данные от <em>NTC-сенсора</em>, дает команду компрессору работать без остановки или, наоборот, не запускаться вовсе.</p>
+
+<p>В моделях с дисплеем часто загораются специфические индикаторы. Например, мигающие лампочки температурных режимов или буквенно-цифровые коды ошибок (например, F1, E1, Er FF) прямо указывают на обрыв цепи или короткое замыкание в контуре датчика. Игнорирование этих сигналов приводит к перегрузке <strong>компрессора</strong> и возможному выходу из строя более дорогих узлов системы.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Если вы заметили, что задняя стенка холодильника покрыта толстым слоем льда, а продукты в основной камере теплые, это классический признак «вранья» датчика испарителя. Он может показывать модулю, что холод достаточно сильный, хотя на самом деле его нет.</p>
+</blockquote>
+
+<p>Также стоит обратить внимание на цикличность работы. Исправный агрегат работает циклами: включился, охладил до заданного предела, выключился. Если цикл нарушен и <strong>холодильный агрегат</strong> гудит 20 часов в сутки или включается каждые 5 минут на короткое время, это верный повод проверить цепь измерения температуры.</p>
+
+<div class="pb-poll" id="poll-862e39b1"><div class="pb-poll-question">📊 Как ведет себя ваш холодильник?</div><div class="pb-poll-option" data-poll="862e39b1" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Не морозит вообще</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="862e39b1" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Морозит слишком сильно</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="862e39b1" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Работает без остановки</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="862e39b1" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Издает странные звуки</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="862e39b1" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Висит ошибка на дисплее</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="подготовка-к-диагностике-инструменты-и-безопасность">Подготовка к диагностике: инструменты и безопасность</h2>
+<p>Для качественной проверки вам понадобится минимальный набор инструментов, который найдется у любого домашнего мастера. Основным прибором станет <strong>мультиметр</strong> (тестер), способный измерять сопротивление в Омах. Без этого устройства провести точную диагностику термистора практически невозможно, так как визуальный осмотр редко показывает внутренние дефекты.</p>
+
+<p>Вторым необходимым элементом является источник холода и тепла для динамической проверки. Это может быть стакан с теплой водой и емкость со льдом или просто морозильная камера. Также подготовьте пассатижи, отвертку для снятия панелей и изоленту для изоляции соединений. Перед началом любых работ <strong>обязательно отключите холодильник от электросети</strong>.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Инструменты для проверки</h4><label class="check-item"><input type="checkbox"><span>Мультиметр (тестер)</span></label><label class="check-item"><input type="checkbox"><span>Емкость со льдом или морозилка</span></label><label class="check-item"><input type="checkbox"><span>Емкость с теплой водой</span></label><label class="check-item"><input type="checkbox"><span>Пассатижи или пинцет</span></label><label class="check-item"><input type="checkbox"><span>Изолента или термоусадка</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<p>Важно обеспечить доступ к датчику. В разных моделях <em>холодильного оборудования</em> они расположены по-разному: в воздушном канале, на задней стенке камеры, внутри пластикового корпуса или даже вмонтированы в испаритель. Изучите схему вашего устройства или найдите сервисный мануал для конкретной модели, чтобы не повредить пластиковые защелки при разборке.</p>
+
+<h2 id="визуальный-осмотр-и-поиск-обрывов">Визуальный осмотр и поиск обрывов</h2>
+<p>Первый этап диагностики — это внимательное изучение внешнего состояния <strong>термодатчика</strong>. Часто причина кроется не в самом элементе, а в нарушении целостности проводки. Осмотрите провода, идущие от сенсора к разъему подключения: на них не должно быть заломов, следов грызунов или оплавлений изоляции.</p>
+
+<p>Обратите внимание на место входа проводов в пластиковый корпус датчика. Именно здесь чаще всего происходят <strong>обрывы жил</strong> из-за постоянных циклов расширения и сжатия пластика при перепадах температур. Если вы видите трещины на корпусе или окислившиеся контакты в разъеме, это может быть причиной сбоя.</p>
+
+<details class="pb-accordion"><summary>Можно ли восстановить датчик скруткой?</summary><div class="pb-accordion-body"><p>Теоретически можно спаять оборванный провод, но в условиях холодильника это временное решение. Влага и конденсат быстро доберутся до места пайки, вызовут коррозию и снова нарушат контакт. Лучше заменить провод целиком или использовать термоусадку с клеевым слоем для герметичности.</p></div></details>
+
+<p>Если визуально дефектов не найдено, переходим к «прозвонке» цепи. Включите мультиметр в режим измерения сопротивления (обычно диапазон 20 кОм). Коснитесь щупами контактов разъема. Если на экране отображается единица (бесконечность) или ноль, это говорит о явном <strong>обрыве</strong> или <strong>коротком замыкании</strong> соответственно. Нормальный датчик при комнатной температуре должен показывать сопротивление в диапазоне от 2 до 10 кОм, в зависимости от модели.</p>
+
+<h2 id="проверка-мультиметром-статический-и-динамический-методы">Проверка мультиметром: статический и динамический методы</h2>
+<p>Самый надежный способ проверки — это сравнение показаний сопротивления при разных температурах. Для начала измерьте сопротивление при комнатной температуре и запишите значение. Затем поместите датчик (не подключая его к плате!) в морозильную камеру или опустите в емкость со льдом на 5-10 минут.</p>
+
+<p>После охлаждения повторите замеры. У исправного <strong>NTC-термистора</strong> сопротивление должно вырасти. Например, если при +25°C оно составляло 5 кОм, то при -15°C должно быть около 15-20 кОм. Точные значения зависят от таблицы соответствия конкретной модели холодильника, но сам тренд роста сопротивления при охлаждении должен соблюдаться.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Температура среды</th>
+<th>Ожидаемое поведение NTC</th>
+<th>Возможная неисправность</th>
+<th>Реакция холодильника</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Комнатная (+20°C)</td>
+<td>Базовое сопротивление (напр. 5 кОм)</td>
+<td>Обрыв (бесконечность)</td>
+<td>Ошибка датчика, работа по аварийному алгоритму</td>
+</tr>
+<tr>
+<td>Заморозка (-18°C)</td>
+<td>Рост сопротивления (напр. 15 кОм)</td>
+<td>КЗ (0 Ом)</td>
+<td>Компрессор не включается, думает что очень холодно</td>
+</tr>
+<tr>
+<td>Нагрев (+40°C)</td>
+<td>Падение сопротивления (напр. 2 кОм)</td>
+<td>Нет реакции на температуру</td>
+<td>Хаотичное включение/выключение</td>
+</tr>
+<tr>
+<td>Любая</td>
+<td>Плавное изменение</td>
+<td>Скачкообразные изменения</td>
+<td>Нестабильный температурный режим</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Если сопротивление не меняется при изменении температуры или меняется скачкообразно, элемент считается неисправным и требует замены. Также проверьте <strong>изоляцию</strong> между контактами датчика и его металлическим корпусом (если он есть) — там не должно быть никакой проводимости.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Для более точной проверки можно использовать фен для нагрева и спрей-охладитель для электроники, чтобы быстро изменить температуру тела датчика и увидеть реакцию стрелки или цифр на мультиметре в реальном времени.</p></aside>
+
+<h2 id="таблица-соответствия-сопротивления-и-коды-ошибок">Таблица соответствия сопротивления и коды ошибок</h2>
+<p>У разных производителей <strong>холодильной техники</strong> используются термисторы с разными номиналами. Наиболее распространены датчики с сопротивлением 5 кОм, 10 кОм и 13 кОм при температуре +25°C. Попытка заменить один тип на другой без перепрограммирования модуля управления приведет к некорректной работе.</p>
+
+<p>Ниже приведена справочная таблица для популярных номиналов. Обратите внимание, что значения могут незначительно отличаться в зависимости от производителя компонента (<em>Danfoss</em>, <em>Emerson</em>, <em>LG Electronics</em>).</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Температура (°C)</th>
+<th>Датчик 5 кОм (±10%)</th>
+<th>Датчик 10 кОм (±5%)</th>
+<th>Датчик 13 кОм (±3%)</th>
+<th>Примечание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+25</td>
+<td>5.0 кОм</td>
+<td>10.0 кОм</td>
+<td>13.0 кОм</td>
+<td>Базовая калибровка</td>
+</tr>
+<tr>
+<td>+10</td>
+<td>8.5 кОм</td>
+<td>16.0 кОм</td>
+<td>21.0 кОм</td>
+<td>Температура в холодильной камере</td>
+</tr>
+<tr>
+<td>0</td>
+<td>12.5 кОм</td>
+<td>26.0 кОм</td>
+<td>33.0 кОм</td>
+<td>Точка замерзания воды</td>
+</tr>
+<tr>
+<td>-18</td>
+<td>33.0 кОм</td>
+<td>65.0 кОм</td>
+<td>85.0 кОм</td>
+<td>Нормальная заморозка</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Если ваш мультиметр показывает значения, сильно отличающиеся от табличных (например, при +25°C датчик 10 кОм показывает 2 кОм), это свидетельствует о деградации материала термистора. В таких случаях модуль управления получает искаженный сигнал и неверно рассчитывает время работы <strong>компрессора</strong>.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Технические характеристики датчиков могут отличаться в зависимости от года выпуска модели. Всегда сверяйте маркировку на самом элементе или в сервисном мануале конкретной модификации холодильника перед покупкой замены.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Использование датчика с неподходящим номиналом (например, 5к вместо 10к) приведет к тому, что холодильник будет либо недоохлаждать продукты, либо работать на износ, пытаясь достичь недостижимой температуры.</p></aside>
+
+<h2 id="замена-и-калибровка-нового-датчика">Замена и калибровка нового датчика</h2>
+<p>Процесс замены <strong>температурного сенсора</strong> обычно не вызывает сложностей. После отключения питания и разморозки камеры (если датчик встроен в испаритель), аккуратно демонтируйте старый элемент. Часто он просто вставлен в отверстие или закреплен пластиковой клипсой.</p>
+
+<p>Новый датчик устанавливается на то же место. Крайне важно обеспечить плотный контакт чувствительного элемента с поверхностью, температуру которой он должен измерять. Если датчик воздушный, убедитесь, что он не перекрыт продуктами. Если контактный — плотно прижат к трубке испарителя.</p>
+
+<p>После физической замены и сборки холодильника необходимо провести калибровку. В некоторых моделях <em>Samsung</em> или <em>LG</em> это делается через сервисное меню, в других достаточно просто оставить агрегат включенным на 6-12 часов без загрузки продуктами, чтобы модуль управления адаптировался к новому сопротивлению цепи.</p>
+
+<details class="pb-accordion"><summary>Нужно ли паять провода?</summary><div class="pb-accordion-body"><p>Большинство современных датчиков идут с готовым разъемом. Если разъемы не совпадают, лучше аккуратно соединить провода методом скрутки с последующей пропайкой и тщательной изоляцией термоусадкой, чтобы исключить попадание влаги.</p></div></details>
+
+<h2 id="частые-вопросы-по-диагностике-датчиков">Частые вопросы по диагностике датчиков</h2>
+<details>
+<summary>Можно ли проверить датчик без мультиметра?</summary>
+<p>Точно определить исправность без приборов нельзя. Однако косвенным признаком может служить исключение других причин: если компрессор и фреон в норме, а температура не держится, вероятность неисправности датчика высока. Можно попробовать временно подключить заведомо исправный датчик для проверки.</p>
+</details>
+
+<details>
+<summary>Почему холодильник морозит, но не выключается?</summary>
+<p>Это классический симптом «залипания» датчика в положении «тепло». Электроника «думает», что в камере до сих пор жарко, и не дает команду на остановку <strong>компрессора</strong>. Требуется замена термистора.</p>
+</details>
+
+<details>
+<summary>Где находится датчик в холодильниках No Frost?</summary>
+<p>В системах No Frost обычно установлено несколько датчиков: один в воздушном канале холодильной камеры, один в морозильной камере и один (или два) на испарителе для контроля оттайки. Расположение зависит от конкретной модели.</p>
+</details>
+
+<details>
+<summary>Как часто нужно менять температурный датчик?</summary>
+<p>Срок службы <strong>термистора</strong> обычно составляет 7-10 лет, но он может выйти из строя раньше из-за скачков напряжения, механических повреждений или заводского брака. Плановая замена не требуется, только по факту поломки.</p>
+</details>
+
+<details>
+<summary>Влияет ли влажность на работу датчика?</summary>
+<p>Да, попадание влаги на контакты разъема может вызвать окисление и искажение показаний сопротивления. При замене всегда проверяйте герметичность соединения и целостность изоляции проводов.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-sbrosit-vosklitsatelnyj-znak-na-kholodilnike-beko.html" class="pb-related-card">
+                <span class="pb-related-title">Как убрать восклицательный знак на холодильнике Beko: сброс ошибки</span>
+                <span class="pb-related-desc">Горит красный индикатор на Beko? Узнайте, как сбросить восклицательный знак, расшифровать коды ошибо</span>
+            </a><a href="/articles/k/ka/kak-proverit-rabotosposobnost-puskovogo-rele-na-kholodilnike.html" class="pb-related-card">
+                <span class="pb-related-title">Как проверить пусковое реле холодильника: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробный гид по диагностике пускового реле. Узнайте симптомы поломки, методы проверки мультиметром </span>
+            </a><a href="/articles/k/ka/kak-dobratsya-do-isparitelya-kholodilnika.html" class="pb-related-card">
+                <span class="pb-related-title">Как добраться до испарителя холодильника: инструкция</span>
+                <span class="pb-related-desc">Подробная инструкция, как снять кожух и добраться до испарителя холодильника. Разборка моделей Атлан</span>
+            </a><a href="/articles/k/ka/kak-zamenit-kompressor-na-kholodilnike-v-domashnikh-usloviyakh.html" class="pb-related-card">
+                <span class="pb-related-title">Замена компрессора холодильника своими руками: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробное руководство, как заменить компрессор на холодильнике в домашних условиях. Инструкция по па</span>
+            </a><a href="/articles/k/ka/kak-sdelat-morozilku-iz-dvukhkamernogo-kholodilnika.html" class="pb-related-card">
+                <span class="pb-related-title">Как сделать морозилку из двухкамерного холодильника: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробное руководство по переделке двухкамерного холодильника в морозильную камеру: схемы, инструмен</span>
+            </a><a href="/articles/k/ka/kak-proverit-rabotu-kholodilnika-atlant.html" class="pb-related-card">
+                <span class="pb-related-title">Как проверить работу холодильника Атлант: диагностика и тесты</span>
+                <span class="pb-related-desc">Подробная инструкция по проверке компрессора, термостата и системы No Frost в холодильниках Атлант. </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Как рассчитать мощность компрессора для холодильника: формулы и нормы — Холодильник Инфо</title>
+    <meta name="description" content="Подробная инструкция, как правильно вычислить мощность компрессора. Формулы, таблицы соответствия хладагентов и советы по подбору запчасти для ремонта.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/k/ka/kak-rasschitat-moshchnost-kompressora-dlya-kholodilnika.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как рассчитать мощность компрессора для холодильника: формулы и нормы">
+    <meta property="og:description" content="Подробная инструкция, как правильно вычислить мощность компрессора. Формулы, таблицы соответствия хладагентов и советы по подбору запчасти для ремонта.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-nav-active">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/remont-svoimi-rukami/">Ремонт своими руками</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как рассчитать мощность компрессора для холодильника: формулы и нормы</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#базовые-понятия-что-такое-холодопроизводительность">Базовые понятия: что такое холодопроизводительность</a></li><li><a href="#методы-определения-мощности-по-маркировке">Методы определения мощности по маркировке</a></li><li><a href="#формулы-и-расчеты-для-подбора-аналога">Формулы и расчеты для подбора аналога</a></li><li><a href="#влияние-типа-хладагента-на-выбор-компрессора">Влияние типа хладагента на выбор компрессора</a></li><li><a href="#практическая-инструкция-по-замеру-тока-и-мощности">Практическая инструкция по замеру тока и мощности</a></li><li><a href="#таблица-совместимости-и-распространенные-ошибки">Таблица совместимости и распространенные ошибки</a></li><li><a href="#заключительные-рекомендации-и-выводы">Заключительные рекомендации и выводы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/p/po/pochemu-pakhnet-atsetonom-iz-kholodilnika.html">Запах ацетона из холодильника: причины, устранение, опасность</a></li><li><a href="/articles/k/ka/kak-otklyuchit-morozilnuyu-kameru-u-kholodilnika-atlant.html">Как отключить морозилку в холодильнике Атлант: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-perevesit-dver-v-kholodilnike-indezit-video.html">Как перевесить дверь холодильника Indesit: видео и пошаговая инструкция</a></li><li><a href="/articles/p/po/pochemu-pokryvaetsya-ldom-radiator-kholodilnika.html">Почему покрывается льдом радиатор холодильника: причины</a></li><li><a href="/articles/p/po/pochemu-v-kholodilnike-namerzaet-led-na-zadnej-stenke-s-odnoj-storony.html">Лед на задней стенке холодильника: причины и устранение</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как рассчитать мощность компрессора для холодильника: точные методы</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#базовые-понятия-что-такое-холодопроизводительность">Базовые понятия: что такое холодопроизводительность</a></li><li><a href="#методы-определения-мощности-по-маркировке">Методы определения мощности по маркировке</a></li><li><a href="#формулы-и-расчеты-для-подбора-аналога">Формулы и расчеты для подбора аналога</a></li><li><a href="#влияние-типа-хладагента-на-выбор-компрессора">Влияние типа хладагента на выбор компрессора</a></li><li><a href="#практическая-инструкция-по-замеру-тока-и-мощности">Практическая инструкция по замеру тока и мощности</a></li><li><a href="#таблица-совместимости-и-распространенные-ошибки">Таблица совместимости и распространенные ошибки</a></li><li><a href="#заключительные-рекомендации-и-выводы">Заключительные рекомендации и выводы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Столкнувшись с поломкой бытовой техники, многие владельцы сразу же задаются вопросом о стоимости и целесообразности ремонта. <strong>Замена компрессора</strong> часто становится ключевым моментом в восстановлении работоспособности агрегата, но без точных расчетов здесь не обойтись. Неправильно подобранная мощность может привести к быстрому выходу из строя новой детали или неэффективному охлаждению камер.</p>
+<p>В этой статье мы разберем, <em>как рассчитать мощность компрессора для холодильника</em> самостоятельно, используя доступные технические параметры. Понимание физических процессов и умение читать маркировку помогут вам избежать дорогостоящих ошибок при заказе запчастей.</p>
+<p>Кроме того, мы затронем тему совместимости хладагентов, так как <mark>мощность напрямую зависит от типа используемого фреона</mark> и конструктивных особенностей системы. Игнорирование этих нюансов превращает ремонт в лотерею с непредсказуемым результатом.</p>
+
+<h2 id="базовые-понятия-что-такое-холодопроизводительность">Базовые понятия: что такое холодопроизводительность</h2>
+<p>Прежде чем переходить к вычислениям, необходимо четко различать понятия электрической мощности и холодопроизводительности. Многие пользователи путают ватты, потребляемые мотором из сети, с ваттами холода, которые он генерирует. <strong>Холодопроизводительность</strong> — это количество теплоты, которое компрессор способен отвести из холодильной камеры за единицу времени.</p>
+<p>Электрическая мощность, указанная на шильдике, показывает лишь энергопотребление двигателя. Для подбора аналога важнее именно производительность в цикле, которая зависит от температуры кипения хладагента. В технической документации этот параметр часто обозначается как <em>Qo</em> или <strong>Cooling Capacity</strong>.</p>
+<p>Значение производительности не является константой и меняется в зависимости от условий работы. Стандартные тестовые условия обычно предполагают температуру кипения <code>-23.3°C</code> (для морозильников) или <code>+7.2°C</code> (для холодильных отделений). Именно при этих температурах снимаются заводские замеры.</p>
+
+<h2 id="методы-определения-мощности-по-маркировке">Методы определения мощности по маркировке</h2>
+<p>Самый надежный способ узнать необходимую мощность — прочитать заводскую маркировку на корпусе старого агрегата. Производители используют единую систему кодировки, где зашифрованы объем, тип хладагента и номинальная мощность. Обычно эти данные нанесены на металлическую бирку или выбиты прямо на металле.</p>
+<p>В обозначении модели часто встречаются цифры, указывающие на объем цилиндров в кубических сантиметрах. Например, в модели <em>FG 10</em> число 10 означает рабочий объем. Зная объем и тип хладагента, можно приблизительно определить холодопроизводительность, обратившись к справочным таблицам производителя <em>Danfoss</em> или <em>Secop</em>.</p>
+<p>Если маркировка стерлась или не читается, можно ориентироваться на цвет маркировочной трубки, которая часто указывает на тип фреона, а значит, и на класс мощности:</p>
+<ul>
+<li>🟢 Зеленый цвет — использование фреона R134a (экологичный, среднее давление).</li>
+<li>🔵 Синий цвет — использование фреона R600a (изобутан, низкое давление, высокая эффективность).</li>
+<li>🔴 Красный или белый цвет — использование фреона R12 или R22 (устаревшие, высокое давление).</li>
+<li>⚫ Черный цвет — универсальные компрессоры или специфические смеси.</li>
+</ul>
+<blockquote>⚠️ Внимание: Цвет трубки — это лишь ориентир. Всегда перепроверяйте тип хладагента по наклейке внутри холодильной камеры, так как заводская комплектация могла быть изменена при предыдущих ремонтах.</blockquote>
+
+<h2 id="формулы-и-расчеты-для-подбора-аналога">Формулы и расчеты для подбора аналога</h2>
+<p>Если прямые данные недоступны, можно воспользоваться расчетным методом, основанным на объеме камер и требуемой температуре. Для бытовых холодильников существует эмпирическая формула, позволяющая оценить необходимую холодопроизводительность. Она учитывает теплопритоки через стенки и нагрузку от продуктов.</p>
+<p>Расчет ведется по формуле: <code>Q = V <em> K </em> ΔT</code>, где V — объем камер, K — коэффициент теплопередачи, а ΔT — разница температур. Однако для мастера-практика важнее соотношение мощностей при замене. Если вы меняете компрессор, новый агрегат должен иметь холодопроизводительность не менее 90-100% от старого.</p>
+<p>Рассмотрим примерную таблицу соответствия объема цилиндров и холодопроизводительности для различных хладагентов при температуре кипения <code>-23.3°C</code>:</p>
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Объем (см³)</th>
+<th>Хладагент R134a (Вт)</th>
+<th>Хладагент R600a (Вт)</th>
+<th>Хладагент R12 (Вт)</th>
+<th>Применение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5.6</td>
+<td>~85</td>
+<td>~95</td>
+<td>~90</td>
+<td>Малые холодильники</td>
+</tr>
+<tr>
+<td>8.9</td>
+<td>~135</td>
+<td>~150</td>
+<td>~140</td>
+<td>Средние холодильники</td>
+</tr>
+<tr>
+<td>12.1</td>
+<td>~190</td>
+<td>~210</td>
+<td>~200</td>
+<td>Большие холодильники</td>
+</tr>
+<tr>
+<td>16.5</td>
+<td>~260</td>
+<td>~290</td>
+<td>~275</td>
+<td>Морозильные лари</td>
+</tr>
+</tbody>
+</table></div>
+<p>Важно понимать, что при переходе с одного типа фреона на другой (например, с R12 на R134a) требуется пересчет мощности, так как их термодинамические свойства различаются. Компрессор под R600a физически меньше и потребляет меньше тока, но выдает сопоставимую холодопроизводительность за счет свойств газа.</p>
+
+<div class="pb-poll" id="poll-2aa38568"><div class="pb-poll-question">📊 Какой тип хладагента в вашем холодильнике?</div><div class="pb-poll-option" data-poll="2aa38568" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">R134a</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="2aa38568" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">R600a</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="2aa38568" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">R12 (старый)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="2aa38568" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю / Нужно посмотреть</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="влияние-типа-хладагента-на-выбор-компрессора">Влияние типа хладагента на выбор компрессора</h2>
+<p>Тип хладагента является критическим параметром, который нельзя игнорировать при расчете мощности. <strong>Изобутан (R600a)</strong>, ставший стандартом для современной техники, требует компрессоров с меньшим рабочим объемом, но более высокими требованиями к герметичности и качеству масла.</p>
+<p>Фреон <em>R134a</em> обладает другими характеристиками сжимаемости и требует использования синтетического масла POE, которое aggressively впитывает влагу. Если вы попытесь установить компрессор, рассчитанный на R134a, в систему, где ранее циркулировал R600a, без замены капиллярной трубы и конденсатора, система будет работать некорректно.</p>
+<p>Давление конденсации и испарения у разных газов отличается. Поэтому мощность, указанная для R12, не может быть механически перенесена на R134a без поправочных коэффициентов. Обычно при замене R12 на R134a мощность компрессора увеличивают на 10-15% для компенсации различий в теплообмене.</p>
+<blockquote>⚠️ Внимание: Никогда не смешивайте масла разных типов! Минеральное масло (для R12/R600a) и синтетическое (для R134a/R404a) не совместимы. Их смесь образует кислотный осадок, который заклинивает компрессор за несколько недель работы.</blockquote>
+<p>При выборе аналога обращайте внимание на допустимые диапазоны рабочих температур. Компрессоры для низкотемпературных камер (LBP) не подойдут для средне-температурных витрин (MBP), даже если их электрическая мощность совпадает.</p>
+
+<details class="pb-accordion"><summary>Можно ли поставить более мощный компрессор?</summary><div class="pb-accordion-body"><p>Теоретически можно, если позволяет место и крепления. Однако избыточная мощность приведет к коротким циклам включения/выключения (тактовке). Это вызывает перегрев пускового реле и быстрый износ клапанной группы, так как система не успевает стабилизировать давление.</p></div></details>
+
+<h2 id="практическая-инструкция-по-замеру-тока-и-мощности">Практическая инструкция по замеру тока и мощности</h2>
+<p>Если документация утеряна, а маркировка не читается, единственным достоверным методом остается замер потребляемого тока работающего двигателя. Этот метод позволяет оценить фактическую нагрузку и сравнить её с паспортными данными потенциальных аналогов.</p>
+<p>Для проведения замера вам понадобятся токоизмерительные клещи и знание номинального напряжения сети. Измерение проводится в рабочем режиме, когда холодильник вышел на режим и компрессор работает непрерывно. Пусковые токи в расчет не берутся, так как они кратковременны.</p>
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Подготовка к замерам</h4><label class="check-item"><input type="checkbox"><span>Отключить холодильник от сети на 5 минут</span></label><label class="check-item"><input type="checkbox"><span>Подготовить токоизмерительные клещи</span></label><label class="check-item"><input type="checkbox"><span>Обеспечить доступ к сетевому шнуру</span></label><label class="check-item"><input type="checkbox"><span>Проверить исправность розетки</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+<p>Последовательность действий:</p>
+<ol>
+<li>Включите измерительный прибор в режим измерения переменного тока (AC).</li>
+<li>Охватите клещами только один провод питающего кабеля (фазу или ноль).</li>
+<li>Включите холодильник и дождитесь выхода на рабочий цикл.</li>
+<li>Зафиксируйте показания, когда они стабилизируются.</li>
+</ol>
+<p>Полученное значение тока умножается на напряжение сети (220-230В) и на коэффициент мощности (cos φ), который для бытовых компрессоров составляет примерно 0.8-0.9. Формула: <code>P = U <em> I </em> cos φ</code>. Сравните полученную активную мощность с таблицами производителей.</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если у вас нет токоизмерительных клещей, можно использовать мультиметр в режиме амперметра, но это потребует разрыва цепи, что небезопасно без навыков работы с электричеством. Лучше воспользоваться услугами электрика.</p></aside>
+
+<h2 id="таблица-совместимости-и-распространенные-ошибки">Таблица совместимости и распространенные ошибки</h2>
+<p>При подборе запчасти новички часто допускают ошибки, фокусируясь только на габаритах или цене. Однако несовместимость технических характеристик приводит к повторному ремонту. Ниже приведены типичные ошибки и способы их избежать.</p>
+<p>Частая проблема — установка компрессора с меньшим объемом цилиндров в надежде на экономию. В результате холодильник "не тянет" мороз, компрессор работает без отключения 24/7 и сгорает от перегрева через месяц. Также опасно ставить агрегаты, предназначенные для других хладагентов, без полной промывки системы.</p>
+<p>Вот сводная таблица частых ошибок:</p>
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Ошибка</th>
+<th>Последствие</th>
+<th>Как избежать</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Мощность ниже нормы</td>
+<td>Недостаточное охлаждение, работа без остановки</td>
+<td>Сравнивать объем цилиндров (см³)</td>
+</tr>
+<tr>
+<td>Неверный тип масла</td>
+<td>Засорение капилляра, кислотное образование</td>
+<td>Промывать систему или ставить фильтр-осушитель</td>
+</tr>
+<tr>
+<td>Игнорирование пускового</td>
+<td>Компрессор гудит, но не запускается</td>
+<td>Менять пусковое реле вместе с мотором</td>
+</tr>
+</tbody>
+</table></div>
+<p>Всегда проверяйте высоту и посадочные размеры лапок. Даже если мощность подобрана верно, компрессор может не встать на штатное место. В таких случаях используют переходные пластины или гибкие медные трубки, но это требует высокой квалификации.</p>
+
+<h2 id="заключительные-рекомендации-и-выводы">Заключительные рекомендации и выводы</h2>
+<p>Правильный расчет мощности компрессора — это баланс между теоретическими вычислениями и практическим опытом. Не существует универсальной кнопки "рассчитать", которая даст 100% гарантию без учета состояния остальной системы холодильника.</p>
+<p>Если вы сомневаетесь в своих расчетах, лучше выбрать модель с чуть большим запасом производительности (но в разумных пределах), чем с меньшим. Однако помните, что чрезмерная мощность так же вредна, как и недостаточная, из-за нарушения цикличности работы.</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Золотое правило ремонта: при замене компрессора всегда меняйте фильтр-осушитель и промывайте систему, даже если ставите точно такую же модель. Старые загрязнения убьют новый мотор.</p></aside>
+<p>Современные инверторные модели требуют еще более тщательного подхода, так как их мощность регулируется электроникой, и простая замена на обычный старт-стопный компрессор невозможна без переделки всей платы управления.</p>
+
+<details>
+<summary>Можно ли заменить компрессор R12 на R134a без замены масла?</summary>
+<p>Нет, нельзя. R12 работает на минеральном масле, а R134a требует синтетического (полиэфирного). Остатки минерального масла в системе (до 40% остается в трубках и конденсаторе) смешаются с синтетикой, выпадет осадок, и компрессор заклинит. Нужна полная промывка азотом или замена всех трубок.</p>
+</details>
+
+<details>
+<summary>Почему новый компрессор греется сильнее старого?</summary>
+<p>Современные компрессоры (класс L или H) имеют более высокий КПД, но и большую удельную теплоту сжатия. Температура корпуса до 80-90°C считается нормальной для многих моделей. Главное — чтобы он не перегревался до состояния, когда срабатывает тепловое реле защиты.</p>
+</details>
+
+<details>
+<summary>Влияет ли длина капиллярной трубы на мощность?</summary>
+<p>Да, длина и диаметр капиллярной трубы создают гидравлическое сопротивление, которое должно соответствовать производительности компрессора. Если поставить более мощный мотор на старую трубку, давление конденсации вырастет, что приведет к перегрузке и шуму.</p>
+</details>
+
+<details>
+<summary>Как узнать мощность, если на шильдике написано только "1/5 HP"?</summary>
+<p>Маркировка "1/5 HP" (или 1/4, 1/3) указывает на электрическую мощность в лошадиных силах. 1/5 HP ≈ 0.2 л.с. ≈ 150 Вт потребляемой мощности. Холодопроизводительность будет зависеть от типа фреона: для R134a это примерно 100-120 Вт холода, для R600a — чуть больше.</p>
+</details>
+
+<details>
+<summary>Обязательно ли делать вакуумирование системы?</summary>
+<p>Абсолютно необходимо. В системе не должно оставаться воздуха и влаги. Вакуумирование удаляет влагу (которая замерзает в капилляре) и воздух (который повышает давление конденсации). Без вакуумного насоса качественный ремонт невозможен.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/p/po/pochemu-pakhnet-atsetonom-iz-kholodilnika.html" class="pb-related-card">
+                <span class="pb-related-title">Запах ацетона из холодильника: причины, устранение, опасность</span>
+                <span class="pb-related-desc">Почему в холодильнике пахнет ацетоном? Разбор причин: от хладагента до пластика. Что делать, если во</span>
+            </a><a href="/articles/k/ka/kak-otklyuchit-morozilnuyu-kameru-u-kholodilnika-atlant.html" class="pb-related-card">
+                <span class="pb-related-title">Как отключить морозилку в холодильнике Атлант: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробное руководство по правильному отключению морозильной камеры в холодильниках Атлант. Схемы, со</span>
+            </a><a href="/articles/k/ka/kak-perevesit-dver-v-kholodilnike-indezit-video.html" class="pb-related-card">
+                <span class="pb-related-title">Как перевесить дверь холодильника Indesit: видео и пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробное руководство по перевешиванию двери холодильника Indesit с видео, схемами и советами. Узнай</span>
+            </a><a href="/articles/p/po/pochemu-pokryvaetsya-ldom-radiator-kholodilnika.html" class="pb-related-card">
+                <span class="pb-related-title">Почему покрывается льдом радиатор холодильника: причины</span>
+                <span class="pb-related-desc">Разбираем, почему намерзает лед на радиаторе холодильника. Причины, диагностика неисправностей и мет</span>
+            </a><a href="/articles/p/po/pochemu-v-kholodilnike-namerzaet-led-na-zadnej-stenke-s-odnoj-storony.html" class="pb-related-card">
+                <span class="pb-related-title">Лед на задней стенке холодильника: причины и устранение</span>
+                <span class="pb-related-desc">Почему намерзает лед на задней стенке холодильника с одной стороны? Полный разбор причин, проверка д</span>
+            </a><a href="/articles/k/ka/kak-smazat-ventilyator-v-kholodilnike-samsung.html" class="pb-related-card">
+                <span class="pb-related-title">Как смазать вентилятор в холодильнике Самсунг: инструкция</span>
+                <span class="pb-related-desc">Подробная инструкция: как смазать вентилятор в холодильнике Самсунг. Устранение шума, выбор смазки, </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

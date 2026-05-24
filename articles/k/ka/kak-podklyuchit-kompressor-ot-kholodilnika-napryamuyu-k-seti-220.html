@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Как подключить компрессор от холодильника к 220В: схема и инструкция — Холодильник Инфо</title>
+    <meta name="description" content="Пошаговое руководство по прямому подключению компрессора холодильника к сети 220В: разбор схем, выбор деталей и меры безопасности. Рабочие решения для Danfoss, Embraco и других моделей.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/k/ka/kak-podklyuchit-kompressor-ot-kholodilnika-napryamuyu-k-seti-220.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как подключить компрессор от холодильника к 220В: схема и инструкция">
+    <meta property="og:description" content="Пошаговое руководство по прямому подключению компрессора холодильника к сети 220В: разбор схем, выбор деталей и меры безопасности. Рабочие решения для Danfoss, Embraco и других моделей.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-nav-active">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/remont-svoimi-rukami/">Ремонт своими руками</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как подключить компрессор от холодильника к 220В: схема и инструкция</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#1-подготовка-что-понадобится-для-подключения">1. Подготовка: что понадобится для подключения</a></li><li><a href="#2-определение-выводов-обмоток-где-common-run-и-start">2. Определение выводов обмоток: где common, run и start</a></li><li><a href="#3-схемы-подключения-3-вывода-vs-4-вывода">3. Схемы подключения: 3 вывода vs 4 вывода</a></li><li><a href="#4-выбор-конденсатора-и-реле-технические-нюансы">4. Выбор конденсатора и реле: технические нюансы</a></li><li><a href="#5-пошаговая-инструкция-подключаем-компрессор-к-220в">5. Пошаговая инструкция: подключаем компрессор к 220В</a></li><li><a href="#6-типичные-ошибки-и-как-их-избежать">6. Типичные ошибки и как их избежать</a></li><li><a href="#7-меры-безопасности-защита-от-пожара-и-поражения-током">7. Меры безопасности: защита от пожара и поражения током</a></li><li><a href="#faq-частые-вопросы-по-подключению-компрессора">FAQ: Частые вопросы по подключению компрессора</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-zamenit-magnity-na-kholodilnike.html">Как заменить магниты на холодильнике: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-otklyuchit-kompressor-u-kholodilnika.html">Как отключить компрессор у холодильника: инструкция</a></li><li><a href="/articles/k/ka/kak-vosstanovit-rezinku-kholodilnika-na-dveri.html">Как восстановить резинку холодильника: инструкция</a></li><li><a href="/articles/p/po/pochemu-kholodilnik-ne-morozit-i-ne-okhlazhdaet-a-svet-gorit.html">Холодильник светит, но не морозит: причины и ремонт</a></li><li><a href="/articles/k/ka/kak-regulirovat-dver-kholodilnika-stinol.html">Регулировка двери холодильника Stinol: пошаговая инструкция 2026</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Подключение компрессора холодильника к 220В без реле: пошаговая инструкция с схемами</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#1-подготовка-что-понадобится-для-подключения">1. Подготовка: что понадобится для подключения</a></li><li><a href="#2-определение-выводов-обмоток-где-common-run-и-start">2. Определение выводов обмоток: где common, run и start</a></li><li><a href="#3-схемы-подключения-3-вывода-vs-4-вывода">3. Схемы подключения: 3 вывода vs 4 вывода</a></li><li><a href="#4-выбор-конденсатора-и-реле-технические-нюансы">4. Выбор конденсатора и реле: технические нюансы</a></li><li><a href="#5-пошаговая-инструкция-подключаем-компрессор-к-220в">5. Пошаговая инструкция: подключаем компрессор к 220В</a></li><li><a href="#6-типичные-ошибки-и-как-их-избежать">6. Типичные ошибки и как их избежать</a></li><li><a href="#7-меры-безопасности-защита-от-пожара-и-поражения-током">7. Меры безопасности: защита от пожара и поражения током</a></li><li><a href="#faq-частые-вопросы-по-подключению-компрессора">FAQ: Частые вопросы по подключению компрессора</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Компрессор холодильника — это сердце системы охлаждения, и его прямое подключение к сети 220В может понадобиться в самых разных ситуациях: от тестирования работоспособности до создания самодельных установок (например, <strong>аэрографов</strong>, <strong>краскопультов</strong> или <strong>вакуумных насосов</strong>). Однако просто воткнуть вилку в розетку не получится — требуется правильная схема подключения, учёт особенностей пусковой обмотки и защита от перегрева.</p>
+
+<p>Многие мастера допускают критические ошибки: игнорируют <strong>пусковое реле</strong>, неправильно определяют выводы обмоток или используют провода недостаточного сечения. В результате компрессор либо не запускается, либо сгорает в течение минут. Эта статья поможет избежать типичных проблем и подключить агрегат безопасно — с учётом его технических характеристик и электрических норм.</p>
+
+<p>Мы разберём:
+<ul>
+  <li>🔍 Как отличить рабочую обмотку от пусковой (даже без мультиметра)</li>
+  <li>⚡ Схемы подключения для компрессоров с 3 и 4 выводами</li>
+  <li>🛠️ Пошаговую пайку контактов и выбор компонентов (реле, конденсаторы, кнопки)</li>
+  <li>⚠️ Критические ошибки, которые приведут к поломке мотора</li>
+</ul>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Параметры обмоток (сопротивление, ток) могут отличаться в зависимости от модели компрессора (<em>Danfoss SC10G</em>, <em>Embraco EG80HLE</em>, <em>Secop</em> и др.). Всегда сверяйтесь с маркировкой на корпусе агрегата или технической документацией холодильника.</blockquote>
+
+<h2 id="1-подготовка-что-понадобится-для-подключения">1. Подготовка: что понадобится для подключения</h2>
+
+<p>Прежде чем браться за паяльник, соберите всё необходимое. Без правильных компонентов схема либо не заработает, либо компрессор прослужит считанные минуты. Вот минимальный набор:
+
+<ul>
+  <li>🔧 <strong>Мультиметр</strong> (для проверки сопротивления обмоток и целостности цепей)</li>
+  <li>🔌 <strong>Провода сечением 1.5–2.5 мм²</strong> (медные, многожильные)</li>
+  <li>🔄 <strong>Пусковое реле</strong> (если планируете использовать его в схеме) или <strong>конденсатор</strong> (для ручного запуска)</li>
+  <li>🔘 <strong>Кнопка ПНВ (пускатель нормально разомкнутый)</strong> — для кратковременного подключения пусковой обмотки</li>
+  <li>🔥 <strong>Термоусадочная трубка</strong> или изолента (для изоляции соединений)</li>
+  <li>🔨 Паяльник, припой и флюс (если будете соединять провода пайкой)</li>
+</ul>
+
+<p>Для компрессоров <em>старого образца</em> (например, советских холодильников <em>"ЗИЛ"</em> или <em>"Минск"</em>) может потребоваться <strong>понижающий трансформатор</strong>, если рабочее напряжение обмоток ниже 220В. Уточните это по маркировке на корпусе агрегата — там указана пара значений наподобие <code>127V/220V</code> или <code>110V/230V</code>.
+
+<p><strong>Ключевой момент:</strong> если компрессор извлечён из холодильника с электронным управлением (например, <em>Samsung No Frost</em> или <em>LG Inverter</em>), его обмотки могут быть рассчитаны на работу с платой управления. В этом случае прямое подключение к 220В без доработок <mark>приведёт к мгновенному сгоранию мотора из-за отсутствия защиты по току</mark>.
+
+<h2 id="2-определение-выводов-обмоток-где-common-run-и-start">2. Определение выводов обмоток: где common, run и start</h2>
+
+<p>На корпусе компрессора обычно есть 3 или 4 вывода, промаркированных буквами:
+<ul>
+  <li><code>C</code> (Common) — общий вывод</li>
+  <li><code>S</code> (Start) — пусковая обмотка</li>
+  <li><code>R</code> (Run) — рабочая обмотка</li>
+  <li><code>CS</code> или <code>CR</code> — комбинированный вывод (встречается реже)</li>
+</ul>
+
+<p>Если маркировки нет, определить обмотки можно по сопротивлению:
+<ol>
+  <li>Замерьте сопротивление между всеми парами выводов.</li>
+  <li>Самое <strong>большое сопротивление</strong> — это сумма <code>C-S</code> + <code>C-R</code> (обычно 20–40 Ом для бытовых компрессоров).</li>
+  <li>Самое <strong>маленькое сопротивление</strong> — это <code>S-R</code> (пусковая + рабочая обмотки, 5–15 Ом).</li>
+  <li>Оставшийся вывод с <strong>средним сопротивлением</strong> — это <code>C</code> (общий).</li>
+</ol>
+
+<p>Пример для компрессора <em>Danfoss NL8FJ</em>:
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr><th>Выводы</th><th>Сопротивление (Ом)</th><th>Назначение</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>C-S</code></td><td>22.5</td><td>Пусковая обмотка</td></tr>
+    <tr><td><code>C-R</code></td><td>12.8</td><td>Рабочая обмотка</td></tr>
+    <tr><td><code>S-R</code></td><td>9.7</td><td>Сумма обмоток</td></tr>
+  </tbody>
+</table></div>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Если сопротивление между любыми выводами стремится к нулю (короткое замыкание) или бесконечности (обрыв), компрессор неисправен. Подключать его к 220В опасно — риск пожара или поражения током!</blockquote>
+
+<details class="pb-accordion"><summary>Что делать, если мультиметра нет?</summary><div class="pb-accordion-body"><p>
+<p>Если под рукой нет мультиметра, можно определить обмотки по толщине проводов:</p>
+<p>- Толстый провод — рабочая обмотка (<code>R</code>).</p>
+<p>- Тонкий провод — пусковая обмотка (<code>S</code>).</p>
+<p>- Средний по толщине — общий (<code>C</code>).</p>
+<strong>Но этот метод работает только для компрессоров с 3 выводами!</strong></p></div></details>
+
+<h2 id="3-схемы-подключения-3-вывода-vs-4-вывода">3. Схемы подключения: 3 вывода vs 4 вывода</h2>
+
+<p>Схема подключения зависит от количества выводов на компрессоре. Рассмотрим оба варианта.
+
+<p><strong>Схема для 3 выводов (C, S, R):</strong>
+<ul>
+  <li>🔹 Подключите <code>C</code> и <code>R</code> напрямую к сети 220В (фаза и ноль).</li>
+  <li>🔹 Пусковую обмотку (<code>S</code>) подключите через кнопку ПНВ <strong>параллельно</strong> рабочей обмотке.</li>
+  <li>🔹 Нажмите кнопку на 1–3 секунды — компрессор должен запуститься.</li>
+</ul>
+
+<p><strong>Схема для 4 выводов (с комбинированным выводом CS):</strong>
+<ul>
+  <li>🔹 Подключите <code>CS</code> и <code>R</code> к сети 220В.</li>
+  <li>🔹 Пусковую обмотку (<code>S</code>) подключите через конденсатор (25–40 мкФ, 450В) к выводу <code>C</code>.</li>
+  <li>🔹 После запуска конденсатор можно отключить (в ручном режиме).</li>
+</ul>
+
+<p>Для постоянной работы (например, в самодельном оборудовании) лучше использовать <strong>пусковое реле</strong> от холодильника или аналогичное (например, <em>DANFOSS 103N0010</em>). Оно автоматически отключает пусковую обмотку после разгона ротора.
+
+
+<p>- Соединения изолированы термоусадкой/изолентой</p>
+<p>- Провода не перекручены и не натянуты</p>
+<p>- Кнопка ПНВ исправна (замыкает контакт)</p>
+<p>- Компрессор закреплён (вибрация может повредить соединения)</p>
+<p>--></p>
+
+<h2 id="4-выбор-конденсатора-и-реле-технические-нюансы">4. Выбор конденсатора и реле: технические нюансы</h2>
+
+<p>Если вы используете <strong>конденсатор</strong> для запуска (вместо реле), его ёмкость подбирается по формуле:
+<pre><code>C (мкФ) = (Iпуск / U) * 10^6</code></pre>
+<p>где:</p>
+<p>- <code>Iпуск</code> — пусковой ток (указан на шильдике компрессора, например, <code>3.2A</code>),</p>
+<p>- <code>U</code> — напряжение сети (220В).</p>
+
+<p>Для большинства бытовых компрессоров (<em>Embraco EG80</em>, <em>Secop SC10</em>) подойдёт конденсатор на <strong>25–40 мкФ</strong> с рабочим напряжением <strong>400–450В</strong>. Использовать конденсаторы меньшего напряжения (например, 250В) опасно — они взрываются при скачках напряжения!
+
+<p>Если решили использовать <strong>пусковое реле</strong>, обратите внимание на:
+<ul>
+  <li>🔌 <strong>Ток срабатывания</strong> (должен совпадать с пусковым током компрессора).</li>
+  <li>🔄 <strong>Тип реле</strong>: для компрессоров с высоким пусковым током (например, <em>Danfoss</em>) подходят реле <em>PTC</em> или <em>текущего типа</em>.</li>
+  <li>🔧 <strong>Совместимость с напряжением</strong>: некоторые реле рассчитаны на 110В и не подойдут для 220В.</li>
+</ul>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Для тестирования компрессора без постоянного подключения можно использовать временную схему с "крокодилами" и кнопкой от дверного звонка. Это убережёт от пайки, если агрегат окажется неисправен.</p></aside>
+
+<h2 id="5-пошаговая-инструкция-подключаем-компрессор-к-220в">5. Пошаговая инструкция: подключаем компрессор к 220В</h2>
+
+<p>Рассмотрим универсальный алгоритм для компрессора с 3 выводами (<code>C</code>, <code>S</code>, <code>R</code>):
+
+<ol>
+  <li><strong>Шаг 1. Проверка обмоток</strong>
+    <p>Убедитесь, что сопротивления обмоток соответствуют норме (см. раздел 2). Если есть короткое замыкание или обрыв — компрессор нужно ремонтировать, а не подключать!</li>
+
+  <li><strong>Шаг 2. Подготовка проводов</strong>
+    <p>Зачистите концы проводов на 10–15 мм. Если будете паять — облудите их. Для временного подключения можно использовать клеммники <em>Wago</em>.</li>
+
+  <li><strong>Шаг 3. Сборка схемы</strong>
+    <p>Подключите:
+    <ul>
+      <li>🔌 <code>C</code> → фаза 220В,</li>
+      <li>🔌 <code>R</code> → ноль 220В,</li>
+      <li>🔘 <code>S</code> → кнопка ПНВ → фаза 220В (параллельно <code>C-R</code>).</li>
+    </ol></li>
+
+  <li><strong>Шаг 4. Запуск</strong>
+    <p>Кратковременно (1–2 сек) нажмите кнопку ПНВ. Компрессор должен запуститься с характерным гудением. Если нет — проверьте соединения или обмотки.</li>
+</ul>
+
+<p>Для компрессоров с 4 выводами (<code>CS</code>, <code>C</code>, <code>S</code>, <code>R</code>) схема аналогична, но пусковая обмотка подключается через конденсатор к <code>C</code>, а не напрямую к фазе.
+
+<div class="pb-poll" id="poll-26cef378"><div class="pb-poll-question">📊 Какой компрессор вы подключаете?</div><div class="pb-poll-option" data-poll="26cef378" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Danfoss</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="26cef378" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Embraco</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="26cef378" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Secop</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="26cef378" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Советский (ЗИЛ, Минск)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="26cef378" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Другой</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="6-типичные-ошибки-и-как-их-избежать">6. Типичные ошибки и как их избежать</h2>
+
+<p>Даже опытные мастера иногда упускают критичные моменты. Вот что <strong>нельзя делать</strong> при подключении:
+
+<ul>
+  <li>❌ <strong>Игнорировать пусковую обмотку</strong> — компрессор не запустится или будет греться.</li>
+  <li>❌ <strong>Использовать конденсатор слишком большой ёмкости</strong> — это приведёт к перегреву обмоток.</li>
+  <li>❌ <strong>Подключать компрессор без заземления</strong> — при пробое изоляции риск поражения током.</li>
+  <li>❌ <strong>Держать кнопку ПНВ дольше 3 секунд</strong> — пусковая обмотка не рассчитана на длительную работу.</li>
+</ul>
+
+<p><mark>Самая распространённая ошибка — перепутать рабочую и пусковую обмотки. Если подключить <code>S</code> как рабочую, компрессор запустится, но через 5–10 минут сгорит из-за перегрузки.</mark>
+
+<p>Ещё один нюанс: если компрессор <strong>гудит, но не запускается</strong>, возможны две причины:
+<ol>
+  <li>Недостаточное напряжение в сети (проверьте мультиметром).</li>
+  <li>Заклинивший вал (попробуйте вручную провернуть ротор через шкив).</li>
+</ol>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Компрессоры с <strong>инверторным управлением</strong> (например, от холодильников <em>LG</em> или <em>Samsung</em> с функцией <em>Smart Inverter</em>) нельзя подключать напрямую к 220В! Их обмотки управляются ШИМ-контроллером, и прямое подключение выведет мотор из строя.</blockquote>
+
+<h2 id="7-меры-безопасности-защита-от-пожара-и-поражения-током">7. Меры безопасности: защита от пожара и поражения током</h2>
+
+<p>Работа с электричеством требует строгого соблюдения правил:
+<ul>
+  <li>🔌 <strong>Отключайте питание</strong> при сборке схемы (даже если вы "всё помните").</li>
+  <li>🔥 <strong>Используйте автомат защиты</strong> на 6–10А в цепи питания компрессора.</li>
+  <li>🌡️ <strong>Контролируйте температуру корпуса</strong> — если компрессор нагрелся выше 60°C, немедленно отключите его.</li>
+  <li>🛡️ <strong>Землите корпус</strong> (особенно если компрессор установлен на металлической поверхности).</li>
+</ul>
+
+<p>Для длительной работы (например, в мастерской) рекомендуется установить:
+<ul>
+  <li>🔄 <strong>Термореле</strong> (например, <em>KSD301</em>) для отключения при перегреве.</li>
+  <li>🔋 <strong>Стабилизатор напряжения</strong> (если в сети частые скачки).</li>
+  <li>🔊 <strong>Звуковой сигнализатор</strong> (на случай аварийной остановки).</li>
+</ul>
+
+<p><strong>Важно:</strong> если компрессор будет работать в <strong>взрывоопасной среде</strong> (например, для перекачки горючих газов), используйте только <strong>взрывозащищённые компоненты</strong> и герметичные короба для электрических соединений.
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Даже исправный компрессор при неправильном подключении может стать источником пожара. Всегда проверяйте схему мультиметром перед первым запуском!</p></aside>
+
+<h2 id="faq-частые-вопросы-по-подключению-компрессора">FAQ: Частые вопросы по подключению компрессора</h2>
+
+<details>
+  <summary>Можно ли подключить компрессор без пускового реле?</summary>
+  <p>Да, но только для кратковременного тестирования. Для постоянной работы реле или конденсатор обязательны — иначе пусковая обмотка сгорит.</p>
+</details>
+
+<details>
+  <summary>Почему компрессор гудит, но не запускается?</summary>
+  <p>Причин несколько:
+  <ul>
+    <li>Недостаточная ёмкость конденсатора (для 4-выводных моделей).</li>
+    <li>Заклинивший вал (попробуйте провернуть его вручную).</li>
+    <li>Низкое напряжение в сети (менее 200В).</li>
+  </ul>
+<p>Проверьте все варианты по порядку.</p></p>
+</details>
+
+<details>
+  <summary>Какой провод использовать для подключения?</summary>
+  <p>Минимальное сечение — <strong>1.5 мм²</strong> для компрессоров мощностью до 1 кВт. Для более мощных (от 1.5 кВт) берите <strong>2.5 мм²</strong>. Провод должен быть медным, многожильным (например, <em>ПВС 3×1.5</em>).</p>
+</details>
+
+<details>
+  <summary>Можно ли использовать компрессор от холодильника для накачки шин?</summary>
+  <p>Технически да, но есть нюансы:
+  <ul>
+    <li>Давление на выходе компрессора обычно не превышает <strong>8–10 атм</strong> (для шин легковушки хватит, для грузовика — нет).</li>
+    <li>Нужно установить <strong>ресивер</strong> (ёмкость для сглаживания пульсаций) и <strong>манометр</strong>.</li>
+    <li>Масло из компрессора может попадать в шланг — требуется <strong>маслоотделитель</strong>.</li>
+  </ul>
+<p>Для постоянного использования лучше купить специализированный компрессор.</p></p>
+</details>
+
+<details>
+  <summary>Что делать, если компрессор после подключения сильно греется?</summary>
+  <p>Срочно отключите его! Причины перегрева:
+  <ul>
+    <li>Неправильно подобрана ёмкость конденсатора.</li>
+    <li>Высокое сопротивление в цепи (плохие контакты, тонкие провода).</li>
+    <li>Заклинивание механической части (износ подшипников, недостаток масла).</li>
+  </ul>
+<p>Проверьте схему и состояние компрессора.</p></p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-zamenit-magnity-na-kholodilnike.html" class="pb-related-card">
+                <span class="pb-related-title">Как заменить магниты на холодильнике: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробный гид по замене магнитов дверцы холодильника. Узнайте, как снять обшивку, извлечь старые и у</span>
+            </a><a href="/articles/k/ka/kak-otklyuchit-kompressor-u-kholodilnika.html" class="pb-related-card">
+                <span class="pb-related-title">Как отключить компрессор у холодильника: инструкция</span>
+                <span class="pb-related-desc">Подробное руководство, как остановить компрессор холодильника. Диагностика, замена реле, блокировка </span>
+            </a><a href="/articles/k/ka/kak-vosstanovit-rezinku-kholodilnika-na-dveri.html" class="pb-related-card">
+                <span class="pb-related-title">Как восстановить резинку холодильника: инструкция</span>
+                <span class="pb-related-desc">Эффективные способы реставрации уплотнителя двери. Как выпрямить резинку, устранить зазоры и продлит</span>
+            </a><a href="/articles/p/po/pochemu-kholodilnik-ne-morozit-i-ne-okhlazhdaet-a-svet-gorit.html" class="pb-related-card">
+                <span class="pb-related-title">Холодильник светит, но не морозит: причины и ремонт</span>
+                <span class="pb-related-desc">Почему холодильник горит, но не охлаждает? Разбор поломок компрессора, утечек фреона и термостата. Э</span>
+            </a><a href="/articles/k/ka/kak-regulirovat-dver-kholodilnika-stinol.html" class="pb-related-card">
+                <span class="pb-related-title">Регулировка двери холодильника Stinol: пошаговая инструкция 2026</span>
+                <span class="pb-related-desc">Как отрегулировать дверь холодильника Stinol самостоятельно: причины перекоса, инструменты, настройк</span>
+            </a><a href="/articles/k/ka/kak-otkryt-kholodilnik-baltika-bez-pulta.html" class="pb-related-card">
+                <span class="pb-related-title">Как открыть холодильник Балтика без пульта: все способы</span>
+                <span class="pb-related-desc">Подробное руководство по управлению холодильником Балтика без пульта. Ручные настройки, скрытые кноп</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

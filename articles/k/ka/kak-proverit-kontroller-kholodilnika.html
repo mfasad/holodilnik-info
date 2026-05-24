@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Как проверить контроллер холодильника: диагностика и коды ошибок — Холодильник Инфо</title>
+    <meta name="description" content="Проверьте контроллер холодильника: симптомы неисправности, мультиметром, коды ошибок. Инструкция по диагностике платы управления своими руками.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/k/ka/kak-proverit-kontroller-kholodilnika.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как проверить контроллер холодильника: диагностика и коды ошибок">
+    <meta property="og:description" content="Проверьте контроллер холодильника: симптомы неисправности, мультиметром, коды ошибок. Инструкция по диагностике платы управления своими руками.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-nav-active">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/remont-svoimi-rukami/">Ремонт своими руками</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как проверить контроллер холодильника: диагностика и коды ошибок</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#симптомы-неисправности-электронного-блока-управления">Симптомы неисправности электронного блока управления</a></li><li><a href="#визуальный-осмотр-и-первичная-диагностика">Визуальный осмотр и первичная диагностика</a></li><li><a href="#необходимые-инструменты-для-проверки">Необходимые инструменты для проверки</a></li><li><a href="#проверка-напряжения-и-целостности-цепей">Проверка напряжения и целостности цепей</a></li><li><a href="#диагностика-датчиков-и-исполнительных-механизмов">Диагностика датчиков и исполнительных механизмов</a></li><li><a href="#типичные-коды-ошибок-и-их-расшифровка">Типичные коды ошибок и их расшифровка</a></li><li><a href="#частые-вопросы-о-диагностике-контроллера">Частые вопросы о диагностике контроллера</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-prikleit-rezinku-k-kholodilniku.html">Как приклеить резинку к холодильнику: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-silno-dolzhen-gretsya-kompressor-kholodilnika.html">Нормальная температура компрессора холодильника: как проверить</a></li><li><a href="/articles/k/ka/kak-pochinit-kholodilnik-nord.html">Ремонт холодильника Nord своими руками: устранение неисправностей</a></li><li><a href="/articles/n/na/na-kholodilnike-plokho-zakryvaetsya-dvertsa-chto-delat.html">Холодильник плохо закрывается: 7 причин и как починить дверцу</a></li><li><a href="/articles/k/ka/kak-pomenyat-dvertsy-na-kholodilnike-haier.html">Как поменять дверцы на холодильнике Haier: полная инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Диагностика контроллера холодильника: пошаговая инструкция</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#симптомы-неисправности-электронного-блока-управления">Симптомы неисправности электронного блока управления</a></li><li><a href="#визуальный-осмотр-и-первичная-диагностика">Визуальный осмотр и первичная диагностика</a></li><li><a href="#необходимые-инструменты-для-проверки">Необходимые инструменты для проверки</a></li><li><a href="#проверка-напряжения-и-целостности-цепей">Проверка напряжения и целостности цепей</a></li><li><a href="#диагностика-датчиков-и-исполнительных-механизмов">Диагностика датчиков и исполнительных механизмов</a></li><li><a href="#типичные-коды-ошибок-и-их-расшифровка">Типичные коды ошибок и их расшифровка</a></li><li><a href="#частые-вопросы-о-диагностике-контроллера">Частые вопросы о диагностике контроллера</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Когда холодильник перестает морозить, издает странные звуки или на дисплее загорается тревожная индикация, первой мыслью часто становится вызов мастера. Однако во многих случаях проблема кроется в электронном блоке управления, который можно диагностировать самостоятельно при наличии базовых навыков. <strong>Контроллер холодильника</strong> — это «мозг» устройства, отвечающий за циклы включения компрессора, работу вентиляторов и оттайку. Его некорректная работа приводит к порче продуктов и полному выходу агрегата из строя.</p>
+
+<p>Прежде чем приступать к разборке, необходимо исключить банальные причины: отсутствие питания в розетке, повреждение шнура или скачки напряжения в сети. Если же внешние факторы исключены, а техника ведет себя неадекватно, потребуется более глубокая проверка <em>электронной платы</em>. В этой статье мы разберем, как выявить неисправность без дорогостоящего оборудования и понять, стоит ли ремонтировать блок или проще заменить его целиком.</p>
+
+<p>Стоит понимать, что современные модели, будь то <em>LG</em>, <em>Bosch</em> или <em>Indesit</em>, оснащены сложной логикой самодиагностики. Часто сам прибор подсказывает владельцу, где искать поломку. Ваша задача — правильно расшифровать эти сигналы и провести визуальный и инструментальный осмотр внутренних компонентов.</p>
+
+<h2 id="симптомы-неисправности-электронного-блока-управления">Симптомы неисправности электронного блока управления</h2>
+
+<p>Первым признаком того, что <strong>контроллер управления</strong> работает некорректно, является хаотичное поведение техники. Холодильник может включаться и выключаться через слишком короткие промежутки времени или, наоборот, не запускать компрессор сутками. Часто наблюдается ситуация, когда горит свет в камере, но двигатель молчит, либо вентилятор гудит, но холода нет.</p>
+
+<p>В моделях с дисплеем на дверце часто появляются <strong>коды ошибок</strong>, которые напрямую указывают на сбой в цепи управления. Например, ошибка датчика температуры может означать не только поломку самого сенсора, но и обрыв цепи на плате или неисправность контроллера, который не может считать показания. Если дисплей мигает или показывает бессмысленный набор символов («кракозябры»), это верный признак проблем с <em>микропроцессором</em> или памятью.</p>
+
+<p>Также стоит обратить внимание на физическое состояние платы, если есть возможность заглянуть внутрь. Запах гари, вздувшиеся конденсаторы или почерневшие дорожки говорят о том, что произошел электрический пробой. Иногда контроллер «зависает» после скачка напряжения, и для его восстановления требуется полный сброс.</p>
+
+<ul>
+<li>⚡ Компрессор не запускается, хотя слышен щелчок реле или гудение.</li>
+<li>⚡ На дисплее горит постоянная ошибка, не исчезающая после перезагрузки.</li>
+<li>⚡ Холодильник работает в режиме непрерывного охлаждения, перемораживая продукты.</li>
+<li>⚡ Отсутствует реакция на нажатие кнопок панели управления.</li>
+</ul>
+
+<blockquote>
+<p>⚠️ Внимание: Если вы заметили следы оплавления проводки или чувствуете стойкий запах горелой пластмассы, немедленно отключите прибор от сети. Эксплуатация такого устройства пожароопасна.</p>
+</blockquote>
+
+<div class="pb-poll" id="poll-fc5604e5"><div class="pb-poll-question">📊 Какой симптом вы наблюдаете чаще всего?</div><div class="pb-poll-option" data-poll="fc5604e5" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Холодильник не включается</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="fc5604e5" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Горит ошибка на дисплее</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="fc5604e5" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Не морозит, но гудит</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="fc5604e5" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Работает без остановок</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="визуальный-осмотр-и-первичная-диагностика">Визуальный осмотр и первичная диагностика</h2>
+
+<p>Любая диагностика начинается с визуального осмотра. Для доступа к <strong>блоку управления</strong> часто достаточно снять верхнюю крышку холодильника или декоративную панель в верхней части камеры. В некоторых моделях, например, у <em>Samsung</em> или <em>LG</em>, плата может быть встроена в дверь, что требует аккуратного снятия пластиковых кожухов.</p>
+
+<p>Внимательно осмотрите печатную плату со всех сторон. Вас должны интересовать вздувшиеся конденсаторы (бочонки с плоской верхушкой), почерневшие резисторы или дорожки. Часто причиной отказа становится окисление контактов в местах пайки разъемов. Если на плате виден белый налет или следы влаги, возможно, причина кроется в конденсате или протечке дренажа.</p>
+
+<p>Проверьте целостность шлейфов и проводов, идущих к плате. Они не должны иметь заломов, следов грызунов или оплавления изоляции. Особое внимание уделите контактам, идущим к компрессору и датчикам. Иногда достаточно просто переподключить разъемы, чтобы устранить проблему плохого контакта, которая воспринималась как поломка электроники.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед снятием платы обязательно сфотографируйте расположение всех проводов и шлейфов. Это поможет вам правильно подключить их обратно и избежать короткого замыкания.</p></aside>
+
+<p>Если визуально дефектов не обнаружено, переходим к более точным методам проверки с использованием инструментов. Помните, что даже отсутствие видимых повреждений не гарантирует исправность <em>электронных компонентов</em>.</p>
+
+<h2 id="необходимые-инструменты-для-проверки">Необходимые инструменты для проверки</h2>
+
+<p>Для качественной диагностики вам потребуется минимальный набор инструментов. Главным прибором станет <strong>мультиметр</strong> (тестер), позволяющий измерять напряжение, сопротивление и проверять целостность цепей. Без него проверить большинство элементов контроллера будет невозможно.</p>
+
+<p>Также могут понадобиться отвертки для снятия кожухов, изолирующая лента, возможно, паяльник для замены сгоревших элементов, если вы обладаете соответствующими навыками. Для проверки некоторых моделей холодильников, таких как <em>Electrolux</em> или <em>Whirlpool</em>, может быть полезен сервисный мануал с распиновкой разъемов.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Назначение</th>
+<th>Важность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Мультиметр</td>
+<td>Замер напряжения, прозвонка цепей</td>
+<td>Критически важен</td>
+</tr>
+<tr>
+<td>Отвертки</td>
+<td>Разборка корпуса, снятие платы</td>
+<td>Обязательно</td>
+</tr>
+<tr>
+<td>Паяльник</td>
+<td>Замена предохранителей, конденсаторов</td>
+<td>Для ремонта</td>
+</tr>
+<tr>
+<td>Фонарик</td>
+<td>Осмотр труднодоступных мест</td>
+<td>Рекомендуется</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Убедитесь, что мультиметр исправен и его батарейки заряжены. Неверные показания прибора могут привести к ошибочным выводам и ненужной замене исправных деталей. Перед началом работ убедитесь, что руки сухие, а инструмент имеет целую изоляцию.</p>
+
+<h2 id="проверка-напряжения-и-целостности-цепей">Проверка напряжения и целостности цепей</h2>
+
+<p>Самый важный этап — проверка поступления питания на плату. Используйте мультиметр в режиме измерения переменного напряжения (AC). Подключите щупы к входному разъему платы (там, куда приходит провод от розетки или сетевого фильтра). Вы должны получить значение, близкое к 220-230 Вольт. Если напряжения нет, проблема в проводе, розетке или сетевом фильтре холодильника.</p>
+
+<p>Далее проверяем выходное напряжение блока питания самой платы. Электроника холодильника обычно работает от 5, 12 или 24 Вольт постоянного тока. Найдите на плате стабилизаторы или разъемы, идущие к дисплею и датчикам. Переключите мультиметр в режим DC (постоянный ток) и замерьте значения. Если вместо 12 Вольт прибор показывает 0 или скачущие значения, блок питания платы неисправен.</p>
+
+<pre><code>Режим мультиметра: DC (постоянный ток)
+<p>Предел измерения: 20V или 200V</p>
+<p>Норма: отклонение не более 5-10% от номинала</code></pre></p>
+
+<p>Также необходимо прозвонить цепи на предмет короткого замыкания. Для этого отключите холодильник от сети! Переведите тестер в режим прозвонки (пищалка). Проверьте дорожки, идущие к силовым элементам. Если раздается писк при замыкании щупов на дорожку и землю (корпус), значит, в цепи есть короткое замыкание, вызванное сгоревшим элементом.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка питания платы</h4><label class="check-item"><input type="checkbox"><span>Отключить холодильник от сети</span></label><label class="check-item"><input type="checkbox"><span>Снять защитный кожух</span></label><label class="check-item"><input type="checkbox"><span>Замерить входное напряжение (220В)</span></label><label class="check-item"><input type="checkbox"><span>Замерить выходное напряжение (5/12/24В)</span></label><label class="check-item"><input type="checkbox"><span>Проверить предохранитель на плате</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<p>Особое внимание уделите <strong>предохранителю</strong> на плате. Часто именно он принимает удар на себя при скачках напряжения. Если он перегорел, простая замена может не помочь — нужно найти причину скачка. Однако в некоторых случаях это разовое явление, и замена предохранителя возвращает технику к жизни.</p>
+
+<h2 id="диагностика-датчиков-и-исполнительных-механизмов">Диагностика датчиков и исполнительных механизмов</h2>
+
+<p>Контроллер управляет холодильником на основе показаний датчиков. Если датчик температуры испарителя или воздуха в камере выдает неверные данные, «мозг» холодильника принимает решения. Проверить датчик можно, измерив его сопротивление. Оно должно меняться в зависимости от температуры.</p>
+
+<p>Снимите датчик и поместите его в емкость с водой известной температуры (можно использовать термометр для контроля). Замерьте сопротивление. Для большинства моделей при температуре около +5°C сопротивление должно быть в диапазоне 5-7 кОм, а при -18°C — около 10-15 кОм. Точные значения для вашей модели (<em>Beko</em>, <em>Haier</em>, <em>Atlant</em>) лучше искать в технических мануалах.</p>
+
+<p>Если сопротивление датчика бесконечно велико (обрыв) или равно нулю (короткое замыкание), датчик неисправен и его замена решит проблему. Однако если датчик исправен, а холодильник ведет себя странно, возможно, сгорел входной контур на самой плате, куда подключается этот датчик.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Характеристики датчиков разных производителей могут существенно отличаться. Установка неподходящего датчика приведет к некорректной работе системы оттайки или охлаждения.</p>
+</blockquote>
+
+<p>Также проверьте целостность обмоток компрессора и вентиляторов. Хотя они редко выходят из строя одновременно с платой, короткое замыкание в моторе компрессора могло стать причиной выгорания силовых ключей на контроллере. Сопротивление обмоток должно быть низким, но не нулевым.</p>
+
+<details class="pb-accordion"><summary>Таблица примерных сопротивлений датчиков</summary><div class="pb-accordion-body"><p>Для большинства холодильников сопротивление датчика при +25°C составляет около 5-6 кОм. При охлаждении до -20°C сопротивление возрастает до 12-14 кОм. Если ваш датчик показывает 0 или бесконечность при любой температуре — он мертв.</p></div></details>
+
+<h2 id="типичные-коды-ошибок-и-их-расшифровка">Типичные коды ошибок и их расшифровка</h2>
+
+<p>Современные холодильники выводят информацию о неисправностях в виде кодов. Понимание их значения помогает сузить круг поиска. Например, у <em>LG</em> код FF часто указывает на проблему с вентилятором морозилки, а Er RF — на неисправность датчика холодильной камеры. У <em>Samsung</em> коды начинаются с буквы C (Cooling) или F (Freezer).</p>
+
+<p>Ошибка, связанная с коммуникацией, часто указывает на обрыв связи между основной платой и платой дисплея или инвертором компрессора. В этом случае нужно проверять не только сам контроллер, но и шлейфы, соединяющие модули. Окисление контактов в шлейфе — частая причина появления «плавающих» ошибок.</p>
+
+<p>Если после замены датчика или проверки цепей ошибка не исчезает, возможно, повреждена сама <strong>микросхема памяти</strong> или процессор на плате. В таких случаях ремонт требует перепрошивки или замены платы целиком, так как компоненты SMD-монтажа в домашних условиях заменить крайне сложно.</p>
+
+<ul>
+<li>❄️ Ошибка датчика испарителя — проверьте сопротивление сенсора и целостность проводов.</li>
+<li>🌀 Ошибка вентилятора — проверьте, не замерз ли вентилятор в льду и крутится ли он от руки.</li>
+<li>🔌 Ошибка связи — проверьте шлейфы между модулями на предмет заломов.</li>
+<li>🔥 Ошибка ТЭНа оттайки — проверьте целостность нагревателя и термопредохранителя.</li>
+</ul>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Код ошибки — это не всегда поломка самого контроллера. Часто это сигнал о том, что исполнительный механизм (датчик, мотор) не выполняет команду, и плата просто фиксирует сбой.</p></aside>
+
+<h2 id="частые-вопросы-о-диагностике-контроллера">Частые вопросы о диагностике контроллера</h2>
+
+<details>
+<summary>Можно ли отремонтировать плату контроллера самостоятельно?</summary>
+<p>Замена простых элементов, таких как предохранители, реле или вздувшиеся конденсаторы, возможна при наличии паяльника и навыков. Однако если сгорела микросхема процессора или память, ремонт в домашних условиях экономически нецелесообразен и технически сложен.</p>
+</details>
+
+<details>
+<summary>Почему после скачка напряжения холодильник перестал работать?</summary>
+<p>Скачки напряжения часто выводят из строя блок питания на плате управления. Первым сгорает предохранитель или варистор. Если замена предохранителя не помогает, скорее всего, повреждены дорожки или другие элементы цепи питания.</p>
+</details>
+
+<details>
+<summary>Сколько стоит новый контроллер для холодильника?</summary>
+<p>Цена зависит от модели и бренда. Для простых механических или электронных плат стоимость может составлять от 2 до 5 тысяч рублей. Для инверторных моделей <em>Samsung</em> или <em>LG</em> цена может достигать 10-15 тысяч рублей и выше.</p>
+</details>
+
+<details>
+<summary>Как сбросить ошибку на контроллере?</summary>
+<p>Часто помогает полный сброс: отключите холодильник от сети на 15-20 минут. Это позволит разрядиться конденсаторам и перезагрузить процессор. Если ошибка вызвана временным сбоем, она исчезнет.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-prikleit-rezinku-k-kholodilniku.html" class="pb-related-card">
+                <span class="pb-related-title">Как приклеить резинку к холодильнику: пошаговая инструкция</span>
+                <span class="pb-related-desc">Как надежно приклеить резинку к холодильнику: выбор клея, подготовка поверхности, этапы замены уплот</span>
+            </a><a href="/articles/k/ka/kak-silno-dolzhen-gretsya-kompressor-kholodilnika.html" class="pb-related-card">
+                <span class="pb-related-title">Нормальная температура компрессора холодильника: как проверить</span>
+                <span class="pb-related-desc">Как сильно греется компрессор? Узнайте норму нагрева, допустимые пределы и признаки перегрева мотора</span>
+            </a><a href="/articles/k/ka/kak-pochinit-kholodilnik-nord.html" class="pb-related-card">
+                <span class="pb-related-title">Ремонт холодильника Nord своими руками: устранение неисправностей</span>
+                <span class="pb-related-desc">Как починить холодильник Nord? Диагностика поломок, замена термостата, пускового реле и уплотнителя.</span>
+            </a><a href="/articles/n/na/na-kholodilnike-plokho-zakryvaetsya-dvertsa-chto-delat.html" class="pb-related-card">
+                <span class="pb-related-title">Холодильник плохо закрывается: 7 причин и как починить дверцу</span>
+                <span class="pb-related-desc">Дверца холодильника не плотно прилегает? Узнайте, почему это происходит и как исправить самостоятель</span>
+            </a><a href="/articles/k/ka/kak-pomenyat-dvertsy-na-kholodilnike-haier.html" class="pb-related-card">
+                <span class="pb-related-title">Как поменять дверцы на холодильнике Haier: полная инструкция</span>
+                <span class="pb-related-desc">Пошаговая инструкция по перевешиванию дверей холодильника Haier. Список инструментов, схемы петель и</span>
+            </a><a href="/articles/k/ka/kak-perevesit-dveri-na-kholodilnike-atlant-s-displeem.html" class="pb-related-card">
+                <span class="pb-related-title">Как перевесить дверь на холодильнике Атлант с дисплеем: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробная инструкция: как перевесить двери на холодильнике Атлант с дисплеем. Снятие панели управлен</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

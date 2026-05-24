@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Как определить КПД холодильника: расчет и факторы — Холодильник Инфо</title>
+    <meta name="description" content="Узнайте, как вычислить КПД холодильника. Разбор формул, влияние температуры и хладагента на энергоэффективность и реальный расход.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/k/ka/kak-opredelit-kpd-kholodilnika.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как определить КПД холодильника: расчет и факторы">
+    <meta property="og:description" content="Узнайте, как вычислить КПД холодильника. Разбор формул, влияние температуры и хладагента на энергоэффективность и реальный расход.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ustrojstvo-i-detali/">Устройство и детали</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как определить КПД холодильника: расчет и факторы</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#физические-основы-работы-холодильного-цикла">Физические основы работы холодильного цикла</a></li><li><a href="#методика-расчета-эффективности-по-формуле">Методика расчета эффективности по формуле</a></li><li><a href="#влияние-класса-энергопотребления-на-кпд">Влияние класса энергопотребления на КПД</a></li><li><a href="#факторы-снижающие-реальный-кпд-устройства">Факторы, снижающие реальный КПД устройства</a></li><li><a href="#диагностика-снижения-производительности">Диагностика снижения производительности</a></li><li><a href="#практические-советы-по-повышению-эффективности">Практические советы по повышению эффективности</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/z/zh/zhidkost-m-dlya-kholodilnika-chto-eto.html">Жидкость М для холодильника: что это и как применять</a></li><li><a href="/articles/k/ka/kak-rabotaet-no-frost-v-kholodilnike-bosch.html">Как работает No Frost в холодильнике Bosch: устройство и ремонт</a></li><li><a href="/articles/p/po/power-cool-v-kholodilnike-chto-eto-haier.html">Функция Power Cool в холодильниках Haier: что это и как работает</a></li><li><a href="/articles/g/gd/gde-prodayutsya-uplotniteli-na-kholodilnik.html">Где купить уплотнители на холодильник: топ мест и советы</a></li><li><a href="/articles/s/sk/skolko-v-srednem-potreblyaet-dvukhkamernyj-kholodilnik.html">Сколько потребляет двухкамерный холодильник: норма и расход кВт</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как определить КПД холодильника и повысить его эффективность</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#физические-основы-работы-холодильного-цикла">Физические основы работы холодильного цикла</a></li><li><a href="#методика-расчета-эффективности-по-формуле">Методика расчета эффективности по формуле</a></li><li><a href="#влияние-класса-энергопотребления-на-кпд">Влияние класса энергопотребления на КПД</a></li><li><a href="#факторы-снижающие-реальный-кпд-устройства">Факторы, снижающие реальный КПД устройства</a></li><li><a href="#диагностика-снижения-производительности">Диагностика снижения производительности</a></li><li><a href="#практические-советы-по-повышению-эффективности">Практические советы по повышению эффективности</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Многие владельцы бытовой техники задаются вопросом, как определить <strong>КПД холодильника</strong>, чтобы понять, насколько эффективно работает их агрегат. В отличие от двигателей внутреннего сгорания, где этот показатель часто измеряется в процентах от сгорания топлива, в холодильной технике ситуация сложнее. Здесь мы говорим о коэффициенте полезного действия, который характеризует способность системы переносить тепловую энергию из холодильной камеры во внешнюю среду, затрачивая при этом определенное количество электроэнергии.</p>
+<p>С точки зрения физики, идеального холодильника не существует, так как любой процесс перекачки тепла сопровождается неизбежными потерями. <em>Компрессор</em> нагревается, теплообменники не всегда идеально отдают тепло, а изоляция стенок пропускает часть тепла обратно внутрь. Понимание этих процессов позволяет не просто узнать цифры, но и реально снизить счета за электричество. Вам нужно рассмотреть работу цикла сжатия и расширения газа, чтобы увидеть полную картину.</p>
+<p>Важно сразу отметить, что в технической документации производители редко указывают прямой процентный КПД. Вместо этого используется параметр <strong>коэффициент эффективности</strong> или EER (Energy Efficiency Ratio). Именно эти данные позволяют провести сравнительный анализ разных моделей. Мы разберем, как перевести сухие цифры из паспорта в понятные показатели реальной экономии.</p>
+
+<h2 id="физические-основы-работы-холодильного-цикла">Физические основы работы холодильного цикла</h2>
+<p>Чтобы грамотно оценить эффективность, необходимо понимать базовый принцип работы. Холодильник не «производит холод», он отбирает тепло из внутреннего объема и выбрасывает его наружу. Этот процесс обеспечивается циркуляцией <em>хладагента</em>, который меняет свое агрегатное состояние от жидкости к газу и обратно. Основную работу по сжатию газа выполняет компрессор, потребляющий электрическую энергию.</p>
+<p>Эффективность этого процесса напрямую зависит от разницы температур. Чем холоднее должно быть внутри камеры и чем жарче в помещении, тем больше энергии требуется для перекачки того же количества тепла. <strong>Термодинамический цикл</strong> Карно задает теоретический предел эффективности, но на практике реальные устройства работают хуже из-за трения, теплопотерь и неидеальности теплообмена.</p>
+<p>Ключевым моментом является то, что КПД — это отношение полезной работы (отведенного тепла) к затраченной энергии. Если система тратит много электричества, но плохо охлаждает, её эффективность низка. На это влияют множество факторов, включая состояние конденсатора и испарителя.</p>
+<ul>
+    <li>🧊 <strong>Испаритель</strong> — узел, где хладаент кипит и забирает тепло из продуктов.</li>
+    <li>🔥 <strong>Конденсатор</strong> — решетка сзади или по бокам, отдающая тепло в комнату.</li>
+    <li>⚡ <strong>Компрессор</strong> — «сердце» системы, создающее давление для циркуляции фреона.</li>
+    <li>🚪 <strong>Терморегулятор</strong> — датчик, отключающий мотор при достижении заданной температуры.</li>
+</ul>
+<blockquote>
+<p>⚠️ Внимание: Никогда не пытайтесь измерить температуру внутри компрессора без специальных инструментов. Это может привести к поражению электрическим током или повреждению датчиков.</p>
+</blockquote>
+
+<h2 id="методика-расчета-эффективности-по-формуле">Методика расчета эффективности по формуле</h2>
+<p>Для тех, кто хочет узнать, как определить КПД холодильника математически, существует простая формула. Она позволяет получить приблизительное представление о том, насколько хорошо техника преобразует электричество в холод. Расчет производится на основе мощности компрессора и холодопроизводительности.</p>
+<p>Формула выглядит следующим образом: <code>КПД = (Q / W) * 100%</code>, где Q — это количество отведенного тепла (холодопроизводительность), а W — затраченная электрическая мощность. Однако, получить точное значение Q в домашних условиях сложно, так как требуются специальные calorimetric камеры. Поэтому чаще используют упрощенный подход через сравнение потребляемой мощности с объемом камер.</p>
+<p>Более практичным способом является расчет коэффициента <strong>энергоэффективности</strong> на основе годового потребления. Разделив общий объем камер в литрах на годовое потребление в кВт*ч и умножив на коэффициент, можно получить сравнимый индекс. Чем выше этот индекс, тем лучше.</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте ваттметр (энергометр) для розетки, чтобы точно измерить реальное потребление вашего холодильника за сутки, так как паспортные данные часто являются усредненными.</p></aside>
+<p>Стоит учитывать, что реальная эффективность падает со временем. Износ уплотнителей, загрязнение конденсатора и старение масла в компрессоре снижают итоговый показатель. Регулярное обслуживание помогает держать КПД близким к заводским значениям.</p>
+
+<h2 id="влияние-класса-энергопотребления-на-кпд">Влияние класса энергопотребления на КПД</h2>
+<p>Самый простой способ для потребителя понять эффективность устройства — посмотреть на наклейку <strong>класса энергоэффективности</strong>. Этот маркировочный знак содержит буквенное обозначение от A до G (в новых стандартах ЕС) или от A+++ до D (в старых). Буква «А» и различные плюсы указывают на высокий КПД, тогда как «G» или «D» свидетельствуют о высоком энергопотреблении.</p>
+<p>Разница в потреблении между классами может достигать 50% и более при одинаковом объеме камер. Модели класса <em>A+++</em> используют более эффективные компрессоры инверторного типа и улучшенную изоляцию. Они способны поддерживать температуру с меньшими затратами энергии, что в долгосрочной перспективе окупает их более высокую стоимость.</p>
+<p>Однако, класс энергопотребления определяется в лабораторных условиях при температуре окружающей среды +25°C. Если ваш холодильник стоит на кухне, где температура летом поднимается до +30°C или выше, реальный расход вырастет, а фактический КПД снизится. Поэтому важно учитывать условия эксплуатации.</p>
+<div class="pb-table-wrap"><table>
+    <thead>
+        <tr>
+            <th>Класс</th>
+            <th>Индекс эффективности</th>
+            <th>Потребление (отн. нормы)</th>
+            <th>Описание</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>A+++</td>
+            <td>< 24%</td>
+            <td>Очень низкое</td>
+            <td>Максимальная экономия</td>
+        </tr>
+        <tr>
+            <td>A+</td>
+            <td>30-42%</td>
+            <td>Низкое</td>
+            <td>Хороший баланс цены и качества</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>55-75%</td>
+            <td>Среднее</td>
+            <td>Стандарт для старых моделей</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>85-100%</td>
+            <td>Высокое</td>
+            <td>Значительный расход энергии</td>
+        </tr>
+    </tbody>
+</table></div>
+<div class="pb-poll" id="poll-6ab27de8"><div class="pb-poll-question">📊 Какой класс энергоэффективности у вашего холодильника?</div><div class="pb-poll-option" data-poll="6ab27de8" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">A+++ / A++ / A+</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="6ab27de8" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">A / B</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="6ab27de8" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">C / D</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="6ab27de8" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю / Не смотрел</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="факторы-снижающие-реальный-кпд-устройства">Факторы, снижающие реальный КПД устройства</h2>
+<p>Даже самый современный холодильник может работать неэффективно, если нарушены условия его эксплуатации. Существует ряд внешних и внутренних факторов, которые drastisch снижают полезную работу системы. Первым и самым частым врагом является загрязнение теплообменника.</p>
+<p>Пыль и шерсть животных, налипающие на черную решетку сзади или снизу устройства, создают «теплоизолирующий» слой. Это мешает нормальному отводу тепла. Компрессор вынужден работать дольше и интенсивнее, чтобы компенсировать плохой теплообмен, что ведет к росту потребления электроэнергии и снижению общего КПД.</p>
+<p>Второй важный фактор — герметичность контура. Если <strong>уплотнительная резинка</strong> на двери износилась или загрязнилась, теплый воздух постоянно проникает внутрь. Система охлаждения не может достичь заданной температуры и работает практически без остановок. Это не только увеличивает счета, но и сокращает ресурс компрессора.</p>
+<ul>
+    <li>❄️ Образование ледяной «шубы» в морозилке (для капельных систем).</li>
+    <li>🌡️ Установка прибора слишком близко к стене или источникам тепла (батареи, плиты).</li>
+    <li>🍲 Загрузка горячих продуктов, требующих интенсивного охлаждения.</li>
+    <li>🚪 Частое открывание дверей, приводящее к теплопритокам.</li>
+</ul>
+<blockquote>
+<p>⚠️ Внимание: Не устанавливайте холодильник в нишу без вентиляционных зазоров. Минимальное расстояние до стен должно составлять 5-7 см для свободной циркуляции воздуха.</p>
+</blockquote>
+
+<h2 id="диагностика-снижения-производительности">Диагностика снижения производительности</h2>
+<p>Как понять, что КПД вашего холодильника упал и он требует внимания? Существует несколько признаков, которые нельзя игнировать. В первую очередь, обратите внимание на режим работы мотора. Если раньше он включался на 15 минут и стоял 40 минут, а теперь работает почти непрерывно или циклы стали очень короткими и частыми — это сигнал тревоги.</p>
+<p>Также стоит прислушаться к звукам. Гудение, стук или шипение могут указывать на проблемы с компрессором или утечку хладагента. При утечке фреона эффективность охлаждения падает практически до нуля, так как рабочему телу нечем переносить тепло, но электричество при этом продолжает расходоваться.</p>
+<p>Проверьте температуру в камерах с помощью отдельного термометра. Если на регуляторе выставлено +4°C, а внутри держится +8°C или выше, значит, система работает с перегрузкой. Это может быть вызвано как неисправностью термостата, так и потерей герметичности корпуса.</p>
+<details class="pb-accordion"><summary>Скрытые признаки неисправности</summary><div class="pb-accordion-body"><p>Если задняя стенка внутри холодильной камеры не охлаждается равномерно (есть теплые пятна), это может говорить о засоре капиллярной трубки или неравномерном распределении хладагента.</p></div></details>
+<p>Для точной диагностики профессионалы используют манометрические коллекторы и течеискатели. Самостоятельно можно проверить только внешние параметры и потребление тока с помощью мультиметра (при наличии навыков).</p>
+
+<h2 id="практические-советы-по-повышению-эффективности">Практические советы по повышению эффективности</h2>
+<p>Хотя конструктивно изменить КПД холодильника сложно, можно оптимизировать условия его работы. Это позволит приблизить реальные показатели к паспортным данным. Начните с правильной установки: выберите самое прохладное место на кухне, подальше от прямых солнечных лучей и отопительных приборов.</p>
+<p>Регулярная разморозка — обязательная процедура для моделей с ручной системой оттаивания. Слой льда толщиной всего в 5 мм увеличивает расход электроэнергии на 15-20%. Лед acts как теплоизолятор, мешая испарителю забирать тепло из камеры.</p>
+<p>Не заполняйте холодильник продуктами «под завязку». Холодный воздух должен свободно циркулировать между полками. Если вы загружаете много продуктов сразу, дайте им остыть до комнатной температуры перед помещением внутрь. Также проверяйте состояние дверных уплотнителей: протрите их мягкой тканью и проверьте плотность прилегания листом бумаги.</p>
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Ежемесячное обслуживание</h4><label class="check-item"><input type="checkbox"><span>Протереть пыль с конденсатора сзади</span></label><label class="check-item"><input type="checkbox"><span>Проверить плотность прилегания двери</span></label><label class="check-item"><input type="checkbox"><span>Разморозить морозильную камеру (если нужно)</span></label><label class="check-item"><input type="checkbox"><span>Проверить температуру внутри камер</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Чистота теплообменника и герметичность дверей — два главных фактора, которые вы можете контролировать для поддержания высокого КПД.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+<details>
+    <summary>Можно ли увеличить КПД старого холодильника установкой дополнительного вентилятора?</summary>
+    <p>Теоретически, улучшенный обдув конденсатора может немного повысить эффективность теплоотдачи, особенно в жарком помещении. Однако, сам вентилятор также потребляет энергию. В большинстве случаев эффект будет минимальным и не окупит затрат на оборудование, а шум может возрасти.</p>
+</details>
+<details>
+    <summary>Правда ли, что полный холодильник работает эффективнее пустого?</summary>
+    <p>Да, это частично верно. Продукты обладают большей теплоемкостью, чем воздух. После открытия двери полный холодильник быстрее восстанавливает температуру, так как холодные продукты «хранят» холод. Однако первоначальное охлаждение большого объема продуктов требует больше энергии.</p>
+</details>
+<details>
+    <summary>Влияет ли цвет холодильника на его КПД?</summary>
+    <p>Цвет корпуса практически не влияет на энергоэффективность, если холодильник не стоит под прямыми солнечными лучами. Темные цвета могут сильнее нагреваться от солнца, что заставит компрессор работать активнее. В условиях кухни без прямого солнца разница negligible.</p>
+</details>
+<details>
+    <summary>Как часто нужно менять хладагент для поддержания КПД?</summary>
+    <p>Хладагент (фреон) — это рабочее тело замкнутого цикла. В исправном холодильнике с качественной заводской сборкой его замена никогда не требуется. Если фреон ушел, значит, произошла утечка, которую нужно устранить перед новой заправкой.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/z/zh/zhidkost-m-dlya-kholodilnika-chto-eto.html" class="pb-related-card">
+                <span class="pb-related-title">Жидкость М для холодильника: что это и как применять</span>
+                <span class="pb-related-desc">Подробный обзор жидкости М: назначение, состав, инструкция по заправке и отличия от аналогов. Как пр</span>
+            </a><a href="/articles/k/ka/kak-rabotaet-no-frost-v-kholodilnike-bosch.html" class="pb-related-card">
+                <span class="pb-related-title">Как работает No Frost в холодильнике Bosch: устройство и ремонт</span>
+                <span class="pb-related-desc">Подробный разбор системы No Frost в холодильниках Bosch. Устройство, принцип работы, плюсы и минусы,</span>
+            </a><a href="/articles/p/po/power-cool-v-kholodilnike-chto-eto-haier.html" class="pb-related-card">
+                <span class="pb-related-title">Функция Power Cool в холодильниках Haier: что это и как работает</span>
+                <span class="pb-related-desc">Подробный разбор режима Power Cool в холодильниках Haier. Инструкция по использованию, принцип работ</span>
+            </a><a href="/articles/g/gd/gde-prodayutsya-uplotniteli-na-kholodilnik.html" class="pb-related-card">
+                <span class="pb-related-title">Где купить уплотнители на холодильник: топ мест и советы</span>
+                <span class="pb-related-desc">Где продаются уплотнители на холодильник? Обзор магазинов, рынков и онлайн-площадок. Как подобрать р</span>
+            </a><a href="/articles/s/sk/skolko-v-srednem-potreblyaet-dvukhkamernyj-kholodilnik.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько потребляет двухкамерный холодильник: норма и расход кВт</span>
+                <span class="pb-related-desc">Узнайте реальное потребление двухкамерного холодильника. Нормы кВт в сутки, месяц и год. Факторы вли</span>
+            </a><a href="/articles/n/no/no-frost-kholodilnik-chto-za-funktsiya.html" class="pb-related-card">
+                <span class="pb-related-title">No Frost холодильник: что это за функция и как она работает</span>
+                <span class="pb-related-desc">Подробный разбор технологии No Frost: принцип работы, плюсы и минусы, сравнение с капельной системой</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

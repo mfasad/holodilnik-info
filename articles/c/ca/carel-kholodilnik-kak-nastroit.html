@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Настройка контроллера Carel холодильника: пошаговая инструкция — Холодильник Инфо</title>
+    <meta name="description" content="Как настроить контроллер Carel в холодильнике: установка температуры, дефрост, коды ошибок. Полное руководство для моделей pRack, pR200 и pRack3000.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/c/ca/carel-kholodilnik-kak-nastroit.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Настройка контроллера Carel холодильника: пошаговая инструкция">
+    <meta property="og:description" content="Как настроить контроллер Carel в холодильнике: установка температуры, дефрост, коды ошибок. Полное руководство для моделей pRack, pR200 и pRack3000.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-nav-active">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/nastrojka-temperatury/">Настройка температуры</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Настройка контроллера Carel холодильника: пошаговая инструкция</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#интерфейс-и-базовое-управление-контроллером">Интерфейс и базовое управление контроллером</a></li><li><a href="#настройка-температурных-уставок-и-гистерезиса">Настройка температурных уставок и гистерезиса</a></li><li><a href="#регулировка-циклов-оттайки-дефростация">Регулировка циклов оттайки (Дефростация)</a></li><li><a href="#работа-с-сервисным-меню-и-паролями">Работа с сервисным меню и паролями</a></li><li><a href="#датчики-и-диагностика-неисправностей">Датчики и диагностика неисправностей</a></li><li><a href="#оптимизация-работы-и-энергосбережение">Оптимизация работы и энергосбережение</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/kh/kholodilnik-hotpoint-ariston-kak-vystavit-temperaturu.html">Холодильник Hotpoint Ariston: как выставить температуру</a></li><li><a href="/articles/k/kh/kholodilnik-stinol-kak-regulirovat-temperaturu-v-kholodilnike.html">Как регулировать температуру в холодильнике Stinol: инструкция</a></li><li><a href="/articles/k/ka/kakoj-gradus-dolzhen-byt-v-kholodilnike-i-v-morozilnike.html">Оптимальная температура в холодильнике и морозильнике: нормы и советы</a></li><li><a href="/articles/k/kh/kholodilnik-atlant-kak-stavit-temperaturu.html">Как выставить температуру в холодильнике Атлант: инструкция</a></li><li><a href="/articles/k/kh/kholodilnik-samsung-sensornyj-displej-kak-nastroit-temperaturu.html">Холодильник Самсунг: настройка сенсорного дисплея температуры</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Настройка контроллера Carel холодильника: полное руководство</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#интерфейс-и-базовое-управление-контроллером">Интерфейс и базовое управление контроллером</a></li><li><a href="#настройка-температурных-уставок-и-гистерезиса">Настройка температурных уставок и гистерезиса</a></li><li><a href="#регулировка-циклов-оттайки-дефростация">Регулировка циклов оттайки (Дефростация)</a></li><li><a href="#работа-с-сервисным-меню-и-паролями">Работа с сервисным меню и паролями</a></li><li><a href="#датчики-и-диагностика-неисправностей">Датчики и диагностика неисправностей</a></li><li><a href="#оптимизация-работы-и-энергосбережение">Оптимизация работы и энергосбережение</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Электронные контроллеры <em>Carel</em> являются одними из самых распространенных систем управления температурным режимом в профессиональном холодильном оборудовании. Владелец магазина, склада или ресторана часто сталкивается с необходимостью изменить уставку температуры, запустить принудительную дефростацию или понять причину мигающего индикатора на панели прибора. Понимание логики работы этих устройств позволяет оперативно реагировать на изменения условий хранения продуктов без вызова сервисного инженера.</p>
+
+<p>Процесс конфигурации может показаться сложным из-за наличия множества скрытых параметров, доступных только через сервисное меню. Однако базовые операции, такие как корректировка целевой температуры, выполняются достаточно просто. Важно различать пользовательский уровень доступа и уровень технического специалиста, так как некорректное изменение критических параметров может нарушить работу всей холодильной установки.</p>
+
+<p>В этой статье мы детально разберем алгоритмы действий для популярных серий контроллеров, таких как <em>IR33</em>, <em>pRack</em> и <em>EX</em>. Вы узнаете, как правильно интерпретировать коды ошибок, настраивать циклы оттайки и оптимизировать энергопотребление оборудования. Грамотная настройка продлевает срок службы компрессора и обеспечивает стабильный температурный режим.</p>
+
+<h2 id="интерфейс-и-базовое-управление-контроллером">Интерфейс и базовое управление контроллером</h2>
+
+<p>Большинство современных панелей управления <em>Carel</em> оснащены цифровым дисплеем и набором функциональных кнопок. Стандартная конфигурация включает кнопки навигации, подтверждения выбора и специальные клавиши для вызова меню или ручной активации функций. Дисплей обычно отображает текущую измеренную температуру, а при нажатии любой кнопки показывает заданную уставку (set-point).</p>
+
+<p>Для изменения основного параметра — целевой температуры — не требуется глубокого погружения в меню. Достаточно нажать и удерживать кнопку настройки в течение нескольких секунд, пока цифры на экране не начнут мигать. Это сигнал о том, что прибор перешел в режим редактирования. Используя кнопки со стрелками"вверх" и"вниз", вы можете установить нужное значение.</p>
+
+<p>Существует важный нюанс, о котором часто забывают новички. Если в течение определенного времени (обычно 10-15 секунд) не нажать кнопку подтверждения, контроллер автоматически вернется к предыдущим значениям. <strong>Сохранение параметров</strong> происходит только после явного подтверждения действия пользователем.</p>
+
+<blockquote>⚠️ Внимание: При настройке температуры в морозильных камерах убедитесь, что вы не выходите за пределы безопасного диапазона работы компрессора, указанного в технической документации модели.</blockquote>
+
+<div class="pb-poll" id="poll-9ffa2b4f"><div class="pb-poll-question">📊 Какой контроллер Carel установлен у вас?</div><div class="pb-poll-option" data-poll="9ffa2b4f" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">IR33 / IR33W</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="9ffa2b4f" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">pRack 100/200/3000</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="9ffa2b4f" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">pRack E2</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="9ffa2b4f" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Другая модель</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>Некоторые модели, например серии <em>IR33V</em>, имеют дополнительные индикаторы состояния. Мигающий светодиод может указывать на активацию дефростации, работу вентилятора испарителя или наличие аварийной ситуации. Понимание цветовой индикации позволяет быстро диагностировать состояние системы без расшифровки кодов.</p>
+
+<h2 id="настройка-температурных-уставок-и-гистерезиса">Настройка температурных уставок и гистерезиса</h2>
+
+<p>Основная задача любого холодильного контроллера — поддержание температуры в заданных пределах. Для этого используется понятие гистерезиса (дифференциала). Это разница температур между включением и выключением компрессора. Если вы установите слишком узкий гистерезис, компрессор будет включаться слишком часто, что приведет к его быстрому износу.</p>
+
+<p>Чтобы попасть в меню настройки уставок, необходимо нажать и удерживать кнопку"Set" (или аналогичную, в зависимости от модели) в течение 3-5 секунд. На дисплее появится первый параметр, обычно обозначаемый как <code>St</code> (Set-point). Изменяя его, вы задаете целевую температуру внутри камеры.</p>
+
+<p>Следующим важным параметром является дифференциал включения, часто обозначаемый как <code>Hd</code> или <code>d</code>. Если целевая температура -18°C, а дифференциал установлен на 4°C, то компрессор выключится при -18°C и включится снова, когда температура поднимется до -14°C. Правильный подбор этого значения критически важен для <strong>энергосбережения</strong> и сохранности продуктов.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Для камер хранения овощей и фруктов используйте меньший дифференциал (2-3°C), чтобы избежать температурных скачков, а для глубокой заморозки допустим более широкий диапазон (4-6°C).</p></aside>
+
+<p>Также в этом разделе часто настраивается минимально допустимая температура. Этот параметр служит защитой от случайной установки экстремально низких значений, которые могут привести к обмерзанию испарителя или поломке оборудования. Значение обычно ограничено заводскими настройками, но может быть скорректировано в сервисном меню.</p>
+
+<h2 id="регулировка-циклов-оттайки-дефростация">Регулировка циклов оттайки (Дефростация)</h2>
+
+<p>В процессе работы на испарителе холодильной установки неизбежно образуется лед. Для его удаления контроллеры <em>Carel</em> управляют циклами дефростации. Настройка этих циклов — один из самых сложных этапов, требующий понимания условий эксплуатации. Существует два основных метода: по времени (Time Clock) и по потребности (Adaptive Defrost).</p>
+
+<p>При настройке по времени вы задаете интервалы между оттайками (параметр <code>Id</code>) и максимальную длительность самой оттайки (параметр <code>dF</code>). Например, если установить интервал 6 часов, контроллер будет пытаться запускать оттайку каждые 6 часов работы компрессора. Длительность оттайки ограничивается временем, необходимым для полного оттаивания, или максимальным лимитом, чтобы не перегреть камеру.</p>
+
+<p>Более продвинутый метод — адаптивная дефростация. В этом случае контроллер анализирует эффективность предыдущих циклов. Если лед не успевает полностью растаять за отведенное время, интервалы между оттайками сокращаются. Если льда мало — интервалы увеличиваются. Это позволяет значительно экономить электроэнергию.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Обозначение</th>
+<th>Описание</th>
+<th>Типичный диапазон</th>
+</tr>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Интервал оттайки</td>
+<td><code>Id</code></td>
+<td>Время работы компрессора между оттайками</td>
+<td>2 - 24 часа</td>
+</tr>
+<tr>
+<td>Длительность оттайки</td>
+<td><code>dF</code></td>
+<td>Максимальное время работы ТЭНа</td>
+<td> 10 - 60 минут</td>
+</tr>
+<tr>
+<td>Температура окончания</td>
+<td><code>tE</code></td>
+<td>Температура датчика оттайки для завершения цикла</td>
+<td> +5...+15°C</td>
+</tr>
+<tr>
+<td>Капающий период</td>
+<td><code>dc</code></td>
+<td>Пауза после оттайки перед запуском компрессора</td>
+<td> 1 - 10 минут</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Отдельного внимания заслуживает параметр"капающий период". После завершения нагрева испарителя необходимо время, чтобы вода стекла в поддон и не замерзла сразу же при включении компрессора. Пренебрежение этой настройкой может привести к образованию ледяной пробки в дренажной системе.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка настройки оттайки</h4><label class="check-item"><input type="checkbox"><span>Установлен правильный интервал Id</span></label><label class="check-item"><input type="checkbox"><span>Задана максимальная длительность dF</span></label><label class="check-item"><input type="checkbox"><span>Настроена температура завершения tE</span></label><label class="check-item"><input type="checkbox"><span>Проверен дренажный поддон</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="работа-с-сервисным-меню-и-паролями">Работа с сервисным меню и паролями</h2>
+
+<p>Для доступа к техническим параметрам, таким как тип хладагента, калибровка датчиков или выбор алгоритма управления, необходимо войти в сервисное меню. Вход в этот раздел часто защищен паролем, чтобы предотвратить неквалифицированное вмешательство. Стандартные пароли для контроллеров <em>Carel</em> часто являются общедоступными, но могут быть изменены интегратором.</p>
+
+<p>Процесс входа обычно выглядит так: нажмите и удерживайте комбинацию кнопок (например,"Set" и"Вниз") в течение 5-10 секунд. На дисплее появится запрос пароля (<code>PA</code>). Введя правильный код, вы получите доступ к полному списку параметров. Будьте осторожны: изменение значений в этом меню может потребовать перезагрузки контроллера.</p>
+
+<p>В сервисном меню настраивается логика работы цифровых выходов. Вы можете назначить конкретному выходу функцию сигнализации, управления вентилятором конденсатора или подключения к системе диспетчеризации. Также здесь производится калибровка показаний датчиков, если они имеют погрешность.</p>
+
+<blockquote>⚠️ Внимание: Изменение параметров в сервисном меню без понимания их физического смысла может привести к нестабильной работе холодильной установки. Записывайте исходные значения перед внесением изменений.</blockquote>
+
+<p>Особое место занимает параметр <code>SE</code> (Security level). Он определяет уровень доступа. Уровень 0 позволяет менять только уставку температуры, уровень 1 открывает основные настройки, а уровень 2 или 3 дает полный доступ ко всем параметрам, включая заводские константы.</p>
+
+<h2 id="датчики-и-диагностика-неисправностей">Датчики и диагностика неисправностей</h2>
+
+<p>Контроллер <em>Carel</em> непрерывно опрашивает подключенные датчики температуры. Основные из них: датчик воздуха в камере (<code>P1</code>), датчик испарителя (<code>P2</code>) и, опционально, датчик конденсатора или окружающей среды. При обрыве цепи или коротком замыкании на дисплее появляются соответствующие коды ошибок.</p>
+
+<p>Наиболее частые коды ошибок включают <code>P1</code> (неисправность датчика камеры) и <code>P2</code> (неисправность датчика испарителя). При возникновении такой ошибки контроллер переходит в аварийный режим работы, запуская компрессор по фиксированному алгоритму, чтобы предотвратить порчу продукта. В этом режиме температура может не поддерживаться точно.</p>
+
+<p>Для диагностики можно использовать меню просмотра статусов. В этом режиме на дисплее последовательно отображаются текущие показания всех подключенных датчиков. Это позволяет быстро определить, какой именно сенсор выдает неверные данные, не прибегая к мультиметру.</p>
+
+<details class="pb-accordion"><summary>Что делать, если датчик показывает неверную температуру?</summary><div class="pb-accordion-body"><p>Если датчик показывает температуру, сильно отличающуюся от реальной (например, -50°C или +90°C при комнатной температуре), скорее всего, он неисправен или нарушен контакт в разъеме. Проверьте целостность проводов и надежность подключения к клеммной колодке контроллера. Если провода целы, датчик подлежит замене.</p>
+
+<p>Важно помнить о сопротивлении датчиков. Большинство контроллеров <em>Carel</em> используют датчики типа <em>NTC</em> с номинальным сопротивлением 10 кОм при 25°C. Использование датчиков другого типа приведет к неверным показаниям и некорректной работе всей системы.</p>
+
+<h2 id="оптимизация-работы-и-энергосбережение">Оптимизация работы и энергосбережение</h2>
+
+<p>Правильная настройка контроллера позволяет существенно снизить потребление электроэнергии. Один из ключевых параметров — задержка включения компрессора после отключения (<code>on</code> или <code>Min Off Time</code>). Это предотвращает тактовку (частые включения-выключения) при колебаниях температуры у границы гистерезиса.</p>
+
+<p>Еще один способ экономии — настройка работы вентиляторов испарителя. В некоторых режимах вентиляторы могут отключаться вместе с компрессором, что снижает теплоприток в камеру и уменьшает шум. Однако для равномерного распределения холода в больших камерах рекомендуется оставлять вентиляторы работающими постоянно или с небольшими паузами.</p>
+
+<p>Функция"ночного режима" или экономичного режима позволяет временно изменить уставку температуры или отключить освещение витрины по таймеру. Это особенно актуально для супермаркетов, где в ночное время нагрузка на холодильное оборудование может быть снижена без риска для продуктов.</p>
+
+
+
+<p>Не забывайте регулярно проверять актуальность настроек. Сезонные изменения температуры окружающей среды (летом жарче, зимой холоднее) могут требовать корректировки параметров конденсации или частоты дефростации для эффективной работы.</p>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Как сбросить контроллер Carel до заводских настроек?</summary>
+<p>Для сброса необходимо войти в сервисное меню, найти параметр <code>rS</code> (Reset) или аналогичный, и установить значение <code>YES</code> или <code>1</code>. После подтверждения контроллер перезагрузится с заводскими параметрами. Обратите внимание, что все пользовательские настройки будут утеряны.</p>
+</details>
+
+<details>
+<summary>Почему контроллер показывает температуру, отличную от термометра в камере?</summary>
+<p>Это может быть вызвано тремя причинами: погрешностью датчика, неправильным местом установки датчика (например, слишком близко к продуктам или выходу воздуха) или необходимостью калибровки. В меню настроек есть параметр смещения (<code>oF</code> или <code>o1</code>), позволяющий скорректировать показания программно.</p>
+</details>
+
+<details>
+<summary>Что означает мигающий индикатор"Defrost"?</summary>
+<p>Мигающий индикатор обычно означает, что идет процесс оттайки. Если индикатор мигает, но компрессор работает, возможно, застряло реле оттайки или неисправен датчик окончания оттайки. Если индикатор горит постоянно, проверьте настройки циклов.</p>
+</details>
+
+<details>
+<summary>Можно ли подключить контроллер Carel к системе умного дома?</summary>
+<p>Многие современные модели имеют порт <code>RS485</code> или <code>LAN</code> для подключения к системам телемониторинга (например, Carel Planet). Для интеграции с умным домом потребуется шлюз, поддерживающий протокол Modbus, который использует контроллер для передачи данных.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/kh/kholodilnik-hotpoint-ariston-kak-vystavit-temperaturu.html" class="pb-related-card">
+                <span class="pb-related-title">Холодильник Hotpoint Ariston: как выставить температуру</span>
+                <span class="pb-related-desc">Подробная инструкция по настройке температуры холодильников Hotpoint Ariston. Разбор режимов, таблиц</span>
+            </a><a href="/articles/k/kh/kholodilnik-stinol-kak-regulirovat-temperaturu-v-kholodilnike.html" class="pb-related-card">
+                <span class="pb-related-title">Как регулировать температуру в холодильнике Stinol: инструкция</span>
+                <span class="pb-related-desc">Полный гид по настройке термостата Stinol. Узнайте, как выставить температуру, расшифровать шкалу и </span>
+            </a><a href="/articles/k/ka/kakoj-gradus-dolzhen-byt-v-kholodilnike-i-v-morozilnike.html" class="pb-related-card">
+                <span class="pb-related-title">Оптимальная температура в холодильнике и морозильнике: нормы и советы</span>
+                <span class="pb-related-desc">Какую температуру выставить в холодильнике и морозильной камере? Нормы для хранения продуктов, настр</span>
+            </a><a href="/articles/k/kh/kholodilnik-atlant-kak-stavit-temperaturu.html" class="pb-related-card">
+                <span class="pb-related-title">Как выставить температуру в холодильнике Атлант: инструкция</span>
+                <span class="pb-related-desc">Подробная инструкция: как настроить температуру в холодильнике Атлант. Регулировка терморегулятора, </span>
+            </a><a href="/articles/k/kh/kholodilnik-samsung-sensornyj-displej-kak-nastroit-temperaturu.html" class="pb-related-card">
+                <span class="pb-related-title">Холодильник Самсунг: настройка сенсорного дисплея температуры</span>
+                <span class="pb-related-desc">Подробная инструкция по настройке температуры на сенсорном дисплее холодильников Samsung. Управление</span>
+            </a><a href="/articles/k/ka/kak-prigotovit-led-v-kholodilnike.html" class="pb-related-card">
+                <span class="pb-related-title">Как приготовить лед в холодильнике: полное руководство</span>
+                <span class="pb-related-desc">Подробная инструкция: как сделать лед в холодильнике вручную и в автоматическом режиме. Секреты проз</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

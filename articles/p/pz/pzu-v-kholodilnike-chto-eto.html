@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>ПЗУ в холодильнике: что это, функции и диагностика — Холодильник Инфо</title>
+    <meta name="description" content="Подробный разбор микросхемы ПЗУ в холодильнике. Что хранит память, признаки поломки и можно ли перепрограммировать модуль.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/p/pz/pzu-v-kholodilnike-chto-eto.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="ПЗУ в холодильнике: что это, функции и диагностика">
+    <meta property="og:description" content="Подробный разбор микросхемы ПЗУ в холодильнике. Что хранит память, признаки поломки и можно ли перепрограммировать модуль.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ustrojstvo-i-detali/">Устройство и детали</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">ПЗУ в холодильнике: что это, функции и диагностика</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#принцип-работы-и-назначение-микросхемы-памяти">Принцип работы и назначение микросхемы памяти</a></li><li><a href="#где-находится-пзу-в-электронном-модуле-управления">Где находится ПЗУ в электронном модуле управления</a></li><li><a href="#основные-симптомы-неисправности-памяти-модуля">Основные симптомы неисправности памяти модуля</a></li><li><a href="#причины-выхода-из-строя-микросхемы-пзу">Причины выхода из строя микросхемы ПЗУ</a></li><li><a href="#методы-диагностики-и-перепрограммирования">Методы диагностики и перепрограммирования</a></li><li><a href="#восстановление-работы-и-профилактика-сбоев">Восстановление работы и профилактика сбоев</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/kh/kholodilnik-kak-teplovaya-mashina.html">Холодильник как тепловая машина: принцип работы и устройство</a></li><li><a href="/articles/g/gd/gde-kupit-polki-dlya-kholodilnika-elektrolyuks.html">Где купить полки для холодильника Electrolux: цены и каталоги</a></li><li><a href="/articles/d/dl/dlya-chego-shchup-v-kholodilnike-na-zadnej-stenke.html">Зачем щуп в холодильнике: функции и настройка термостата</a></li><li><a href="/articles/f/fr/fresh-balancer-v-kholodilnike-chto-eto.html">Fresh Balancer в холодильнике: что это и как настроить</a></li><li><a href="/articles/g/gd/gde-nakhoditsya-regulyator-temperatury-v-kholodilnike-indezit.html">Где находится регулятор температуры в холодильнике Индезит: поиск и настройка</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>ПЗУ в холодильнике: что это и как влияет на работу</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#принцип-работы-и-назначение-микросхемы-памяти">Принцип работы и назначение микросхемы памяти</a></li><li><a href="#где-находится-пзу-в-электронном-модуле-управления">Где находится ПЗУ в электронном модуле управления</a></li><li><a href="#основные-симптомы-неисправности-памяти-модуля">Основные симптомы неисправности памяти модуля</a></li><li><a href="#причины-выхода-из-строя-микросхемы-пзу">Причины выхода из строя микросхемы ПЗУ</a></li><li><a href="#методы-диагностики-и-перепрограммирования">Методы диагностики и перепрограммирования</a></li><li><a href="#восстановление-работы-и-профилактика-сбоев">Восстановление работы и профилактика сбоев</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Современный холодильник — это сложное электронное устройство, управление которым полностью ложится на плечи микропроцессорной техники. Когда на дисплее появляются странные символы, а агрегат перестает реагировать на команды или начинает хаотично менять температурные режимы, опытные мастера первым делом смотрят в сторону управляющего модуля. Именно здесь находится ключевой элемент, отвечающий за «интеллект» техники — микросхема <strong>постоянного запоминающего устройства</strong>, или ПЗУ.</p>
+
+<p>Для обычного пользователя аббревиатура ПЗУ может показаться сложным техническим термином, но именно эта маленькая черная микросхема хранит всю логику работы вашего холодильника. В ней зашит алгоритм, который объясняет компрессору, когда включаться, а датчикам — когда передавать показания. Без этой программы электронный мозг превращается в бесполезный кусок пластика и металла, неспособный выполнять даже базовые функции охлаждения.</p>
+
+<p>В этой статье мы детально разберем, какую роль играет <em>EEPROM</em> в современных моделях <em>LG</em>, <em>Samsung</em> и <em>Bosch</em>, почему она выходит из строя и можно ли восстановить её работоспособность в домашних условиях. Понимание принципов работы этой памяти поможет вам лучше диагностировать неисправности и избежать лишней траты денег на замену целых блоков управления, когда достаточно перепрошивки.</p>
+
+<h2 id="принцип-работы-и-назначение-микросхемы-памяти">Принцип работы и назначение микросхемы памяти</h2>
+
+<p>ПЗУ, или ROM (Read-Only Memory), представляет собой энергонезависимую память. Это означает, что хранящаяся в ней информация не исчезает даже после полного отключения электричества. В отличие от оперативной памяти, которая очищается при каждом выключении, ПЗУ хранит <strong>базовый программный код</strong> и заводские настройки. Именно благодаря этому, когда вы включаете холодильник в розетку после простоя, он «вспоминает», как нужно морозить, и не требует повторной настройки с нуля.</p>
+
+<p>Внутри микросхемы записана программа, управляющая всеми циклами работы: от стартовой диагностики до включения режима разморозки. Современные холодильники используют тип памяти <em>EEPROM</em> (Electrically Erasable Programmable Read-Only Memory), который позволяет вносить изменения в код при необходимости. Это критически важно для работы <strong>инверторных компрессоров</strong>, где алгоритмы управления скоростью вращения двигателя должны быть максимально точными и адаптивными.</p>
+
+<p>Процессор считывает данные из ПЗУ в реальном времени. Если в памяти происходит сбой или повреждение ячеек, процессор перестает получать корректные команды. В результате холодильник может вести себя непредсказуемо: включать свет при закрытой дверце, игнировать нажатия кнопок или выдавать ошибки, которых фактически нет. <mark>Критическим является повреждение загрузчика — начального сектора памяти, без которого запуск системы становится невозможным.</mark></p>
+
+<blockquote>
+<p>⚠️ Внимание: Попытка самостоятельной перепрошивки ПЗУ без специального оборудования и оригинального дампа прошивки может привести к полной блокировке электронного модуля. Восстановление в таком случае возможно только в сервисном центре.</p>
+</blockquote>
+
+<h2 id="где-находится-пзу-в-электронном-модуле-управления">Где находится ПЗУ в электронном модуле управления</h2>
+
+<p>Физически микросхема ПЗУ расположена на печатной плате электронного модуля управления. В большинстве современных холодильников этот блок скрыт за декоративными панелями, часто в верхней части корпуса или за цоколем. Чтобы добраться до микросхемы, необходимо демонтировать крышку модуля, что требует осторожности, так как внутри находятся чувствительные к статическому электричеству компоненты.</p>
+
+<p>На самой плате ПЗУ выглядит как небольшая черная прямоугольная или квадратная микросхема с несколькими контактами (ножками) по бокам. Она часто маркируется логотипами производителей полупроводников, таких как <em>Atmel</em>, <em>Microchip</em> или <em>STMicroelectronics</em>. Рядом с ней могут располагаться другие элементы: кварцевые генераторы, резисторы и конденсаторы, обеспечивающие стабильность напряжения.</p>
+
+<p>В некоторых моделях холодильников, например, в серии <em>Indesit</em> или <em>Ariston</em>, микросхема памяти может быть впаяна непосредственно в основной процессор или находиться под защитным экраном. В таких случаях доступ к ней для диагностики или замены сильно затруднен и требует профессионального паяльного оборудования. Самостоятельное вмешательство в структуру платы без навыков микроскопической пайки чревато отрывом контактных площадок.</p>
+
+<details class="pb-accordion"><summary>Как выглядит микросхема ПЗУ визуально?</summary><div class="pb-accordion-body"><p>Микросхема ПЗУ обычно имеет маркировку из букв и цифр (например, 24C04, 24C16, 25Q80). Она может быть в корпусе DIP (с ножками) или SOP (для поверхностного монтажа). Часто рядом с ней нанесена шелкография с обозначением IC (Integrated Circuit).</p></div></details>
+
+<h2 id="основные-симптомы-неисправности-памяти-модуля">Основные симптомы неисправности памяти модуля</h2>
+
+<p>Диагностика проблем с ПЗУ не всегда очевидна, так как симптомы могут пересекаться с поломками датчиков или проводки. Однако существует ряд характерных признаков, указывающих именно на сбой в программном обеспечении или физической деградации ячеек памяти. Если ваш холодильник начал вести себя странно после скачка напряжения или грозы, вероятность повреждения ПЗУ возрастает многократно.</p>
+
+<p>Чаще всего пользователи сталкиваются с ситуацией, когда дисплей горит, но не реагирует на команды, или показывает бессмысленный набор символов. Это прямой сигнал о том, что процессор не может корректно считать данные из <strong>энергонезависимой памяти</strong>. Также тревожным звоночком является частое самопроизвольное перезапускание системы или циклическое включение и выключение компрессора без достижения заданной температуры.</p>
+
+<p>Для более точного определения проблемы обратите внимание на следующие проявления:</p>
+<ul>
+<li>🔥 <strong>Сбои в циклах разморозки:</strong> холодильник перестает запускать оттайку или, наоборот, проводит её слишком часто, что ведет к намерзанию льда.</li>
+<li>📉 <strong>Потеря настроек:</strong> после отключения света сбиваются установленные температурные режимы, и холодильник возвращается к заводским значениям.</li>
+<li>🔊 <strong>Ошибочные коды:</strong> на дисплее появляются коды ошибок, которые не устраняются стандартным сбросом или перезагрузкой.</li>
+<li>🔄 <strong>Бесконечная загрузка:</strong> модуль управления «висит» на этапе инициализации и не переходит в рабочий режим.</li>
+</ul>
+
+<div class="pb-poll" id="poll-3cf85b59"><div class="pb-poll-question">📊 Сталкивались ли вы с «глюками» электроники холодильника?</div><div class="pb-poll-option" data-poll="3cf85b59" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Да, сбивались настройки</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3cf85b59" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Да, появлялись странные ошибки</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3cf85b59" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Нет, только механические поломки</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3cf85b59" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Пока холодильник работает идеально</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="причины-выхода-из-строя-микросхемы-пзу">Причины выхода из строя микросхемы ПЗУ</h2>
+
+<p>Электроника холодильника рассчитана на длительную работу, но внешние факторы могут значительно сократить срок службы микросхем. Основной враг ПЗУ — нестабильное напряжение в сети. Скачки напряжения, даже кратковременные, способны вызвать пробой в ячейках памяти или повредить цепь питания микросхемы, что приведет к необратимым изменениям в записанном коде.</p>
+
+<p>Второй распространенной причиной является естественный износ. У памяти типа <em>EEPROM</em> есть ограниченный ресурс циклов перезаписи. Хотя современные микросхемы выдерживают сотни тысяч циклов, в условиях постоянных сбоев питания, когда система пытается аварийно сохранить данные, этот ресурс может исчерпаться быстрее. Также негативное влияние оказывает высокая влажность и конденсат, которые могут вызвать коррозию контактов.</p>
+
+<p>Нельзя сбрасывать со счетов и программные сбои, возникающие при некорректной работе других узлов холодильника. Например, если <strong>датчик температуры</strong> передает неверные сигналы, процессор может попытаться записать ошибочные данные в память, что в редких случаях приводит к логическому конфликту. В таких ситуациях физически микросхема цела, но её содержимое требует коррекции.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Характеристики элементов питания и требования к прошивкам могут различаться в зависимости от конкретной модификации холодильника. Всегда сверяйте маркировку платы и микросхемы с технической документацией производителя перед вмешательством.</p>
+</blockquote>
+
+<h2 id="методы-диагностики-и-перепрограммирования">Методы диагностики и перепрограммирования</h2>
+
+<p>Профессиональная диагностика ПЗУ требует наличия специального оборудования: программатора микросхем и компьютера с соответствующим программным обеспечением. Мастер снимает модуль управления, выпаивает микросхему памяти (или подключается к ней через клипсу, если конструкция позволяет) и считывает её содержимое. Полученный дамп сравнивается с эталонной прошивкой для данной модели.</p>
+
+<p>Если выявляются ошибки, производится перепрограммирование. В некоторых случаях достаточно просто «перезалить» оригинальный программный код. В более сложных ситуациях, когда память физически деградировала, требуется замена микросхемы на новую с последующей записью в неё необходимых данных. Этот процесс называется «прошивкой под клиента» и требует точных данных о конфигурации конкретного холодильника.</p>
+
+<p>Ниже приведена таблица, демонстрирующая распространенные типы микросхем и их особенности:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип микросхемы</th>
+<th>Интерфейс связи</th>
+<th>Объем памяти</th>
+<th>Особенности</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>24C04 / 24C16</td>
+<td>I2C</td>
+<td>4-16 Кбит</td>
+<td>Стандарт для старых моделей, легко читается</td>
+</tr>
+<tr>
+<td>25Q80 / 25Q16</td>
+<td>SPI</td>
+<td>8-16 Мбит</td>
+<td>Используется в современных Smart-холодильниках</td>
+</tr>
+<tr>
+<td>93C46 / 93C56</td>
+<td>MICROWIRE</td>
+<td>1-2 Кбит</td>
+<td>Встречается в бюджетных моделях и морозилках</td>
+</tr>
+<tr>
+<td>Custom IC</td>
+<td> proprietary</td>
+<td>Зависит от модели</td>
+<td>Защищенные чипы, требуют спец. оборудования</td>
+</tr>
+</tbody>
+</table></div>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Действия при подозрении на сбой ПЗУ</h4><label class="check-item"><input type="checkbox"><span>Отключить холодильник от сети на 15 минут</span></label><label class="check-item"><input type="checkbox"><span>Проверить стабильность напряжения в розетке</span></label><label class="check-item"><input type="checkbox"><span>Вызвать мастера для диагностики модуля</span></label><label class="check-item"><input type="checkbox"><span>Не пытаться вскрывать модуль самостоятельно</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="восстановление-работы-и-профилактика-сбоев">Восстановление работы и профилактика сбоев</h2>
+
+<p>Восстановление работоспособности холодильника после сбоя ПЗУ в домашних условиях ограничивается, как правило, полным сбросом системы. Для этого необходимо отключить appliance от сети питания на длительное время (от 30 минут до нескольких часов). Это позволяет остаточному току полностью уйти из конденсаторов, и процессор при включении попытается перечитать данные из памяти заново. Иногда это помогает устранить логические ошибки.</p>
+
+<p>Если простой сброс не помогает, единственным решением остается обращение в сервисный центр. Специалисты могут заменить неисправную микросхему или перепрошить её, восстановив заводские алгоритмы. Важно понимать, что <strong>ремонт модуля управления</strong> — это тонкая работа, требующая квалификации. Замена целой платы часто обходится дороже, чем ремонт микросхемы, поэтому квалифицированная перепрошивка экономически целесообразна.</p>
+
+<p>Для профилактики проблем с электроникой рекомендуется использовать стабилизаторы напряжения, особенно в домах со старой проводкой или частыми скачками света. Также стоит избегать установки холодильника в местах с повышенной влажностью или рядом с источниками тепла, что может ускорить деградацию электронных компонентов.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте сетевые фильтры с функцией защиты от перегрузок — это дешевый способ обезопасить электронику холодильника от скачков напряжения.</p></aside>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>В 80% случаев «глюков» электроники проблема решается перепрошивкой или заменой одной микросхемы, а не покупкой нового дорогого модуля управления.</p></aside>
+
+<details>
+<summary>Можно ли перепрошить ПЗУ холодильника самостоятельно через USB?</summary>
+<p>В подавляющем большинстве бытовых холодильников такая функция не предусмотрена производителем. Порты, которые вы можете увидеть на плате, обычно являются сервисными (UART, JTAG) и предназначены для заводской диагностики. Для работы с ними нужен специальный адаптер и программное обеспечение, которое не находится в свободном доступе. Самостоятельные попытки могут привести к необратимому повреждению модуля.</p>
+</details>
+
+<details>
+<summary>Сколько стоит замена микросхемы ПЗУ в сервисе?</summary>
+<p>Стоимость складывается из цены самой микросхемы (обычно это несколько долларов) и работы мастера по пайке и прошивке. В среднем ремонт модуля управления обходится значительно дешевле замены всего блока целиком. Точную цену можно узнать только после диагностики конкретной модели.</p>
+</details>
+
+<details>
+<summary>Повлияет ли замена ПЗУ на гарантию холодильника?</summary>
+<p>Да, любое вмешательство в конструкцию электронного модуля, совершенное не у авторизованного сервисного центра, автоматически снимает гарантийные обязательства производителя. Если холодильник находится на гарантии, настоятельно рекомендуется обращаться только в официальные сервисы.</p>
+</details>
+
+<details>
+<summary>Почему после замены ПЗУ холодильник может работать иначе?</summary>
+<p>Если при перепрошивке была установлена универсальная прошивка или версия ПО для другой модификации, алгоритмы работы могут измениться. Например, могут сбиться температурные пороги или таймеры оттайки. Поэтому критически важно использовать оригинальный дамп памяти, соответствующий точной модели вашего агрегата.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/kh/kholodilnik-kak-teplovaya-mashina.html" class="pb-related-card">
+                <span class="pb-related-title">Холодильник как тепловая машина: принцип работы и устройство</span>
+                <span class="pb-related-desc">Подробный разбор холодильника как тепловой машины. Цикл Карно, работа хладагента, роль компрессора и</span>
+            </a><a href="/articles/g/gd/gde-kupit-polki-dlya-kholodilnika-elektrolyuks.html" class="pb-related-card">
+                <span class="pb-related-title">Где купить полки для холодильника Electrolux: цены и каталоги</span>
+                <span class="pb-related-desc">Ищете, где купить полки для холодильника Электролюкс? Полный гид по поиску оригинальных запчастей, п</span>
+            </a><a href="/articles/d/dl/dlya-chego-shchup-v-kholodilnike-na-zadnej-stenke.html" class="pb-related-card">
+                <span class="pb-related-title">Зачем щуп в холодильнике: функции и настройка термостата</span>
+                <span class="pb-related-desc">Узнайте, зачем нужен щуп в холодильнике на задней стенке, как он регулирует температуру и что делать</span>
+            </a><a href="/articles/f/fr/fresh-balancer-v-kholodilnike-chto-eto.html" class="pb-related-card">
+                <span class="pb-related-title">Fresh Balancer в холодильнике: что это и как настроить</span>
+                <span class="pb-related-desc">Узнайте, что такое Fresh Balancer в холодильнике, как работает система и как её правильно настроить </span>
+            </a><a href="/articles/g/gd/gde-nakhoditsya-regulyator-temperatury-v-kholodilnike-indezit.html" class="pb-related-card">
+                <span class="pb-related-title">Где находится регулятор температуры в холодильнике Индезит: поиск и настройка</span>
+                <span class="pb-related-desc">Подробный гид по поиску терморегулятора в холодильниках Indesit. Инструкции для разных моделей, табл</span>
+            </a><a href="/articles/k/ka/kak-uznat-nomer-kholodilnika-atlant.html" class="pb-related-card">
+                <span class="pb-related-title">Как узнать номер холодильника Атлант: где искать серийный код</span>
+                <span class="pb-related-desc">Подробная инструкция, как найти номер холодильника Атлант. Расположение шильдика, расшифровка серийн</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

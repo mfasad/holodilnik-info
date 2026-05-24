@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Как проверить мотор компрессора холодильника: диагностика и тесты — Холодильник Инфо</title>
+    <meta name="description" content="Подробная инструкция, как проверить компрессор холодильника мультиметром и без приборов. Симптомы поломки, замеры сопротивления и обмоток, диагностика пускового реле.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/k/ka/kak-proverit-motor-kompressora-kholodilnika.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как проверить мотор компрессора холодильника: диагностика и тесты">
+    <meta property="og:description" content="Подробная инструкция, как проверить компрессор холодильника мультиметром и без приборов. Симптомы поломки, замеры сопротивления и обмоток, диагностика пускового реле.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-nav-active">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/remont-svoimi-rukami/">Ремонт своими руками</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как проверить мотор компрессора холодильника: диагностика и тесты</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#первичная-визуальная-диагностика-и-подготовка">Первичная визуальная диагностика и подготовка</a></li><li><a href="#необходимые-инструменты-для-проверки">Необходимые инструменты для проверки</a></li><li><a href="#проверка-целостности-обмоток-мультиметром">Проверка целостности обмоток мультиметром</a></li><li><a href="#диагностика-пробоя-на-корпус">Диагностика пробоя на корпус</a></li><li><a href="#проверка-пускового-реле-и-термореле">Проверка пускового реле и термореле</a></li><li><a href="#прямой-запуск-компрессора-тест-bypass">Прямой запуск компрессора (тест bypass)</a></li><li><a href="#механические-неисправности-и-заклинивание">Механические неисправности и заклинивание</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-otremontirovat-ruchku-kholodilnika-lg.html">Как починить ручку холодильника LG: пошаговый ремонт</a></li><li><a href="/articles/c/ch/chem-spayat-trubki-na-kholodilnike.html">Чем спаять трубки на холодильнике: выбор припоя и флюса</a></li><li><a href="/articles/c/ch/chem-smazat-ventilyator-kholodilnika.html">Чем смазать вентилятор холодильника: выбор смазки и инструкция</a></li><li><a href="/articles/r/re/rele-kholodilnika-biryusa-gde-nakhoditsya.html">Реле холодильника Бирюса: где находится и как заменить</a></li><li><a href="/articles/k/ka/kak-pravilno-postavit-ventilyator-v-kholodilnike.html">Как правильно поставить вентилятор в холодильнике: схема</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как проверить мотор компрессора холодильника: пошаговая диагностика</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#первичная-визуальная-диагностика-и-подготовка">Первичная визуальная диагностика и подготовка</a></li><li><a href="#необходимые-инструменты-для-проверки">Необходимые инструменты для проверки</a></li><li><a href="#проверка-целостности-обмоток-мультиметром">Проверка целостности обмоток мультиметром</a></li><li><a href="#диагностика-пробоя-на-корпус">Диагностика пробоя на корпус</a></li><li><a href="#проверка-пускового-реле-и-термореле">Проверка пускового реле и термореле</a></li><li><a href="#прямой-запуск-компрессора-тест-bypass">Прямой запуск компрессора (тест bypass)</a></li><li><a href="#механические-неисправности-и-заклинивание">Механические неисправности и заклинивание</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Холодильник перестал морозить, а внутри установилась комнатная температура? Часто причиной такой неисправности становится <strong>компрессор</strong>, который является сердцем всей холодильной системы. Однако прежде чем вызывать мастера или покупать новую технику, стоит провести первичную диагностику, чтобы убедиться в характере поломки. Нередко владельцы путают выход из строя двигателя с неисправностью термостата, пускового реле или утечкой хладагента, что приводит к лишним тратам.</p>
+
+<p>В этой статье мы разберем, как проверить мотор компрессора холодильника, используя базовые инструменты и мультиметр. Вы узнаете, как отличить механическую блокировку от электрического пробоя, и поймете, стоит ли ремонтировать агрегат или его проще заменить. <mark>Критически важно: если при визуальном осмотре вы обнаружили вздутие корпуса компрессора или следы масла под ним, дальнейшая самостоятельная диагностика может быть опасной.</mark></p>
+
+<p>Для начала необходимо локализовать источник проблемы. Если холодильник гудит, но не запускается, или же запускается на пару секунд и сразу щелкает, выключаясь — это классические симптомы проблем с пусковым механизмом или самим двигателем. В ситуациях, когда техника вообще молчит и не издает никаких звуков, проверка электрической цепи становится первым шагом к восстановлению холода.</p>
+
+<h2 id="первичная-визуальная-диагностика-и-подготовка">Первичная визуальная диагностика и подготовка</h2>
+
+<p>Перед тем как брать в руки измерительные приборы, необходимо провести тщательный внешний осмотр. Отключите холодильник от электросети и отодвиньте его от стены, чтобы получить доступ к задней панели. Снимите защитный кожух, закрывающий компрессорную группу, и внимательно изучите состояние самого агрегата и прилегающих деталей. Ищите следы копоти, оплавления изоляции или маслянистые подтеки, которые могут указывать на пробой или нарушение герметичности.</p>
+
+<p>Особое внимание уделите пусковому реле, которое обычно закреплено сбоку на корпусе компрессора. Если на пластике видны следы термического воздействия или чувствуется запах гари, то, вероятно, проблема кроется именно в этом узле, а не в самом моторе. В некоторых случаях достаточно заменить реле, чтобы <em>мотор-компрессор</em> снова заработал штатно.</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Категорически запрещается проводить любые манипуляции с электрическими компонентами, пока холодильник подключен к сети. Риск поражения током при работе с напряжением 220В крайне высок.</blockquote>
+
+<p>Также проверьте целостность подводящих проводов. Часто грызуны или механические повреждения в процессе уборки нарушают изоляцию, что приводит к короткому замыканию. Если визуально нормально, можно переходить к более глубокой проверке с использованием инструментов.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед снятием реле сфотографируйте схему подключения проводов на телефон. Это поможет избежать ошибок при сборке, если вы решите проверить детали отдельно.</p></aside>
+
+<h2 id="необходимые-инструменты-для-проверки">Необходимые инструменты для проверки</h2>
+
+<p>Для качественной диагностики вам потребуется минимальный набор инструментов, который найдется у большинства домашних мастеров. Основным прибором станет <strong>мультиметр</strong> (тестер), позволяющий измерять сопротивление обмоток и проверять наличие короткого замыкания на корпус. Без этого устройства точная диагностика электрической части двигателя невозможна.</p>
+
+<p>Кроме мультиметра, приготовьте отвертки для снятия кожуха и клемм, а также плоскогубцы. Если вы планируете проводить проверку"напрямую" (о чем будет сказано ниже), вам понадобится отрезок провода с вилкой и, возможно, исправное пусковое реле для контрольного запуска.</p>
+
+<ul>
+<li>🔌 Мультиметр (цифровой или аналоговый) для замера сопротивления.</li>
+<li>🔧 Набор отверток (крестовая и плоская) для демонтажа защиты.</li>
+<li>🧤 Диэлектрические перчатки для обеспечения безопасности.</li>
+<li>💡 Лампа накаливания (опционально) для проверки цепи.</li>
+</ul>
+
+<p>Убедитесь, что щупы мультиметра исправны, а их провода не имеют повреждений изоляции. Перед началом замеров всегда проверяйте работоспособность самого прибора, замкнув щупы между собой — на экране должно отобразиться значение, близкое к нулю.</p>
+
+<h2 id="проверка-целостности-обмоток-мультиметром">Проверка целостности обмоток мультиметром</h2>
+
+<p>Самый надежный способ определить состояние двигателя — это прозвонка обмоток. Для этого нужно снять пусковое реле и защитную крышку контактов на компрессоре. Вы увидите три вывода, образующих треугольник. Эти выводы соответствуют пусковой обмотке, рабочей обмотке и общему проводу.</p>
+
+<p>Переключите мультиметр в режим измерения сопротивления (Ом) на предел 2 кОм. Сначала найдите общий провод: измерьте сопротивление между всеми парами контактов. Пара с наименьшим сопротивлением — это рабочая и пусковая обмотки, а оставшийся третий контакт и есть <strong>общий провод</strong>. Обычно сопротивление между рабочей и пусковой обмоткой составляет сумму сопротивлений каждой из них относительно общего провода.</p>
+
+<div class="pb-poll" id="poll-7725986c"><div class="pb-poll-question">📊 Какой симптом у вашего холодильника?</div><div class="pb-poll-option" data-poll="7725986c" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Гудит, но не запускается</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7725986c" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Вообще не реагирует</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7725986c" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Запускается и сразу выключается</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7725986c" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Слышен стук при работе</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>Нормальные показатели сопротивления для исправного компрессора бытового холодильника варьируются в следующих пределах:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип обмотки</th>
+<th>Нормальное сопротивление (Ом)</th>
+<th>Признак неисправности</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Рабочая обмотка</td>
+<td>10 – 30 Ом</td>
+<td>Обрыв (бесконечность) или КЗ (ноль)</td>
+</tr>
+<tr>
+<td>Пусковая обмотка</td>
+<td>20 – 50 Ом</td>
+<td>Обрыв или короткое замыкание</td>
+</tr>
+<tr>
+<td>Сопротивление корпусу</td>
+<td>Бесконечность (∞)</td>
+<td>Любое значение указывает на пробой</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Если прибор показывает единицу или символ бесконечности на любом из замеров между выводами, это означает <strong>обрыв цепи</strong>. В таком случае двигатель сгорел и не подлежит восстановлению в домашних условиях. Если же сопротивление близко к нулю, значит, произошло межвитковое замыкание.</p>
+
+<h2 id="диагностика-пробоя-на-корпус">Диагностика пробоя на корпус</h2>
+
+<p>Одной из самых опасных неисправностей является пробой изоляции обмоток на металлический корпус компрессора. Это не только выводит технику из строя, но и создает риск удара током при касании металлических частей холодильника. Проверить этот параметр также можно с помощью мультиметра.</p>
+
+<p>Установите переключатель тестера в режим измерения сопротивления на максимальный предел (обычно 2 МОм или 20 МОм). Один щуп прижмите к зачищенному месту на корпусе компрессора (где нет краски и лака), а вторым поочередно касайтесь всех трех контактов мотора. Исправный двигатель покажет бесконечное сопротивление.</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Если мультиметр показывает хоть какое-то сопротивление между обмотками и корпусом, эксплуатировать такой холодильник запрещено. Даже если он заработает после замены реле, риск поражения электрическим током остается критическим.</blockquote>
+
+<p>Иногда пробой проявляется только под напряжением. В таких случаях мультиметр может ничего не показать, но при подаче питания будет выбивать автомат в щитке или срабатывать УЗО. Для точной диагностики в сложных случаях профессионалы используют <em>мегомметр</em>, который подает высокое напряжение для проверки изоляции, но в быту достаточно и качественного мультиметра.</p>
+
+<h2 id="проверка-пускового-реле-и-термореле">Проверка пускового реле и термореле</h2>
+
+<p>Часто сам мотор исправен, но не запускается из-за неисправности пускового реле. Этот небольшой блок отвечает за подачу импульса на пусковую обмотку. Чтобы проверить его, аккуратно снимите реле с контактов компрессора. Визуально осмотрите внутренности: если внутри видна обгоревшая катушка или оплавленные контакты, деталь требует замены.</p>
+
+<p>Проверьте реле на сопротивление. В зависимости от конструкции (электромагнитное или позисторное), методика может отличаться. Позистор должен иметь сопротивление в пределах десятков Ом. Если прибор показывает ноль или бесконечность — реле неисправно. Также проверьте термореле защиты, которое часто встроено в конструкцию пускового.</p>
+
+<details class="pb-accordion"><summary>Как работает позистор?</summary><div class="pb-accordion-body"><p>Позистор — это керамический элемент, который при нагревании током резко увеличивает свое сопротивление, размыкая цепь пусковой обмотки. Если он"пробит", ток продолжает идти на пусковую обмотку, вызывая гудение и перегрев.</p></div></details>
+
+<p>Замена пускового реле — процедура недорогая и простая. Главное — подобрать аналог с такими же характеристиками и типом подключения. Неправильно подобранное реле может не запустить мотор или привести к его быстрому сгоранию.</p>
+
+<h2 id="прямой-запуск-компрессора-тест-bypass">Прямой запуск компрессора (тест bypass)</h2>
+
+<p>Если все предыдущие тесты пройдены успешно, но холодильник не работает, можно попробовать запустить компрессор напрямую, минуя штатное реле. Этот метод позволяет окончательно убедиться в работоспособности двигателя. Для этого потребуется кусок провода с вилкой и, желательно, исправное пусковое реле или кнопка для кратковременной подачи напряжения.</p>
+
+<p>Схема подключения проста: фазный провод от вилки подключается к одному из крайних контактов (обычно рабочая обмотка), а нулевой — к общему. Для запуска нужно кратковременно подать напряжение на пусковую обмотку. Будьте осторожны: вал двигателя начнет вращаться мгновенно.</p>
+
+<ul>
+<li>⚡ Подключите провода к контактам компрессора согласно схеме.</li>
+<li>🔋 Включите вилку в розетку (соблюдая осторожность!).</li>
+<li>🔊 Слушайте звук: ровное гудение говорит об исправности.</li>
+<li>🛑 Немедленно отключите питание при появлении искр или запаха.</li>
+</ul>
+
+<p>Если мотор запустился и работает ровно, проблема была в пусковом реле или термостате. Если же слышен гудение без вращения вала или срабатывает защита, возможно, заклинило механическую часть компрессора. В последнем случае реанимировать агрегат крайне сложно и часто экономически нецелесообразно.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Диагностика компрессора</h4><label class="check-item"><input type="checkbox"><span>Отключить от сети</span></label><label class="check-item"><input type="checkbox"><span>Снять заднюю крышку</span></label><label class="check-item"><input type="checkbox"><span>Визуальный осмотр</span></label><label class="check-item"><input type="checkbox"><span>Прозвонка обмоток</span></label><label class="check-item"><input type="checkbox"><span>Проверка на пробой</span></label><label class="check-item"><input type="checkbox"><span>Тестовый запуск</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 6</div></div>
+
+<h2 id="механические-неисправности-и-заклинивание">Механические неисправности и заклинивание</h2>
+
+<p>Иногда электрическая часть полностью цела, но компрессор не запускается из-за механического заклинивания поршневой группы. Это может произойти из-за выработки ресурса, отсутствия смазки или попадания влаги в систему. Симптомом часто служит характерный металлический лязг или гудение при попытке запуска, после чего срабатывает тепловая защита.</p>
+
+<p>Существует метод"расклинивания", когда на контакты подается повышенное напряжение или производится резкий старт, чтобы сорвать поршни с места. Однако этот метод рискован и может окончательно добить компрессор. Если вы не обладаете опытом, лучше не экспериментировать.</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Вскрывать корпус компрессора для ремонта механической части в домашних условиях нельзя. Это требует вакуумирования системы, замены масла и точной пайки, что возможно только в специализированной мастерской.</blockquote>
+
+<p>Если диагностировано заклинивание, единственным выходом остается замена компрессора на новый. При установке нового агрегата обязательно нужно заменить фильтр-осушитель и провести вакуумирование контура, иначе новая деталь быстро выйдет из строя.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если обмотки целы, пробоя на корпус нет, реле исправно, но компрессор гудит и не запускается — вероятнее всего, произошло механическое заклинивание или потеря компрессии.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли отремонтировать сгоревший компрессор?</summary>
+<p>В условиях обычной мастерской или дома — нет. Перемотка обмоток требует специального оборудования и герметизации. Проще и надежнее заменить весь агрегат на новый.</p>
+</details>
+
+<details>
+<summary>Почему компрессор горячий на ощупь?</summary>
+<p>Рабочая температура компрессора может достигать 60-90 градусов, что нормально. Однако если он раскален до такой степени, что нельзя дотронуться, или работает без перерыва — это признак неисправности термостата или утечки фреона.</p>
+</details>
+
+<details>
+<summary>Какое сопротивление должно быть у исправного компрессора?</summary>
+<p>Суммарное сопротивление между пусковой и рабочей обмоткой обычно составляет от 30 до 80 Ом, в зависимости от мощности и модели двигателя. Главное — отсутствие короткого замыкания и обрывов.</p>
+</details>
+
+<details>
+<summary>Можно ли заменить компрессор на аналог от другой марки?</summary>
+<p>Да, если совпадают габаритные размеры, тип хладагента, мощность и производительность. Важно также учесть тип масла и требования к пусковому устройству.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-otremontirovat-ruchku-kholodilnika-lg.html" class="pb-related-card">
+                <span class="pb-related-title">Как починить ручку холодильника LG: пошаговый ремонт</span>
+                <span class="pb-related-desc">Сломалась ручка холодильника LG? Узнайте, как заменить ручку, снять дверцу, выбрать крепеж и избежат</span>
+            </a><a href="/articles/c/ch/chem-spayat-trubki-na-kholodilnike.html" class="pb-related-card">
+                <span class="pb-related-title">Чем спаять трубки на холодильнике: выбор припоя и флюса</span>
+                <span class="pb-related-desc">Экспертный гид по выбору припоя для ремонта холодильника. Сравнение твердых и мягких припоев, техник</span>
+            </a><a href="/articles/c/ch/chem-smazat-ventilyator-kholodilnika.html" class="pb-related-card">
+                <span class="pb-related-title">Чем смазать вентилятор холодильника: выбор смазки и инструкция</span>
+                <span class="pb-related-desc">Узнайте, чем смазать вентилятор холодильника, чтобы устранить шум. Разбор типов масел, инструкция по</span>
+            </a><a href="/articles/r/re/rele-kholodilnika-biryusa-gde-nakhoditsya.html" class="pb-related-card">
+                <span class="pb-related-title">Реле холодильника Бирюса: где находится и как заменить</span>
+                <span class="pb-related-desc">Узнайте точное расположение реле пускозащитного в холодильнике Бирюса. Инструкция по замене, схема п</span>
+            </a><a href="/articles/k/ka/kak-pravilno-postavit-ventilyator-v-kholodilnike.html" class="pb-related-card">
+                <span class="pb-related-title">Как правильно поставить вентилятор в холодильнике: схема</span>
+                <span class="pb-related-desc">Пошаговая инструкция по установке вентилятора в холодильнике. Схема подключения, проверка обдува и у</span>
+            </a><a href="/articles/k/ka/kak-proverit-ispravnost-datchika-temperatury-v-kholodilnike.html" class="pb-related-card">
+                <span class="pb-related-title">Как проверить датчик температуры в холодильнике: пошаговая инструкция</span>
+                <span class="pb-related-desc">Узнайте, как проверить исправность датчика температуры в холодильнике мультиметром. Признаки поломки</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

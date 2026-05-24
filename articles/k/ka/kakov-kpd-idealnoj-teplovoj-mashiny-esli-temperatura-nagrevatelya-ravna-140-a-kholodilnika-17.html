@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>КПД идеальной тепловой машины: расчёт при T₁=140°C и T₂=17°C — Холодильник Инфо</title>
+    <meta name="description" content="Как рассчитать КПД тепловой машины Карно при заданных температурах нагревателя (140°C) и холодильника (17°C)? Формулы, примеры, физический смысл и ошибки расчётов.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/k/ka/kakov-kpd-idealnoj-teplovoj-mashiny-esli-temperatura-nagrevatelya-ravna-140-a-kholodilnika-17.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="КПД идеальной тепловой машины: расчёт при T₁=140°C и T₂=17°C">
+    <meta property="og:description" content="Как рассчитать КПД тепловой машины Карно при заданных температурах нагревателя (140°C) и холодильника (17°C)? Формулы, примеры, физический смысл и ошибки расчётов.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ustrojstvo-i-detali/">Устройство и детали</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">КПД идеальной тепловой машины: расчёт при T₁=140°C и T₂=17°C</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#что-такое-идеальная-тепловая-машина-и-цикл-карно">Что такое идеальная тепловая машина и цикл Карно</a></li><li><a href="#формула-кпд-идеальной-тепловой-машины">Формула КПД идеальной тепловой машины</a></li><li><a href="#расчёт-кпд-для-t₁140c-и-t₂17c-пошаговая-инструкция">Расчёт КПД для T₁=140°C и T₂=17°C: пошаговая инструкция</a></li><li><a href="#почему-кпд-не-может-быть-100-второй-закон-термодинамики">Почему КПД не может быть 100%: второй закон термодинамики</a></li><li><a href="#сравнение-с-реальными-тепловыми-машинами">Сравнение с реальными тепловыми машинами</a></li><li><a href="#типичные-ошибки-при-расчёте-кпд">Типичные ошибки при расчёте КПД</a></li><li><a href="#практическое-применение-расчётов-кпд">Практическое применение расчётов КПД</a></li><li><a href="#faq-частые-вопросы-о-кпд-тепловых-машин">FAQ: Частые вопросы о КПД тепловых машин</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/kh/kholodilnik-konvektornyj-chto-eto.html">Конвекторный холодильник: что это, принцип работы и отличия</a></li><li><a href="/articles/z/za/zachem-kondensator-na-kompressore-kholodilnika.html">Зачем конденсатор на компрессоре: функции, признаки и замена</a></li><li><a href="/articles/i/iz/iz-chego-delayut-sumku-kholodilnik.html">Из чего делают сумку-холодильник: материалы, устройство</a></li><li><a href="/articles/s/sk/skolko-kg-mozhno-zagruzit-v-kholodilnike.html">Сколько кг можно загрузить в холодильник: нормы и правила</a></li><li><a href="/articles/a/ak/akkumulyator-kholoda-v-kholodilnike-zachem.html">Аккумулятор холода в холодильнике: зачем он нужен</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>КПД идеальной тепловой машины: точный расчёт для T₁=140°C и T₂=17°C</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#что-такое-идеальная-тепловая-машина-и-цикл-карно">Что такое идеальная тепловая машина и цикл Карно</a></li><li><a href="#формула-кпд-идеальной-тепловой-машины">Формула КПД идеальной тепловой машины</a></li><li><a href="#расчёт-кпд-для-t₁140c-и-t₂17c-пошаговая-инструкция">Расчёт КПД для T₁=140°C и T₂=17°C: пошаговая инструкция</a></li><li><a href="#почему-кпд-не-может-быть-100-второй-закон-термодинамики">Почему КПД не может быть 100%: второй закон термодинамики</a></li><li><a href="#сравнение-с-реальными-тепловыми-машинами">Сравнение с реальными тепловыми машинами</a></li><li><a href="#типичные-ошибки-при-расчёте-кпд">Типичные ошибки при расчёте КПД</a></li><li><a href="#практическое-применение-расчётов-кпд">Практическое применение расчётов КПД</a></li><li><a href="#faq-частые-вопросы-о-кпд-тепловых-машин">FAQ: Частые вопросы о КПД тепловых машин</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Тепловые машины окружают нас повсюду: от холодильников и кондиционеров до автомобильных двигателей и электростанций. Их эффективность измеряется <strong>коэффициентом полезного действия (КПД)</strong> — ключевым параметром, показывающим, какую долю полученной теплоты машина преобразует в полезную работу. Но как рассчитать КПД <em>идеальной</em> тепловой машины, если известны температуры нагревателя (<code>140°C</code>) и холодильника (<code>17°C</code>)? Ответ кроется в законах термодинамики и цикле Карно — теоретической модели, которая задаёт предел эффективности для любых реальных устройств.</p>
+
+<p>В этой статье мы не только выведем точную формулу и проведем расчёты, но и разберём физический смысл каждого параметра. Вы узнаете, почему температуры нужно переводить в <strong>кельвины</strong>, как избежать типичных ошибок при вычислениях, и почему даже идеальная машина не может иметь КПД в 100%. А для тех, кто планирует применять эти знания на практике — например, при диагностике холодильного оборудования или оптимизации систем отопления — мы подготовили чек-лист проверки расчётов и FAQ с разбором сложных случаев.</p>
+
+<h2 id="что-такое-идеальная-тепловая-машина-и-цикл-карно">Что такое идеальная тепловая машина и цикл Карно</h2>
+
+<p>Идеальная тепловая машина — это абстрактная модель, работающая по <em>циклу Карно</em>, предложенному французским физиком Сади Карно в 1824 году. В реальности таких машин не существует, но они служат <strong>эталоном максимально возможного КПД</strong> для любых тепловых двигателей, работающих в заданном диапазоне температур.</p>
+
+<p>Цикл Карно состоит из четырёх обратимых процессов:</p>
+<ul>
+  <li>🔥 <strong>Изотермическое расширение</strong> (газ получает теплоту <code>Q₁</code> от нагревателя при температуре <code>T₁</code>).</li>
+  <li>↗️ <strong>Адиабатическое расширение</strong> (газ расширяется без теплообмена, температура падает до <code>T₂</code>).</li>
+  <li>❄️ <strong>Изотермическое сжатие</strong> (газ отдаёт теплоту <code>Q₂</code> холодильнику при температуре <code>T₂</code>).</li>
+  <li>↘️ <strong>Адиабатическое сжатие</strong> (газ сжимается без теплообмена, температура возвращается к <code>T₁</code>).</li>
+</ul>
+
+<p>Ключевое преимущество цикла Карно — его <mark>обратимость</mark>: все процессы можно провести в обратном порядке без потерь энергии. Именно это свойство позволяет достичь максимального КПД среди всех тепловых машин, работающих между двумя тепловыми резервуарами с температурами <code>T₁</code> и <code>T₂</code>.</p>
+
+<div class="pb-poll" id="poll-7ba6ea2d"><div class="pb-poll-question">📊 С какой тепловой машиной вы чаще сталкиваетесь?</div><div class="pb-poll-option" data-poll="7ba6ea2d" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Холодильник</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7ba6ea2d" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Кондиционер</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7ba6ea2d" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Автомобильный двигатель</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7ba6ea2d" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Промышленное оборудование</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7ba6ea2d" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Другое</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="формула-кпд-идеальной-тепловой-машины">Формула КПД идеальной тепловой машины</h2>
+
+<p>КПД (<code>η</code>) цикла Карно определяется только температурами нагревателя (<code>T₁</code>) и холодильника (<code>T₂</code>) и рассчитывается по формуле:</p>
+
+<pre><code>η = (T₁ - T₂) / T₁ = 1 - (T₂ / T₁)</code></pre>
+
+<p>Где:</p>
+<ul>
+  <li><code>T₁</code> — абсолютная температура нагревателя (в <strong>кельвинах</strong>).</li>
+  <li><code>T₂</code> — абсолютная температура холодильника (в кельвинах).</li>
+  <li><code>η</code> — КПД (безразмерная величина, часто выражается в процентах).</li>
+</ul>
+
+<p>Обратите внимание: формула использует <em>абсолютные температуры</em>, а не градусы Цельсия! Это критично, так как шкала Кельвина начинается с абсолютного нуля (<code>0 K = -273.15°C</code>), и только в ней соотношение температур корректно отражает физические процессы.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Чтобы быстро перевести Цельсии в Кельвины, используйте формулу: <code>T(K) = T(°C) + 273.15</code>. Например, <code>25°C = 298.15 K</code>.</p></aside>
+
+<h2 id="расчёт-кпд-для-t₁140c-и-t₂17c-пошаговая-инструкция">Расчёт КПД для T₁=140°C и T₂=17°C: пошаговая инструкция</h2>
+
+<p>Теперь применим формулу к заданным условиям. Температуры даны в градусах Цельсия, поэтому первым шагом будет их перевод в Кельвины:</p>
+
+<ol>
+  <li><strong>Переводим температуру нагревателя</strong>:
+     <code>T₁ = 140°C + 273.15 = 413.15 K</code>.</li>
+  <li><strong>Переводим температуру холодильника</strong>:
+     <code>T₂ = 17°C + 273.15 = 290.15 K</code>.</li>
+  <li><strong>Подставляем в формулу КПД</strong>:
+     <code>η = 1 - (290.15 / 413.15) ≈ 1 - 0.702 ≈ 0.298</code>.</li>
+  <li><strong>Переводим в проценты</strong>:
+     <code>η ≈ 0.298 × 100% ≈ 29.8%</code>.</li>
+</ol>
+
+<p>Таким образом, <strong>максимально возможный КПД идеальной тепловой машины</strong> при температурах нагревателя <code>140°C</code> и холодильника <code>17°C</code> составляет <mark>29.8%</mark>. Это означает, что даже в идеальных условиях только 29.8% теплоты, полученной от нагревателя, преобразуется в полезную работу, а остальные 70.2% передаются холодильнику.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка расчётов КПД</h4><label class="check-item"><input type="checkbox"><span>Температуры переведены в Кельвины?</span></label><label class="check-item"><input type="checkbox"><span>Использована формула η = 1 - (T₂/T₁)?</span></label><label class="check-item"><input type="checkbox"><span>Результат переведён в проценты?</span></label><label class="check-item"><input type="checkbox"><span>Сравнен с реальными значениями для аналогичных машин?</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="почему-кпд-не-может-быть-100-второй-закон-термодинамики">Почему КПД не может быть 100%: второй закон термодинамики</h2>
+
+<p>Многие задаются вопросом: почему даже идеальная машина не способна преобразовать всю теплоту в работу? Ответ даёт <strong>второй закон термодинамики</strong>, который можно сформулировать так:</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Невозможно создать тепловую машину, которая бы имела КПД 100%, даже если холодильник отсутствует (то есть <code>T₂ = 0 K</code>). На практике достижение абсолютного нуля невозможно, а любая реальная машина всегда имеет потери.</blockquote>
+
+<p>Физический смысл этого закона заключается в том, что <em>энтропия</em> (мера хаоса в системе) никогда не уменьшается самопроизвольно. Часть теплоты <strong>обязательно</strong> должна передаваться холодильнику, чтобы компенсировать рост энтропии при передаче энергии от нагревателя. Именно поэтому КПД цикла Карно всегда меньше единицы:</p>
+
+<ul>
+  <li>🔥 Если <code>T₂ > 0 K</code>, то <code>η < 1</code>.</li>
+  <li>❄️ При <code>T₂ = T₁</code> (одинаковые температуры) <code>η = 0</code> — машина не совершает работы.</li>
+  <li>📈 Чем больше разница <code>T₁ - T₂</code>, тем выше КПД, но он никогда не достигает 100%.</li>
+</ul>
+
+<p>Например, если бы холодильник имел температуру <code>0 K</code> (что невозможно), КПД стремился бы к 100%. Но в реальности даже в космосе, где температура близка к <code>2.7 K</code> (реликтовое излучение), достичь такого холода для технических систем нереально.</p>
+
+<h2 id="сравнение-с-реальными-тепловыми-машинами">Сравнение с реальными тепловыми машинами</h2>
+
+<p>Идеальный цикл Карно служит benchmark’ом для оценки эффективности реальных устройств. Однако в практике КПД всегда ниже из-за:</p>
+
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr>
+      <th>Тип машины</th>
+      <th>Теоретический КПД (Карно)</th>
+      <th>Реальный КПД</th>
+      <th>Причины потерь</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Паровые турбины (ТЭС)</td>
+      <td>~40–50%</td>
+      <td>30–35%</td>
+      <td>Трение, теплопотери, неидеальный цикл</td>
+    </tr>
+    <tr>
+      <td>ДВС (бензиновые)</td>
+      <td>~50–60%</td>
+      <td>20–30%</td>
+      <td>Неполное сгорание, теплопередача, механические потери</td>
+    </tr>
+    <tr>
+      <td>Холодильники</td>
+      <td>~10–20%</td>
+      <td>3–8%</td>
+      <td>Утечки хладагента, теплообмен с окружающей средой</td>
+    </tr>
+    <tr>
+      <td>Тепловые насосы</td>
+      <td>~300–500%</td>
+      <td>200–400%</td>
+      <td>Электрические потери, неидеальный компрессор</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>Как видно из таблицы, реальные машины теряют значительную часть энергии. Например, <em>бензиновый двигатель</em> с теоретическим КПД в <code>50%</code> на практике выдаёт всего <code>25%</code> из-за:</p>
+<ul>
+  <li>🔥 Неполного сгорания топлива (часть энергии уходит с выхлопными газами).</li>
+  <li>🛢️ Трения в движущихся частях (поршни, коленвал).</li>
+  <li>🌡️ Теплопотерь через корпус двигателя.</li>
+</ul>
+
+<p>Для холодильников ситуация ещё сложнее: их КПД часто оценивают через <em>коэффициент эффективности</em> (COP), который может превышать 100% (так как они не производят работу, а "перекачивают" тепло). Но даже здесь реальные значения далеки от идеала.</p>
+
+<details class="pb-accordion"><summary>Почему в таблице КПД теплового насоса >100%?</summary><div class="pb-accordion-body"><p>Тепловые насосы не производят энергию, а переносят тепло из холодной среды в тёплую, затрачивая электроэнергию. COP показывает, сколько тепла передано на 1 кВт затраченной электроэнергии. Например, COP=4 означает, что на 1 кВт электричества переносится 4 кВт тепла.</p></div></details>
+
+<h2 id="типичные-ошибки-при-расчёте-кпд">Типичные ошибки при расчёте КПД</h2>
+
+<p>Даже в простой формуле Карно легко допустить ошибки, которые приведут к неверным результатам. Вот наиболее распространённые из них:</p>
+
+<ol>
+  <li><strong>Использование Цельсия вместо Кельвина</strong>:
+<p>Если подставить <code>140°C</code> и <code>17°C</code> напрямую, получится <code>η = 1 - (17/140) ≈ 87.9%</code> — <em>абсурдно высокий результат</em>, так как температуры не приведены к абсолютной шкале.</li></p>
+  <li><strong>Перепутанные температуры</strong>:
+<p>Если случайно поменять местами <code>T₁</code> и <code>T₂</code>, КПД станет отрицательным, что физически невозможно.</li></p>
+  <li><strong>Игнорирование знака температуры</strong>:
+<p>Абсолютная температура всегда положительна. Ошибка в знаке (например, <code>-273°C</code> вместо <code>0 K</code>) приведёт к некорректным вычислениям.</li></p>
+  <li><strong>Неучёт единиц измерения</strong>:
+<p>Если температуры даны в <em>Фаренгейтах</em>, их нужно сначала перевести в Цельсии, а затем в Кельвины.</li></p>
+</ol>
+
+<blockquote>⚠️ <strong>Внимание:</strong> При расчётах для холодильных установок (например, в системах кондиционирования) иногда используют <em>обратный цикл Карно</em>. В этом случае формула КПД меняется на <code>COP = T₂ / (T₁ - T₂)</code>, где <code>COP</code> — коэффициент эффективности. Не путайте эти величины!</blockquote>
+
+<h2 id="практическое-применение-расчётов-кпд">Практическое применение расчётов КПД</h2>
+
+<p>Знание теоретического КПД помогает в нескольких практических сценариях:</p>
+
+<ol>
+  <li><strong>Диагностика холодильного оборудования</strong>:
+<p>Если реальный КПД вашего холодильника или кондиционера значительно ниже теоретического (например, <code>5%</code> вместо <code>15%</code>), это может указывать на:</p>
+     <ul>
+       <li>🛠️ Утечку хладагента.</li>
+       <li>🧊 Загрязнение теплообменника.</li>
+       <li>🔧 Неисправность компрессора.</li>
+     </ol>
+  </li>
+  <li><strong>Оптимизация систем отопления</strong>:
+<p>Тепловые насосы выбирают исходя из <code>COP</code>, который зависит от разницы температур источника тепла (например, грунта или воздуха) и обогреваемого помещения. Чем меньше эта разница, тем эффективнее работа.</li></p>
+  <li><strong>Выбор автомобильного масла</strong>:
+<p>Масла с низкой вязкостью уменьшают трение в двигателе, приближая его КПД к теоретическому максимуму.</li></p>
+</ul>
+
+<p>Например, если вы подбираете <em>инверторный кондиционер</em>, его <code>COP</code> должен быть близок к теоретическому для вашего климатического пояса. В Москве (где летом <code>T₁ ≈ 30°C</code>, а зимой <code>T₂ ≈ -10°C</code>) идеальный <code>COP</code> для обогрева составит:</p>
+<pre><code>COP_идеальный = T₁ / (T₁ - T₂) = 273.15 / (273.15 - 263.15) ≈ 27.3</code></pre>
+<p>Реальные значения будут в 2–3 раза ниже, но это даёт ориентир для сравнения моделей.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Теоретический КПД — это предел, к которому можно только стремиться. Реальные машины всегда имеют потери, но знание идеальных значений помогает выявить неисправности или резервы для оптимизации.</p></aside>
+
+<h2 id="faq-частые-вопросы-о-кпд-тепловых-машин">FAQ: Частые вопросы о КПД тепловых машин</h2>
+
+<details>
+  <summary>Может ли КПД тепловой машины превышать 100%?</summary>
+  <p>Нет, для тепловых <strong>двигателей</strong> (машин, преобразующих теплоту в работу) КПД всегда меньше 100%. Однако <em>тепловые насосы</em> и <em>холодильники</em> могут иметь коэффициент эффективности (<code>COP</code>) больше 100%, так как они не производят энергию, а переносят тепло с меньших затратами.</p>
+</details>
+
+<details>
+  <summary>Почему в формуле Карно используется разность температур?</summary>
+  <p>Разность <code>(T₁ - T₂)</code> отражает <strong>максимально возможную работу</strong>, которую можно получить при передаче теплоты от нагревателя к холодильнику. Чем больше разница температур, тем больше энергии можно преобразовать в работу (но никогда не всю).</p>
+</details>
+
+<details>
+  <summary>Как температура холодильника влияет на КПД?</summary>
+  <p>Чем <strong>ниже температура холодильника</strong> (<code>T₂</code>), тем выше КПД, так как уменьшается доля теплоты, передаваемая холодильнику. Однако на практике чрезмерное охлаждение требует дополнительных затрат энергии (например, в криогенных системах).</p>
+</details>
+
+<details>
+  <summary>Можно ли использовать формулу Карно для реальных двигателей?</summary>
+  <p>Формула Карно даёт <em>теоретический максимум</em>, но реальные двигатели работают по другим циклам (например, <em>Отто</em> для ДВС или <em>Ренкина</em> для паровых турбин). Их КПД рассчитывается с учётом специфики процессов, но всегда остаётся ниже карновского предела.</p>
+</details>
+
+<details>
+  <summary>Какая температура нагревателя считается оптимальной для максимального КПД?</summary>
+  <p>Оптимальная температура зависит от технических ограничений. Например, в <em>паровых турбинах</em> <code>T₁</code> ограничена прочностью материалов (обычно <code>500–600°C</code>). В <em>ДВС</em> температура сгорания достигает <code>2000°C</code>, но КПД ограничен механическими потерями.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/kh/kholodilnik-konvektornyj-chto-eto.html" class="pb-related-card">
+                <span class="pb-related-title">Конвекторный холодильник: что это, принцип работы и отличия</span>
+                <span class="pb-related-desc">Подробный разбор технологии No Frost и динамического охлаждения. Узнайте, чем конвекторный холодильн</span>
+            </a><a href="/articles/z/za/zachem-kondensator-na-kompressore-kholodilnika.html" class="pb-related-card">
+                <span class="pb-related-title">Зачем конденсатор на компрессоре: функции, признаки и замена</span>
+                <span class="pb-related-desc">Подробный разбор роли конденсатора в холодильнике. Почему он нужен, как влияет на запуск двигателя и</span>
+            </a><a href="/articles/i/iz/iz-chego-delayut-sumku-kholodilnik.html" class="pb-related-card">
+                <span class="pb-related-title">Из чего делают сумку-холодильник: материалы, устройство</span>
+                <span class="pb-related-desc">Подробный разбор материалов: из чего делают сумку-холодильник. Сравнение тканей, утеплителей и фольг</span>
+            </a><a href="/articles/s/sk/skolko-kg-mozhno-zagruzit-v-kholodilnike.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько кг можно загрузить в холодильник: нормы и правила</span>
+                <span class="pb-related-desc">Узнайте, сколько кг продуктов можно загрузить в холодильник. Расчет нагрузки на полки, вес компрессо</span>
+            </a><a href="/articles/a/ak/akkumulyator-kholoda-v-kholodilnike-zachem.html" class="pb-related-card">
+                <span class="pb-related-title">Аккумулятор холода в холодильнике: зачем он нужен</span>
+                <span class="pb-related-desc">Зачем нужен аккумулятор холода в холодильнике? Разбираем принцип работы, правильную заморозку и влия</span>
+            </a><a href="/articles/g/gd/gde-izgotavlivayut-kholodilniki-biryusa.html" class="pb-related-card">
+                <span class="pb-related-title">Где изготавливают холодильники Бирюса: заводы и адреса</span>
+                <span class="pb-related-desc">Узнайте, где собирают холодильники Бирюса. Адреса заводов в Красноярске и Липецке, особенности произ</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

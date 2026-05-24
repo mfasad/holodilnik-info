@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Настройка контроллера Eliwell: полная инструкция — Холодильник Инфо</title>
+    <meta name="description" content="Как настроить терморегулятор Eliwell для холодильника. Разбор меню, кодов ошибок, калибровка датчика и выбор режима работы.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/k/ka/kak-nastroit-kholodilnik-eliwell.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Настройка контроллера Eliwell: полная инструкция">
+    <meta property="og:description" content="Как настроить терморегулятор Eliwell для холодильника. Разбор меню, кодов ошибок, калибровка датчика и выбор режима работы.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-nav-active">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/nastrojka-temperatury/">Настройка температуры</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Настройка контроллера Eliwell: полная инструкция</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#интерфейс-и-навигация-по-меню-устройства">Интерфейс и навигация по меню устройства</a></li><li><a href="#регулировка-температурных-уставок">Регулировка температурных уставок</a></li><li><a href="#конфигурация-циклов-оттайки">Конфигурация циклов оттайки</a></li><li><a href="#работа-с-аварийными-сигналами-и-кодами-ошибок">Работа с аварийными сигналами и кодами ошибок</a></li><li><a href="#калибровка-датчика-и-защита-доступа">Калибровка датчика и защита доступа</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/v/v-/v-kholodilnike-kakaya-temperatura-kholodnee-2-ili-4.html">Какая температура холоднее в холодильнике: 2 или 4? Разбор + таблица</a></li><li><a href="/articles/s/sk/skolko-gradusov-v-kholodilnike-v-morozilke-bosh.html">Сколько градусов в морозилке Бош: норма и настройка</a></li><li><a href="/articles/k/ka/kak-nastroit-temperaturu-v-kholodilnike-gorenje.html">Как настроить температуру в холодильнике Gorenje: инструкция</a></li><li><a href="/articles/k/ka/kak-v-kholodilnike-samsung-otklyuchit-morozilku.html">Как отключить морозилку в холодильнике Samsung: пошаговая инструкция</a></li><li><a href="/articles/p/po/pochemu-v-kholodilnike-mokrye-banki.html">Почему в холодильнике мокрые банки: причины и решение</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Настройка контроллера Eliwell: полная инструкция</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#интерфейс-и-навигация-по-меню-устройства">Интерфейс и навигация по меню устройства</a></li><li><a href="#регулировка-температурных-уставок">Регулировка температурных уставок</a></li><li><a href="#конфигурация-циклов-оттайки">Конфигурация циклов оттайки</a></li><li><a href="#работа-с-аварийными-сигналами-и-кодами-ошибок">Работа с аварийными сигналами и кодами ошибок</a></li><li><a href="#калибровка-датчика-и-защита-доступа">Калибровка датчика и защита доступа</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Холодильное оборудование, работающее под управлением контроллеров <em>Eliwell</em>, широко распространено в коммерческом секторе. Эти устройства обеспечивают точное поддержание температурного режима, необходимого для сохранности продуктов. Однако после установки нового агрегата или сбоя в электросети часто возникает потребность в ручной корректировке параметров.</p>
+
+<p>Базовая настройка <strong>терморегулятора</strong> не требует глубоких знаний в электронике, но предполагает понимание логики работы устройства. Владелец должен четко представлять, какую температуру необходимо поддерживать и как часто будет открываться дверь камеры. Именно от этих факторов зависит выбор алгоритма оттайки и работы компрессора.</p>
+
+<p>Некорректные установки могут привести к порче товаров или повышенному расходу электроэнергии. Поэтому перед началом манипуляций с меню рекомендуется изучить текущие значения. В большинстве случаев заводские настройки являются оптимальными, но специфические условия эксплуатации требуют индивидуального подхода к конфигурированию <strong>электронного блока</strong>.</p>
+
+<h2 id="интерфейс-и-навигация-по-меню-устройства">Интерфейс и навигация по меню устройства</h2>
+
+<p>Управление контроллером осуществляется через цифровой дисплей и набор кнопок на лицевой панели. Стандартная компоновка включает кнопку "SET" для входа в меню и подтверждения изменений. Навигация по параметрам производится стрелками вверх и вниз, что позволяет быстро переключаться между цифрами.</p>
+
+<p>При первом включении на экране отображается текущая температура внутри камеры. Кратковременное нажатие клавиши "SET" позволяет увидеть уставку включения и выключения компрессора. Для доступа к техническим параметрам требуется удерживать кнопку в течение нескольких секунд, пока на дисплее не появится код параметра.</p>
+
+<blockquote>⚠️ Внимание: Длительное нахождение в режиме программирования (более 30 секунд) может привести к автоматическому выходу из меню без сохранения изменений. Работайте с настройками уверенно и быстро.</blockquote>
+
+<p>Система индикации также сообщает о состоянии работы оборудования. Мигающий светодиод может указывать на активную оттайку или тревожное состояние, например, выход температуры за допустимые пределы. Понимание этих сигналов помогает оперативно реагировать на изменения в работе <strong>холодильной установки</strong>.</p>
+
+<div class="pb-poll" id="poll-b5fb73fd"><div class="pb-poll-question">📊 Какой тип оборудования вы настраиваете?</div><div class="pb-poll-option" data-poll="b5fb73fd" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Витринный холодильник</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="b5fb73fd" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Морозильный ларь</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="b5fb73fd" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Камера шоковой заморозки</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="b5fb73fd" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Другое</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="регулировка-температурных-уставок">Регулировка температурных уставок</h2>
+
+<p>Основная задача оператора — установить правильную температуру. Для этого не нужно лезть в глубокое инженерное меню. Достаточно войти в режим пользователя, где доступны два главных параметра: точка включения компрессора и разница температур для его выключения.</p>
+
+<p>Первый параметр определяет порог, при достижении которого <strong>компрессор</strong> запускается. Второй задает гистерезис, то есть величину, на которую должна упасть температура, чтобы агрегат остановился. Например, при уставке -18°C и дельте 2°C компрессор включится при -18°C и выключится при -20°C.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Для продуктов с длительным сроком хранения рекомендуется устанавливать более низкие температуры, чем для товаров быстрого оборота, чтобы компенсировать частые открытия дверей.</p></aside>
+
+<p>Важно не путать уставку с реальной температурой внутри камеры. Если датчик показывает одно значение, а физически продукты промерзли или, наоборот, потекли, требуется не просто менять цифры, а проводить калибровку. Слепое снижение температуры без анализа показаний сенсора приведет к перегрузке двигателя.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Описание</th>
+<th>Типичное значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Set Point</td>
+<td>Целевая температура</td>
+<td>-18...+5 °C</td>
+</tr>
+<tr>
+<td>Differential</td>
+<td>Разница включения/выключения</td>
+<td>2...5 °C</td>
+</tr>
+<tr>
+<td>Probe Calib</td>
+<td>Коррекция показаний датчика</td>
+<td>0.0 °C</td>
+</tr>
+<tr>
+<td>Min Temp</td>
+<td>Минимально допустимая уставка</td>
+<td>-50 °C</td>
+</tr>
+</tbody>
+</table></div>
+
+<h2 id="конфигурация-циклов-оттайки">Конфигурация циклов оттайки</h2>
+
+<p>Образование льда на испарителе — естественный процесс, снижающий эффективность теплообмена. Контроллеры <em>Eliwell</em> поддерживают различные методы дефростации. Выбор конкретного метода зависит от конструкции холодильного шкафа и типа используемого испарителя.</p>
+
+<p>Существует несколько основных типов оттайки: электрическими тэнами, горячим газом или естественным оттаиванием при остановке компрессора. В меню программирования необходимо выбрать соответствующий код метода. Ошибка в выборе приведет к тому, что лед не будет удаляться или, наоборот, камера будет excessively нагреваться.</p>
+
+<p>Периодичность запуска цикла также настраивается пользователем. Обычно интервал задается в часах работы компрессора или в реальном времени. Для камер с высокой влажностью и частым доступом людей интервалы должны быть короче, чтобы предотвратить обрастание "шубой".</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Настройка оттайки</h4><label class="check-item"><input type="checkbox"><span>Выбрать метод (ТЭН/Газ/Естественная)</span></label><label class="check-item"><input type="checkbox"><span>Установить интервал запуска</span></label><label class="check-item"><input type="checkbox"><span>Задать максимальное время оттайки</span></label><label class="check-item"><input type="checkbox"><span>Установить время каплепадения</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Критически важным параметром является время каплепадения. Это пауза после окончания нагрева или разморозки, необходимая для стекания конденсата в дренажный поддон. Если запустить вентилятор или компрессор раньше времени, вода замерзнет на дне камеры или вытечет наружу.</p>
+
+<h2 id="работа-с-аварийными-сигналами-и-кодами-ошибок">Работа с аварийными сигналами и кодами ошибок</h2>
+
+<p>Электроника постоянно мониторит состояние системы. При выходе параметров за безопасные пределы на дисплее появляется код ошибки. Наиболее распространенным сигналом является мигание температуры, что указывает на проблему с датчиком.</p>
+
+<p>Код "P1" или "E1" обычно свидетельствует об обрыве цепи датчика температуры. Значение "P2" или "E2" говорит о коротком замыкании в цепи измерения. В таких случаях <strong>термостат</strong> переходит в аварийный режим работы, пытаясь поддерживать температуру по таймеру, чтобы спасти продукты.</p>
+
+<blockquote>⚠️ Внимание: Игнорирование ошибок датчика может привести к выходу из строя компрессора из-за работы в режиме "сухого хода" или непрерывного включения без остановки.</blockquote>
+
+<p>Кроме проблем с температурой, контроллер может сигнализировать о превышении максимально допустимой температуры в камере. Это часто случается после загрузки большого объема теплых продуктов или при неисправности уплотнителей двери. Сбросить тревогу можно кнопкой, но причина должна быть устранена физически.</p>
+
+<details class="pb-accordion"><summary>Скрытые коды диагностики</summary><div class="pb-accordion-body"><p>В некоторых моделях при одновременном нажатии кнопок можно войти в режим диагностики, где отображается статус входов и выходов в реальном времени. Это полезно для проверки целостности цепей управления.</p></div></details>
+
+<h2 id="калибровка-датчика-и-защита-доступа">Калибровка датчика и защита доступа</h2>
+
+<p>Со временем показания датчика могут дрейфовать, или же новый сенсор может иметь небольшую погрешность. Для компенсации этого в меню предусмотрена функция калибровки. Сравнив показания контроллера с эталонным термометром, можно внести поправку в диапазоне +/- нескольких градусов.</p>
+
+<p>Для предотвращения несанкционированного изменения настроек персоналом предусмотрена система паролей. Уровень доступа может быть разным: от простого изменения уставок до полного инженерного меню. Пароль по умолчанию часто указан в инструкции, но его настоятельно рекомендуется сменить.</p>
+
+<p>Если вы забыли установленный пароль, существует процедура сброса к заводским настройкам. Однако это вернет все параметры к исходным значениям, что потребует повторной настройки всех режимов работы. Поэтому ведение журнала изменений является хорошей практикой для технического специалиста.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Калибровка датчика — единственная настройка, которая изменяет физическое восприятие температуры контроллером, не меняя при этом положение чувствительного элемента.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Как сбросить контроллер Eliwell до заводских настроек?</summary>
+<p>Для сброса необходимо войти в меню программирования, найти параметр, отвечающий за инициализацию (часто обозначается как "rSt" или аналогично), и установить значение "ON" или "YES". Точная последовательность зависит от серии контроллера.</p>
+</details>
+
+<details>
+<summary>Почему холодильник не включается после настройки?</summary>
+<p>Возможно, была установлена слишком низкая температура отключения или слишком большой гистерезис. Также проверьте, не активирован ли режим ручной остановки компрессора, который часто обозначается мигающим символом снежинки.</p>
+</details>
+
+<details>
+<summary>Можно ли использовать контроллер Eliwell для морозильной камеры?</summary>
+<p>Да, большинство моделей поддерживают широкий диапазон температур. Необходимо лишь в меню выбрать соответствующий тип хладагента или диапазон работы, а также настроить параметры оттайки, так как в морозилках льда образуется больше.</p>
+</details>
+
+<details>
+<summary>Что делать, если дисплей показывает "LLL" или "HHH"?</summary>
+<p>Эти обозначения говорят о том, что измеренная температура вышла за пределы диапазона измерения датчика. "LLL" означает слишком низкую, "HHH" — слишком высокую. В первую очередь проверьте целостность проводов датчика.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/v/v-/v-kholodilnike-kakaya-temperatura-kholodnee-2-ili-4.html" class="pb-related-card">
+                <span class="pb-related-title">Какая температура холоднее в холодильнике: 2 или 4? Разбор + таблица</span>
+                <span class="pb-related-desc">Разбираемся, что означают цифры 2 и 4 на регуляторе холодильника, какая из них холоднее и как правил</span>
+            </a><a href="/articles/s/sk/skolko-gradusov-v-kholodilnike-v-morozilke-bosh.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько градусов в морозилке Бош: норма и настройка</span>
+                <span class="pb-related-desc">Узнайте, сколько градусов должно быть в морозилке холодильника Bosch. Таблица температурных режимов,</span>
+            </a><a href="/articles/k/ka/kak-nastroit-temperaturu-v-kholodilnike-gorenje.html" class="pb-related-card">
+                <span class="pb-related-title">Как настроить температуру в холодильнике Gorenje: инструкция</span>
+                <span class="pb-related-desc">Подробная инструкция по регулировке температуры в холодильниках Gorenje. Узнайте, как выставить град</span>
+            </a><a href="/articles/k/ka/kak-v-kholodilnike-samsung-otklyuchit-morozilku.html" class="pb-related-card">
+                <span class="pb-related-title">Как отключить морозилку в холодильнике Samsung: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробное руководство по отключению морозильной камеры в холодильниках Samsung: модели с No Frost, д</span>
+            </a><a href="/articles/p/po/pochemu-v-kholodilnike-mokrye-banki.html" class="pb-related-card">
+                <span class="pb-related-title">Почему в холодильнике мокрые банки: причины и решение</span>
+                <span class="pb-related-desc">Выясняем, почему в холодильнике мокрые банки. Причины конденсата, неисправности системы No Frost и о</span>
+            </a><a href="/articles/s/st/staryj-kholodilnik-atlant-kak-vystavit-temperaturu.html" class="pb-related-card">
+                <span class="pb-related-title">Как выставить температуру на старом холодильнике Атлант: инструкция</span>
+                <span class="pb-related-desc">Подробная инструкция по настройке температуры в старых холодильниках Атлант. Разбор термостатов, рег</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

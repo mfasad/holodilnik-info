@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Express Cool холодильник: что это и как работает — Холодильник Инфо</title>
+    <meta name="description" content="Подробный обзор технологии Express Cool в холодильниках. Как работает быстрая заморозка, настройки и влияние на хранение продуктов.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/e/ex/express-cool-kholodilnik-chto-eto.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Express Cool холодильник: что это и как работает">
+    <meta property="og:description" content="Подробный обзор технологии Express Cool в холодильниках. Как работает быстрая заморозка, настройки и влияние на хранение продуктов.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ustrojstvo-i-detali/">Устройство и детали</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Express Cool холодильник: что это и как работает</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#принцип-работы-технологии-express-cool">Принцип работы технологии Express Cool</a></li><li><a href="#когда-необходимо-активировать-режим-быстрого-охлаждения">Когда необходимо активировать режим быстрого охлаждения</a></li><li><a href="#отличия-express-cool-от-режима-super-freeze">Отличия Express Cool от режима Super Freeze</a></li><li><a href="#влияние-функции-на-срок-хранения-продуктов">Влияние функции на срок хранения продуктов</a></li><li><a href="#энергопотребление-и-шум-при-работе-express-cool">Энергопотребление и шум при работе Express Cool</a></li><li><a href="#настройка-и-управление-функцией-в-различных-моделях">Настройка и управление функцией в различных моделях</a></li><li><a href="#возможные-неисправности-и-диагностика">Возможные неисправности и диагностика</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/s/sk/skolko-toka-beret-kholodilnik.html">Сколько тока берет холодильник: расчет потребления и экономия</a></li><li><a href="/articles/g/gd/gde-kupit-yashchik-v-kholodilnik.html">Где купить ящик в холодильник: цены, размеры и бренды</a></li><li><a href="/articles/k/kh/kholodilnik-v-avto-kak-rabotaet.html">Автохолодильник: как работает и что нужно знать перед покупкой</a></li><li><a href="/articles/g/gd/gde-na-kholodilnike-data-izgotovleniya.html">Где искать дату изготовления холодильника: 5 проверенных мест</a></li><li><a href="/articles/s/sa/safety-glass-v-kholodilnike-chto-eto.html">Safety Glass в холодильнике: что это за стекло и его свойства</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Express Cool в холодильнике: что это за функция и как ею пользоваться</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#принцип-работы-технологии-express-cool">Принцип работы технологии Express Cool</a></li><li><a href="#когда-необходимо-активировать-режим-быстрого-охлаждения">Когда необходимо активировать режим быстрого охлаждения</a></li><li><a href="#отличия-express-cool-от-режима-super-freeze">Отличия Express Cool от режима Super Freeze</a></li><li><a href="#влияние-функции-на-срок-хранения-продуктов">Влияние функции на срок хранения продуктов</a></li><li><a href="#энергопотребление-и-шум-при-работе-express-cool">Энергопотребление и шум при работе Express Cool</a></li><li><a href="#настройка-и-управление-функцией-в-различных-моделях">Настройка и управление функцией в различных моделях</a></li><li><a href="#возможные-неисправности-и-диагностика">Возможные неисправности и диагностика</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Современная бытовая техника переполнена аббревиатурами и маркетинговыми названиями, которые часто ставят пользователей в тупик при покупке или первом использовании устройства. Одной из таких функций, встречающейся на панелях управления или в описаниях моделей, является <strong>Express Cool</strong>. Этот термин не является стандартом для всех производителей, но чаще всего ассоциируется с технологиями быстрого охлаждения и интенсивной заморозки, позволяющими значительно сократить время достижения заданных температурных параметров.</p>
+
+<p>Владельцы холодильного оборудования часто задаются вопросом, стоит ли активировать этот режим постоянно или его использование ограничено особыми случаями. <mark>Express Cool — это режим форсированной работы компрессора, предназначенный для экстренного снижения температуры в камере или быстрой заморозки свежих продуктов.</mark> Понимание принципов работы этой системы поможет не только эффективнее хранить еду, но и продлить срок службы самого агрегата, избегая unnecessary нагрузок.</p>
+
+<p>В данной статье мы подробно разберем, что скрывается за этим названием, как правильно эксплуатировать функцию и какие существуют нюансы, о которых редко пишут в кратких инструкциях. Вы узнаете, чем отличается этот режим от обычной работы и в каких ситуациях его активация действительно необходима для сохранения качества ваших продуктов.</p>
+
+<h2 id="принцип-работы-технологии-express-cool">Принцип работы технологии Express Cool</h2>
+
+<p>Функция <em>Express Cool</em>, часто встречающаяся в холодильниках различных брендов (иногда под названиями Quick Cool, Super Cool или аналогичными), базируется на изменении алгоритма работы компрессорного агрегата. В штатном режиме холодильник циклически включается и выключается, поддерживая температуру в заданном коридоре, например, от +2 до +5 градусов Цельсия. При активации режима быстрого охлаждения система переходит в режим непрерывной работы или работы с минимальными паузами до достижения минимально возможной температуры в камере.</p>
+
+<p>Технически это реализуется через блокировку сигнала от термостата или электронного датчика температуры, который обычно дает команду на остановку компрессора. <strong>Интенсивное охлаждение</strong> заставляет хладагент циркулировать по системе с максимальной скоростью, отбирая тепло из внутреннего пространства камеры. Это позволяет быстро охладить только что поставленные продукты или восстановить температурный режим после длительной разморозки или загрузки большого объема теплой пищи.</p>
+
+<p>Важно понимать, что данный режим не является бесконечным процессом. Большинство современных моделей оснащены таймером или логикой, которая автоматически отключает функцию <em>Express Cool</em> через определенное время (обычно от 2 до 6 часов) или после достижения критически низкой температуры, чтобы предотвратить перемерзание продуктов и обледенение испарителя.</p>
+
+<blockquote>⚠️ Внимание: Длительная принудительная работа компрессора в режиме Express Cool без перерывов может привести к перегреву мотора и сокращению ресурса холодильного агрегата. Используйте функцию только по необходимости.</blockquote>
+
+<h2 id="когда-необходимо-активировать-режим-быстрого-охлаждения">Когда необходимо активировать режим быстрого охлаждения</h2>
+
+<p>Использование функции <strong>Express Cool</strong> должно быть обоснованным. Существует ряд сценариев, когда активация этого режима является не просто удобной, но и необходимой мерой для обеспечения безопасности продуктов. В первую очередь, это касается ситуаций, когда вы принесли домой большое количество продуктов после покупки и планируете поместить их в холодильник одновременно.</p>
+
+<p>Также режим незаменим при подготовке к приему гостей, когда требуется быстро охладить напитки или закуски. Если вы размораживали холодильник для уборки, функция поможет в кратчайшие сроки вернуть камеру к рабочим параметрам, минимизируя риск порчи уже имеющихся запасов. В летний период, когда ambient-температура на кухне высока, использование <em>Express Cool</em> помогает быстрее стабилизировать микроклимат внутри камер после частого открывания дверцы.</p>
+
+<p>Не рекомендуется держать режим включенным постоянно. Это приведет к перерасходу электроэнергии и излишнему высушиванию продуктов, не покрытых упаковкой. <strong>Оптимальная стратегия</strong> — включать функцию на несколько часов при высокой загрузке, а затем возвращать холодильник в стандартный режим работы.</p>
+
+<div class="pb-poll" id="poll-bcea156d"><div class="pb-poll-question">📊 Зачем вы чаще всего используете режим быстрого охлаждения?</div><div class="pb-poll-option" data-poll="bcea156d" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Для охлаждения напитков перед вечеринкой</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="bcea156d" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">После покупки большого объема продуктов</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="bcea156d" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">После разморозки холодильника</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="bcea156d" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Я не использую эту функцию</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="отличия-express-cool-от-режима-super-freeze">Отличия Express Cool от режима Super Freeze</h2>
+
+<p>Пользователи часто путают функции быстрого охлаждения и суперзаморозки, однако между ними есть существенная разница, связанная с целевым назначением и зоной воздействия. Режим <em>Super Freeze</em> (Суперзаморозка) предназначен в первую очередь для морозильной камеры. Его задача — создать условия для шоковой заморозки, при которой в клетках продуктов не успевают образоваться крупные кристаллы льда, разрушающие структуру пищи.</p>
+
+<p>В свою очередь, <strong>Express Cool</strong> ориентирован на холодильное отделение. Его цель — не заморозить продукты в лед, а максимально быстро снизить их температуру до безопасных значений хранения (около 0...+4 градусов). Если включить Super Freeze в холодильнике, есть риск заморозить овощи и фрукты, что приведет к потере их вкусовых качеств и витаминов после разморозки.</p>
+
+<p>Ниже приведена сравнительная таблица, демонстрирующая ключевые различия между этими двумя функциями:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Express Cool (Охлаждение)</th>
+<th>Super Freeze (Заморозка)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Основная камера</td>
+<td>Холодильное отделение</td>
+<td>Морозильная камера</td>
+</tr>
+<tr>
+<td>Целевая температура</td>
+<td>+1...+4 °C</td>
+<td>-18...-24 °C и ниже</td>
+</tr>
+<tr>
+<td>Влияние на структуру</td>
+<td>Сохраняет свежесть без заморозки</td>
+<td>Шоковая заморозка, сохранение сока</td>
+</tr>
+<tr>
+<td>Длительность цикла</td>
+<p>Обычно 2-4 часа</p>
+<p>Обычно 24-48 часов (или постоянно)</p>
+</tr>
+</tbody>
+</table></div>
+
+<details class="pb-accordion"><summary>Что будет если перепутать режимы?</summary><div class="pb-accordion-body"><p>Если вы включите Super Freeze в холодильной камере, продукты у задней стенки могут замерзнуть, а стеклянные бутылки с жидкостью — лопнуть из-за расширения воды. Если включите Express Cool в морозилке, просто не удастся достичь глубокой заморозки, и качество хранения мяса или рыбы снизится.</p></div></details>
+
+<h2 id="влияние-функции-на-срок-хранения-продуктов">Влияние функции на срок хранения продуктов</h2>
+
+<p>Правильное использование режима <em>Express Cool</em> напрямую влияет на безопасность пищи. Бактерии наиболее активно размножаются в так называемой "опасной зоне" температур, которая составляет от +5 до +60 градусов Цельсия. Когда вы помещаете в холодильник большое количество продуктов комнатной температуры, общий климат внутри камеры нагревается, и существующие запасы также оказываются в зоне риска.</p>
+
+<p>Активация форсированного охлаждения позволяет быстро миновать этот опасный диапазон. <strong>Быстрое снижение температуры</strong> подавляет жизнедеельность патогенных микроорганизмов, таких как сальмонелла и кишечная палочка. Это особенно актуально для мясных полуфабрикатов, молочных продуктов и готовых блюд, которые не подлежат длительной термической обработке перед употреблением.</p>
+
+<p>Однако стоит учитывать и обратную сторону медали. Слишком интенсивный поток холодного воздуха может привести к обезвоживанию продуктов, не упакованных в герметичные контейнеры. Овощи и фрукты могут потерять тургор (упругость), а хлеб — зачерстветь быстрее обычного. Поэтому при использовании <em>Express Cool</em> рекомендуется упаковывать продукты в пакеты или закрывать крышками.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Для равномерного охлаждения при использовании Express Cool старайтесь не ставить продукты вплотную к задней стенке камеры, где расположен испаритель. Оставьте зазор в 2-3 см для циркуляции воздуха.</p></aside>
+
+<h2 id="энергопотребление-и-шум-при-работе-express-cool">Энергопотребление и шум при работе Express Cool</h2>
+
+<p>Переход холодильника в режим интенсивной работы неизбежно сказывается на потреблении электроэнергии. В стандартном режиме компрессор работает intermittently (периодически), затрачивая энергию только на поддержание температуры. В режиме <strong>Express Cool</strong> двигатель работает практически без остановок, что может увеличить расход электричества в 2-3 раза за этот промежуток времени.</p>
+
+<p>Кроме того, пользователи часто отмечают повышение уровня шума. Это связано с тем, что компрессор работает на максимальных оборотах, а вентиляторы системы No Frost (если она предусмотрена моделью) также усиливают циркуляцию воздуха для быстрого теплообмена. <em>Гудение</em> может стать более ощутимым, особенно в ночное время или в квартирах с открытой планировкой кухни-гостиной.</p>
+
+<p>Несмотря на временные неудобства и затраты, однократное использование функции для охлаждения большой загрузки экономически более целесообразно, чем попытка охладить теплый груз в обычном режиме. Во втором случае холодильник будет работать долго, но менее эффективно, так как термостат будет постоянно давать команду на включение, пытаясь компенсировать теплопродукты.</p>
+
+<blockquote>⚠️ Внимание: Если при включении режима Express Cool вы слышите посторонние стуки, скрипы или вибрацию, которой не было раньше, немедленно отключите функцию и проверьте устойчивость холодильника. Интенсивная работа может усилить проявление неисправностей.</blockquote>
+
+<h2 id="настройка-и-управление-функцией-в-различных-моделях">Настройка и управление функцией в различных моделях</h2>
+
+<p>Интерфейс управления режимом <em>Express Cool</em> может отличаться в зависимости от производителя и года выпуска холодильника. В современных моделях с электронным управлением и дисплеем активация обычно производится касанием соответствующей сенсорной кнопки на передней панели. На экране при этом загорается индикатор, сигнализирующий о работе функции.</p>
+
+<p>В более простых или старых моделях управление может осуществляться механическим переключателем внутри холодильной камеры. Иногда для активации быстрого охлаждения требуется зажать определенную комбинацию кнопок на панели управления. Например, одновременное нажатие кнопок регулировки температуры для холодильной и морозильной камер в течение 3-5 секунд.</p>
+
+<p>Для точной настройки обратитесь к инструкции вашей модели, так как алгоритмы могут различаться. Ниже приведен общий алгоритм действий, характерный для большинства устройств:</p>
+
+<ul>
+<li>🔌 Убедитесь, что холодильник подключен к сети и находится в рабочем состоянии.</li>
+<li>❄️ Найдите кнопку с надписью "Cool", "Express", "Quick" или изображением снежинки/капли на панели управления.</li>
+<li>👆 Нажмите кнопку один раз (или зажмите, согласно инструкции) до загорания индикатора.</li>
+<li>⏳ Дождитесь автоматического отключения режима или выключите его вручную через несколько часов.</li>
+</ul>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка перед включением Express Cool</h4><label class="check-item"><input type="checkbox"><span>Продукты упакованы в контейнеры</span></label><label class="check-item"><input type="checkbox"><span>Дверца плотно закрывается</span></label><label class="check-item"><input type="checkbox"><span>Холодильник стоит ровно</span></label><label class="check-item"><input type="checkbox"><span>Вокруг агрегата есть зазор для вентиляции</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="возможные-неисправности-и-диагностика">Возможные неисправности и диагностика</h2>
+
+<p>Хотя режим <strong>Express Cool</strong> является штатной функцией, его некорректная работа может сигнализировать о проблемах с холодильником. Если после включения режима температура не снижается в течение 1-2 часов, или индикатор горит, но холода нет, это может указывать на утечку хладагента или неисправность компрессора.</p>
+
+<p>Частой проблемой является примерзание заслонки воздуховода (в моделях с No Frost), которая регулирует поток холодного воздуха из морозилки в холодильную камеру. В режиме экспресс-охлаждения заслонка должна быть полностью открыта. Если она заблокирована льдом, холод не поступает, и функция не работает. В этом случае требуется полная разморозка холодильника в течение 10-12 часов.</p>
+
+<p>Также стоит обратить внимание на поведение компрессора. Если он включается в режиме <em>Express Cool</em>, но через несколько секунд выключается с щелчком и не запускается снова — это признак перегрева или проблем с пусковым реле. Эксплуатация такого устройства запрещена, требуется вызов мастера.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если режим Express Cool не приносит результата в течение 2 часов, дальнейшее его использование бессмысленно и опасно для техники. Необходимо искать причину отсутствия холода.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли оставлять режим Express Cool включенным постоянно?</summary>
+<p>Нет, это не рекомендуется. Постоянная работа на максимальной мощности приведет к быстрому износу компрессора, увеличению счета за электроэнергию и возможному перемерзанию продуктов в холодильной камере. Используйте режим только по необходимости.</p>
+</details>
+
+<details>
+<summary>Почему после выключения Express Cool температура снова поднимается?</summary>
+<p>Это нормальное явление. Режим служил для быстрого снижения температуры. После его отключения холодильник возвращается в штатный режим поддержания температуры, который может быть настроен на менее низкие значения (например, +5°C вместо +1°C). Проверьте настройки терморегулятора.</p>
+</details>
+
+<details>
+<summary>Вредно ли ставить горячие кастрюли в холодильник с включенным Express Cool?</summary>
+<p>Ставить горячее вредно в любом режиме, так как это создает огромную нагрузку на агрегат и нагревает соседние продукты. Однако режим Express Cool справится с последствиями быстрее, чем обычный режим. Все же лучше остужать пищу до комнатной температуры перед загрузкой.</p>
+</details>
+
+<details>
+<summary>Сколько времени работает Express Cool до автоотключения?</summary>
+<p>Время зависит от модели холодильника. Обычно таймер устанавливается на 2, 4 или 6 часов. В некоторых моделях функция работает до тех пор, пока пользователь не выключит ее вручную. Точные данные смотрите в инструкции к вашему устройству.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/s/sk/skolko-toka-beret-kholodilnik.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько тока берет холодильник: расчет потребления и экономия</span>
+                <span class="pb-related-desc">Узнайте, как измерить ток холодильника, нормы потребления для разных классов (A+++ до D) и как снизи</span>
+            </a><a href="/articles/g/gd/gde-kupit-yashchik-v-kholodilnik.html" class="pb-related-card">
+                <span class="pb-related-title">Где купить ящик в холодильник: цены, размеры и бренды</span>
+                <span class="pb-related-desc">Где купить ящик в холодильник, если он сломался. Подбор оригинальных и универсальных лотков, советы </span>
+            </a><a href="/articles/k/kh/kholodilnik-v-avto-kak-rabotaet.html" class="pb-related-card">
+                <span class="pb-related-title">Автохолодильник: как работает и что нужно знать перед покупкой</span>
+                <span class="pb-related-desc">Принцип работы холодильников для автомобиля: компрессорные, термоэлектрические и абсорбционные модел</span>
+            </a><a href="/articles/g/gd/gde-na-kholodilnike-data-izgotovleniya.html" class="pb-related-card">
+                <span class="pb-related-title">Где искать дату изготовления холодильника: 5 проверенных мест</span>
+                <span class="pb-related-desc">Не знаете, где на холодильнике указана дата производства? Разбираем все возможные места: шильдик, на</span>
+            </a><a href="/articles/s/sa/safety-glass-v-kholodilnike-chto-eto.html" class="pb-related-card">
+                <span class="pb-related-title">Safety Glass в холодильнике: что это за стекло и его свойства</span>
+                <span class="pb-related-desc">Узнайте, что такое safety glass в холодильнике. Разбор характеристик закаленного стекла, его прочнос</span>
+            </a><a href="/articles/k/kh/kholodilnik-kak-teplovoj-nasos.html" class="pb-related-card">
+                <span class="pb-related-title">Холодильник как тепловой насос: принцип работы и эффективность</span>
+                <span class="pb-related-desc">Как холодильник работает как тепловой насос, физика процесса и возможности применения в быту. Коэффи</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

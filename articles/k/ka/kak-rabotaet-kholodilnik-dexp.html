@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Как работает холодильник DEXP: устройство, принцип действия, неисправности — Холодильник Инфо</title>
+    <meta name="description" content="Подробный разбор устройства холодильников DEXP. Разбираемся, как работает компрессор, система No Frost, и диагностируем типичные поломки своими руками.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/k/ka/kak-rabotaet-kholodilnik-dexp.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как работает холодильник DEXP: устройство, принцип действия, неисправности">
+    <meta property="og:description" content="Подробный разбор устройства холодильников DEXP. Разбираемся, как работает компрессор, система No Frost, и диагностируем типичные поломки своими руками.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ustrojstvo-i-detali/">Устройство и детали</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как работает холодильник DEXP: устройство, принцип действия, неисправности</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#базовая-схема-парокомпрессионного-цикла">Базовая схема парокомпрессионного цикла</a></li><li><a href="#особенности-систем-разморозки-static-vs-no-frost">Особенности систем разморозки: Static vs No Frost</a></li><li><a href="#роль-терморегуляции-и-электронных-модулей">Роль терморегуляции и электронных модулей</a></li><li><a href="#используемые-хладагенты-и-их-свойства">Используемые хладагенты и их свойства</a></li><li><a href="#диагностика-типовых-неисправностей">Диагностика типовых неисправностей</a></li><li><a href="#рекомендации-по-продлению-срока-службы">Рекомендации по продлению срока службы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-rabotaet-kapelnaya-sistema-v-kholodilnike.html">Капельная система разморозки: как работает и что ломается</a></li><li><a href="/articles/r/re/regulyator-temperatury-kholodilnika-kak-rabotaet.html">Регулятор температуры холодильника: принцип работы и настройка</a></li><li><a href="/articles/s/sk/skolko-potreblyaet-invertornyj-kholodilnik.html">Сколько потребляет инверторный холодильник: расход кВт в месяц</a></li><li><a href="/articles/p/pl/plachushchij-isparitel-dlya-kholodilnika-chto-eto.html">Плачущий испаритель холодильника: устройство и принцип работы</a></li><li><a href="/articles/g/gd/gde-kupit-yashchik-dlya-morozilnoj-kamery-kholodilnika-atlant.html">Где купить ящик для морозильной камеры Атлант: цены и модели</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как работает холодильник DEXP: устройство и принципы работы</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#базовая-схема-парокомпрессионного-цикла">Базовая схема парокомпрессионного цикла</a></li><li><a href="#особенности-систем-разморозки-static-vs-no-frost">Особенности систем разморозки: Static vs No Frost</a></li><li><a href="#роль-терморегуляции-и-электронных-модулей">Роль терморегуляции и электронных модулей</a></li><li><a href="#используемые-хладагенты-и-их-свойства">Используемые хладагенты и их свойства</a></li><li><a href="#диагностика-типовых-неисправностей">Диагностика типовых неисправностей</a></li><li><a href="#рекомендации-по-продлению-срока-службы">Рекомендации по продлению срока службы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Холодильное оборудование бренда <em>DEXP</em> завоевало популярность благодаря доступной цене и широкому модельному ряду, охватывающему как компактные однокамерные модели, так и вместительные двухкамерные агрегаты. Понимание принципов работы этого устройства необходимо каждому владельцу для правильной эксплуатации, своевременного обслуживания и минимизации риска преждевременных поломок. Несмотря на внешние различия, все холодильники DEXP базируются на классической парокомпрессионной схеме охлаждения, однако могут существенно отличаться типом разморозки и используемыми хладагентами.</p>
+
+<p>В основе функционирования лежит непрерывный цикл циркуляции <strong>хладагента</strong> (чаще всего экологически безопасного <em>R600a</em> или <em>R134a</em>) по замкнутому контуру. Электрическая энергия, потребляемая из сети, преобразуется компрессором в механическую, которая заставляет хладагент перемещаться, меняя свое агрегатное состояние и температуру. Именно этот физический процесс позволяет отводить тепло из внутренней камеры холодильника и рассеивать его в окружающее пространство через заднюю решетку конденсатора.</p>
+
+<p>Современные модели DEXP часто оснащаются системами электронного управления, которые оптимизируют работу мотора и предотвращают перегрузки. Знание того, как именно ваш <em>DEXP</em> генерирует холод, поможет вам не только экономить электроэнергию, но и быстро реагировать на малейшие изменения в звуке работающего агрегата или качестве заморозки продуктов.</p>
+
+<h2 id="базовая-схема-парокомпрессионного-цикла">Базовая схема парокомпрессионного цикла</h2>
+
+<p>Центральным элементом любой холодильной установки является <strong>компрессор</strong>, который часто называют «сердцем» системы. В холодильниках DEXP используются преимущественно герметичные поршневые компрессоры, которые нагнетают хладагент под высоким давлением. Когда хладагент выходит из компрессора, он находится в газообразном состоянии и имеет высокую температуру, после чего направляется в конденсатор.</p>
+
+<p>В конденсаторе, который представляет собой змеевик на задней стенке или скрытый в боковых панелях, происходит отдача тепла. Проходя по трубкам, горячий газ остывает и переходит в жидкое состояние. Этот этап критически важен: если (теплоотдача) нарушена из-за пыли или плохой вентиляции, эффективность всей системы падает, а нагрузка на мотор возрастает.</p>
+
+<p>Далее жидкий хладагент проходит через <strong>капиллярную трубку</strong> или дроссель, где резко падает его давление. Это приводит к мгновенному охлаждению вещества. Попадая в испаритель внутри морозильной камеры, хладагент закипает при очень низкой температуре, активно поглощая тепло из продуктов. После этого цикл повторяется заново.</p>
+
+<div class="pb-poll" id="poll-abbb5f3a"><div class="pb-poll-question">📊 Какой у вас тип холодильника DEXP?</div><div class="pb-poll-option" data-poll="abbb5f3a" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Однокамерный</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="abbb5f3a" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Двухкамерный (Top Freezer)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="abbb5f3a" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Двухухкамерный (Bottom Freezer)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="abbb5f3a" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Side-by-Side</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="особенности-систем-разморозки-static-vs-no-frost">Особенности систем разморозки: Static vs No Frost</h2>
+
+<p>Модельный ряд DEXP делится на две основные группы по типу разморозки: классическая капельная система (или статическая) и технология <em>No Frost</em>. В моделях с капельной системой (<em>Drop System</em>) испаритель расположен на задней стенке холодильной камеры. Влага из воздуха конденсируется на холодной поверхности, превращается в иней, а во время остановки компрессора тает и стекает в специальный желобок.</p>
+
+<p>Система <strong>No Frost</strong> («без инея») работает по иному принципу. Здесь испаритель скрыт в техническом отсеке, обычно за задней панелью морозильной камеры. Охлажденный воздух принудительно циркулирует внутри камер благодаря работе <strong>вентилятора</strong>. Это обеспечивает равномерную температуру по всему объему и отсутствие наледи на продуктах и стенках.</p>
+
+<blockquote>⚠️ Внимание: В холодильниках DEXP с системой No Frost нельзя перекрывать вентиляционные отверстия на задней стенке камер продуктами. Нарушение циркуляции воздуха приведет к локальному перегреву компрессора и некачественному охлаждению.</blockquote>
+
+<p>Периодически, по сигналу таймера или термостата, система No Frost переходит в режим оттайки. В этот момент включается <strong>ТЭН</strong> (трубчатый электронагреватель), который плавит накопившийся на скрытом испарителе лед. Образовавшаяся вода стекает в поддон, расположенный над компрессором, где благополучно испаряется.</p>
+
+<details class="pb-accordion"><summary>Почему в No Frost сохнет продукты?</summary><div class="pb-accordion-body"><p>В системе No Frost циркулирует очень сухой холодный воздух. Если продукты не упакованы в контейнеры или пакеты, влага из них быстро испаряется, что приводит к заветриванию. В отличие от капельной системы, где влажность естественно выше.</</p></div></details>
+
+<h2 id="роль-терморегуляции-и-электронных-модулей">Роль терморегуляции и электронных модулей</h2>
+
+<p>Управление температурным режимом в холодильниках DEXP может осуществляться механическим термостатом или электронным блоком управления. Механический регулятор представляет собой устройство, чувствительное к изменению давления газа в сильфоне или расширению жидкости. Когда температура в камере достигает заданного значения, контакты размыкаются, и компрессор отключается.</p>
+
+<p>В более продвинутых моделях за процесс отвечает <strong>электронный модуль</strong>, получающий данные с нескольких термодатчиков (сенсоров). Это позволяет поддерживать температуру с точностью до градуса, что особенно важно для длительного хранения свежих продуктов. Электроника также контролирует работу вентилятора и циклы оттайки.</p>
+
+<ul>
+ <li>🌡️ <strong>Термостат</strong> — механический переключатель, разрывающий цепь питания компрессора при достижении нужного холода.</li>
+ <li>📡 <strong>Датчики температуры</strong> — электронные сенсоры (термисторы), передающие точные данные на плату управления.</li>
+ <li>⏱️ <strong>Таймер оттайки</strong> — устройство (механическое или электронное), задающее интервалы для включения режима разморозки.</li>
+</ul>
+
+<p>Если холодильник DEXP перестал выключаться или, наоборот, не включается, проблема часто кроется именно в элементах системы терморегуляции. Неисправный датчик может «врать» модулю управления, сообщая, что в камере тепло, хотя на самом деле там уже глубокая заморозка, или наоборот.</p>
+
+<h2 id="используемые-хладагенты-и-их-свойства">Используемые хладагенты и их свойства</h2>
+
+<p>Экологичность и эффективность работы напрямую зависят от типа используемого <strong>хладагента</strong>. Современные холодильники DEXP чаще всего заправляются изобутаном (<em>R600a</em>) или тетрафторэтаном (<em>R134a</em>). Изобутан считается более современным и энергоэффективным, он не разрушает озоновый слой, но является легковоспламеняющимся газом.</p>
+
+<p>Тетрафторэтан (<em>R134a</em>) также безопасен для озона, но работает при slightly более высоком давлении. Он менее эффективен с точки зрения энергопотребления по сравнению с R600a, но обладает лучшей смазывающей способностью для компрессора. Определить тип газа можно по наклейке на компрессоре или технической табличке на корпусе.</p>
+
+<div class="pb-table-wrap"><table>
+ <thead>
+ <tr>
+ <th>Параметр</th>
+ <th>R600a (Изобутан)</th>
+ <th>R134a (Тетрафторэтан)</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Энергоэффективность</td>
+ <td>Высокая (класс А+ и выше)</td>
+ <td>Средняя (класс А)</td>
+ </tr>
+ <tr>
+ <td>Рабочее давление</td>
+ <td>Низкое</td>
+ <td>Среднее</td>
+ </tr>
+ <tr>
+ <td>Безопасность</td>
+ <td>Взрывоопасен при утечке</td>
+ <td>Не горит, безопасен</td>
+ </tr>
+ <tr>
+ <td>Тип масла</td>
+ <td>Минеральное</td>
+ <td>Синтетическое (POE)</td>
+ </tr>
+ </tbody>
+</table></div>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если вы планируете самостоятельную разморозку холодильника DEXP, никогда не используйте острые предметы для скалывания льда. Повреждение испарителя приведет к мгновенной утечке хладагента и дорогостоящему ремонту.</p></aside>
+
+<h2 id="диагностика-типовых-неисправностей">Диагностика типовых неисправностей</h2>
+
+<p>Понимание устройства позволяет быстрее выявить причину поломки. Если холодильник DEXP гудит, но не холодит, возможно, вышел из строя компрессор или произошла утечка фреона. Если же агрегат работает беспрерывно, стоит проверить герметичность дверцы и состояние уплотнителя, а также работу термостата.</p>
+
+<p>Частой проблемой в моделях No Frost является засорение дренажного канала отвода талой воды. Вода начинает скапливаться на дне холодильной камеры или морозилки. Также может выйти из строя вентилятор: в этом случае холод перестанет поступать в камеры, хотя испаритель будет обмерзать льдом.</p>
+
+<blockquote>⚠️ Внимание: Постоянная работа компрессора без отключений может свидетельствовать не только о поломке, но и о неправильной установке. Если холодильник стоит слишком близко к стене или нагревательным приборам, система не может эффективно рассеивать тепло.</blockquote>
+
+<p>Для диагностики электроники часто требуется мультиметр. Проверке подлежат контакты пускового реле, целостность обмоток компрессора и сопротивление ТЭНа оттайки. В моделях с инверторными компрессорами диагностика сложнее и требует специального оборудования для проверки частотного преобразователя.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Первичная диагностика холодильника</h4><label class="check-item"><input type="checkbox"><span>Проверить наличие питания в розетке</span></label><label class="check-item"><input type="checkbox"><span>Оценить плотность прилегания дверцы</span></label><label class="check-item"><input type="checkbox"><span>Прослушать работу компрессора</span></label><label class="check-item"><input type="checkbox"><span>Проверить температуру в камерах</span></label><label class="check-item"><input type="checkbox"><span>Осмотреть заднюю решетку на предмет пыли</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="рекомендации-по-продлению-срока-службы">Рекомендации по продлению срока службы</h2>
+
+<p>Чтобы холодильник DEXP служил долгие годы, необходимо соблюдать правила эксплуатации. Важно обеспечить adequate вентиляцию задней части корпуса. Расстояние до стены должно составлять не менее 5-7 см. Регулярная очистка конденсатора от пыли (пылесосом или мягкой щеткой) значительно снижает нагрузку на мотор.</p>
+
+<p>Не следует загружать в камеры горячие продукты. Это не только нарушает температурный режим, но и приводит к повышенному образованию конденсата и льда, что особенно критично для систем No Frost. Также рекомендуется не заполнять камеру продуктами более чем на 70%, чтобы воздух мог свободно циркулировать.</p>
+
+<p>Периодически проверяйте состояние <strong>уплотнителя дверцы</strong>. Если резинка потрескалась или потеряла эластичность, в камеру будет проникать теплый влажный воздух, заставляя компрессор работать на износ. Протирание уплотнителя мягкой тканью и проверка его прилегания — простая, но эффективная мера профилактики.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярная разморозка (для капельных систем) и чистка конденсатора от пыли — два главных фактора, продлевающие жизнь компрессору холодильника DEXP на 30-40%.</p></aside>
+
+<details>
+ <summary>Почему холодильник DEXP издает булькающие звуки?</summary>
+ <p>Бульканье и переливание жидкости — это нормальный звук циркуляции хладагента по трубкам системы, особенно сразу после включения или выключения компрессора. Если звук не сопровождается отсутствием холода, беспокоиться не о чем.</p>
+</details>
+
+<details>
+ <summary>Как часто нужно размораживать холодильник DEXP с No Frost?</summary>
+ <p>Система No Frost не требует ручной разморозки для удаления льда, так как это происходит автоматически. Однако, раз в 6-12 месяцев рекомендуется проводить полную разморозку и мойку камер для соблюдения гигиенических норм и устранения запахов.</p>
+</details>
+
+<details>
+ <summary>Можно ли перевозить холодильник DEXP лежа?</summary>
+ <p>Крайне нежелательно. При транспортировке лежа масло из компрессора может затечь в контур циркуляции хладагента, что приведет к гидравлическому удару при первом запуске. Если перевозки не избежать, после установки агрегат должен отстояться вертикально не менее 4-6 часов.</p>
+</details>
+
+<details>
+ <summary>Что делать, если в холодильной камере DEXP слишком холодно?</summary>
+ <p>Проверьте настройки терморегулятора. Если механическая ручка стоит на максимуме, убавьте мощность. В электронных моделях проверьте, не сбились ли настройки. Если проблема сохраняется, возможно, залипло реле компрессора или неисправен датчик температуры.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-rabotaet-kapelnaya-sistema-v-kholodilnike.html" class="pb-related-card">
+                <span class="pb-related-title">Капельная система разморозки: как работает и что ломается</span>
+                <span class="pb-related-desc">Подробный разбор устройства капельной системы холодильника. Принцип работы, причины появления воды, </span>
+            </a><a href="/articles/r/re/regulyator-temperatury-kholodilnika-kak-rabotaet.html" class="pb-related-card">
+                <span class="pb-related-title">Регулятор температуры холодильника: принцип работы и настройка</span>
+                <span class="pb-related-desc">Как работает терморегулятор в холодильнике: устройство, типы, признаки неисправности и инструкция по</span>
+            </a><a href="/articles/s/sk/skolko-potreblyaet-invertornyj-kholodilnik.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько потребляет инверторный холодильник: расход кВт в месяц</span>
+                <span class="pb-related-desc">Узнайте, сколько электроэнергии потребляет инверторный холодильник. Реальный расход кВт, сравнение с</span>
+            </a><a href="/articles/p/pl/plachushchij-isparitel-dlya-kholodilnika-chto-eto.html" class="pb-related-card">
+                <span class="pb-related-title">Плачущий испаритель холодильника: устройство и принцип работы</span>
+                <span class="pb-related-desc">Что такое плачущий испаритель в холодильнике и как он работает? Подробный разбор системы No Frost и </span>
+            </a><a href="/articles/g/gd/gde-kupit-yashchik-dlya-morozilnoj-kamery-kholodilnika-atlant.html" class="pb-related-card">
+                <span class="pb-related-title">Где купить ящик для морозильной камеры Атлант: цены и модели</span>
+                <span class="pb-related-desc">Ищете, где купить ящик для морозильной камеры холодильника Атлант? Полный гид по артикулам, совмести</span>
+            </a><a href="/articles/k/ka/kak-snyat-displej-u-kholodilnika.html" class="pb-related-card">
+                <span class="pb-related-title">Как снять дисплей у холодильника: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробный гайд по демонтажу панели управления холодильника. Узнайте, как безопасно отключить шлейфы </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

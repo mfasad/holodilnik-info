@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>❄️</text></svg>">
+    <title>Как поместить жирафа в холодильник: разбор игры и логических задач — Холодильник Инфо</title>
+    <meta name="description" content="Анализ популярной логической игры: как поместить жирафа в холодильник. Разбор алгоритмов, уровней сложности и скрытой механики головоломки.">
+    <link rel="canonical" href="https://holodilnik-info.vercel.app/articles/k/ka/kak-pomestit-zhirafa-v-kholodilnik-igra.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как поместить жирафа в холодильник: разбор игры и логических задач">
+    <meta property="og:description" content="Анализ популярной логической игры: как поместить жирафа в холодильник. Разбор алгоритмов, уровней сложности и скрытой механики головоломки.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1779600520">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">❄️</span>
+                <span class="pb-logo-text">Холодильник Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/sroki-khraneniya/">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/sroki-khraneniya/" class="pb-dropdown-item">📅 Сроки хранения</a>
+<a href="/category/remont-svoimi-rukami/" class="pb-dropdown-item">🛠️ Ремонт своими руками</a>
+<a href="/category/nastrojka-temperatury/" class="pb-dropdown-item">🌡️ Настройка температуры</a>
+<a href="/category/ukhod-i-chistka/" class="pb-dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/razmorozka/" class="pb-dropdown-item">💧 Разморозка</a>
+<a href="/category/problemy-i-shum/" class="pb-dropdown-item">🔊 Проблемы и шум</a>
+<a href="/category/vybor-kholodilnika/" class="pb-dropdown-item">🛒 Выбор холодильника</a>
+<a href="/category/ustanovka-i-montazh/" class="pb-dropdown-item">🔌 Установка и монтаж</a>
+<a href="/category/khranenie-bez-kholoda/" class="pb-dropdown-item">🏠 Хранение без холода</a>
+<a href="/category/ustrojstvo-i-detali/" class="pb-dropdown-item">⚙️ Устройство и детали</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как поместить жирафа в холодильник: разбор игры и логических задач</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#суть-и-происхождение-логической-задачи">Суть и происхождение логической задачи</a></li><li><a href="#классический-алгоритм-решения-задачи">Классический алгоритм решения задачи</a></li><li><a href="#уровни-сложности-и-вариации-игры">Уровни сложности и вариации игры</a></li><li><a href="#психологический-аспект-и-тестирование-iq">Психологический аспект и тестирование IQ</a></li><li><a href="#техническая-реализация-в-игровых-движках">Техническая реализация в игровых движках</a></li><li><a href="#частые-ошибки-игроков-и-как-их-избежать">Частые ошибки игроков и как их избежать</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-snyat-blokirovku-s-kholodilnika-atlant.html">Как снять блокировку с холодильника Атлант: инструкция</a></li><li><a href="/articles/k/ka/kak-sokhranit-svezhim-zelenyj-luk-v-kholodilnike-na-neskolko.html">Как сохранить зеленый лук в холодильнике свежим: методы</a></li><li><a href="/articles/z/zh/zhiznennyj-tsikl-kholodilnika-kak-tovara.html">Жизненный цикл холодильника: этапы от производства до утилизации</a></li><li><a href="/articles/v/vi/video-kak-svinya-dostaet-pechene-s-kholodilnika-video.html">Видео как свинья достает печенье: анализ и безопасность холодильника</a></li><li><a href="/articles/c/ch/chto-postelit-na-polki-v-kholodilnik.html">Что постелить на полки в холодильник: лучшие материалы</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как поместить жирафа в холодильник: разбор игры</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#суть-и-происхождение-логической-задачи">Суть и происхождение логической задачи</a></li><li><a href="#классический-алгоритм-решения-задачи">Классический алгоритм решения задачи</a></li><li><a href="#уровни-сложности-и-вариации-игры">Уровни сложности и вариации игры</a></li><li><a href="#психологический-аспект-и-тестирование-iq">Психологический аспект и тестирование IQ</a></li><li><a href="#техническая-реализация-в-игровых-движках">Техническая реализация в игровых движках</a></li><li><a href="#частые-ошибки-игроков-и-как-их-избежать">Частые ошибки игроков и как их избежать</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Вопрос «как поместить жирафа в холодильник» давно перестал быть просто детской шуткой и превратился в настоящий культурный феномен, породивший множество вариаций <strong>логических игр</strong> и головоломок. Этот сценарий часто используется как тест на креативность мышления, способность находить нестандартные решения и понимать абсурдность поставленной задачи в рамках реального мира. Геймеры и любители загадок со всего света ищут способы «пройти» этот уровень, не подозревая, что сама формулировка уже содержит ключ к разгадке.</p>
+
+<p>В данной статье мы детально разберем механику этой известной <em>шутливой задачи</em>, рассмотрим алгоритмы действий для различных вариаций игры и объясним, почему классический ответ часто оказывается неверным в контексте игровых движков. Вы узнаете, как правильно интерпретировать условия <strong>логического парадокса</strong> и какие скрытые смыслы вкладывают разработчики в подобные сценарии.</p>
+
+<p>Стоит сразу отметить, что стандартные методы упаковки вещей здесь не работают, так как мы имеем дело с <mark>условным пространством абстрактной логики</mark>, а не с физикой твердого тела. Если вы пытаетесь применить реальные габариты к виртуальной задаче, вы уже проиграли. Основная цель такой игры — проверить, сможет ли игрок отбросить очевидное и увидеть структуру процесса.</p>
+
+<h2 id="суть-и-происхождение-логической-задачи">Суть и происхождение логической задачи</h2>
+
+<p>История этой загадки уходит корнями в советские и западные сборники анекдотов, где она использовалась для демонстрации абсурдности бюрократических процедур или чрезмерного упрощения сложных процессов. В игровом формате задача трансформировалась в серию последовательных действий, где игроку необходимо выполнить строго определенный <strong>алгоритм</strong>. Часто это первый уровень в цепочке из трех задач, где сложность нарастает экспоненциально.</p>
+
+<p>Суть игры заключается не в физическом перемещении животного, а в соблюдении последовательности шагов, которые кажутся очевидными, но требуют точности исполнения. Ошибка в одном пункте приводит к тому, что <em>гирaffe</em> (или его цифровой аватар) отказывается входить в отведенное пространство. Это классический пример того, как <strong>условная логика</strong> доминирует над здравым смыслом.</p>
+
+<blockquote>
+<p>⚠️ Внимание: В некоторых современных интерпретациях игры (особенно в мобильных приложениях жанра «Brain Teaser») ответ может зависеть от наклона устройства или необходимости перевернуть смартфон, что делает задачу еще более коварной.</p>
+</blockquote>
+
+<p>Разработчики часто используют этот сценарий для обучения игроков базовым механикам интерфейса. Например, необходимость сначала освободить место, прежде чем помещать туда новый объект, является фундаментальным принципом <strong>инвентарной системы</strong> во многих RPG и стратегиях. Таким образом, «жираф в холодильнике» — это метафора управления ресурсами.</p>
+
+<div class="pb-poll" id="poll-44a19961"><div class="pb-poll-question">📊 Считаете ли вы эту задачу сложной?</div><div class="pb-poll-option" data-poll="44a19961" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Да, это ловушка</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="44a19961" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Нет, всё очевидно</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="44a19961" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Я вообще не понимаю суть</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="44a19961" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Это гениально просто</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="классический-алгоритм-решения-задачи">Классический алгоритм решения задачи</h2>
+
+<p>Традиционное решение, которое считается каноничным для большинства текстовых квестов и логических тестов, состоит из трех простых, но критически важных шагов. Игнорирование любого из них делает выполнение задачи невозможным. Первый шаг — это <strong>открытие дверцы</strong> холодильника. Без этого действия все последующие манипуляции бессмысленны, так как замкнутое пространство недоступно.</p>
+
+<p>Второй шаг — непосредственное помещение жирафа внутрь. Здесь важно понимать, что в контексте игры мы абстрагируемся от размеров. Третий, и самый часто забываемый шаг, — <strong>закрытие дверцы</strong>. Многие игроки ошибочно полагают, что задача решена в момент нахождения объекта внутри, но условие «поместить» подразумевает изоляцию объекта от внешней среды.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Алгоритм действий</h4><label class="check-item"><input type="checkbox"><span>Открыть дверцу холодильника</span></label><label class="check-item"><input type="checkbox"><span>Поместить жирафа внутрь</span></label><label class="check-item"><input type="checkbox"><span>Закрыть дверцу холодильника</span></label><label class="check-item"><input type="checkbox"><span>Проверить результат</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Если рассматривать задачу через призму программирования, то это последовательность функций: <code>open(fridge)</code>, <code>insert(giraffe)</code>, <code>close(f)</code>. Отсутствие любой из строк кода приведет к ошибке компиляции или логическому сбою в сценарии. Именно на этом этапе «заваливается» большинство новичков, которые ищут сложные обходные пути.</p>
+
+<details class="pb-accordion"><summary>Что будет, если забыть закрыть дверь?</summary><div class="pb-accordion-body"><p>Если вы не закроете холодильник, в игровом сценарии часто запускается таймер, после которого жираф «убегает» или холодильник «ломается» из-за работы компрессора вхолостую, что приводит к проигрышу уровня.</p></div></details>
+
+<h2 id="уровни-сложности-и-вариации-игры">Уровни сложности и вариации игры</h2>
+
+<p>Существует популярная вариация этой задачи, известная как «Тест на логику», состоящая из четырех уровней. На первом уровне игроку предлагается поместить слона в холодильник. Решение тривиально: открыть, положить, закрыть. Это тренирует базовое понимание механики.</p>
+
+<p>Второй уровень ставит вопрос: как поместить жирафа в холодильник, если там уже лежит слон? Здесь требуется <strong>критическое мышление</strong>. Игрок должен догадаться, что сначала нужно достать слона, затем поместить жирафа и снова закрыть дверь. Это учит учитывать предыдущее состояние системы.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Уровень</th>
+<th>Задача</th>
+<th>Ключевое действие</th>
+<th>Сложность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Поместить слона</td>
+<td>Открыть-Положить-Закрыть</td>
+<td>Низкая</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Поместить жирафа</td>
+<td>Достать слона</td>
+<td>Средняя</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Собраться всем зверям</td>
+<td>Жираф не пришел</td>
+<td>Высокая</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Перейти реку</td>
+<td>Жираф остался</td>
+<td>Экстремальная</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Третий уровень обычно звучит как «Король зверей созвал собрание, все пришли, кроме одного. Кто отсутствует?». Ответ — жираф, потому что он все еще в холодильнике. Четвертый уровень — «Как перейти реку, полную крокодилов?». Ответ — вплавь, так как крокодилы на собрании. Эта цепочка демонстрирует важность <strong>контекстной памяти</strong>.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Запоминайте состояние объектов в предыдущих уровнях — это ключевая механика прохождения многоэтапных логических игр.</p></aside>
+
+<h2 id="психологический-аспект-и-тестирование-iq">Психологический аспект и тестирование IQ</h2>
+
+<p>Почему эта задача так популярна в корпоративных тренингах и тестах на <strong>IQ</strong>? Она проверяет способность человека отбрасывать лишние детали и фокусироваться на очевидном. Высокоинтеллектуальные люди часто склонны к <em>оверфиттингу</em> — они ищут сложные научные объяснения, когда ответ лежит на поверхности.</p>
+
+<p>Исследования показывают, что дети до 7 лет справляются с этой задачей быстрее взрослых. Это связано с тем, что их мышление еще не зашорено социальными нормами и физическими ограничениями. Для них поместить жирафа в холодильник — это просто действие в воображении, не требующее <strong>физического обоснования</strong>.</p>
+
+<p>В психологических тестах реакция на эту задачу может указывать на тип мышления: аналитический (поиск физических решений), творческий (поиск метафорических решений) или прагматичный (следование инструкции). Важно не «застрять» в попытках уменьшить жирафа или растянуть холодильник.</p>
+
+<blockquote>
+<p>⚠️ Внимание: В некоторых интерпретациях теста наличие у вас «творческого» ответа (например, «сделать из жирафа оригами») может быть расценено как неспособность следовать четким инструкциям, что важно учитывать при прохождении собеседований.</p>
+</blockquote>
+
+<h2 id="техническая-реализация-в-игровых-движках">Техническая реализация в игровых движках</h2>
+
+<p>С точки зрения геймдева, реализация сцены «Жираф в холодильнике» требует careful handling коллизий и хитбоксов. Разработчики используют специальные триггеры, которые активируются при взаимодействии игрока с дверцей холодильника. Если <strong>хитбокс</strong> жирафа больше внутреннего объема холодильника, физический движок (например, <em>Unity PhysX</em> или <em>Havok</em>) должен либо сжать модель, либо предотвратить вход.</p>
+
+<p>Часто в таких мини-играх используется баг или фича, известная как «клipping». Если игрок находит правильный угол атаки, модель жирафа может «провалиться» сквозь текстуры холодильника. Это не является задуманным решением, но часто используется спидраннерами для быстрого прохождения.</p>
+
+<p>Для корректной работы скрипта необходимо, чтобы переменная состояния холодильника <code>isDoorOpen</code> была равна <code>true</code>. Попытка изменить переменную <code>giraffePosition</code> без проверки состояния двери приведет к логической ошибке и «залипанию» персонажа в текстурах.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>В играх логика всегда приоритетнее реализма: если скрипт позволяет, жираф поместится в любой объем, независимо от законов физики.</p></aside>
+
+<h2 id="частые-ошибки-игроков-и-как-их-избежать">Частые ошибки игроков и как их избежать</h2>
+
+<p>Одной из самых распространенных ошибок является попытка использовать инвентарь неправильно. Игроки пытаются «крафтить» холодильник и жирафа вместе или использовать инструменты уменьшения, если они не предусмотрены механикой игры. Это тратит время и ресурсы.</p>
+
+<p>Другая ошибка — игнорирование текстового описания. В текстовых квестах (MUD) или играх с глубоким лором решение часто кроется в диалогах с NPC. Если кто-то обмолвился, что «жирафы боятся холода», возможно, холодильник нужно предварительно выключить или использовать изоляцию.</p>
+
+<ul>
+<li>🚫 Попытка запихнуть жирафа силой без открытия двери (приводит к повреждению модели).</li>
+<li>🚫 Забывание вытащить другие предметы (слон, бегемот), занимающие объем.</li>
+<li>🚫 Поиск несуществующих предметов в инвентаре (например, «уменьшительная линза»).</li>
+<li>🚫 Игнорирование последовательности действий в многоэтапных квестах.</li>
+</ul>
+
+<p>Чтобы избежать этих ошибок, всегда внимательно читайте условия задачи и проверяйте инвентарь. Если игра требует <strong>логической последовательности</strong>, не пытайтесь её нарушить креативными, но бесполезными действиями.</p>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Можно ли решить эту задачу в реальной жизни?</summary>
+<p>Физически поместить живого жирафа в бытовой холодильник невозможно из-за несоответствия габаритов и биологических потребностей животного. В реальности это приведет к гибели животного и поломке техники. Задача существует исключительно в плоскости логики и юмора.</p>
+</details>
+
+<details>
+<summary>Почему в игре нужно доставать слона?</summary>
+<p>Это проверка на внимательность и память. В контексте последовательной логической цепочки (уровень 2 после уровня 1) пространство холодильника уже занято. Без освобождения объема новый объект не может быть помещен внутрь согласно правилам игры.</p>
+</details>
+
+<details>
+<summary>Есть ли ответ, где жирафа не нужно запихивать?</summary>
+<p>Да, в некоторых вариациях «боковых» квестов правильным ответом может быть «нарисовать жирафа на холодильнике» или «сфотографировать жирафа рядом». Однако в классической версии требуется именно действие помещения внутрь.</p>
+</details>
+
+<details>
+<summary>Как эта задача связана с программированием?</summary>
+<p>Задача иллюстрирует работу со стеком (Stack) или очередью (Queue), а также необходимость проверки условий (if/else) перед выполнением действия. Это базовый алгоритмический паттерн, используемый в обучении основам кода.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-snyat-blokirovku-s-kholodilnika-atlant.html" class="pb-related-card">
+                <span class="pb-related-title">Как снять блокировку с холодильника Атлант: инструкция</span>
+                <span class="pb-related-desc">Подробная инструкция по разблокировке холодильника Атлант. Устранение блокировки кнопок, Child Lock,</span>
+            </a><a href="/articles/k/ka/kak-sokhranit-svezhim-zelenyj-luk-v-kholodilnike-na-neskolko.html" class="pb-related-card">
+                <span class="pb-related-title">Как сохранить зеленый лук в холодильнике свежим: методы</span>
+                <span class="pb-related-desc">Проверенные способы хранения зеленого лука в холодильнике. Узнайте, как продлить свежесть пера до 3 </span>
+            </a><a href="/articles/z/zh/zhiznennyj-tsikl-kholodilnika-kak-tovara.html" class="pb-related-card">
+                <span class="pb-related-title">Жизненный цикл холодильника: этапы от производства до утилизации</span>
+                <span class="pb-related-desc">Полный разбор жизненного цикла холодильника. Анализ производства, эксплуатации, поломок и правильной</span>
+            </a><a href="/articles/v/vi/video-kak-svinya-dostaet-pechene-s-kholodilnika-video.html" class="pb-related-card">
+                <span class="pb-related-title">Видео как свинья достает печенье: анализ и безопасность холодильника</span>
+                <span class="pb-related-desc">Разбор популярного видео со свиньей, ворующей печенье из холодильника. Анализ поведения животных и с</span>
+            </a><a href="/articles/c/ch/chto-postelit-na-polki-v-kholodilnik.html" class="pb-related-card">
+                <span class="pb-related-title">Что постелить на полки в холодильник: лучшие материалы</span>
+                <span class="pb-related-desc">Выбираем покрытие для полок холодильника: коврики, пленки, салфетки. Обзор материалов, советы по ухо</span>
+            </a><a href="/articles/z/za/zagadka-pro-slona-kak-zasunut-slona-v-kholodilnik.html" class="pb-related-card">
+                <span class="pb-related-title">Загадка про слона в холодильник: решение и логика</span>
+                <span class="pb-related-desc">Разбор популярной логической загадки: как засунуть слона в холодильник? Анализ ответа, связь с жираф</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">❄️ Холодильник Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/sroki-khraneniya/">📅 Сроки хранения</a> · <a href="/category/remont-svoimi-rukami/">🛠️ Ремонт своими руками</a> · <a href="/category/nastrojka-temperatury/">🌡️ Настройка температуры</a> · <a href="/category/ukhod-i-chistka/">🧼 Уход и чистка</a> · <a href="/category/razmorozka/">💧 Разморозка</a> · <a href="/category/problemy-i-shum/">🔊 Проблемы и шум</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Холодильник Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>
